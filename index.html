@@ -3,272 +3,803 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EduPro Suite | High-Yield AP® & Trade Math Exam Prep Vaults</title>
+  <title>EduPro Suite | #1 Exam Prep Vault — AP® Stats, Calculus & Trade Math</title>
+  <meta name="description" content="Score 5 on AP® Statistics & Calculus or pass your Journeyman Plumbing License. 25 full-length exams, Bluebook Simulator, formula frameworks. 7-Day Free Trial. No credit card required.">
   <link rel="stylesheet" href="styles.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232563eb'/><text y='22' x='4' font-size='18' fill='white' font-weight='bold'>E</text></svg>">
 </head>
 <body>
-  <!-- Announcement Bar -->
-  <div class="announcement-bar">
-    ⚡ <strong>EARLY-BIRD PRE-LAUNCH:</strong> Save 40% on all 2027 Digital Exam Vaults & Simulator Passes. Instant Delivery.
-  </div>
 
-  <!-- Header -->
-  <header class="header">
-    <div class="container header-container">
+<!-- ============================================================ -->
+<!-- COUNTDOWN ANNOUNCEMENT BAR -->
+<!-- ============================================================ -->
+<div class="announcement-bar" id="announcementBar">
+  <div class="announcement-inner">
+    <span class="announcement-emoji">🔥</span>
+    <span><strong>LIMITED TIME:</strong> 70% OFF ends in &nbsp;</span>
+    <div class="countdown-mini" id="countdown">
+      <span class="cd-unit"><span id="cd-days">13</span><small>d</small></span>
+      <span class="cd-sep">:</span>
+      <span class="cd-unit"><span id="cd-hours">23</span><small>h</small></span>
+      <span class="cd-sep">:</span>
+      <span class="cd-unit"><span id="cd-mins">59</span><small>m</small></span>
+      <span class="cd-sep">:</span>
+      <span class="cd-unit"><span id="cd-secs">59</span><small>s</small></span>
+    </div>
+    <a href="#pricing" class="announcement-cta">Grab 70% Off Now →</a>
+  </div>
+  <button class="announcement-close" onclick="document.getElementById('announcementBar').style.display='none'">✕</button>
+</div>
+
+<!-- ============================================================ -->
+<!-- HEADER -->
+<!-- ============================================================ -->
+<header class="header" id="mainHeader">
+  <div class="container header-inner">
+    <!-- Logo -->
+    <a href="index.html" class="logo-link">
       <div class="logo">
-        <a href="index.html" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
-          <span class="logo-badge">EXAM READY</span>
-          <span class="logo-title">EduPro Suite</span>
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#2563eb"/><path d="M7 14h14M14 7v14" stroke="white" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="14" r="4" fill="white" opacity="0.25"/></svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">EduPro Suite</span>
+          <span class="logo-tag">Exam Prep Platform</span>
+        </div>
+      </div>
+    </a>
+
+    <!-- Main Nav -->
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html" class="nav-item active">Home</a>
+      <div class="nav-dropdown">
+        <a href="#courses" class="nav-item">Courses <span class="nav-arrow">▾</span></a>
+        <div class="dropdown-menu">
+          <a href="ap-stats.html" class="dropdown-item">
+            <span class="di-icon">📊</span>
+            <div><strong>AP® Statistics 2027</strong><small>Inference, FRQ, Bluebook Simulator</small></div>
+          </a>
+          <a href="ap-calc.html" class="dropdown-item">
+            <span class="di-icon">∫</span>
+            <div><strong>AP® Calculus AB & BC</strong><small>Derivatives, Integrals, Theorems</small></div>
+          </a>
+          <a href="trade-math.html" class="dropdown-item">
+            <span class="di-icon">🔧</span>
+            <div><strong>Plumber & Pipefitter Math</strong><small>Rolling Offsets, License Exam</small></div>
+          </a>
+        </div>
+      </div>
+      <a href="#pricing" class="nav-item">Pricing</a>
+      <a href="#free-resources" class="nav-item">Free Resources</a>
+      <a href="affiliates.html" class="nav-item">Partners</a>
+    </nav>
+
+    <!-- Header CTAs -->
+    <div class="header-actions">
+      <a href="#free-trial" class="btn btn-ghost btn-sm">Start Free Trial</a>
+      <a href="#pricing" class="btn btn-primary btn-sm">
+        <span class="btn-badge">70% Off</span>
+        Get Full Access
+      </a>
+      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- HERO SECTION -->
+<!-- ============================================================ -->
+<section class="hero-section">
+  <div class="hero-bg-gradient"></div>
+  <div class="container hero-container">
+    <div class="hero-left">
+      <!-- Trust Badge -->
+      <div class="trust-badges-row">
+        <div class="trust-badge"><span>⭐⭐⭐⭐⭐</span> 4.9/5 (2,400+ students)</div>
+        <div class="trust-badge trust-badge-green">✅ College Board CED Aligned 2027</div>
+      </div>
+
+      <h1 class="hero-title">
+        Stop Guessing.<br>
+        <span class="hero-highlight">Score 5 with Precision.</span>
+      </h1>
+      <p class="hero-subtitle">
+        High-yield exam vaults for <strong>AP® Statistics</strong>, <strong>AP® Calculus AB/BC</strong> and <strong>Journeyman Plumbing & Trade Math</strong> — the only platform calibrated to the exact rubric patterns examiners use.
+      </p>
+
+      <!-- Stats Row -->
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>25</strong><span>Full-Length Exams</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <strong>709</strong><span>Page Question Bank</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <strong>500+</strong><span>Digital Flashcards</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="hero-stat">
+          <strong>3</strong><span>Exam Tracks</span>
+        </div>
+      </div>
+
+      <!-- Hero CTA Group -->
+      <div class="hero-cta-group">
+        <a href="#free-trial" class="btn btn-primary btn-lg">
+          🚀 Start 7-Day Free Trial
+          <span class="btn-sub">No credit card required</span>
+        </a>
+        <a href="#pricing" class="btn btn-outline btn-lg">
+          View All Plans →
         </a>
       </div>
-      <nav class="nav">
-        <a href="#ap-math" class="nav-link">AP® Statistics & Calc</a>
-        <a href="#trade-math" class="nav-link">Plumbing & Trade Math</a>
-        <a href="#academies" class="nav-link">B2B Center Licenses</a>
-        <a href="affiliates.html" class="nav-link" style="color: #2563eb; font-weight: 700;">Partners (40% Cut)</a>
-        <a href="#featured-products" class="btn btn-sm btn-primary">Instant Pre-Order</a>
-      </nav>
+
+      <!-- Coupon / Flash Discount -->
+      <div class="flash-deal-row">
+        <span class="flash-icon">⚡</span>
+        <span>Use code <strong class="coupon-code" onclick="copyCoupon(this)" title="Click to copy">SCORE70</strong> for <strong>70% off</strong> — 2 weeks only</span>
+        <span class="copy-hint">click to copy</span>
+      </div>
     </div>
-  </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <div class="eyebrow">High-Yield Exam Prep • Zero Fluff • 100% Calibrated</div>
-        <h1 class="hero-title">Pass Your Exam on the First Attempt. Without the 500-Page Fluff.</h1>
-        <p class="hero-subtitle">
-          Whether you are aiming for a College Board <strong>Score 5 in AP Statistics / Calculus</strong> or passing your <strong>Journeyman Plumber & Pipefitter Licensing Exam</strong>, our high-yield formula frameworks and timed simulators guarantee test-day mastery.
-        </p>
+    <div class="hero-right">
+      <!-- Product Showcase Card -->
+      <div class="hero-product-card">
+        <div class="product-card-header">
+          <div class="product-tag">🎯 Choose Your Exam Track</div>
+        </div>
+        <div class="exam-track-tabs">
+          <button class="track-tab active" onclick="switchTrack(this,'ap-stats')">AP® Stats</button>
+          <button class="track-tab" onclick="switchTrack(this,'ap-calc')">AP® Calc</button>
+          <button class="track-tab" onclick="switchTrack(this,'trade')">Trade Math</button>
+        </div>
 
-        <!-- Fast Sales Lead Magnet Box -->
-        <div class="lead-box">
-          <div class="lead-box-header">
-            <span class="badge-free">FREE INSTANT DOWNLOAD</span>
-            <h3>Get Your Free High-Yield Exam Trap & Decision Sheet</h3>
-            <p>Select your track below to receive the free PDF directly in your inbox:</p>
+        <!-- AP Stats Preview -->
+        <div class="track-content" id="track-ap-stats">
+          <div class="track-preview-items">
+            <div class="preview-item locked">
+              <span class="pi-icon">📝</span>
+              <div><strong>Mock Exam #1</strong><small>40 MCQ + 6 FRQ · Full rubrics</small></div>
+              <span class="pi-lock">🔓 Free</span>
+            </div>
+            <div class="preview-item locked">
+              <span class="pi-icon">🃏</span>
+              <div><strong>Inference Flashcard Deck</strong><small>30 cards · Unit 4 & 5</small></div>
+              <span class="pi-lock">🔓 Free</span>
+            </div>
+            <div class="preview-item locked">
+              <span class="pi-icon">📄</span>
+              <div><strong>Quick Review Sheet</strong><small>All 9 units compressed</small></div>
+              <span class="pi-lock">🔓 Free</span>
+            </div>
+            <div class="preview-item">
+              <span class="pi-icon">📚</span>
+              <div><strong>Mock Exams #2–25</strong><small>709 pages of practice</small></div>
+              <span class="pi-badge">Pro</span>
+            </div>
+            <div class="preview-item">
+              <span class="pi-icon">💻</span>
+              <div><strong>Bluebook Timed Simulator</strong><small>Full-year unlimited access</small></div>
+              <span class="pi-badge">Pro</span>
+            </div>
           </div>
-          <form class="lead-form" onsubmit="event.preventDefault(); alert('Success! Your free high-yield guide has been dispatched to your inbox.');">
-            <div class="form-group" style="grid-template-columns: 1fr 1fr;">
-              <input type="text" placeholder="Your Name" required class="input-field">
-              <input type="email" placeholder="Your Email Address" required class="input-field">
+          <a href="#free-trial" class="btn btn-primary btn-block mt-12">Get Free Access to Stats Track →</a>
+        </div>
+
+        <!-- AP Calc Preview -->
+        <div class="track-content hidden" id="track-ap-calc">
+          <div class="track-preview-items">
+            <div class="preview-item">
+              <span class="pi-icon">📝</span>
+              <div><strong>Mock Exam #1 (AB & BC)</strong><small>FRQ Justification Frames Included</small></div>
+              <span class="pi-lock">🔓 Free</span>
             </div>
-            <div style="margin-bottom: 12px;">
-              <select class="input-field" style="width: 100%; cursor: pointer;">
-                <option value="ap_stats">Track 1: AP® Statistics (8-Page Inference Decision Tree & Trap Matrix)</option>
-                <option value="ap_calc">Track 2: AP® Calculus (Existence Theorems & Convergence Flowchart)</option>
-                <option value="plumbing">Track 3: Trade Math (Rolling Offset & Head Pressure Cheat Sheet)</option>
-              </select>
+            <div class="preview-item">
+              <span class="pi-icon">🃏</span>
+              <div><strong>Derivative Rules Flashcards</strong><small>30 cards · Chain, Product, Quotient</small></div>
+              <span class="pi-lock">🔓 Free</span>
             </div>
-            <button type="submit" class="btn btn-primary btn-block">Download Free High-Yield PDF Now ➔</button>
+            <div class="preview-item">
+              <span class="pi-icon">📄</span>
+              <div><strong>Existence Theorems Sheet</strong><small>IVT, MVT, EVT, FTC</small></div>
+              <span class="pi-lock">🔓 Free</span>
+            </div>
+            <div class="preview-item">
+              <span class="pi-icon">📚</span>
+              <div><strong>Mock Exams #2–25</strong><small>301 pages · AB & BC split</small></div>
+              <span class="pi-badge">Pro</span>
+            </div>
+            <div class="preview-item">
+              <span class="pi-icon">🔢</span>
+              <div><strong>Series Convergence Flowchart</strong><small>10 Decision Tests for BC</small></div>
+              <span class="pi-badge">Pro</span>
+            </div>
+          </div>
+          <a href="#free-trial" class="btn btn-primary btn-block mt-12">Get Free Access to Calc Track →</a>
+        </div>
+
+        <!-- Trade Math Preview -->
+        <div class="track-content hidden" id="track-trade">
+          <div class="track-preview-items">
+            <div class="preview-item">
+              <span class="pi-icon">🔧</span>
+              <div><strong>Rolling Offset Practice Set</strong><small>25 drill questions + solutions</small></div>
+              <span class="pi-lock">🔓 Free</span>
+            </div>
+            <div class="preview-item">
+              <span class="pi-icon">🃏</span>
+              <div><strong>Formula Flashcards</strong><small>30 cards · Offset, Pressure, Grade</small></div>
+              <span class="pi-lock">🔓 Free</span>
+            </div>
+            <div class="preview-item">
+              <span class="pi-icon">📄</span>
+              <div><strong>1.414 Multiplier Reference Sheet</strong><small>45°, 60° offset cheat sheet</small></div>
+              <span class="pi-lock">🔓 Free</span>
+            </div>
+            <div class="preview-item">
+              <span class="pi-icon">📚</span>
+              <div><strong>Full Journeyman Exam Bank</strong><small>200+ practice questions</small></div>
+              <span class="pi-badge">Pro</span>
+            </div>
+          </div>
+          <a href="#free-trial" class="btn btn-primary btn-block mt-12">Get Free Access to Trade Track →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- SOCIAL PROOF STRIP -->
+<!-- ============================================================ -->
+<div class="proof-strip">
+  <div class="container proof-strip-inner">
+    <div class="proof-item">🏆 <strong>2,400+</strong> Students Enrolled</div>
+    <div class="proof-div">|</div>
+    <div class="proof-item">⭐ <strong>4.9/5</strong> Avg Rating</div>
+    <div class="proof-div">|</div>
+    <div class="proof-item">✅ <strong>College Board CED</strong> Aligned 2027</div>
+    <div class="proof-div">|</div>
+    <div class="proof-item">🔧 <strong>UA Union</strong> Apprentice Approved</div>
+    <div class="proof-div">|</div>
+    <div class="proof-item">💳 <strong>30-Day</strong> Money-Back Guarantee</div>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- FREE RESOURCES SECTION -->
+<!-- ============================================================ -->
+<section class="section bg-light" id="free-resources">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Free Resources</span>
+      <h2 class="section-title">Try Before You Buy — Free Access Included</h2>
+      <p class="section-desc">Every track includes free limited resources with an EduPro Suite watermark. Sign up and get instant access.</p>
+    </div>
+
+    <div class="free-resources-grid">
+      <!-- Free Resource 1 -->
+      <div class="resource-card">
+        <div class="resource-icon-wrap" style="background: #eff6ff;">
+          <span style="font-size: 28px;">📝</span>
+        </div>
+        <h4>1 Full Mock Exam</h4>
+        <p>Complete Section I & II with authentic College Board rubric scoring. <em>Watermarked PDF — EduPro Suite Free Edition</em></p>
+        <div class="resource-track-tags">
+          <span class="track-tag blue">AP® Stats</span>
+          <span class="track-tag indigo">AP® Calc</span>
+          <span class="track-tag green">Trade Math</span>
+        </div>
+        <a href="#free-trial" class="btn btn-outline btn-sm mt-8">Download Free →</a>
+      </div>
+
+      <!-- Free Resource 2 -->
+      <div class="resource-card">
+        <div class="resource-icon-wrap" style="background: #ecfdf5;">
+          <span style="font-size: 28px;">🃏</span>
+        </div>
+        <h4>30 Digital Flashcards</h4>
+        <p>High-yield formula and concept cards for your track. Covers the most tested concepts. <em>Watermarked — EduPro Suite</em></p>
+        <div class="resource-track-tags">
+          <span class="track-tag blue">AP® Stats</span>
+          <span class="track-tag indigo">AP® Calc</span>
+          <span class="track-tag green">Trade Math</span>
+        </div>
+        <a href="#free-trial" class="btn btn-outline btn-sm mt-8">Access Flashcards →</a>
+      </div>
+
+      <!-- Free Resource 3 -->
+      <div class="resource-card">
+        <div class="resource-icon-wrap" style="background: #fff7ed;">
+          <span style="font-size: 28px;">📄</span>
+        </div>
+        <h4>Quick Review Sheet</h4>
+        <p>All key formulas, decision trees and scoring templates compressed into 1 lamination-ready page. <em>Watermarked PDF</em></p>
+        <div class="resource-track-tags">
+          <span class="track-tag blue">AP® Stats</span>
+          <span class="track-tag indigo">AP® Calc</span>
+          <span class="track-tag green">Trade Math</span>
+        </div>
+        <a href="#free-trial" class="btn btn-outline btn-sm mt-8">Get Review Sheet →</a>
+      </div>
+    </div>
+
+    <!-- Email Signup for Free Resources -->
+    <div class="email-capture-banner" id="free-trial">
+      <div class="email-capture-content">
+        <div class="email-capture-left">
+          <span class="badge-free">100% FREE — INSTANT DELIVERY</span>
+          <h3>Get All 3 Free Resources Right Now</h3>
+          <p>Sign up once — access free flashcards, 1 mock exam & quick review sheet for your chosen track. No spam. Unsubscribe anytime.</p>
+          <div class="share-buttons">
+            <span class="share-label">📤 Share with classmates:</span>
+            <a href="https://twitter.com/intent/tweet?text=Getting%20free%20exam%20prep%20resources%20at%20https%3A%2F%2Feduprosuite.pro%20%F0%9F%9A%80%20Use%20code%20SCORE70%20for%2070%25%20off!" target="_blank" class="share-btn share-twitter">𝕏 Twitter</a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Feduprosuite.pro" target="_blank" class="share-btn share-fb">Facebook</a>
+            <a href="https://api.whatsapp.com/send?text=Free%20exam%20prep%20resources%20at%20https%3A%2F%2Feduprosuite.pro%20%E2%80%94%20use%20code%20SCORE70%20for%2070%25%20off!" target="_blank" class="share-btn share-wa">WhatsApp</a>
+            <a href="https://www.reddit.com/submit?url=https%3A%2F%2Feduprosuite.pro&title=Free%20AP%20Stats%20%26%20Trade%20Math%20Exam%20Prep%20Resources" target="_blank" class="share-btn share-reddit">Reddit</a>
+          </div>
+        </div>
+        <div class="email-capture-right">
+          <form class="email-form" onsubmit="handleFreeSignup(event)">
+            <input type="text" placeholder="Your First Name" required class="form-input" id="freeName">
+            <input type="email" placeholder="Your Email Address" required class="form-input" id="freeEmail">
+            <select class="form-input form-select" id="freeTrack">
+              <option value="ap_stats">📊 AP® Statistics (Inference Decision Tree)</option>
+              <option value="ap_calc">∫ AP® Calculus (Existence Theorems Sheet)</option>
+              <option value="trade">🔧 Trade Math (Rolling Offset Cheat Sheet)</option>
+            </select>
+            <button type="submit" class="btn btn-primary btn-block">
+              Get My Free Resources Instantly ➔
+            </button>
+            <div class="form-trust">🔒 Instant delivery to your inbox. No credit card. No spam.</div>
           </form>
-          <div class="form-footer">🔒 Instant PDF download link sent directly from support@eduprosuite.pro. No spam ever.</div>
-        </div>
-      </div>
-
-      <!-- Hero Visual / Trust Matrix -->
-      <div class="hero-card">
-        <div class="card-glass">
-          <div class="card-tag">Why Students & Tutors Choose EduPro Suite</div>
-          <ul class="feature-list">
-            <li>
-              <span class="check-icon">✓</span>
-              <div>
-                <strong>Turnkey Exam Bank (709 Pages)</strong>
-                <span>25 Full-length exams with line-by-line distractor rationales</span>
-              </div>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <div>
-                <strong>Timed Bluebook Digital Simulator</strong>
-                <span>Exact digital exam interface with built-in formula sheets & timer</span>
-              </div>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <div>
-                <strong>Trade Math & Licensing Mastery</strong>
-                <span>Real 45° rolling offsets, fall/grade math & UA union aptitude drills</span>
-              </div>
-            </li>
-            <li>
-              <span class="check-icon">✓</span>
-              <div>
-                <strong>Instant Digital Access</strong>
-                <span>PDFs & Simulator logins sent immediately upon purchase</span>
-              </div>
-            </li>
-          </ul>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- High Buyer Intent Products (Immediate Sales Section) -->
-  <section class="section section-alt" id="featured-products">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="eyebrow">Immediate Digital Delivery</span>
-        <h2 class="section-title">High-Yield Exam Prep Vaults & Bundles</h2>
-        <p class="section-subtitle">
-          Lock in your early-bird 40% pre-launch discount. Instant lifetime access delivered to your inbox.
-        </p>
+<!-- ============================================================ -->
+<!-- PRICING SECTION -->
+<!-- ============================================================ -->
+<section class="section" id="pricing">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Simple, Transparent Pricing</span>
+      <h2 class="section-title">Choose Your Plan</h2>
+      <p class="section-desc">All plans include a <strong>7-day free trial</strong> and a <strong>30-day money-back guarantee</strong>.</p>
+
+      <!-- Billing Toggle -->
+      <div class="billing-toggle">
+        <span id="toggle-monthly" class="toggle-label active">Monthly</span>
+        <div class="toggle-switch" onclick="toggleBilling()">
+          <div class="toggle-thumb" id="toggleThumb"></div>
+        </div>
+        <span id="toggle-annual" class="toggle-label">Annual <span class="save-badge">Save 40%</span></span>
       </div>
 
-      <div class="pricing-grid">
-        <!-- Product 1: AP Stats & Calc Master Bundle -->
-        <div class="price-card price-card-featured" id="ap-math">
-          <div class="card-ribbon">BESTSELLER • 40% OFF</div>
-          <div class="price-header">
-            <h3>AP® Score-5 Master Suite</h3>
-            <p>AP Statistics & Calculus 2027 Comprehensive Prep</p>
-            <div class="price-amount">$39 <span style="text-decoration: line-through; color: #94a3b8; font-size: 18px;">$65</span><span> / one-time</span></div>
+      <!-- Coupon Strip -->
+      <div class="coupon-strip">
+        <span>🏷️ Site-wide 15% discount:</span>
+        <code class="coupon-code-inline" onclick="copyCoupon(this)" title="Click to copy">STUDY15</code>
+        <span class="copy-hint">click to copy</span>
+        &nbsp;|&nbsp;
+        <span>🔥 70% flash deal:</span>
+        <code class="coupon-code-inline" onclick="copyCoupon(this)" title="Click to copy">SCORE70</code>
+        <span class="copy-hint">click to copy</span>
+      </div>
+    </div>
+
+    <!-- Pricing Track Selector -->
+    <div class="pricing-track-tabs">
+      <button class="pt-tab active" onclick="switchPriceTrack(this,'price-ap')">AP® Math Bundle</button>
+      <button class="pt-tab" onclick="switchPriceTrack(this,'price-trade')">Trade Math</button>
+      <button class="pt-tab" onclick="switchPriceTrack(this,'price-b2b')">B2B / Center License</button>
+    </div>
+
+    <!-- AP MATH PRICING -->
+    <div id="price-ap" class="price-track-content">
+      <div class="pricing-grid-3">
+
+        <!-- Free Tier -->
+        <div class="pricing-card">
+          <div class="plan-label">Free</div>
+          <div class="plan-name">Starter</div>
+          <div class="plan-desc">Perfect for trying before committing</div>
+          <div class="plan-price">
+            <span class="price-main">$0</span>
+            <span class="price-period">/forever</span>
           </div>
-          <ul class="price-features">
-            <li>✓ <strong>709-Page Master Question Bank</strong> (25 Full Exams)</li>
-            <li>✓ <strong>Full-Year Bluebook Simulator Access</strong></li>
-            <li>✓ 8-Step Inference Decision Tree & Trap Matrix</li>
-            <li>✓ College Board FRQ Sentence Stems & Rubrics</li>
-            <li>✓ 500 Digital Flashcards Access</li>
-            <li>✓ TI-84 Plus CE Keystroke Playbooks</li>
+          <ul class="plan-features">
+            <li class="feat-yes">✓ 1 Full Mock Exam (watermarked)</li>
+            <li class="feat-yes">✓ 30 Digital Flashcards</li>
+            <li class="feat-yes">✓ Quick Review Sheet (watermarked)</li>
+            <li class="feat-yes">✓ Access to Community Forum</li>
+            <li class="feat-no">✗ No Bluebook Simulator</li>
+            <li class="feat-no">✗ No Full 709-Page Question Bank</li>
+            <li class="feat-no">✗ No FRQ Rubric Templates</li>
           </ul>
-          <button class="btn btn-primary btn-block" onclick="alert('Proceeding to secure checkout for AP Score-5 Master Suite ($39)...');">Pre-Order Now for $39 ➔</button>
-          <p style="font-size: 11px; text-align: center; margin-top: 8px; color: #64748b;">⚡ Instant Digital PDF + Simulator Login</p>
+          <a href="#free-trial" class="btn btn-outline btn-block">Get Free Access →</a>
         </div>
 
-        <!-- Product 2: Trade Math Plumber & Pipefitter Vault -->
-        <div class="price-card" id="trade-math">
-          <div class="card-ribbon" style="background: #059669;">EXTREME BUYER INTENT</div>
-          <div class="price-header">
-            <h3>Plumber & Pipefitter Exam Vault</h3>
-            <p>Journeyman Licensing & UA Apprentice Entrance Prep</p>
-            <div class="price-amount">$34 <span style="text-decoration: line-through; color: #94a3b8; font-size: 18px;">$59</span><span> / one-time</span></div>
+        <!-- Pro Tier -->
+        <div class="pricing-card pricing-card-featured">
+          <div class="plan-badge">🏆 MOST POPULAR</div>
+          <div class="plan-label" style="color:#fff; opacity:0.7">Pro</div>
+          <div class="plan-name">Score-5 Pro</div>
+          <div class="plan-desc">Everything you need to score a 5</div>
+          <div class="plan-price">
+            <span class="price-old" id="ap-pro-old">$65</span>
+            <span class="price-main" id="ap-pro-main">$29</span>
+            <span class="price-period" id="ap-pro-period">/month</span>
           </div>
-          <ul class="price-features">
-            <li>✓ <strong>Complete Trade Mathematics Vault</strong> (102 Pages)</li>
-            <li>✓ 45° & 60° Rolling Offset Calculation Cheat Sheets</li>
-            <li>✓ Head Pressure, Fall/Grade, & Flow Rate Drills</li>
-            <li>✓ Fitting Take-off & Center-to-Center Formulas</li>
-            <li>✓ 200+ Practice Exam Questions with Step-by-Step Solutions</li>
-            <li>✓ Pass-Guarantee for UA Union Apprenticeship Exam</li>
+          <div class="plan-trial-note">🎁 7-Day Free Trial Included</div>
+          <ul class="plan-features plan-features-white">
+            <li class="feat-yes">✓ 709-Page Full Exam Question Bank (25 Exams)</li>
+            <li class="feat-yes">✓ Full-Year Bluebook Digital Simulator</li>
+            <li class="feat-yes">✓ All FRQ Rubric Sentence Frames</li>
+            <li class="feat-yes">✓ 500 Digital Flashcard Full Deck</li>
+            <li class="feat-yes">✓ TI-84 Plus CE Keystroke Playbook</li>
+            <li class="feat-yes">✓ Inference Decision Tree (8-Page PDF)</li>
+            <li class="feat-yes">✓ Score Improvement Tracking Dashboard</li>
+            <li class="feat-yes">✓ Unlimited Mock Exam Resets</li>
           </ul>
-          <button class="btn btn-primary btn-block" style="background: #059669;" onclick="alert('Proceeding to secure checkout for Plumber Exam Vault ($34)...');">Get Trade Math Pack ($34) ➔</button>
-          <p style="font-size: 11px; text-align: center; margin-top: 8px; color: #64748b;">⚡ Instant Download • Print-Ready Master PDF</p>
+          <button class="btn btn-white btn-block" onclick="alert('Starting 7-Day Free Trial for Score-5 Pro...')">Start Free Trial — No Card Needed</button>
+          <p class="plan-guarantee">💳 No credit card required · Cancel anytime</p>
         </div>
 
-        <!-- Product 3: TI-84 Calculator Impulse Buy -->
-        <div class="price-card">
-          <div class="price-header">
-            <h3>TI-84 Plus CE Rapid Playbook</h3>
-            <p>The Ultimate Exam Calculator Cheat Sheet</p>
-            <div class="price-amount">$9.99 <span style="text-decoration: line-through; color: #94a3b8; font-size: 18px;">$19</span><span> / one-time</span></div>
+        <!-- Elite Tier -->
+        <div class="pricing-card">
+          <div class="plan-label">Elite</div>
+          <div class="plan-name">Score-5 Elite</div>
+          <div class="plan-desc">For tutors, parents & serious students</div>
+          <div class="plan-price">
+            <span class="price-old" id="ap-elite-old">$120</span>
+            <span class="price-main" id="ap-elite-main">$49</span>
+            <span class="price-period" id="ap-elite-period">/month</span>
           </div>
-          <ul class="price-features">
-            <li>✓ Keystroke Shortcuts for Every AP Stats Inference Test</li>
-            <li>✓ Numerical Derivatives & Definite Integrals on TI-84</li>
-            <li>✓ Zero Calculator Panic on Section II FRQs</li>
-            <li>✓ Mobile-Friendly Quick Lookup on Exam Day</li>
-            <li>✓ High-Resolution 1-Page Laminated-Style Reference PDF</li>
+          <div class="plan-trial-note">🎁 7-Day Free Trial Included</div>
+          <ul class="plan-features">
+            <li class="feat-yes">✓ Everything in Pro Plan</li>
+            <li class="feat-yes">✓ <strong>AP Stats + Calc AB + Calc BC</strong> (All 3 Tracks)</li>
+            <li class="feat-yes">✓ 3 User Seats (share with family / cohort)</li>
+            <li class="feat-yes">✓ Parent/Tutor Progress Dashboard</li>
+            <li class="feat-yes">✓ Priority Email Support</li>
+            <li class="feat-yes">✓ Printable Diagnostic Analytics Export</li>
           </ul>
-          <button class="btn btn-outline btn-block" onclick="alert('Proceeding to instant checkout for TI-84 Playbook ($9.99)...');">Buy Cheat Sheet ($9.99) ➔</button>
-          <p style="font-size: 11px; text-align: center; margin-top: 8px; color: #64748b;">⚡ Instant PDF Download</p>
+          <button class="btn btn-primary btn-block" onclick="alert('Starting 7-Day Free Trial for Score-5 Elite...')">Start Free Trial →</button>
+          <p class="plan-guarantee">💳 No credit card required · Cancel anytime</p>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- B2B Institutional Licensing Section -->
-  <section class="section" id="academies">
-    <div class="container">
-      <div class="section-header text-center">
-        <span class="eyebrow">B2B Institutional Licensing</span>
-        <h2 class="section-title">Equip Your Entire Tutoring Center or High School Math Dept</h2>
-        <p class="section-subtitle">
-          Turnkey 25-exam vaults and co-branded digital simulator access for tutoring franchises, private academies, and school districts.
-        </p>
-      </div>
-
-      <div class="pricing-grid">
-        <div class="price-card">
-          <div class="price-header">
-            <h3>Single Academy</h3>
-            <p>For independent prep centers & boutique tutors</p>
-            <div class="price-amount">$499<span> / year</span></div>
+    <!-- TRADE MATH PRICING -->
+    <div id="price-trade" class="price-track-content hidden">
+      <div class="pricing-grid-3">
+        <div class="pricing-card">
+          <div class="plan-label">Free</div>
+          <div class="plan-name">Apprentice Starter</div>
+          <div class="plan-desc">Try before your exam</div>
+          <div class="plan-price">
+            <span class="price-main">$0</span>
           </div>
-          <ul class="price-features">
-            <li>✓ 25 Full-Length Exams (Printable Master PDFs)</li>
-            <li>✓ Complete Teacher Answer & Rubric Key</li>
-            <li>✓ 50 Student Accounts on Bluebook Simulator</li>
-            <li>✓ Classroom Handout Rights</li>
+          <ul class="plan-features">
+            <li class="feat-yes">✓ Rolling Offset Practice Set (25 Questions)</li>
+            <li class="feat-yes">✓ 30 Formula Flashcards</li>
+            <li class="feat-yes">✓ 1.414 Multiplier Reference Sheet (watermarked)</li>
+            <li class="feat-no">✗ Full 200+ Exam Question Bank</li>
+            <li class="feat-no">✗ UA Local Aptitude Test Drills</li>
           </ul>
-          <a href="mailto:support@eduprosuite.pro?subject=Inquiry: Single Academy License ($499)" class="btn btn-outline btn-block">Inquire for Center</a>
+          <a href="#free-trial" class="btn btn-outline btn-block">Get Free Starter →</a>
         </div>
 
-        <div class="price-card price-card-featured">
-          <div class="card-ribbon">ENTERPRISE PILOT</div>
-          <div class="price-header">
-            <h3>Department & Franchise</h3>
-            <p>For multi-branch centers & high schools</p>
-            <div class="price-amount">$1,299<span> / year</span></div>
+        <div class="pricing-card pricing-card-featured">
+          <div class="plan-badge">🔧 PASS GUARANTEED</div>
+          <div class="plan-name">Journeyman Pro</div>
+          <div class="plan-desc">Complete trade math mastery</div>
+          <div class="plan-price">
+            <span class="price-old">$59</span>
+            <span class="price-main">$34</span>
+            <span class="price-period">/one-time</span>
           </div>
-          <ul class="price-features">
-            <li>✓ Everything in Single Academy</li>
-            <li>✓ Up to 300 Student Simulator Accounts</li>
-            <li>✓ Co-Branded Portal with Your Center's Logo</li>
-            <li>✓ Unit Diagnostic Analytics Export</li>
-            <li>✓ Priority Curriculum Updates</li>
+          <div class="plan-trial-note">🎁 7-Day Free Trial Included</div>
+          <ul class="plan-features plan-features-white">
+            <li class="feat-yes">✓ Full 102-Page Trade Math Vault</li>
+            <li class="feat-yes">✓ 200+ Practice Questions + Step-by-Step Solutions</li>
+            <li class="feat-yes">✓ Rolling Offset (45°, 60°) Master Drills</li>
+            <li class="feat-yes">✓ Water Head Pressure & Fall Grade Formulas</li>
+            <li class="feat-yes">✓ UA Local & Journeyman Exam Calibrated Practice</li>
+            <li class="feat-yes">✓ Printable Instant-Download PDF</li>
           </ul>
-          <a href="mailto:support@eduprosuite.pro?subject=Inquiry: Department License ($1299)" class="btn btn-primary btn-block">Schedule 10-Min Demo Call</a>
+          <button class="btn btn-white btn-block" onclick="alert('Starting 7-Day Free Trial for Journeyman Pro...')">Start Free Trial — No Card Needed</button>
         </div>
 
-        <div class="price-card">
-          <div class="price-header">
-            <h3>Partner / Affiliate Program</h3>
-            <p>For Tutors, YouTubers, & Trade Educators</p>
-            <div class="price-amount">40% / 25%<span> Commission</span></div>
+        <div class="pricing-card">
+          <div class="plan-name">TI-84 Rapid Playbook</div>
+          <div class="plan-desc">Quick exam-day calculator cheat sheet</div>
+          <div class="plan-price">
+            <span class="price-old">$19</span>
+            <span class="price-main">$9.99</span>
+            <span class="price-period">/one-time</span>
           </div>
-          <ul class="price-features">
-            <li>✓ 40% Commission on Student Digital Sales</li>
-            <li>✓ 25% Recurring on B2B Institutional Deals ($125-$325/deal)</li>
-            <li>✓ Dedicated Promo Codes for Your Audience</li>
-            <li>✓ Monthly Automated Payouts</li>
+          <ul class="plan-features">
+            <li class="feat-yes">✓ TI-84 Keystroke Shortcuts for All AP Tests</li>
+            <li class="feat-yes">✓ Numerical Derivative & Integral Shortcuts</li>
+            <li class="feat-yes">✓ 1-Page Lamination-Ready Reference PDF</li>
+            <li class="feat-yes">✓ Instant Download</li>
           </ul>
-          <a href="affiliates.html" class="btn btn-outline btn-block">View Partner Portal ➔</a>
+          <button class="btn btn-primary btn-block" onclick="alert('Adding TI-84 Playbook to cart...')">Buy Now — $9.99 →</button>
         </div>
       </div>
     </div>
-  </section>
 
-  <!-- Guarantee & Trust Banner -->
-  <section class="section section-alt">
-    <div class="container text-center">
-      <div class="preorder-banner">
-        <h2>30-Day Score-Improvement Money-Back Guarantee</h2>
-        <p>If our high-yield formula frameworks and exam simulations do not dramatically improve your confidence and practice test scores, simply email us at support@eduprosuite.pro for a 100% refund.</p>
-        <div class="cta-actions">
-          <a href="#featured-products" class="btn btn-lg btn-primary">Claim Your 40% Pre-Launch Bundle Now ➔</a>
+    <!-- B2B PRICING -->
+    <div id="price-b2b" class="price-track-content hidden">
+      <div class="pricing-grid-3">
+        <div class="pricing-card">
+          <div class="plan-label">Single Site</div>
+          <div class="plan-name">Academy Starter</div>
+          <div class="plan-desc">For boutique prep centers & independent tutors</div>
+          <div class="plan-price">
+            <span class="price-main">$499</span>
+            <span class="price-period">/year</span>
+          </div>
+          <ul class="plan-features">
+            <li class="feat-yes">✓ 25 Printable Exam Masters (All tracks)</li>
+            <li class="feat-yes">✓ Teacher Answer & Rubric Key Pack</li>
+            <li class="feat-yes">✓ 50 Student Simulator Accounts</li>
+            <li class="feat-yes">✓ Classroom Handout Rights</li>
+          </ul>
+          <a href="mailto:support@eduprosuite.pro?subject=B2B: Academy Starter $499" class="btn btn-outline btn-block">Contact Sales →</a>
         </div>
-        <p class="money-back">🔒 256-Bit Encrypted Direct Checkout • Instant Digital Delivery • 100% Risk-Free</p>
-      </div>
-    </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-container">
-      <div>
-        <strong>EduPro Suite</strong> &copy; 2027. All Rights Reserved.  
-        <p class="disclaimer">AP® and College Board® are registered trademarks which do not endorse this site.</p>
-      </div>
-      <div class="footer-links">
-        <a href="mailto:support@eduprosuite.pro">Contact Support</a>
-        <a href="affiliates.html">Partner / Affiliate Hub (40% Cut)</a>
+        <div class="pricing-card pricing-card-featured">
+          <div class="plan-badge">🏫 PILOT OFFER</div>
+          <div class="plan-name">Department License</div>
+          <div class="plan-desc">Multi-branch tutoring centers & high school departments</div>
+          <div class="plan-price">
+            <span class="price-main">$1,299</span>
+            <span class="price-period">/year</span>
+          </div>
+          <ul class="plan-features plan-features-white">
+            <li class="feat-yes">✓ Everything in Academy Starter</li>
+            <li class="feat-yes">✓ 300 Student Simulator Accounts</li>
+            <li class="feat-yes">✓ Co-Branded Portal with Your Logo</li>
+            <li class="feat-yes">✓ Unit Diagnostic Analytics Export</li>
+            <li class="feat-yes">✓ Priority Curriculum Support</li>
+            <li class="feat-yes">✓ Free 3-Test Diagnostic Pilot Pack</li>
+          </ul>
+          <a href="mailto:support@eduprosuite.pro?subject=B2B: Department License $1299 — Demo Request" class="btn btn-white btn-block">Schedule Free 10-Min Demo →</a>
+        </div>
+
+        <div class="pricing-card">
+          <div class="plan-label">Enterprise</div>
+          <div class="plan-name">Regional Network</div>
+          <div class="plan-desc">Franchise chains, school districts & unions</div>
+          <div class="plan-price">
+            <span class="price-main">$2,999</span>
+            <span class="price-period">/year</span>
+          </div>
+          <ul class="plan-features">
+            <li class="feat-yes">✓ Unlimited Student Accounts</li>
+            <li class="feat-yes">✓ White-Label PDF Masters</li>
+            <li class="feat-yes">✓ Dedicated Faculty Onboarding</li>
+            <li class="feat-yes">✓ PO & ACH Payments Accepted</li>
+            <li class="feat-yes">✓ Custom Diagnostic Analytics</li>
+          </ul>
+          <a href="mailto:support@eduprosuite.pro?subject=Enterprise License Inquiry" class="btn btn-primary btn-block">Contact Enterprise Sales →</a>
+        </div>
       </div>
     </div>
-  </footer>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- REFER & EARN SECTION -->
+<!-- ============================================================ -->
+<section class="section bg-light" id="refer">
+  <div class="container">
+    <div class="refer-card">
+      <div class="refer-left">
+        <span class="eyebrow">Refer & Earn</span>
+        <h2>Share EduPro Suite.<br>Get 25% Off Your Plan.</h2>
+        <p>Every friend you refer who signs up for a paid plan earns <strong>you 25% off your next billing cycle</strong> — automatically. No limits. Stack up to 100% off.</p>
+        <div class="refer-steps">
+          <div class="refer-step"><span class="step-num">1</span><span>Sign up for any paid plan</span></div>
+          <div class="refer-step"><span class="step-num">2</span><span>Share your unique referral link</span></div>
+          <div class="refer-step"><span class="step-num">3</span><span>Friend signs up → You get 25% off instantly</span></div>
+        </div>
+        <a href="#pricing" class="btn btn-primary">Join & Get Your Referral Link →</a>
+      </div>
+      <div class="refer-right">
+        <div class="refer-visual">
+          <div class="refer-stat">
+            <strong>25%</strong>
+            <span>Discount per referral</span>
+          </div>
+          <div class="refer-stat">
+            <strong>∞</strong>
+            <span>No referral limit</span>
+          </div>
+          <div class="refer-stat">
+            <strong>$0</strong>
+            <span>Possible final cost</span>
+          </div>
+        </div>
+        <div class="affiliate-cta-box">
+          <strong>📢 Are you an educator, tutor, or YouTuber?</strong>
+          <p>Join our Affiliate Partner Program and earn up to <strong>40% cash commission</strong> on every sale.</p>
+          <a href="affiliates.html" class="btn btn-outline btn-sm">View Affiliate Program →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- TESTIMONIALS / SOCIAL PROOF -->
+<!-- ============================================================ -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Student Reviews</span>
+      <h2 class="section-title">Trusted by Students, Tutors & Tradespeople</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p>"The inference decision flowchart alone saved me on FRQ Question 6. Scored a 5 — first attempt."</p>
+        <div class="testi-author">
+          <div class="testi-avatar">JM</div>
+          <div><strong>Jordan M.</strong><small>AP® Statistics · Score: 5</small></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p>"Passed my Journeyman Plumbing exam on the first try. The rolling offset cheat sheet is exactly what I needed."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#059669">RC</div>
+          <div><strong>Ryan C.</strong><small>UA Local 130 · Journeyman License</small></div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+        <p>"We purchased the center license for 80 students. The co-branded simulator cut our prep time in half."</p>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:#7c3aed">DL</div>
+          <div><strong>Dr. David L.</strong><small>Academic Director · Apex Prep Academy</small></div>
+        </div>
+      </div>
+    </div>
+    <!-- Share Buttons -->
+    <div class="share-section">
+      <span class="share-label">📤 Spread the word:</span>
+      <a href="https://twitter.com/intent/tweet?text=Just%20found%20the%20best%20AP%20Stats%20%26%20Trade%20Math%20exam%20prep%20platform%20%40EduProSuite%20https%3A%2F%2Feduprosuite.pro%20%F0%9F%9A%80" target="_blank" class="share-btn share-twitter">𝕏 Share on Twitter</a>
+      <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Feduprosuite.pro" target="_blank" class="share-btn share-fb">Facebook</a>
+      <a href="https://api.whatsapp.com/send?text=Check%20out%20EduPro%20Suite%20for%20AP%20Math%20%26%20Trade%20Exam%20Prep%3A%20https%3A%2F%2Feduprosuite.pro%20%F0%9F%94%A5%20Use%20code%20SCORE70%20for%2070%25%20off!" target="_blank" class="share-btn share-wa">WhatsApp</a>
+      <a href="https://www.reddit.com/submit?url=https%3A%2F%2Feduprosuite.pro&title=Best%20AP%20Stats%20%26%20Trade%20Math%20Exam%20Prep%20Platform" target="_blank" class="share-btn share-reddit">Reddit</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- NEWSLETTER -->
+<!-- ============================================================ -->
+<section class="newsletter-section">
+  <div class="container">
+    <div class="newsletter-card">
+      <div class="newsletter-left">
+        <span class="eyebrow" style="color: #93c5fd;">Weekly Exam Tips</span>
+        <h3>Get Free Weekly Study Tips + Flash Deals</h3>
+        <p style="color:#94a3b8">Join 2,400+ students who get weekly high-yield exam tips, formula breakdowns and exclusive subscriber-only discounts delivered every Monday morning.</p>
+      </div>
+      <div class="newsletter-right">
+        <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+          <input type="email" placeholder="Enter your email address" required class="form-input nl-input" id="nlEmail">
+          <button type="submit" class="btn btn-primary">Subscribe Free</button>
+        </form>
+        <div class="nl-trust">🔒 No spam. Unsubscribe anytime. Join 2,400+ subscribers.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- FOOTER -->
+<!-- ============================================================ -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <!-- Brand Column -->
+      <div class="footer-col footer-brand">
+        <div class="logo footer-logo">
+          <div class="logo-icon">
+            <svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#2563eb"/><path d="M7 14h14M14 7v14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>
+          </div>
+          <span class="logo-name" style="color:white">EduPro Suite</span>
+        </div>
+        <p class="footer-desc">High-yield exam prep vaults for AP® Statistics, AP® Calculus & Trade Math licensing exams. Precision-calibrated to real scoring rubrics.</p>
+        <div class="footer-social">
+          <a href="https://twitter.com" target="_blank" class="social-icon">𝕏</a>
+          <a href="https://youtube.com" target="_blank" class="social-icon">▶</a>
+          <a href="https://reddit.com" target="_blank" class="social-icon">🔴</a>
+          <a href="mailto:support@eduprosuite.pro" class="social-icon">✉</a>
+        </div>
+      </div>
+
+      <!-- Courses Column -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Courses</h4>
+        <ul class="footer-links">
+          <li><a href="ap-stats.html">AP® Statistics 2027</a></li>
+          <li><a href="ap-calc.html">AP® Calculus AB & BC</a></li>
+          <li><a href="trade-math.html">Plumber & Pipefitter Math</a></li>
+          <li><a href="#free-resources">Free Resources</a></li>
+          <li><a href="#free-trial">7-Day Free Trial</a></li>
+        </ul>
+      </div>
+
+      <!-- Platform Column -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Platform</h4>
+        <ul class="footer-links">
+          <li><a href="#pricing">Pricing & Plans</a></li>
+          <li><a href="#refer">Refer & Earn 25%</a></li>
+          <li><a href="affiliates.html">Affiliate Program (40%)</a></li>
+          <li><a href="#academies">B2B Center Licenses</a></li>
+          <li><a href="https://eduprosuite-org.github.io/ap-statistics/">Online Simulator</a></li>
+        </ul>
+      </div>
+
+      <!-- Support Column -->
+      <div class="footer-col">
+        <h4 class="footer-col-title">Support</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:support@eduprosuite.pro">support@eduprosuite.pro</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Money-Back Guarantee</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+        <div class="footer-coupon-box">
+          <span>🏷️ Use code for 15% off:</span>
+          <code onclick="copyCoupon(this)" class="coupon-code-footer">STUDY15</code>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2027 EduPro Suite. All Rights Reserved. | AP® and College Board® are registered trademarks which do not endorse this site.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Refunds</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================ -->
+<!-- STICKY BOTTOM BUY BAR (Mobile) -->
+<!-- ============================================================ -->
+<div class="sticky-buy-bar" id="stickyBar">
+  <div class="sticky-buy-inner">
+    <div class="sticky-deal">⚡ <strong>70% Off</strong> ends in <span id="sticky-countdown">13d 23h</span></div>
+    <a href="#pricing" class="btn btn-primary btn-sm">Claim 70% Off →</a>
+  </div>
+</div>
+
+<!-- ============================================================ -->
+<!-- SCRIPTS -->
+<!-- ============================================================ -->
+<script src="app.js"></script>
 </body>
 </html>
