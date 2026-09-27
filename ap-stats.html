@@ -260,12 +260,92 @@
         </form>
         <div class="form-trust">🔒 Instant browser activation · No credit card · No spam</div>
       </div>
+    <!-- UI SCREENSHOT SHOWCASE (Visual Live Preview of Tools) -->
+    <section class="ui-showcase-section" id="previews" style="border-radius:16px; margin: 32px 0;">
+      <div style="padding: 0 10px;">
+        <div class="ui-showcase-header">
+          <span class="eyebrow">Visual Platform Preview</span>
+          <h2 class="ui-showcase-title">Inside the AP® Statistics Score-5 Vault</h2>
+          <p class="ui-showcase-subtitle">See the actual Bluebook-calibrated exam simulator, 3D interactive flashcards, and inference decision cheat sheets before enrolling.</p>
+        </div>
+
+        <div class="ui-showcase-grid">
+          <!-- Mock Test Simulator Preview -->
+          <div class="ui-mockup-window">
+            <div class="ui-window-bar">
+              <div class="ui-window-dots"><span class="ui-dot red"></span><span class="ui-dot yellow"></span><span class="ui-dot green"></span></div>
+              <span class="ui-window-title">bluebook-stats-sim</span>
+              <span class="ui-count-badge">25 Exams · 709 Pgs</span>
+            </div>
+            <div class="ui-window-body">
+              <div class="mock-exam-preview-ui">
+                <div class="mep-timer-row"><span>Section I: 40 MCQs</span><span class="mep-timer">⏱️ 88:42</span></div>
+                <div class="mep-question">Q3: Which test statistic tests H₀: μ = 50 vs Hₐ: μ &lt; 50 with unknown σ?</div>
+                <div class="mep-option"><span>(A)</span> <span>z-test statistic</span></div>
+                <div class="mep-option selected"><span>(B)</span> <span>t-statistic with df = 49 ✓</span></div>
+                <div class="mep-correct-banner">✅ Rubric: df = n - 1 (49) earned full credit.</div>
+              </div>
+              <div class="ui-card-footer">
+                <div class="ui-stat-label"><span>Vault Total:</span><strong>25 Full Mock Exams</strong></div>
+                <div class="ui-stat-label"><span>Free No Signup:</span><strong style="color:#4ade80;">1 Full Diagnostic Test</strong></div>
+                <a href="mock-test-ap-stats.html" class="btn btn-primary btn-block btn-sm" style="margin-top:8px;">Launch Mock Exam #1 Free →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flashcards Preview -->
+          <div class="ui-mockup-window">
+            <div class="ui-window-bar">
+              <div class="ui-window-dots"><span class="ui-dot red"></span><span class="ui-dot yellow"></span><span class="ui-dot green"></span></div>
+              <span class="ui-window-title">stats-flashcards</span>
+              <span class="ui-count-badge">500+ Digital Cards</span>
+            </div>
+            <div class="ui-window-body">
+              <div class="flashcard-preview-ui">
+                <div class="fc-flip-indicator">CARD 14 OF 500 · TAP TO FLIP ↕</div>
+                <div class="fc-preview-q">Standard Error of Sample Means (x̄)?</div>
+                <div class="fc-preview-formula">SE = σ / √n</div>
+                <div class="fc-preview-rating-row"><span class="fc-btn-mini" style="background:#22c55e;">✓ Got it (142)</span><span class="fc-btn-mini" style="background:#f59e0b;">↻ Review (18)</span></div>
+              </div>
+              <div class="ui-card-footer">
+                <div class="ui-stat-label"><span>Vault Total:</span><strong>500+ Digital Flashcards</strong></div>
+                <div class="ui-stat-label"><span>Free No Signup:</span><strong style="color:#4ade80;">30 High-Yield Cards</strong></div>
+                <a href="flashcards-ap-stats.html" class="btn btn-primary btn-block btn-sm" style="margin-top:8px;">Practice 30 Cards Free →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Sheet Preview -->
+          <div class="ui-mockup-window">
+            <div class="ui-window-bar">
+              <div class="ui-window-dots"><span class="ui-dot red"></span><span class="ui-dot yellow"></span><span class="ui-dot green"></span></div>
+              <span class="ui-window-title">stats-review-sheet</span>
+              <span class="ui-count-badge">9 Units · 1 Page</span>
+            </div>
+            <div class="ui-window-body">
+              <div class="reviewsheet-preview-ui">
+                <div class="rs-watermark">EduPro Suite</div>
+                <div class="rs-header-row"><span>INFERENCE DECISION TREE</span><span>2027 CED</span></div>
+                <table class="rs-table-mini">
+                  <tr><td><strong>1-Prop z</strong></td><td><span class="rs-badge-mini">z=(p̂-p₀)/SE</span></td><td>np ≥ 10</td></tr>
+                  <tr><td><strong>1-Sample t</strong></td><td><span class="rs-badge-mini">t=(x̄-μ)/SE</span></td><td>df=n-1</td></tr>
+                </table>
+              </div>
+              <div class="ui-card-footer">
+                <div class="ui-stat-label"><span>Vault Total:</span><strong>Complete Formula & Decision Trees</strong></div>
+                <div class="ui-stat-label"><span>Free No Signup:</span><strong style="color:#4ade80;">Virtual Review Sheet</strong></div>
+                <a href="review-sheet-ap-stats.html" class="btn btn-primary btn-block btn-sm" style="margin-top:8px;">Open Review Sheet Free →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- PRICING -->
     <section class="product-section" id="pricing">
       <h2 class="product-section-title">💰 Choose Your AP® Stats Plan</h2>
-      <p class="product-section-desc">All plans include a 7-day free trial and 30-day money-back guarantee. No credit card to start.</p>
+      <p class="product-section-desc">All plans include instant digital access and a 30-day money-back guarantee.</p>
 
       <div class="coupon-strip">
         <span>🏷️ 15% off anytime:</span>
@@ -291,7 +371,7 @@
             <li class="feat-no">✗ Bluebook Simulator</li>
             <li class="feat-no">✗ FRQ Rubric Templates</li>
           </ul>
-          <a href="#free-trial" class="btn btn-outline btn-block">Get Free Access →</a>
+          <a href="mock-test-ap-stats.html" class="btn btn-outline btn-block">Launch Free Tools →</a>
         </div>
 
         <!-- Pro Plan - Featured -->
@@ -318,21 +398,15 @@
 
           <!-- Referral & Affiliate Bullets above Price Button -->
           <div class="pricing-perks-box">
-            <div class="pricing-perks-title">🎁 Member Perks & Earnings:</div>
+            <div class="pricing-perks-title">🎁 Member Referral & Earnings:</div>
             <ul class="pricing-perks-list">
               <li>🎁 <strong>Refer a Friend:</strong> Earn <strong>25% recurring discount</strong> on your subscription.</li>
-              <li>💰 <strong>Affiliate Rights:</strong> Earn <strong>40% cash commission</strong> per sale.</li>
-              <li>⚡ <strong>Have a Coupon?</strong> Apply <code>SCORE70</code> for 70% off at checkout.</li>
+              <li>💰 <strong>Affiliate Rights:</strong> Earn <strong>40% cash commission</strong> per sale referred.</li>
             </ul>
           </div>
 
-          <div style="margin-bottom: 12px;">
-            <a href="checkout.html?item=ap-stats-pro&coupon=SCORE70" class="btn btn-white btn-block" style="font-size:13.5px; padding:10px 14px;">Apply Coupon at Checkout ($5.70/mo) →</a>
-          </div>
-
-          <!-- PayPal Button -->
-          <div id="paypal-stats-pro" class="paypal-btn-wrap"></div>
-          <p class="plan-guarantee">💳 Free 7-day trial · Cancel anytime · 30-day refund</p>
+          <a href="checkout.html?item=ap-stats-pro&coupon=SCORE70" class="btn btn-white btn-block" style="font-size:15px; font-weight:800; padding:14px 20px;">Proceed to Checkout (70% Off) →</a>
+          <p class="plan-guarantee">💳 Instant Access via PayPal · 30-Day Money-Back Guarantee</p>
         </div>
 
         <!-- One-Time Lifetime -->
@@ -353,19 +427,14 @@
 
           <!-- Referral & Affiliate Bullets above Price Button -->
           <div class="pricing-perks-box">
-            <div class="pricing-perks-title">🎁 Member Perks & Earnings:</div>
+            <div class="pricing-perks-title">🎁 Member Referral & Earnings:</div>
             <ul class="pricing-perks-list">
               <li>🎁 <strong>Refer a Friend:</strong> Earn <strong>25% cashback</strong> on this purchase.</li>
               <li>💰 <strong>Affiliate Partner:</strong> Earn <strong>40% cash commission</strong> for referring students.</li>
             </ul>
           </div>
 
-          <div style="margin-bottom: 12px;">
-            <a href="checkout.html?item=ap-stats-lifetime&coupon=SCORE70" class="btn btn-primary btn-block" style="font-size:13.5px; padding:10px 14px;">Apply Coupon at Checkout ($11.70) →</a>
-          </div>
-
-          <!-- PayPal Button -->
-          <div id="paypal-stats-lifetime" class="paypal-btn-wrap"></div>
+          <a href="checkout.html?item=ap-stats-lifetime&coupon=SCORE70" class="btn btn-primary btn-block" style="font-size:15px; font-weight:800; padding:14px 20px;">Proceed to Checkout (70% Off) →</a>
           <p class="plan-guarantee">30-day money-back guarantee</p>
         </div>
       </div>

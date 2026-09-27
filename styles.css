@@ -529,22 +529,22 @@ body {
 
 /* ---- PRICING PERKS BULLETS (Above Price Button) ---- */
 .pricing-perks-box {
-  background: rgba(37,99,235,0.06);
-  border: 1px dashed rgba(37,99,235,0.3);
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
   border-radius: var(--radius-md);
   padding: 14px 16px;
-  margin: 16px 0 20px;
+  margin: 18px 0 22px;
 }
 .pricing-card-featured .pricing-perks-box {
-  background: rgba(255,255,255,0.08);
-  border-color: rgba(255,255,255,0.25);
+  background: rgba(255,255,255,0.09);
+  border: 1px solid rgba(255,255,255,0.22);
 }
 .pricing-perks-title {
   font-size: 11px;
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.8px;
-  color: var(--blue-600);
+  color: var(--blue-700);
   margin-bottom: 8px;
 }
 .pricing-card-featured .pricing-perks-title {
@@ -556,19 +556,286 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 .pricing-perks-list li {
-  font-size: 12.5px;
-  color: var(--slate-700);
+  font-size: 13px;
+  color: #1e293b;
   display: flex;
-  align-items: baseline;
-  gap: 6px;
-  line-height: 1.4;
+  align-items: flex-start;
+  gap: 8px;
+  line-height: 1.45;
 }
 .pricing-card-featured .pricing-perks-list li {
-  color: rgba(255,255,255,0.9);
+  color: #f8fafc;
 }
+
+/* ---- UI SCREENSHOT SHOWCASE SECTION (Realistic Product Previews) ---- */
+.ui-showcase-section {
+  padding: 64px 0;
+  background: #0f172a;
+  color: white;
+}
+.ui-showcase-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 40px;
+}
+.ui-showcase-header .eyebrow {
+  color: #38bdf8;
+}
+.ui-showcase-title {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+  margin-bottom: 12px;
+}
+.ui-showcase-subtitle {
+  font-size: 15px;
+  color: #94a3b8;
+  line-height: 1.6;
+}
+
+.ui-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.ui-mockup-window {
+  background: #1e293b;
+  border: 1.5px solid #334155;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+}
+.ui-mockup-window:hover {
+  transform: translateY(-4px);
+  border-color: #38bdf8;
+  box-shadow: 0 20px 50px rgba(56,189,248,0.15);
+}
+
+.ui-window-bar {
+  background: #0f172a;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #334155;
+}
+.ui-window-dots {
+  display: flex;
+  gap: 5px;
+}
+.ui-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+}
+.ui-dot.red    { background: #ef4444; }
+.ui-dot.yellow { background: #facc15; }
+.ui-dot.green  { background: #22c55e; }
+
+.ui-window-title {
+  font-size: 11px;
+  font-weight: 600;
+  color: #94a3b8;
+  font-family: monospace;
+}
+.ui-count-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 12px;
+  background: #2563eb;
+  color: white;
+  white-space: nowrap;
+}
+
+/* Mockup Content Views */
+.ui-window-body {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Mock Test UI Preview Card */
+.mock-exam-preview-ui {
+  background: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.mep-timer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #1e293b;
+  padding-bottom: 8px;
+  margin-bottom: 10px;
+  font-size: 11.5px;
+}
+.mep-timer {
+  color: #facc15;
+  font-weight: 700;
+  font-family: monospace;
+}
+.mep-question {
+  font-weight: 600;
+  color: #f1f5f9;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+.mep-option {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 6px;
+  padding: 6px 10px;
+  margin-bottom: 5px;
+  font-size: 11.5px;
+  color: #cbd5e1;
+  display: flex;
+  gap: 8px;
+}
+.mep-option.selected {
+  border-color: #22c55e;
+  background: rgba(34,197,94,0.12);
+  color: #4ade80;
+  font-weight: 600;
+}
+.mep-correct-banner {
+  background: rgba(34,197,94,0.15);
+  border-left: 3px solid #22c55e;
+  padding: 6px 8px;
+  border-radius: 4px;
+  margin-top: 8px;
+  font-size: 11px;
+  color: #4ade80;
+}
+
+/* Flashcard UI Preview Card */
+.flashcard-preview-ui {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  border-radius: 12px;
+  padding: 18px 16px;
+  color: white;
+  text-align: center;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 24px rgba(37,99,235,0.25);
+  position: relative;
+}
+.fc-flip-indicator {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
+.fc-preview-q {
+  font-size: 14.5px;
+  font-weight: 700;
+  line-height: 1.35;
+  margin-bottom: 10px;
+}
+.fc-preview-formula {
+  font-family: monospace;
+  background: rgba(255,255,255,0.18);
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 8px;
+}
+.fc-preview-rating-row {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 8px;
+}
+.fc-btn-mini {
+  font-size: 10.5px;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(255,255,255,0.2);
+  color: white;
+}
+
+/* Review Sheet UI Preview Card */
+.reviewsheet-preview-ui {
+  background: white;
+  color: #0f172a;
+  border-radius: 10px;
+  padding: 14px;
+  font-size: 12px;
+  margin-bottom: 16px;
+  position: relative;
+  overflow: hidden;
+}
+.rs-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-30deg);
+  font-size: 16px;
+  font-weight: 900;
+  color: rgba(37,99,235,0.08);
+  white-space: nowrap;
+  pointer-events: none;
+  text-transform: uppercase;
+}
+.rs-header-row {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #2563eb;
+  padding-bottom: 4px;
+  margin-bottom: 6px;
+  font-weight: 800;
+  font-size: 11px;
+  color: #1e3a8a;
+}
+.rs-table-mini {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 10.5px;
+}
+.rs-table-mini td {
+  border: 1px solid #e2e8f0;
+  padding: 4px 6px;
+}
+.rs-badge-mini {
+  font-family: monospace;
+  background: #eff6ff;
+  color: #2563eb;
+  font-weight: 700;
+  padding: 1px 4px;
+  border-radius: 3px;
+}
+
+.ui-card-footer {
+  margin-top: auto;
+}
+.ui-stat-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  color: #94a3b8;
+  margin-bottom: 10px;
+}
+.ui-stat-label strong {
+  color: #38bdf8;
+}
+
 
 /* ---- DEDICATED COURSE PORTALS SECTION ---- */
 .course-portals-grid {
