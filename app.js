@@ -140,7 +140,7 @@ function handleFreeSignup(e) {
   };
 
   // Simulate submission (in production, connect to Zoho Mail API / ConvertKit)
-  alert(`🎉 Success, ${name}!\n\nYour free "${trackNames[track] || 'High-Yield PDF'}" has been dispatched to ${email}.\n\nCheck your inbox (and spam folder) for an email from support@eduprosuite.pro.`);
+  alert(`🎉 Welcome, ${name || 'Student'}!\n\nYour Free Signup Bonus has been ACTIVATED:\n✅ 50 Flashcards Unlocked\n✅ 3 Diagnostic Mock Exams Unlocked\n✅ Virtual Quick Review Sheet Access\n\nWe have dispatched your direct access links to ${email}.\n(From: support@eduprosuite.pro)`);
 
   // Reset form
   e.target.reset();

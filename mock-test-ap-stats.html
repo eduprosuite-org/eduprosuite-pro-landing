@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP® Statistics Free Mock Exam #1 | EduPro Suite Exam Simulator</title>
+  <meta name="description" content="Take a free authentic AP® Statistics diagnostic mock exam. Instant scoring, detailed rubric rationales, College Board 2027 CED aligned.">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body { background: #0f172a; color: #f8fafc; font-family: 'Inter', sans-serif; }
+    .exam-header { background: #1e293b; border-bottom: 1px solid #334155; padding: 14px 24px; position: sticky; top: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; }
+    .exam-title-group { display: flex; align-items: center; gap: 12px; }
+    .exam-tag { background: #2563eb; color: white; font-size: 11px; font-weight: 700; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; }
+    .exam-heading { font-size: 15px; font-weight: 700; color: #f1f5f9; }
+    .exam-timer { display: flex; align-items: center; gap: 8px; font-family: monospace; font-size: 18px; font-weight: 700; background: #0f172a; padding: 6px 14px; border-radius: 8px; border: 1px solid #334155; color: #facc15; }
+    
+    .exam-container { max-width: 900px; margin: 32px auto; padding: 0 20px 80px; }
+    .exam-card { background: #1e293b; border: 1px solid #334155; border-radius: 16px; padding: 32px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); margin-bottom: 24px; position: relative; }
+    
+    .watermark-banner { position: absolute; top: 12px; right: 20px; font-size: 11px; color: #64748b; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; }
+    
+    .q-number { font-size: 12px; font-weight: 800; color: #38bdf8; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+    .q-text { font-size: 17px; font-weight: 600; line-height: 1.6; color: #f8fafc; margin-bottom: 20px; }
+    
+    .options-list { display: flex; flex-direction: column; gap: 10px; margin-bottom: 24px; }
+    .option-item { background: #0f172a; border: 1.5px solid #334155; border-radius: 10px; padding: 14px 18px; cursor: pointer; display: flex; align-items: center; gap: 14px; transition: all 0.2s; font-size: 15px; }
+    .option-item:hover { border-color: #38bdf8; background: #1e293b; }
+    .option-item.selected { border-color: #2563eb; background: rgba(37,99,235,0.15); }
+    .option-letter { width: 28px; height: 28px; border-radius: 50%; background: #334155; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 13px; color: #e2e8f0; flex-shrink: 0; }
+    .option-item.selected .option-letter { background: #2563eb; color: white; }
+    
+    .explanation-box { background: rgba(56, 189, 248, 0.08); border-left: 4px solid #38bdf8; padding: 16px; border-radius: 6px; margin-top: 16px; font-size: 14px; line-height: 1.6; color: #cbd5e1; display: none; }
+    .explanation-box.correct { border-left-color: #10b981; background: rgba(16, 185, 129, 0.08); }
+    .explanation-box.incorrect { border-left-color: #ef4444; background: rgba(239, 68, 68, 0.08); }
+    
+    .exam-actions { display: flex; justify-content: space-between; align-items: center; }
+    .btn-test { padding: 10px 20px; border-radius: 8px; font-weight: 700; font-size: 14px; cursor: pointer; border: none; transition: 0.2s; }
+    .btn-submit { background: #10b981; color: white; }
+    .btn-submit:hover { background: #059669; }
+    .btn-next { background: #2563eb; color: white; }
+    .btn-next:hover { background: #1d4ed8; }
+    .btn-prev { background: #334155; color: #cbd5e1; }
+    .btn-prev:hover { background: #475569; }
+    
+    .score-summary-modal { display: none; background: #1e293b; border: 2px solid #2563eb; border-radius: 20px; padding: 40px; text-align: center; }
+    .score-big { font-family: 'Space Grotesk', sans-serif; font-size: 56px; font-weight: 800; color: #38bdf8; margin: 12px 0; }
+    .score-grade { font-size: 20px; font-weight: 700; color: #facc15; margin-bottom: 20px; }
+    
+    /* Gated Upgrade Banner */
+    .upgrade-box { background: linear-gradient(135deg, #1e3a8a, #1e1b4b); border: 1.5px solid #3b82f6; border-radius: 16px; padding: 28px; margin-top: 28px; text-align: center; }
+    .upgrade-box h3 { font-family: 'Space Grotesk', sans-serif; font-size: 22px; color: white; margin-bottom: 8px; }
+    .upgrade-box p { font-size: 14px; color: #94a3b8; max-width: 580px; margin: 0 auto 20px; }
+    
+    .signup-tier-pills { display: flex; gap: 12px; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; }
+    .tier-pill { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); padding: 8px 16px; border-radius: 20px; font-size: 12.5px; font-weight: 600; }
+    .tier-pill.active { background: #2563eb; border-color: #3b82f6; }
+    
+    .free-signup-inline { display: flex; gap: 10px; max-width: 440px; margin: 0 auto; }
+    .free-signup-inline input { flex: 1; padding: 12px 16px; border-radius: 8px; border: 1px solid #334155; background: #0f172a; color: white; font-size: 14px; }
+    .free-signup-inline button { padding: 12px 20px; border-radius: 8px; background: #facc15; color: #0f172a; font-weight: 700; border: none; cursor: pointer; white-space: nowrap; }
+  </style>
+</head>
+<body>
+
+<header class="exam-header">
+  <div class="exam-title-group">
+    <a href="ap-stats.html" style="color:#94a3b8; text-decoration:none; font-size:14px; margin-right:8px;">← Exit</a>
+    <span class="exam-tag">Free Diagnostic</span>
+    <span class="exam-heading">AP® Statistics Mock Exam #1 (College Board 2027 Format)</span>
+  </div>
+  <div class="exam-timer">
+    <span>⏱️</span>
+    <span id="timerDisplay">90:00</span>
+  </div>
+</header>
+
+<div class="exam-container">
+  
+  <div class="exam-card" id="questionCard">
+    <div class="watermark-banner">EduPro Suite · Free Practice Edition</div>
+    
+    <div class="q-number" id="qNumber">Question 1 of 10 Diagnostic Sample</div>
+    <div class="q-text" id="qText">Loading question content...</div>
+    
+    <div class="options-list" id="optionsContainer"></div>
+    
+    <div class="explanation-box" id="explanationBox"></div>
+    
+    <div class="exam-actions mt-12">
+      <button class="btn-test btn-prev" onclick="prevQ()" id="prevBtn" disabled>← Previous</button>
+      <button class="btn-test btn-submit" onclick="checkAnswer()" id="checkBtn">Check Answer</button>
+      <button class="btn-test btn-next" onclick="nextQ()" id="nextBtn">Next Question →</button>
+    </div>
+  </div>
+
+  <!-- Score Summary Area -->
+  <div class="score-summary-modal" id="scoreModal">
+    <h2>Diagnostic Mock Exam #1 Complete!</h2>
+    <div class="score-big" id="finalScore">8/10</div>
+    <div class="score-grade" id="predictedGrade">Estimated AP® Score: 5 (Extremely Strong)</div>
+    <p style="color:#cbd5e1; max-width:540px; margin:0 auto 24px; font-size:15px;">
+      You have experienced our Free Mock Test #1. Want <strong>Mock Exams #2 and #3</strong> plus <strong>50 Flashcards</strong>?
+    </p>
+
+    <!-- FREE SIGNUP GATE -->
+    <div class="upgrade-box">
+      <div class="signup-tier-pills">
+        <span class="tier-pill">Current: 1 Free Test & 30 Cards</span>
+        <span class="tier-pill active">🎁 Unlock with Free Signup: 3 Tests + 50 Cards</span>
+        <span class="tier-pill">🏆 Pro: 25 Exams + Simulator ($19)</span>
+      </div>
+      <h3>Sign Up Free to Unlock Mock Tests #2 & #3</h3>
+      <p>Enter your email below to instantly activate Mock Test #2, Mock Test #3, and the full 50-card flashcard deck in your browser.</p>
+      <form class="free-signup-inline" onsubmit="handleUnlockTests(event)">
+        <input type="email" id="unlockEmail" placeholder="Enter your student email" required>
+        <button type="submit">Unlock 3 Tests Free</button>
+      </form>
+      <div style="font-size:12px; color:#64748b; margin-top:10px;">No credit card required. Free instant activation.</div>
+    </div>
+    
+    <div style="margin-top:28px;">
+      <a href="ap-stats.html#pricing" class="btn btn-primary" style="display:inline-block; padding:12px 28px; border-radius:8px; text-decoration:none; font-weight:700;">
+        Upgrade to 25 Full Exams & Bluebook Simulator ($19/mo) →
+      </a>
+    </div>
+  </div>
+
+</div>
+
+<script>
+const examQuestions = [
+  {
+    q: "A quality control manager at a battery factory takes a random sample of 50 batteries and finds an average lifespan of 48.2 hours with a sample standard deviation of 3.4 hours. Which test statistic formula should be used to test H₀: μ = 50 vs Hₐ: μ < 50?",
+    options: [
+      "z = (48.2 - 50) / (3.4 / √50)",
+      "t = (48.2 - 50) / (3.4 / √50) with df = 49",
+      "t = (48.2 - 50) / (3.4 / 50) with df = 50",
+      "z = (48.2 - 50) / √(48.2(1 - 48.2) / 50)"
+    ],
+    correct: 1,
+    explanation: "Correct! Because the population standard deviation σ is unknown and estimated by the sample standard deviation s = 3.4, a one-sample t-statistic must be used with degrees of freedom df = n - 1 = 49."
+  },
+  {
+    q: "In an AP® Statistics experiment comparing two fertilizers, why is random assignment of treatments to plots critical?",
+    options: [
+      "To eliminate the need for replication.",
+      "To ensure the sample size is sufficiently large for the Central Limit Theorem.",
+      "To balance out confounding variables evenly across treatment groups so causation can be inferred.",
+      "To allow generalization of results to all plant varieties nationwide."
+    ],
+    correct: 2,
+    explanation: "Correct! Random assignment distributes lurking and confounding variables (soil nutrients, sunlight angle, moisture) roughly equally between groups, isolating the treatment effect to infer causation."
+  },
+  {
+    q: "A 95% confidence interval for the difference between two population proportions (p₁ - p₂) is calculated to be (-0.08, 0.04). What conclusion should be drawn at the α = 0.05 significance level for H₀: p₁ = p₂ vs Hₐ: p₁ ≠ p₂?",
+    options: [
+      "Reject H₀ because 0 is inside the interval.",
+      "Fail to reject H₀ because 0 is a plausible value contained within the 95% confidence interval.",
+      "Reject H₀ because the lower bound is negative.",
+      "Accept Hₐ because the sample sizes were unequal."
+    ],
+    correct: 1,
+    explanation: "Correct! Since zero is included in the 95% confidence interval, a difference of zero is plausible. Therefore, we fail to reject H₀ at α = 0.05."
+  },
+  {
+    q: "Which of the following distributions is skewed right with mean 20 and standard deviation 5. If repeated independent random samples of size n = 64 are drawn, what is the approximate shape and standard error of the sampling distribution of x̄?",
+    options: [
+      "Skewed right with standard error 5",
+      "Approximately Normal with standard error 5 / √64 = 0.625",
+      "Skewed right with standard error 0.625",
+      "Uniform with standard error 5"
+    ],
+    correct: 1,
+    explanation: "Correct! By the Central Limit Theorem, since n = 64 ≥ 30, the sampling distribution of x̄ is approximately Normal. The standard error is σ / √n = 5 / 8 = 0.625."
+  },
+  {
+    q: "In linear regression analysis, a residual plot shows a clear curved, parabolic pattern. What does this indicate?",
+    options: [
+      "The linear model is an appropriate fit for the bivariate data.",
+      "A linear model is NOT appropriate; a non-linear relationship exists between the variables.",
+      "The correlation coefficient r must equal 0.",
+      "Homoscedasticity has been verified."
+    ],
+    correct: 1,
+    explanation: "Correct! A non-random curved pattern in the residual plot indicates that the underlying relationship is non-linear and a linear model is inappropriate."
+  }
+];
+
+let currentIdx = 0;
+let userAnswers = {};
+
+function loadQuestion(idx) {
+  const item = examQuestions[idx];
+  document.getElementById('qNumber').textContent = `Question ${idx + 1} of ${examQuestions.length} Diagnostic Sample`;
+  document.getElementById('qText').textContent = item.q;
+  
+  const container = document.getElementById('optionsContainer');
+  container.innerHTML = '';
+  
+  item.options.forEach((opt, oIdx) => {
+    const letters = ['A', 'B', 'C', 'D'];
+    const div = document.createElement('div');
+    div.className = 'option-item' + (userAnswers[idx] === oIdx ? ' selected' : '');
+    div.innerHTML = `<span class="option-letter">${letters[oIdx]}</span><span>${opt}</span>`;
+    div.onclick = () => selectOption(idx, oIdx);
+    container.appendChild(div);
+  });
+  
+  const expBox = document.getElementById('explanationBox');
+  expBox.style.display = 'none';
+  expBox.className = 'explanation-box';
+  
+  document.getElementById('prevBtn').disabled = (idx === 0);
+  document.getElementById('nextBtn').textContent = (idx === examQuestions.length - 1) ? 'Finish & Score Exam →' : 'Next Question →';
+}
+
+function selectOption(qIdx, oIdx) {
+  userAnswers[qIdx] = oIdx;
+  loadQuestion(qIdx);
+}
+
+function checkAnswer() {
+  const selected = userAnswers[currentIdx];
+  if (selected === undefined) {
+    alert("Please select an answer choice first!");
+    return;
+  }
+  const item = examQuestions[currentIdx];
+  const expBox = document.getElementById('explanationBox');
+  expBox.style.display = 'block';
+  if (selected === item.correct) {
+    expBox.className = 'explanation-box correct';
+    expBox.innerHTML = `<strong>✅ Correct!</strong> ${item.explanation}`;
+  } else {
+    expBox.className = 'explanation-box incorrect';
+    const letters = ['A', 'B', 'C', 'D'];
+    expBox.innerHTML = `<strong>❌ Incorrect.</strong> Correct answer is <strong>(${letters[item.correct]})</strong>.<br>${item.explanation}`;
+  }
+}
+
+function nextQ() {
+  if (currentIdx < examQuestions.length - 1) {
+    currentIdx++;
+    loadQuestion(currentIdx);
+  } else {
+    finishExam();
+  }
+}
+
+function prevQ() {
+  if (currentIdx > 0) {
+    currentIdx--;
+    loadQuestion(currentIdx);
+  }
+}
+
+function finishExam() {
+  document.getElementById('questionCard').style.display = 'none';
+  const scoreModal = document.getElementById('scoreModal');
+  scoreModal.style.display = 'block';
+  
+  let correctCount = 0;
+  examQuestions.forEach((q, i) => {
+    if (userAnswers[i] === q.correct) correctCount++;
+  });
+  
+  const pct = Math.round((correctCount / examQuestions.length) * 100);
+  document.getElementById('finalScore').textContent = `${correctCount} / ${examQuestions.length} (${pct}%)`;
+  
+  let gradeText = "Estimated AP® Score: 5 (Top Tier)";
+  if (pct < 60) gradeText = "Estimated AP® Score: 3 (Needs High-Yield Vault Practice)";
+  else if (pct < 80) gradeText = "Estimated AP® Score: 4 (Strong — Push to 5 with Mock Exams)";
+  document.getElementById('predictedGrade').textContent = gradeText;
+}
+
+function handleUnlockTests(e) {
+  e.preventDefault();
+  const email = document.getElementById('unlockEmail').value;
+  alert(`🎉 Success! Free Tier upgraded.\n\nMock Test #2 and Mock Test #3 unlocked for ${email}.\nCheck your inbox for your login link and 50 Flashcard access!`);
+}
+
+// Timer
+let secondsLeft = 90 * 60;
+setInterval(() => {
+  if (secondsLeft > 0) {
+    secondsLeft--;
+    const mins = Math.floor(secondsLeft / 60);
+    const secs = secondsLeft % 60;
+    document.getElementById('timerDisplay').textContent = `${String(mins).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+  }
+}, 1000);
+
+loadQuestion(0);
+</script>
+</body>
+</html>

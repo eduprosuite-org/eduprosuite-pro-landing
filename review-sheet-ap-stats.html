@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Virtual Quick Review Sheet | AP® Statistics 2027 | EduPro Suite</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body { background: #f1f5f9; color: #1e293b; font-family: 'Inter', sans-serif; }
+    .sheet-wrapper { max-width: 960px; margin: 30px auto; padding: 0 20px 80px; }
+    .sheet-toolbar { background: white; border: 1px solid #cbd5e1; border-radius: 12px; padding: 14px 24px; display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); }
+    .sheet-toolbar h1 { font-size: 18px; font-weight: 800; color: #0f172a; margin: 0; }
+    .toolbar-actions { display: flex; gap: 12px; }
+    
+    .sheet-document { background: white; border: 1.5px solid #cbd5e1; border-radius: 16px; padding: 48px; box-shadow: 0 12px 30px rgba(0,0,0,0.08); position: relative; overflow: hidden; }
+    
+    /* Watermark */
+    .sheet-watermark { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) rotate(-35deg); font-size: 54px; font-weight: 900; color: rgba(37,99,235,0.05); pointer-events: none; white-space: nowrap; user-select: none; z-index: 1; text-transform: uppercase; }
+    
+    .sheet-header { border-bottom: 2px solid #2563eb; padding-bottom: 16px; margin-bottom: 28px; display: flex; justify-content: space-between; align-items: flex-end; }
+    .sheet-header-title { font-family: 'Space Grotesk', sans-serif; font-size: 26px; font-weight: 800; color: #0f172a; }
+    .sheet-header-meta { text-align: right; font-size: 12px; color: #64748b; font-weight: 600; }
+    
+    .unit-section { margin-bottom: 28px; position: relative; z-index: 2; }
+    .unit-title { background: #eff6ff; color: #1e40af; font-size: 14px; font-weight: 800; padding: 6px 14px; border-radius: 6px; border-left: 4px solid #2563eb; margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+    
+    .review-table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin-bottom: 12px; }
+    .review-table th { background: #f8fafc; border: 1px solid #e2e8f0; padding: 10px 12px; text-align: left; font-weight: 700; color: #334155; }
+    .review-table td { border: 1px solid #e2e8f0; padding: 10px 12px; vertical-align: top; }
+    
+    .formula-badge { font-family: monospace; background: #f1f5f9; padding: 3px 6px; border-radius: 4px; font-weight: 700; color: #0284c7; }
+    .frq-frame { background: #fefce8; border: 1px dashed #ca8a04; border-radius: 8px; padding: 12px 16px; font-size: 13px; color: #854d0e; line-height: 1.6; margin-top: 8px; }
+    
+    .signup-card-bottom { background: linear-gradient(135deg, #1e3a8a, #0f172a); border-radius: 14px; padding: 28px; color: white; text-align: center; margin-top: 36px; }
+    .signup-card-bottom h3 { font-size: 20px; font-weight: 800; margin-bottom: 8px; color: white; }
+    .signup-card-bottom p { font-size: 13.5px; color: #94a3b8; margin-bottom: 18px; }
+    .signup-inputs { display: flex; gap: 8px; justify-content: center; max-width: 460px; margin: 0 auto; }
+    .signup-inputs input { flex: 1; padding: 10px 14px; border-radius: 6px; border: 1px solid #334155; background: #1e293b; color: white; font-size: 13.5px; }
+    .signup-inputs button { padding: 10px 20px; border-radius: 6px; background: #facc15; color: #0f172a; font-weight: 700; border: none; cursor: pointer; }
+    
+    @media print {
+      .sheet-toolbar, .signup-card-bottom { display: none; }
+      .sheet-document { border: none; box-shadow: none; padding: 0; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="sheet-wrapper">
+  <!-- Toolbar -->
+  <div class="sheet-toolbar">
+    <div>
+      <a href="ap-stats.html" style="color:#2563eb; text-decoration:none; font-size:13px; font-weight:600;">← Back to AP® Stats</a>
+      <h1>Virtual Quick Review Sheet (Free Watermarked Edition)</h1>
+    </div>
+    <div class="toolbar-actions">
+      <button onclick="window.print()" class="btn btn-outline btn-sm">🖨️ Print / Save PDF</button>
+      <a href="ap-stats.html#pricing" class="btn btn-primary btn-sm">Get Complete Vault →</a>
+    </div>
+  </div>
+
+  <!-- Document Body -->
+  <div class="sheet-document">
+    <div class="sheet-watermark">EduPro Suite · Free Practice Edition</div>
+
+    <div class="sheet-header">
+      <div>
+        <div class="sheet-header-title">AP® Statistics High-Yield Review Sheet</div>
+        <div style="font-size:13px; color:#2563eb; font-weight:700; margin-top:4px;">College Board 2027 Course & Exam Description Aligned</div>
+      </div>
+      <div class="sheet-header-meta">
+        <div>Watermarked Free Edition</div>
+        <div>EduProSuite.pro</div>
+      </div>
+    </div>
+
+    <!-- Section 1: Sampling & Inference Decision Tree -->
+    <div class="unit-section">
+      <div class="unit-title">1. Inference Procedure Decision Matrix (Units 6 - 9)</div>
+      <table class="review-table">
+        <thead>
+          <tr>
+            <th>Scenario / Data Type</th>
+            <th>Number of Samples</th>
+            <th>Procedure Name</th>
+            <th>Test Statistic Formula</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Categorical (Proportions)</td>
+            <td>1 Sample</td>
+            <td>1-Prop z-test / interval</td>
+            <td><span class="formula-badge">z = (p̂ - p₀) / √(p₀(1-p₀)/n)</span></td>
+          </tr>
+          <tr>
+            <td>Categorical (Proportions)</td>
+            <td>2 Independent Samples</td>
+            <td>2-Prop z-test / interval</td>
+            <td><span class="formula-badge">z = (p̂₁ - p̂₂) / √(p̂c(1-p̂c)(1/n₁ + 1/n₂))</span></td>
+          </tr>
+          <tr>
+            <td>Quantitative (Means)</td>
+            <td>1 Sample (σ unknown)</td>
+            <td>1-Sample t-test / interval</td>
+            <td><span class="formula-badge">t = (x̄ - μ₀) / (s / √n), df = n - 1</span></td>
+          </tr>
+          <tr>
+            <td>Quantitative (Paired Data)</td>
+            <td>1 Sample of Differences</td>
+            <td>Matched Pairs t-test</td>
+            <td><span class="formula-badge">t = (x̄_d - 0) / (s_d / √n), df = n - 1</span></td>
+          </tr>
+          <tr>
+            <td>Categorical Distribution Fit</td>
+            <td>1 Categorical Variable</td>
+            <td>Chi-Square Goodness of Fit</td>
+            <td><span class="formula-badge">χ² = Σ (O - E)² / E, df = k - 1</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Section 2: FRQ Rubric Sentence Frames -->
+    <div class="unit-section">
+      <div class="unit-title">2. FRQ Grader Sentence Frames (Word-For-Word Rubric Points)</div>
+      
+      <div style="margin-bottom:12px;">
+        <strong style="font-size:13px; color:#0f172a;">A. Interpreting Confidence Level (e.g., 95%):</strong>
+        <div class="frq-frame">
+          "If this sampling procedure were repeated many times, approximately <strong>95%</strong> of the resulting confidence intervals would contain the true population parameter [proportion of / mean of in context]."
+        </div>
+      </div>
+
+      <div style="margin-bottom:12px;">
+        <strong style="font-size:13px; color:#0f172a;">B. Interpreting P-Value in Context:</strong>
+        <div class="frq-frame">
+          "Assuming that the true [parameter in context] is [H₀ value], there is a <strong>[p-value]</strong> probability of obtaining a test statistic as extreme as or more extreme than the observed one purely by random chance."
+        </div>
+      </div>
+
+      <div>
+        <strong style="font-size:13px; color:#0f172a;">C. Making Inference Decision:</strong>
+        <div class="frq-frame">
+          "Because the p-value ([X.XX]) is [less than / greater than] α = 0.05, we [reject / fail to reject] H₀. There [is convincing / is not convincing] statistical evidence that [restate Hₐ in real-world context]."
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 3: Regression & Residuals -->
+    <div class="unit-section">
+      <div class="unit-title">3. Regression & Diagnostic Rules (Unit 2)</div>
+      <table class="review-table">
+        <tbody>
+          <tr>
+            <td style="width:25%;"><strong>LSRL Equation</strong></td>
+            <td><span class="formula-badge">ŷ = a + bx</span> where slope <span class="formula-badge">b = r(sy / sx)</span> and intercept <span class="formula-badge">a = ȳ - bx̄</span></td>
+          </tr>
+          <tr>
+            <td><strong>Residual Definition</strong></td>
+            <td><span class="formula-badge">Residual = Observed y - Predicted ŷ = y - ŷ</span></td>
+          </tr>
+          <tr>
+            <td><strong>Coefficient of Determination (r²)</strong></td>
+            <td>"<strong>[r²]%</strong> of the variation in [response variable y] is accounted for by the linear relationship with [explanatory variable x]."</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <!-- Sign up for more -->
+  <div class="signup-card-bottom">
+    <h3>Want 50 Flashcards & 3 Full Mock Tests?</h3>
+    <p>Get instant free access to our upgraded Practice Pack. No credit card required.</p>
+    <form class="signup-inputs" onsubmit="event.preventDefault(); alert('Free Pack Unlocked! Check your email for login access.');">
+      <input type="email" placeholder="Your student email address" required>
+      <button type="submit">Unlock 3 Tests + 50 Cards</button>
+    </form>
+  </div>
+</div>
+
+</body>
+</html>

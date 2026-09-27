@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP® Statistics Flashcards | EduPro Suite</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    body { background: #f8fafc; }
+    .fc-page { max-width: 760px; margin: 0 auto; padding: 32px 20px 80px; }
+    .fc-header { text-align: center; margin-bottom: 28px; }
+    .fc-track-badge { display: inline-block; background: #dbeafe; color: #2563eb; font-size: 12px; font-weight: 700; padding: 4px 12px; border-radius: 20px; margin-bottom: 10px; }
+    .fc-title { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 800; color: #0f172a; margin-bottom: 6px; }
+    .fc-subtitle { font-size: 14px; color: #64748b; }
+    /* Progress bar */
+    .fc-progress-wrap { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 14px 20px; margin-bottom: 20px; display: flex; align-items: center; gap: 14px; }
+    .fc-progress-bar { flex: 1; height: 8px; background: #e2e8f0; border-radius: 4px; overflow: hidden; }
+    .fc-progress-fill { height: 100%; background: linear-gradient(90deg, #2563eb, #4f46e5); border-radius: 4px; transition: width 0.4s ease; }
+    .fc-progress-text { font-size: 13px; font-weight: 600; color: #475569; white-space: nowrap; }
+    /* Flashcard */
+    .fc-card-area { perspective: 1200px; margin-bottom: 20px; cursor: pointer; }
+    .fc-card { position: relative; width: 100%; min-height: 260px; transform-style: preserve-3d; transition: transform 0.55s cubic-bezier(.4,0,.2,1); }
+    .fc-card.flipped { transform: rotateY(180deg); }
+    .fc-front, .fc-back {
+      position: absolute; inset: 0; backface-visibility: hidden; border-radius: 20px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 36px 40px; text-align: center;
+    }
+    .fc-front { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; }
+    .fc-back  { background: white; border: 2px solid #2563eb; transform: rotateY(180deg); color: #0f172a; }
+    .fc-side-label { font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.5; margin-bottom: 16px; }
+    .fc-question { font-size: 20px; font-weight: 700; line-height: 1.4; color: white; }
+    .fc-answer   { font-size: 17px; font-weight: 600; line-height: 1.5; color: #1e293b; }
+    .fc-formula  { font-family: monospace; font-size: 22px; background: #eff6ff; padding: 8px 18px; border-radius: 8px; margin: 10px 0; color: #2563eb; font-weight: 700; }
+    .fc-hint     { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 16px; }
+    .fc-hint-back { font-size: 12px; color: #94a3b8; margin-top: 14px; }
+    /* Nav Buttons */
+    .fc-nav { display: flex; gap: 12px; justify-content: center; margin-bottom: 20px; }
+    .fc-btn { padding: 11px 24px; border-radius: 10px; font-size: 14px; font-weight: 700; border: none; cursor: pointer; transition: all 0.2s; }
+    .fc-btn-prev { background: white; color: #475569; border: 1.5px solid #e2e8f0; }
+    .fc-btn-prev:hover { border-color: #94a3b8; }
+    .fc-btn-flip { background: #2563eb; color: white; padding: 11px 32px; }
+    .fc-btn-flip:hover { background: #1d4ed8; transform: translateY(-1px); }
+    .fc-btn-next { background: white; color: #475569; border: 1.5px solid #e2e8f0; }
+    .fc-btn-next:hover { border-color: #94a3b8; }
+    /* Know it / Review buttons */
+    .fc-rate { display: flex; gap: 12px; justify-content: center; margin-bottom: 24px; }
+    .fc-btn-know   { background: #ecfdf5; color: #059669; border: 1.5px solid #6ee7b7; padding: 9px 24px; border-radius: 10px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+    .fc-btn-review { background: #fff7ed; color: #d97706; border: 1.5px solid #fcd34d; padding: 9px 24px; border-radius: 10px; font-size: 13px; font-weight: 700; cursor: pointer; transition: all 0.2s; }
+    .fc-btn-know:hover   { background: #d1fae5; }
+    .fc-btn-review:hover { background: #fef3c7; }
+    /* Signup gate */
+    .fc-gate {
+      background: linear-gradient(135deg, #1e3a8a, #2563eb);
+      border-radius: 20px; padding: 40px 36px; text-align: center; color: white;
+    }
+    .fc-gate h3 { font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 800; margin-bottom: 10px; }
+    .fc-gate p  { font-size: 14px; opacity: 0.8; margin-bottom: 24px; line-height: 1.6; }
+    .fc-gate-form { display: flex; flex-direction: column; gap: 10px; max-width: 380px; margin: 0 auto; }
+    .fc-gate-input { padding: 12px 16px; border-radius: 10px; border: none; font-size: 14px; background: rgba(255,255,255,0.15); color: white; placeholder-color: rgba(255,255,255,0.5); }
+    .fc-gate-input::placeholder { color: rgba(255,255,255,0.5); }
+    .fc-gate-input:focus { outline: none; background: rgba(255,255,255,0.25); }
+    .fc-gate-btn { background: #facc15; color: #0f172a; font-weight: 800; font-size: 15px; padding: 13px; border-radius: 10px; border: none; cursor: pointer; transition: all 0.2s; }
+    .fc-gate-btn:hover { background: #fde047; }
+    .fc-gate-note { font-size: 12px; opacity: 0.55; margin-top: 8px; }
+    /* Summary */
+    .fc-summary { background: white; border: 1.5px solid #e2e8f0; border-radius: 20px; padding: 32px; text-align: center; }
+    .fc-summary h3 { font-size: 22px; font-weight: 800; margin-bottom: 8px; }
+    .fc-summary-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 20px 0; }
+    .fc-stat-box { background: #f8fafc; border-radius: 12px; padding: 16px; }
+    .fc-stat-box strong { display: block; font-size: 28px; font-weight: 800; color: #2563eb; font-family: 'Space Grotesk', sans-serif; }
+    .fc-stat-box span { font-size: 12px; color: #64748b; }
+    /* Locked overlay */
+    .fc-locked { position: relative; }
+    .fc-locked-overlay {
+      position: absolute; inset: 0; background: rgba(15,23,42,0.65); backdrop-filter: blur(4px);
+      border-radius: 20px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      color: white; font-size: 18px; font-weight: 700; gap: 8px;
+    }
+    /* Upgrade CTA */
+    .fc-upgrade-bar { background: #fafafa; border: 1px solid #e2e8f0; border-radius: 14px; padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .fc-upgrade-bar span { font-size: 14px; color: #475569; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: #2563eb; font-size: 13px; font-weight: 600; text-decoration: none; margin-bottom: 20px; }
+  </style>
+</head>
+<body>
+<div class="fc-page">
+  <a href="ap-stats.html" class="back-link">← Back to AP® Statistics</a>
+
+  <div class="fc-header">
+    <div class="fc-track-badge">📊 AP® Statistics 2027</div>
+    <h1 class="fc-title">Flashcard Deck</h1>
+    <p class="fc-subtitle">
+      <span id="fc-access-label">Free access: 30 cards · <a href="#" onclick="showGate(); return false;" style="color:#2563eb;font-weight:600">Sign up free for 50 cards →</a></span>
+    </p>
+  </div>
+
+  <!-- Progress -->
+  <div class="fc-progress-wrap">
+    <div class="fc-progress-bar"><div class="fc-progress-fill" id="progressFill" style="width:3%"></div></div>
+    <div class="fc-progress-text"><span id="cardNum">1</span> / <span id="cardTotal">30</span></div>
+    <div style="display:flex;gap:6px;font-size:12px;">
+      <span style="color:#059669;font-weight:700">✓ <span id="knewCount">0</span></span>
+      <span style="color:#d97706;font-weight:700">↻ <span id="reviewCount">0</span></span>
+    </div>
+  </div>
+
+  <!-- Card -->
+  <div class="fc-card-area" id="cardArea" onclick="flipCard()">
+    <div class="fc-card" id="flashcard">
+      <div class="fc-front">
+        <div class="fc-side-label">QUESTION — click to reveal answer</div>
+        <div class="fc-question" id="cardQuestion">Loading...</div>
+        <div class="fc-hint">👆 Click card or press Space to flip</div>
+      </div>
+      <div class="fc-back">
+        <div class="fc-side-label" style="color:#94a3b8">ANSWER</div>
+        <div class="fc-answer" id="cardAnswer"></div>
+        <div class="fc-formula" id="cardFormula" style="display:none"></div>
+        <div class="fc-hint-back" id="cardHint"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Nav -->
+  <div class="fc-nav">
+    <button class="fc-btn fc-btn-prev" onclick="prevCard()">← Prev</button>
+    <button class="fc-btn fc-btn-flip" onclick="flipCard()">Flip Card ↕</button>
+    <button class="fc-btn fc-btn-next" onclick="nextCard()">Next →</button>
+  </div>
+  <div class="fc-rate" id="rateButtons" style="display:none">
+    <button class="fc-btn-know"   onclick="rateCard('know')">✓ Got it!</button>
+    <button class="fc-btn-review" onclick="rateCard('review')">↻ Review Again</button>
+  </div>
+
+  <!-- Signup Gate (shown at card 31) -->
+  <div id="signupGate" style="display:none">
+    <div class="fc-gate">
+      <div style="font-size:32px;margin-bottom:12px">🔓</div>
+      <h3>You've completed 30 Free Cards!</h3>
+      <p>Sign up free to unlock <strong>20 more flashcards</strong> (50 total) — plus 3 mock tests and more study tools. No credit card needed, ever.</p>
+      <form class="fc-gate-form" onsubmit="unlockMore(event)">
+        <input type="text"  class="fc-gate-input" placeholder="Your First Name" required id="gateName">
+        <input type="email" class="fc-gate-input" placeholder="Your Email Address" required id="gateEmail">
+        <button type="submit" class="fc-gate-btn">🎉 Unlock 50 Flashcards + 3 Mock Tests FREE</button>
+        <div class="fc-gate-note">🔒 No spam · No credit card · Instant access</div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Upgrade bar -->
+  <div class="fc-upgrade-bar">
+    <span>🚀 Want all <strong>500+ flashcards</strong> + 25 mock exams + Bluebook Simulator?</span>
+    <a href="ap-stats.html#pricing" class="btn btn-primary btn-sm" style="flex-shrink:0">Upgrade to Pro →</a>
+  </div>
+</div>
+
+<script>
+// =========================================================
+// AP® STATISTICS FLASHCARD DATA
+// 30 Free (no signup) + 20 Signup-unlocked = 50 total
+// =========================================================
+const FREE_LIMIT = 30;
+const SIGNUP_LIMIT = 50;
+
+const cards = [
+  // ---- FREE CARDS (1-30) ----
+  { q: "What is the formula for the mean of a sampling distribution of sample proportions (p̂)?", a: "μp̂ = p", formula: "μp̂ = p", hint: "Center of sampling dist = population proportion" },
+  { q: "What is the standard deviation of the sampling distribution of p̂?", a: "σp̂ = √(p(1-p)/n)", formula: "σp̂ = √[p(1−p)/n]", hint: "Also called 'standard error of p̂'" },
+  { q: "What are the conditions to use a one-proportion z-test?", a: "1. Random sample\n2. np ≥ 10 and n(1−p) ≥ 10 (Large Counts)\n3. 10% condition: n ≤ 0.1N", hint: "Always state all 3 conditions in FRQ!" },
+  { q: "What does a p-value represent?", a: "The probability of getting results as extreme as observed, assuming H₀ is true.", hint: "Lower p-value = stronger evidence against H₀" },
+  { q: "What is a Type I Error?", a: "Rejecting H₀ when H₀ is actually true. Probability = α (significance level).", hint: "False Positive — 'Cry wolf' error" },
+  { q: "What is a Type II Error?", a: "Failing to reject H₀ when H₀ is actually false. Probability = β.", hint: "False Negative — 'Miss the wolf' error" },
+  { q: "What is the formula for a z-test statistic for proportions?", a: "z = (p̂ − p₀) / √(p₀(1−p₀)/n)", formula: "z = (p̂ − p₀) / √[p₀(1−p₀)/n]", hint: "p₀ = claimed proportion in H₀" },
+  { q: "What does Power of a test mean?", a: "Power = 1 − β = Probability of correctly rejecting a false H₀.", hint: "Power increases as: n↑, α↑, effect size↑" },
+  { q: "What is the formula for a confidence interval for a proportion?", a: "p̂ ± z* · √(p̂(1−p̂)/n)", formula: "p̂ ± z* · √[p̂(1−p̂)/n]", hint: "z* = 1.645 (90%), 1.96 (95%), 2.576 (99%)" },
+  { q: "What is the standard error of the difference between two sample proportions?", a: "√(p̂₁(1−p̂₁)/n₁ + p̂₂(1−p̂₂)/n₂)", hint: "Used in 2-proportion z-interval" },
+  { q: "What is the formula for the mean of the sampling distribution of x̄?", a: "μx̄ = μ (population mean)", formula: "μx̄ = μ", hint: "Sampling distribution center = population mean" },
+  { q: "What is the standard deviation of the sampling distribution of x̄?", a: "σx̄ = σ/√n", formula: "σx̄ = σ/√n", hint: "Called 'standard error of the mean'" },
+  { q: "State the Central Limit Theorem (CLT).", a: "When n is large (n ≥ 30), the sampling distribution of x̄ is approximately Normal, regardless of the population shape.", hint: "CLT applies to means, not individual values" },
+  { q: "What is the formula for a one-sample t-interval for μ?", a: "x̄ ± t* · (s/√n)", formula: "x̄ ± t* · (s/√n)", hint: "df = n − 1 for t*" },
+  { q: "What are the conditions for a one-sample t-test?", a: "1. Random\n2. Normal/Large Sample (n ≥ 30 or population is Normal)\n3. Independent (10% condition)", hint: "Use t when σ is unknown" },
+  { q: "What is a chi-square goodness-of-fit test used for?", a: "To test if observed categorical data fits a claimed distribution.", hint: "H₀: The distribution is as claimed" },
+  { q: "What is the chi-square test formula?", a: "χ² = Σ (Observed − Expected)² / Expected", formula: "χ² = Σ(O−E)²/E", hint: "Each cell contributes a component" },
+  { q: "What conditions are required for a chi-square test?", a: "1. Random sample\n2. Expected count ≥ 5 in all cells\n3. Independent observations", hint: "Check expected counts, NOT observed counts" },
+  { q: "What is the chi-square test for independence used for?", a: "To test whether two categorical variables are associated (not independent) in a two-way table.", hint: "H₀: The two variables are independent" },
+  { q: "What is the formula for expected counts in a chi-square independence test?", a: "Expected = (Row Total × Column Total) / Grand Total", formula: "E = (row total × col total) / n", hint: "Calculate expected, then use χ² formula" },
+  { q: "What is the least-squares regression line equation?", a: "ŷ = b₀ + b₁x, where b₁ = r(sy/sx) and b₀ = ȳ − b₁x̄", formula: "ŷ = b₀ + b₁x", hint: "Always passes through (x̄, ȳ)" },
+  { q: "What does the correlation coefficient r measure?", a: "The direction and strength of a LINEAR relationship between two quantitative variables. Range: −1 ≤ r ≤ 1.", hint: "r near ±1 = strong linear; r near 0 = weak" },
+  { q: "What does R² (coefficient of determination) tell us?", a: "The proportion of variation in y that is explained by the linear relationship with x.", hint: "R² = 55% means 55% of variation in y is explained" },
+  { q: "What is a residual?", a: "Residual = Observed y − Predicted ŷ = y − ŷ", formula: "Residual = y − ŷ", hint: "Positive residual = point is ABOVE the line" },
+  { q: "What is the difference between a statistic and a parameter?", a: "Parameter: describes the POPULATION (μ, σ, p). Statistic: describes the SAMPLE (x̄, s, p̂).", hint: "Parameters are fixed; statistics vary sample to sample" },
+  { q: "What is a simple random sample (SRS)?", a: "Every group of n individuals from the population has an equal chance of being selected as the sample.", hint: "Key: every COMBINATION has equal probability" },
+  { q: "What is a stratified random sample?", a: "Divide population into strata (groups) then take an SRS from each stratum.", hint: "Used when strata are homogeneous within" },
+  { q: "What is a cluster sample?", a: "Divide population into clusters, randomly select entire clusters, then sample all individuals in selected clusters.", hint: "Clusters are heterogeneous within (like population)" },
+  { q: "What is the formula for standard deviation of a discrete random variable X?", a: "σX = √[ Σ(xi − μX)² · P(xi) ]", formula: "σX = √[Σ(xᵢ−μX)²·P(xᵢ)]", hint: "Always find μX first, then compute σX" },
+  { q: "What is a geometric distribution used for?", a: "Models the number of TRIALS needed to get the FIRST success. P(X=k) = (1−p)^(k−1) · p", formula: "P(X=k) = (1−p)^(k−1)·p", hint: "Mean = 1/p for geometric distribution" },
+
+  // ---- SIGNUP-LOCKED CARDS (31-50) ----
+  { q: "What are the conditions for a binomial distribution (BINS)?", a: "Binary outcomes, Independent trials, fixed Number of trials (n), Same probability (p) each trial.", hint: "B-I-N-S acronym", locked: true },
+  { q: "What is the formula for binomial probability P(X=k)?", a: "P(X=k) = C(n,k) · pᵏ · (1−p)^(n−k)", formula: "P(X=k) = C(n,k)·pᵏ·(1−p)^(n−k)", hint: "Mean = np; SD = √(np(1−p))", locked: true },
+  { q: "What is the formula for the t-test statistic for means?", a: "t = (x̄ − μ₀) / (s/√n)", formula: "t = (x̄ − μ₀)/(s/√n)", hint: "df = n−1; use t-table or calculator", locked: true },
+  { q: "How do you set up H₀ and Hₐ for a two-sample t-test?", a: "H₀: μ₁ = μ₂ (or μ₁ − μ₂ = 0)\nHₐ: μ₁ ≠ μ₂ or μ₁ > μ₂ or μ₁ < μ₂", hint: "Never use x̄ in hypotheses — only μ", locked: true },
+  { q: "What is the formula for the slope of LSRL using summary statistics?", a: "b₁ = r · (sy / sx)", formula: "b₁ = r·(sy/sx)", hint: "r is correlation, sy and sx are standard deviations", locked: true },
+  { q: "What does 'statistically significant' mean?", a: "The p-value is less than the significance level α, providing evidence against H₀.", hint: "Significant ≠ practically important!", locked: true },
+  { q: "What is a confounding variable?", a: "A variable that is associated with both the explanatory variable and the response variable, making it hard to establish causation.", hint: "Lurking variable that distorts the relationship", locked: true },
+  { q: "What is the difference between observational study and experiment?", a: "Observational: researcher observes without imposing treatment. Experiment: researcher deliberately imposes a treatment to measure response.", hint: "Only experiments can establish causation", locked: true },
+  { q: "What are the three principles of experimental design?", a: "1. Comparison (control group)\n2. Random assignment\n3. Replication (enough subjects)", hint: "Add Blinding as 4th principle when applicable", locked: true },
+  { q: "What is blocking in an experiment?", a: "Grouping similar experimental units into blocks, then randomly assigning treatments within each block. Reduces variability.", hint: "Block on variables you can't control", locked: true },
+  { q: "What is the interquartile range (IQR)?", a: "IQR = Q3 − Q1", formula: "IQR = Q3 − Q1", hint: "Middle 50% of data spread", locked: true },
+  { q: "What is the outlier rule using IQR?", a: "Outlier if: value < Q1 − 1.5(IQR) or value > Q3 + 1.5(IQR)", formula: "< Q1−1.5·IQR  or  > Q3+1.5·IQR", hint: "Use this rule on AP® FRQs explicitly", locked: true },
+  { q: "What is the difference between population distribution and sampling distribution?", a: "Population dist: distribution of all individuals. Sampling dist: distribution of a statistic (like x̄) over many samples.", hint: "Sampling dist is what we build probability models on", locked: true },
+  { q: "What does 'margin of error' equal in a confidence interval?", a: "Margin of Error = z* or t* × (standard error)", formula: "ME = critical value × SE", hint: "CI = estimate ± ME", locked: true },
+  { q: "What does 'we are 95% confident' mean?", a: "If we repeated this process many times, about 95% of the intervals constructed would capture the true parameter.", hint: "NOT 'there's a 95% probability μ is in this interval'", locked: true },
+  { q: "What is the normal approximation condition for binomial?", a: "np ≥ 10 and n(1−p) ≥ 10 — same as Large Counts condition.", hint: "Ensures binomial shape is approx Normal", locked: true },
+  { q: "What is a matched pairs t-test?", a: "A one-sample t-test performed on the DIFFERENCES (d = x₁ − x₂) from paired data.", hint: "Always work with differences, not original values", locked: true },
+  { q: "What is the formula for the standard error in a two-sample t-interval?", a: "SE = √(s₁²/n₁ + s₂²/n₂)", formula: "SE = √(s₁²/n₁ + s₂²/n₂)", hint: "Use Welch's df on calculator (complicated)", locked: true },
+  { q: "How do you interpret the slope b₁ in context?", a: "For each additional one [unit of x], the predicted [y] increases/decreases by b₁ [units of y].", hint: "Always include: direction, amount, units, in context", locked: true },
+  { q: "What is extrapolation and why is it dangerous?", a: "Extrapolation: using LSRL to predict y for an x value OUTSIDE the range of data. Dangerous because the linear pattern may not continue.", hint: "Flag extrapolation in FRQs — it loses points if missed", locked: true },
+];
+
+let current = 0;
+let isFlipped = false;
+let knew = 0, reviewAgain = 0;
+let isUnlocked = false;
+let totalCards = FREE_LIMIT;
+
+function loadCard() {
+  const c = cards[current];
+  const flipped = document.getElementById('flashcard');
+  flipped.classList.remove('flipped');
+  isFlipped = false;
+  document.getElementById('rateButtons').style.display = 'none';
+  document.getElementById('cardQuestion').textContent = c.q;
+  document.getElementById('cardAnswer').textContent = c.a;
+  const formulaEl = document.getElementById('cardFormula');
+  if (c.formula) { formulaEl.style.display = 'block'; formulaEl.textContent = c.formula; }
+  else { formulaEl.style.display = 'none'; }
+  document.getElementById('cardHint').textContent = c.hint ? '💡 ' + c.hint : '';
+  document.getElementById('cardNum').textContent = current + 1;
+  updateProgress();
+}
+
+function updateProgress() {
+  const pct = ((current + 1) / totalCards) * 100;
+  document.getElementById('progressFill').style.width = pct + '%';
+  document.getElementById('knewCount').textContent = knew;
+  document.getElementById('reviewCount').textContent = reviewAgain;
+}
+
+function flipCard() {
+  const card = document.getElementById('flashcard');
+  card.classList.toggle('flipped');
+  isFlipped = !isFlipped;
+  document.getElementById('rateButtons').style.display = isFlipped ? 'flex' : 'none';
+}
+
+function rateCard(type) {
+  if (type === 'know') knew++;
+  else reviewAgain++;
+  nextCard();
+}
+
+function nextCard() {
+  if (current + 1 >= FREE_LIMIT && !isUnlocked) {
+    showGate();
+    return;
+  }
+  if (current + 1 >= totalCards) {
+    showSummary();
+    return;
+  }
+  current++;
+  loadCard();
+}
+
+function prevCard() {
+  if (current > 0) { current--; loadCard(); }
+}
+
+function showGate() {
+  document.getElementById('cardArea').style.display = 'none';
+  document.querySelector('.fc-nav').style.display = 'none';
+  document.getElementById('rateButtons').style.display = 'none';
+  document.getElementById('signupGate').style.display = 'block';
+}
+
+function unlockMore(e) {
+  e.preventDefault();
+  const name  = document.getElementById('gateName').value;
+  const email = document.getElementById('gateEmail').value;
+  isUnlocked = true;
+  totalCards = SIGNUP_LIMIT;
+  document.getElementById('cardTotal').textContent = SIGNUP_LIMIT;
+  document.getElementById('fc-access-label').innerHTML = '✅ Signed up! <strong>50 flashcards unlocked</strong>';
+  document.getElementById('signupGate').style.display = 'none';
+  document.getElementById('cardArea').style.display = 'block';
+  document.querySelector('.fc-nav').style.display = 'flex';
+  alert(`🎉 Welcome, ${name}! 50 flashcards now unlocked.\nCheck ${email} for your 3 free mock tests too!`);
+  loadCard();
+}
+
+function showGate() {
+  document.getElementById('cardArea').style.display = 'none';
+  document.querySelector('.fc-nav').style.display = 'none';
+  document.getElementById('rateButtons').style.display = 'none';
+  document.getElementById('signupGate').style.display = 'block';
+}
+
+function showSummary() {
+  document.getElementById('cardArea').style.display = 'none';
+  document.querySelector('.fc-nav').style.display = 'none';
+  document.getElementById('rateButtons').style.display = 'none';
+}
+
+// Keyboard support
+document.addEventListener('keydown', (e) => {
+  if (e.code === 'Space') { e.preventDefault(); flipCard(); }
+  if (e.code === 'ArrowRight') nextCard();
+  if (e.code === 'ArrowLeft') prevCard();
+});
+
+// Init
+loadCard();
+</script>
+</body>
+</html>
