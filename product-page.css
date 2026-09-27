@@ -1,0 +1,320 @@
+/* ============================================================ */
+/* EDUPRO SUITE — PRODUCT PAGE CSS (Sidebar Layout)            */
+/* Used by: ap-stats.html, ap-calc.html, trade-math.html       */
+/* ============================================================ */
+
+/* ---- PRODUCT LAYOUT: Sidebar + Main ---- */
+.product-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 24px;
+  gap: 32px;
+  align-items: start;
+}
+
+/* ---- LEFT SIDEBAR ---- */
+.product-sidebar {
+  position: sticky;
+  top: 84px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sidebar-section {
+  background: white;
+  border: 1.5px solid var(--slate-200);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+}
+
+.sidebar-product-badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+.sidebar-product-badge.blue    { background: var(--blue-50); color: var(--blue-600); }
+.sidebar-product-badge.indigo  { background: #eef2ff; color: #4f46e5; }
+.sidebar-product-badge.green   { background: var(--green-50); color: var(--green-600); }
+
+.sidebar-title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 12px;
+  color: var(--slate-900);
+}
+
+.sidebar-price {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.sidebar-price-old  { font-size: 16px; text-decoration: line-through; color: var(--slate-400); }
+.sidebar-price-main { font-size: 32px; font-weight: 800; color: var(--slate-900); font-family: var(--font-display); }
+.sidebar-price-period { font-size: 13px; color: var(--slate-500); }
+
+.sidebar-trial {
+  font-size: 12.5px;
+  color: var(--green-600);
+  font-weight: 600;
+  background: var(--green-50);
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+}
+
+.sidebar-cta { font-size: 14px; font-weight: 700; }
+
+/* ---- REFER WIDGET ---- */
+.refer-widget {
+  background: linear-gradient(135deg, #eff6ff, #eef2ff);
+  border-color: var(--blue-100);
+}
+
+.refer-widget-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+.refer-icon { font-size: 20px; }
+.refer-widget-header strong { display: block; font-size: 14px; color: var(--slate-900); }
+.refer-widget-header small { font-size: 11.5px; color: var(--slate-500); }
+
+.refer-widget-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.rws {
+  background: white;
+  border-radius: var(--radius-sm);
+  padding: 10px;
+  text-align: center;
+  border: 1px solid var(--slate-200);
+}
+.rws strong { display: block; font-size: 22px; font-weight: 800; color: var(--blue-600); font-family: var(--font-display); }
+.rws small  { font-size: 11px; color: var(--slate-500); }
+
+/* ---- AFFILIATE WIDGET ---- */
+.affiliate-widget {
+  background: #fffbeb;
+  border-color: #fde68a;
+}
+.affiliate-widget-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 14px; }
+.affiliate-widget p { font-size: 12.5px; color: var(--slate-600); margin-bottom: 10px; }
+
+/* ---- COUPON WIDGET ---- */
+.coupon-widget { background: var(--slate-50); }
+.coupon-widget-label { font-size: 11.5px; font-weight: 700; color: var(--slate-500); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.coupon-item { display: flex; align-items: center; gap: 8px; margin-bottom: 6px; font-size: 13px; }
+
+/* ---- SIDEBAR TOC ---- */
+.sidebar-toc-title { font-size: 11.5px; font-weight: 700; color: var(--slate-500); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 10px; }
+.sidebar-toc { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+.sidebar-toc li a { font-size: 13px; color: var(--slate-600); text-decoration: none; padding: 4px 8px; border-radius: 4px; display: block; transition: var(--transition); }
+.sidebar-toc li a:hover { background: var(--blue-50); color: var(--blue-600); }
+
+/* ---- PRODUCT MAIN ---- */
+.product-main { min-width: 0; }
+
+/* ---- PRODUCT HERO (per-track colors) ---- */
+.product-hero {
+  border-radius: var(--radius-xl);
+  padding: 48px 40px;
+  margin-bottom: 32px;
+  position: relative;
+  overflow: hidden;
+}
+.blue-hero   { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 60%, #e0e7ff 100%); }
+.indigo-hero { background: linear-gradient(135deg, #eef2ff 0%, #e0e7ff 60%, #ede9fe 100%); }
+.green-hero  { background: linear-gradient(135deg, #ecfdf5 0%, #d1fae5 60%, #f0fdf4 100%); }
+
+.product-hero-inner { display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 36px; align-items: center; }
+.product-exam-tag { font-size: 12px; font-weight: 700; color: var(--blue-600); text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 10px; }
+
+.indigo-hero .product-exam-tag { color: #4f46e5; }
+.green-hero  .product-exam-tag { color: var(--green-600); }
+
+.product-title { font-family: var(--font-display); font-size: 36px; font-weight: 800; letter-spacing: -1px; color: var(--slate-900); margin-bottom: 14px; line-height: 1.15; }
+.hero-highlight-indigo { background: linear-gradient(135deg, #4f46e5, #7c3aed); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+.hero-highlight-green  { background: linear-gradient(135deg, #059669, #047857); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+
+.product-subtitle { font-size: 15px; color: var(--slate-600); margin-bottom: 24px; line-height: 1.65; }
+
+.product-stats-row {
+  display: flex;
+  gap: 0;
+  margin-bottom: 24px;
+  background: white;
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  width: fit-content;
+}
+.ps { padding: 12px 18px; text-align: center; }
+.ps strong { display: block; font-size: 20px; font-weight: 800; color: var(--blue-600); font-family: var(--font-display); }
+.ps span   { font-size: 10.5px; color: var(--slate-500); font-weight: 500; }
+.ps-div    { width: 1px; background: var(--slate-200); flex-shrink: 0; }
+
+/* PRODUCT MOCKUP CARD */
+.product-mockup-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-xl);
+  overflow: hidden;
+  border: 1px solid var(--slate-200);
+}
+.mockup-cover {
+  padding: 28px 24px;
+  position: relative;
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+}
+.blue-cover   { background: linear-gradient(160deg, #1e3a8a, #2563eb); }
+.indigo-cover { background: linear-gradient(160deg, #312e81, #4f46e5); }
+.green-cover  { background: linear-gradient(160deg, #064e3b, #059669); }
+
+.mockup-cover-inner { position: relative; z-index: 2; }
+.mc-badge    { display: inline-block; background: rgba(255,255,255,0.2); color: white; font-size: 10px; font-weight: 700; padding: 2px 8px; border-radius: 4px; margin-bottom: 8px; letter-spacing: 0.5px; }
+.mc-title    { font-size: 15px; font-weight: 800; color: white; line-height: 1.3; margin-bottom: 6px; }
+.mc-subtitle { font-size: 11px; color: rgba(255,255,255,0.7); margin-bottom: 10px; }
+.mc-watermark { font-size: 9px; color: rgba(255,255,255,0.4); text-transform: uppercase; letter-spacing: 1px; }
+.mc-pages    { margin-top: 8px; background: rgba(255,255,255,0.15); display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 11px; color: white; font-weight: 600; }
+
+.mockup-details { padding: 14px 16px; display: flex; flex-direction: column; gap: 6px; }
+.mockup-feature { font-size: 12.5px; color: var(--slate-600); }
+.free-feature   { color: var(--green-600); font-weight: 600; }
+
+/* ---- PRODUCT SECTIONS ---- */
+.product-section { padding: 40px 0; border-bottom: 1px solid var(--slate-100); }
+.product-section:last-child { border-bottom: none; }
+.bg-light-section { background: var(--slate-50); border-radius: var(--radius-lg); padding: 32px; margin-bottom: 8px; }
+.product-section-title { font-family: var(--font-display); font-size: 26px; font-weight: 800; color: var(--slate-900); margin-bottom: 8px; }
+.product-section-desc  { font-size: 15px; color: var(--slate-500); margin-bottom: 24px; }
+
+/* ---- INCLUDED GRID ---- */
+.included-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.included-card {
+  background: white;
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  transition: var(--transition);
+}
+.included-card:hover { box-shadow: var(--shadow-md); border-color: var(--blue-200); }
+.ic-icon { font-size: 24px; margin-bottom: 10px; }
+.included-card h4 { font-size: 14.5px; font-weight: 700; margin-bottom: 6px; color: var(--slate-900); }
+.included-card p  { font-size: 12.5px; color: var(--slate-500); line-height: 1.55; }
+
+/* ---- FREE RESOURCES ROW ---- */
+.free-resources-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-bottom: 24px; }
+.free-resource-card {
+  background: white;
+  border: 1.5px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  padding: 20px;
+  text-align: center;
+  transition: var(--transition);
+}
+.free-resource-card:hover { border-color: var(--green-600); }
+.frc-icon { font-size: 28px; display: block; margin-bottom: 8px; }
+.free-resource-card h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+.free-resource-card p  { font-size: 12px; color: var(--slate-500); margin-bottom: 10px; }
+.frc-badge { background: var(--green-600); color: white; font-size: 11px; font-weight: 700; padding: 2px 10px; border-radius: 20px; }
+
+/* ---- FREE SIGNUP FORM ---- */
+.free-signup-form { background: white; border: 1px solid var(--slate-200); border-radius: var(--radius-lg); padding: 24px; }
+.free-signup-form form { display: grid; grid-template-columns: 1fr 1fr auto; gap: 10px; align-items: end; }
+.free-signup-form .btn { white-space: nowrap; height: 46px; align-self: end; flex-direction: row; }
+
+/* ---- PRICING GRID FOR PRODUCT PAGES ---- */
+.pricing-grid-product { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; margin-bottom: 24px; }
+
+/* ---- PAYPAL BUTTON WRAPPER ---- */
+.paypal-btn-wrap { min-height: 44px; margin-bottom: 8px; }
+.paypal-success {
+  background: var(--green-50);
+  border: 1px solid #6ee7b7;
+  color: var(--green-600);
+  font-size: 13px;
+  font-weight: 600;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+/* ---- REFER REMINDER BAR ---- */
+.refer-reminder-bar {
+  background: linear-gradient(90deg, #eff6ff, #eef2ff);
+  border: 1.5px solid var(--blue-100);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  font-size: 14px;
+  color: var(--slate-700);
+}
+.refer-reminder-bar a { color: var(--blue-600); font-weight: 600; text-decoration: none; }
+
+/* ---- FAQ ---- */
+.faq-list { display: flex; flex-direction: column; gap: 8px; }
+.faq-item {
+  background: white;
+  border: 1px solid var(--slate-200);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  overflow: hidden;
+  transition: var(--transition);
+}
+.faq-item:hover { border-color: var(--blue-600); }
+.faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 20px;
+  font-size: 14.5px;
+  font-weight: 600;
+  color: var(--slate-800);
+}
+.faq-arrow { transition: var(--transition); opacity: 0.5; }
+.faq-a {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 20px;
+  font-size: 13.5px;
+  color: var(--slate-600);
+  line-height: 1.65;
+  transition: all 0.3s ease;
+}
+.faq-item.open .faq-a    { max-height: 200px; padding: 0 20px 16px; }
+.faq-item.open .faq-arrow { transform: rotate(180deg); opacity: 1; }
+
+/* ---- RESPONSIVE ---- */
+@media (max-width: 1024px) {
+  .product-layout { grid-template-columns: 260px 1fr; }
+  .product-hero-inner { grid-template-columns: 1fr; }
+  .product-hero-right { display: none; }
+}
+
+@media (max-width: 768px) {
+  .product-layout { grid-template-columns: 1fr; padding: 16px; }
+  .product-sidebar { position: static; }
+  .included-grid { grid-template-columns: 1fr 1fr; }
+  .free-resources-row { grid-template-columns: 1fr; }
+  .pricing-grid-product { grid-template-columns: 1fr; }
+  .free-signup-form form { grid-template-columns: 1fr; }
+  .product-hero { padding: 28px 20px; }
+  .product-title { font-size: 26px; }
+  .refer-widget-stats { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+  .included-grid { grid-template-columns: 1fr; }
+}
