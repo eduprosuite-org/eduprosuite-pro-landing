@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Checkout & Coupon | EduPro Suite</title>
+  <meta name="description" content="Complete your exam prep enrollment with instant access. Apply discount coupon codes (SCORE70, STUDY15) and pay securely via PayPal.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="product-page.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- PayPal Live SDK -->
+  <script src="https://www.paypal.com/sdk/js?client-id=Afa7sdsBIdHlh53dXfB0jEJvhXgDmrMe1FZrRaLd3xgDE7DrCuHSBiJPvogxFtuhw67KlCS8YuU0RCmI&currency=USD&intent=capture" defer></script>
+  <style>
+    body { background: #f8fafc; color: #1e293b; }
+    .checkout-wrap { max-width: 1040px; margin: 36px auto; padding: 0 20px 80px; }
+    .checkout-grid { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 32px; align-items: start; }
+    .checkout-box { background: white; border: 1.5px solid #e2e8f0; border-radius: 16px; padding: 32px; box-shadow: 0 4px 20px rgba(0,0,0,0.04); }
+    .checkout-title { font-family: 'Space Grotesk', sans-serif; font-size: 24px; font-weight: 800; color: #0f172a; margin-bottom: 20px; }
+    
+    .item-select-group { margin-bottom: 24px; }
+    .item-label { font-size: 13px; font-weight: 700; color: #475569; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; display: block; }
+    .product-select-custom {
+      width: 100%; padding: 14px 16px; border-radius: 10px; border: 1.5px solid #cbd5e1;
+      font-size: 15px; font-weight: 600; color: #0f172a; background: white; cursor: pointer;
+    }
+    .product-select-custom:focus { outline: none; border-color: #2563eb; }
+
+    /* Coupon Box */
+    .coupon-card { background: #f8fafc; border: 1.5px dashed #93c5fd; border-radius: 12px; padding: 20px; margin-bottom: 24px; }
+    .coupon-card-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+    .coupon-input-group { display: flex; gap: 8px; }
+    .coupon-input-group input { flex: 1; padding: 12px 14px; border: 1.5px solid #cbd5e1; border-radius: 8px; font-size: 14px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
+    .coupon-input-group button { padding: 12px 20px; background: #2563eb; color: white; border: none; border-radius: 8px; font-weight: 700; cursor: pointer; transition: 0.2s; }
+    .coupon-input-group button:hover { background: #1d4ed8; }
+    .coupon-msg { font-size: 13px; font-weight: 600; margin-top: 8px; }
+    .coupon-msg.success { color: #059669; }
+    .coupon-msg.error { color: #dc2626; }
+    .active-coupons-hint { font-size: 12.5px; color: #64748b; margin-top: 10px; }
+    .active-coupons-hint code { background: #eff6ff; color: #2563eb; font-weight: 700; padding: 2px 6px; border-radius: 4px; cursor: pointer; }
+
+    /* Order Summary */
+    .summary-line { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid #f1f5f9; font-size: 14.5px; color: #475569; }
+    .summary-line.total { border-bottom: none; border-top: 2px solid #e2e8f0; padding-top: 16px; margin-top: 6px; font-size: 19px; font-weight: 800; color: #0f172a; }
+    .strike-price { text-decoration: line-through; color: #94a3b8; margin-right: 8px; font-size: 14px; }
+
+    /* Value Bullets above Payment */
+    .tier-value-bullets { list-style: none; padding: 0; margin: 20px 0; display: flex; flex-direction: column; gap: 9px; }
+    .tier-value-bullets li { display: flex; gap: 8px; font-size: 13.5px; color: #334155; line-height: 1.45; }
+    .bullet-highlight { font-weight: 700; color: #2563eb; }
+
+    /* Perks Banner */
+    .perks-banner { background: linear-gradient(135deg, #eff6ff, #f0fdf4); border: 1px solid #bfdbfe; border-radius: 12px; padding: 16px; margin-top: 20px; }
+    .perk-row { display: flex; gap: 10px; align-items: flex-start; margin-bottom: 10px; font-size: 13px; color: #1e293b; }
+    .perk-row:last-child { margin-bottom: 0; }
+    .perk-icon { font-size: 16px; flex-shrink: 0; }
+
+    /* Free resources banner */
+    .free-try-callout { background: white; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 16px 20px; margin-top: 20px; display: flex; align-items: center; justify-content: space-between; gap: 14px; }
+    .free-try-callout p { font-size: 13px; color: #64748b; margin: 0; }
+
+    @media (max-width: 800px) {
+      .checkout-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar" id="announcementBar">
+  <div class="announcement-inner">
+    <span>🔥 <strong>FLASH DEAL:</strong> Apply code <strong>SCORE70</strong> for 70% OFF! &nbsp;</span>
+    <a href="index.html#pricing" class="announcement-cta">View All Plans →</a>
+  </div>
+  <button class="announcement-close" onclick="this.parentElement.style.display='none'">✕</button>
+</div>
+
+<!-- Header -->
+<header class="header" id="mainHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link">
+      <div class="logo">
+        <div class="logo-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#2563eb"/><path d="M7 14h14M14 7v14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+        <div class="logo-text"><span class="logo-name">EduPro Suite</span><span class="logo-tag">Secure Checkout</span></div>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="ap-stats.html" class="nav-item">AP® Statistics</a>
+      <a href="ap-calc.html" class="nav-item">AP® Calculus</a>
+      <a href="trade-math.html" class="nav-item">Trade Math</a>
+      <a href="affiliates.html" class="nav-item">Affiliate (40%)</a>
+    </nav>
+    <div class="header-actions">
+      <a href="flashcards-ap-stats.html" class="btn btn-ghost btn-sm">🃏 30 Free Cards</a>
+      <a href="mock-test-ap-stats.html" class="btn btn-primary btn-sm">📝 1 Free Test</a>
+    </div>
+  </div>
+</header>
+
+<div class="checkout-wrap">
+  <div style="margin-bottom: 24px;">
+    <a href="index.html" style="color:#2563eb; text-decoration:none; font-size:13.5px; font-weight:600;">← Back to Home & Courses</a>
+    <h1 style="font-family:'Space Grotesk',sans-serif; font-size:30px; font-weight:800; color:#0f172a; margin-top:8px;">Instant Secure Checkout</h1>
+    <p style="color:#64748b; font-size:15px;">Complete enrollment below. Apply your coupon code for instant savings.</p>
+  </div>
+
+  <div class="checkout-grid">
+    <!-- Left Column: Item Selection & Coupon -->
+    <div>
+      <div class="checkout-box">
+        <h2 class="checkout-title">1. Select Your Exam Prep Plan</h2>
+        
+        <div class="item-select-group">
+          <label class="item-label" for="productSelect">Select Course / Plan:</label>
+          <select id="productSelect" class="product-select-custom" onchange="onProductChange()">
+            <optgroup label="AP® Statistics 2027">
+              <option value="ap-stats-pro" data-price="19.00" data-name="AP® Statistics Score-5 Pro (Monthly)" data-period="/month">AP® Statistics Score-5 Pro — $19/mo</option>
+              <option value="ap-stats-lifetime" data-price="39.00" data-name="AP® Statistics Score-5 Lifetime Access" data-period="one-time">AP® Statistics Score-5 Lifetime — $39 one-time</option>
+            </optgroup>
+            <optgroup label="AP® Calculus AB & BC 2027">
+              <option value="ap-calc-pro" data-price="19.00" data-name="AP® Calculus AB & BC Score-5 Pro (Monthly)" data-period="/month">AP® Calculus AB & BC Score-5 Pro — $19/mo</option>
+              <option value="ap-calc-lifetime" data-price="39.00" data-name="AP® Calculus Score-5 Lifetime Access" data-period="one-time">AP® Calculus Score-5 Lifetime — $39 one-time</option>
+            </optgroup>
+            <optgroup label="Journeyman Trade Math">
+              <option value="trade-pro" data-price="34.00" data-name="Plumber & Pipefitter Journeyman Math Pack" data-period="one-time">Plumber & Pipefitter Journeyman Math Pack — $34 one-time</option>
+              <option value="ti84" data-price="9.99" data-name="TI-84 Plus CE Rapid Playbook" data-period="one-time">TI-84 Plus CE Rapid Playbook — $9.99 one-time</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <!-- Coupon Application Section -->
+        <div class="coupon-card">
+          <div class="coupon-card-header">
+            <span style="font-weight:700; font-size:14px; color:#1e3a8a;">🏷️ Have a Coupon Code?</span>
+            <span style="font-size:12px; color:#2563eb; font-weight:600;">Instant Discount</span>
+          </div>
+          <div class="coupon-input-group">
+            <input type="text" id="couponInput" placeholder="Enter coupon code (e.g. SCORE70)" value="SCORE70">
+            <button type="button" onclick="applyCoupon()">Apply</button>
+          </div>
+          <div id="couponMessage" class="coupon-msg"></div>
+          <div class="active-coupons-hint">
+            Available codes: <code onclick="setCoupon('SCORE70')">SCORE70</code> (70% Off Flash) &nbsp;|&nbsp; <code onclick="setCoupon('STUDY15')">STUDY15</code> (15% Off Sitewide)
+          </div>
+        </div>
+
+        <!-- Bullet Highlights on Resources & Referral -->
+        <h3 style="font-size:15px; font-weight:800; color:#0f172a; margin-top:24px; text-transform:uppercase; letter-spacing:0.5px;">Plan Inclusions & Benefits:</h3>
+        <ul class="tier-value-bullets">
+          <li><span>✅</span> <span><strong>Full Exam Vault:</strong> 25 Full-Length Mock Exams + 709 pages authentic scoring rubrics.</span></li>
+          <li><span>✅</span> <span><strong>Digital Simulator:</strong> Unlimited Bluebook timed exam practice sessions with auto-scoring.</span></li>
+          <li><span>✅</span> <span><strong>High-Yield Tools:</strong> 500+ Digital Flashcards, Sentence Grader Frames & Decision Flowcharts.</span></li>
+          <li><span>🎁</span> <span><strong class="bullet-highlight">Refer-a-Friend System:</strong> Share your unique referral link after checkout to earn <strong>25% recurring discount</strong> per friend enrolled!</span></li>
+          <li><span>💰</span> <span><strong class="bullet-highlight">Affiliate Partner Rights:</strong> Option to promote as creator/tutor and earn <strong>40% cash commission</strong> per sale!</span></li>
+          <li><span>🛡️</span> <span><strong>Risk-Free Guarantee:</strong> 30-Day Money-Back Guarantee. No questions asked.</span></li>
+        </ul>
+
+      </div>
+
+      <!-- Free trial callout -->
+      <div class="free-try-callout">
+        <div>
+          <strong style="display:block; font-size:13.5px; color:#0f172a;">Want to test without paying?</strong>
+          <p>Practice 30 flashcards, 1 mock exam & review sheet 100% free without signup.</p>
+        </div>
+        <a href="mock-test-ap-stats.html" class="btn btn-outline btn-sm">Try Free First →</a>
+      </div>
+    </div>
+
+    <!-- Right Column: Order Summary & PayPal Checkout -->
+    <div>
+      <div class="checkout-box" style="border-color:#2563eb; position:sticky; top:88px;">
+        <h2 class="checkout-title">2. Order Summary</h2>
+        
+        <div class="summary-line">
+          <span id="sumItemName">AP® Statistics Score-5 Pro</span>
+          <span id="sumOriginalPrice">$19.00</span>
+        </div>
+        <div class="summary-line" id="discountRow" style="color:#059669; font-weight:600;">
+          <span>Coupon Discount (<span id="couponPercentBadge">70%</span>)</span>
+          <span id="sumDiscountAmount">-$13.30</span>
+        </div>
+        <div class="summary-line">
+          <span>Taxes & Processing Fees</span>
+          <span style="color:#059669; font-weight:700;">$0.00 (Free)</span>
+        </div>
+        <div class="summary-line total">
+          <span>Total Due Today:</span>
+          <div>
+            <span class="strike-price" id="strikeOriginal">$19.00</span>
+            <span id="sumFinalTotal" style="color:#2563eb;">$5.70</span>
+            <span id="sumPeriodNote" style="font-size:12px; font-weight:500; color:#64748b;">/month</span>
+          </div>
+        </div>
+
+        <div style="margin: 24px 0 12px;">
+          <label class="item-label">Pay Securely via PayPal or Debit/Credit Card:</label>
+          <div id="paypal-checkout-container" style="min-height: 120px;"></div>
+        </div>
+
+        <div class="perks-banner">
+          <div class="perk-row">
+            <span class="perk-icon">🔒</span>
+            <span><strong>256-Bit SSL Encryption:</strong> Handled securely by PayPal. EduPro Suite never stores card details.</span>
+          </div>
+          <div class="perk-row">
+            <span class="perk-icon">⚡</span>
+            <span><strong>Instant Delivery:</strong> Immediate access links dispatched to your PayPal email.</span>
+          </div>
+          <div class="perk-row">
+            <span class="perk-icon">🤝</span>
+            <span><strong>25% Referral Credit:</strong> Referral dashboard link generated instantly upon purchase.</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Supported coupon codes
+const COUPONS = {
+  'SCORE70': 0.70,
+  'STUDY15': 0.15
+};
+
+let currentDiscountRate = 0.70; // Default active 70% flash deal
+let currentCode = 'SCORE70';
+
+// Check URL Params (e.g., checkout.html?item=ap-calc-lifetime&coupon=SCORE70)
+window.addEventListener('DOMContentLoaded', () => {
+  const urlParams = new URLSearchParams(window.location.search);
+  const itemParam = urlParams.get('item');
+  const couponParam = urlParams.get('coupon');
+
+  if (itemParam) {
+    const select = document.getElementById('productSelect');
+    if (select.querySelector(`option[value="${itemParam}"]`)) {
+      select.value = itemParam;
+    }
+  }
+
+  if (couponParam && COUPONS[couponParam.toUpperCase()]) {
+    currentCode = couponParam.toUpperCase();
+    currentDiscountRate = COUPONS[currentCode];
+    document.getElementById('couponInput').value = currentCode;
+  }
+
+  applyCoupon();
+});
+
+function setCoupon(code) {
+  document.getElementById('couponInput').value = code;
+  applyCoupon();
+}
+
+function applyCoupon() {
+  const inputCode = document.getElementById('couponInput').value.trim().toUpperCase();
+  const msgEl = document.getElementById('couponMessage');
+
+  if (COUPONS[inputCode]) {
+    currentCode = inputCode;
+    currentDiscountRate = COUPONS[inputCode];
+    msgEl.className = 'coupon-msg success';
+    msgEl.textContent = `✅ Code "${currentCode}" applied! ${Math.round(currentDiscountRate * 100)}% Discount activated.`;
+  } else if (inputCode === '') {
+    currentDiscountRate = 0;
+    currentCode = '';
+    msgEl.textContent = '';
+  } else {
+    currentDiscountRate = 0;
+    currentCode = '';
+    msgEl.className = 'coupon-msg error';
+    msgEl.textContent = `❌ Invalid coupon code. Try SCORE70 (70% off) or STUDY15 (15% off).`;
+  }
+
+  calculateTotal();
+}
+
+function onProductChange() {
+  calculateTotal();
+}
+
+function calculateTotal() {
+  const select = document.getElementById('productSelect');
+  const selectedOpt = select.options[select.selectedIndex];
+  const basePrice = parseFloat(selectedOpt.getAttribute('data-price'));
+  const itemName = selectedOpt.getAttribute('data-name');
+  const period = selectedOpt.getAttribute('data-period');
+
+  const discountAmount = basePrice * currentDiscountRate;
+  const finalPrice = Math.max(0.99, basePrice - discountAmount);
+
+  document.getElementById('sumItemName').textContent = itemName;
+  document.getElementById('sumOriginalPrice').textContent = `$${basePrice.toFixed(2)}`;
+
+  const discountRow = document.getElementById('discountRow');
+  const strikeOriginal = document.getElementById('strikeOriginal');
+
+  if (currentDiscountRate > 0) {
+    discountRow.style.display = 'flex';
+    document.getElementById('couponPercentBadge').textContent = `${Math.round(currentDiscountRate * 100)}%`;
+    document.getElementById('sumDiscountAmount').textContent = `-$${discountAmount.toFixed(2)}`;
+    strikeOriginal.style.display = 'inline';
+    strikeOriginal.textContent = `$${basePrice.toFixed(2)}`;
+  } else {
+    discountRow.style.display = 'none';
+    strikeOriginal.style.display = 'none';
+  }
+
+  document.getElementById('sumFinalTotal').textContent = `$${finalPrice.toFixed(2)}`;
+  document.getElementById('sumPeriodNote').textContent = period === '/month' ? '/month' : ' one-time';
+
+  renderPayPalButton(finalPrice.toFixed(2), itemName);
+}
+
+let paypalButtonsInstance = null;
+
+function renderPayPalButton(amountStr, descriptionStr) {
+  if (typeof paypal === 'undefined') return;
+
+  const container = document.getElementById('paypal-checkout-container');
+  container.innerHTML = '';
+
+  paypal.Buttons({
+    style: {
+      layout: 'vertical',
+      color: 'gold',
+      shape: 'rect',
+      label: 'pay',
+      height: 44
+    },
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          description: descriptionStr,
+          amount: {
+            value: amountStr,
+            currency_code: 'USD'
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        container.innerHTML = `
+          <div style="background:#ecfdf5; border:2px solid #10b981; border-radius:12px; padding:24px; text-align:center;">
+            <div style="font-size:36px; margin-bottom:8px;">🎉</div>
+            <h3 style="color:#065f46; font-size:20px; font-weight:800; margin-bottom:6px;">Payment Successful!</h3>
+            <p style="color:#047857; font-size:14px; margin-bottom:14px;">
+              Thank you, <strong>${details.payer.name.given_name || 'Student'}</strong>! Your vault has been unlocked.
+            </p>
+            <div style="background:white; border-radius:8px; padding:12px; font-size:13px; color:#334155; margin-bottom:14px;">
+              Access instructions sent to: <strong>${details.payer.email_address}</strong><br>
+              Order ID: <code>${details.id}</code>
+            </div>
+            <div style="background:#eff6ff; border:1px dashed #3b82f6; border-radius:8px; padding:12px; font-size:13px; color:#1e40af;">
+              🎁 <strong>Your 25% Referral Link:</strong><br>
+              <code>https://eduprosuite.pro/?ref=${details.id.substring(0,8)}</code>
+            </div>
+          </div>
+        `;
+      });
+    },
+    onError: function(err) {
+      console.error(err);
+      alert('Payment encountered an issue. Please try another card or email support@eduprosuite.pro.');
+    }
+  }).render('#paypal-checkout-container');
+}
+
+// Initial calculation
+window.addEventListener('load', () => {
+  calculateTotal();
+});
+</script>
+</body>
+</html>
