@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Exam Mastery Textbooks & Study Guides | EduPro Suite Vault</title>
+  <meta name="description" content="Official 300+ page AP Statistics, AP Calculus & Trade Licensing textbooks. Complete College Board CED blueprints, 500+ MCQs, worked FRQ proofs, and instant PDF downloads.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='8' fill='%232563eb'/><text y='22' x='4' font-size='18' fill='white' font-weight='bold'>E</text></svg>">
+  <style>
+    .books-header {
+      background: linear-gradient(135deg, #0b0f19 0%, #1e1b4b 50%, #0f172a 100%);
+      color: white;
+      padding: 70px 20px 50px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .books-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid rgba(245, 158, 11, 0.4);
+      color: #fbbf24;
+      font-size: 12.5px;
+      font-weight: 700;
+      padding: 6px 16px;
+      border-radius: 999px;
+      margin-bottom: 18px;
+    }
+    .books-title {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .books-sub {
+      color: #94a3b8;
+      max-width: 680px;
+      margin: 0 auto 28px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .books-filter-bar {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #e2e8f0;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: #2563eb;
+      border-color: #3b82f6;
+      color: white;
+    }
+    .books-grid-section {
+      max-width: 1240px;
+      margin: -20px auto 60px;
+      padding: 0 20px;
+    }
+    .books-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 30px;
+    }
+    .book-card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .book-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 32px rgba(37, 99, 235, 0.12);
+      border-color: #93c5fd;
+    }
+    .book-cover-wrap {
+      background: #0f172a;
+      padding: 30px 20px 25px;
+      text-align: center;
+      position: relative;
+    }
+    .book-cover-img {
+      max-width: 220px;
+      height: 310px;
+      object-fit: cover;
+      border-radius: 6px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.4), 0 0 0 1px rgba(255,255,255,0.15);
+      transition: transform 0.3s;
+    }
+    .book-card:hover .book-cover-img {
+      transform: scale(1.03) rotate(-0.5deg);
+    }
+    .book-badge-ribbon {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: #ea580c;
+      color: white;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 4px 10px;
+      border-radius: 4px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .book-meta-strip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #f8fafc;
+      padding: 8px 18px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 12px;
+      font-weight: 600;
+      color: #64748b;
+    }
+    .book-meta-strip span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .book-body {
+      padding: 22px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .book-series-tag {
+      font-size: 11.5px;
+      font-weight: 700;
+      color: #2563eb;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .book-title {
+      font-size: 19px;
+      font-weight: 800;
+      color: #0f172a;
+      line-height: 1.35;
+      margin-bottom: 10px;
+    }
+    .book-desc {
+      font-size: 13.5px;
+      color: #475569;
+      line-height: 1.55;
+      margin-bottom: 16px;
+      flex-grow: 1;
+    }
+    .book-highlights {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 18px 0;
+      font-size: 12.5px;
+      color: #334155;
+    }
+    .book-highlights li {
+      margin-bottom: 6px;
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+    }
+    .book-highlights li::before {
+      content: "✓";
+      color: #10b981;
+      font-weight: bold;
+    }
+    .book-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 14px;
+      border-top: 1px solid #f1f5f9;
+    }
+    .book-pricing {
+      display: flex;
+      flex-direction: column;
+    }
+    .book-price-old {
+      font-size: 13px;
+      color: #94a3b8;
+      text-decoration: line-through;
+    }
+    .book-price-now {
+      font-size: 24px;
+      font-weight: 900;
+      color: #0f172a;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+    .book-buy-btn {
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-size: 13.5px;
+      font-weight: 700;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s, transform 0.15s;
+    }
+    .book-buy-btn:hover {
+      background: #1d4ed8;
+      transform: scale(1.02);
+    }
+  </style>
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar" id="announcementBar">
+  <div class="announcement-inner">
+    <span class="announcement-emoji">🔥</span>
+    <span><strong>SPRING EXAM SEASON:</strong> Get 70% OFF all Books & Exam Pass Vaults &nbsp;</span>
+    <a href="#books" class="announcement-cta">Explore Books Below →</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link">
+      <div class="logo">
+        <div class="logo-icon">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#2563eb"/><path d="M7 14h14M14 7v14" stroke="white" stroke-width="2.5" stroke-linecap="round"/><circle cx="14" cy="14" r="4" fill="white" opacity="0.25"/></svg>
+        </div>
+        <div class="logo-text">
+          <span class="logo-name">EduPro Suite</span>
+          <span class="logo-tag">Exam Prep Platform</span>
+        </div>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="books.html" class="nav-item active">📚 Books Vault</a>
+      <a href="ap-stats.html" class="nav-item">AP® Stats</a>
+      <a href="ap-calc.html" class="nav-item">AP® Calculus</a>
+      <a href="trade-math.html" class="nav-item">Trade Math</a>
+      <a href="affiliates.html" class="nav-item">Partners</a>
+    </nav>
+    <div class="header-actions">
+      <a href="ap-stats.html" class="btn btn-primary btn-sm">Start Learning</a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section class="books-header">
+  <div class="books-badge">⭐ 100% COLLEGE BOARD CED ALIGNED • 300+ PAGES EACH</div>
+  <h1 class="books-title">Mastery Textbooks & Exam Blueprints</h1>
+  <p class="books-sub">
+    Rigorous, publication-grade textbooks verified by mathematical proof engines. Every volume features complete syllabus coverage, step-by-step worked examples, and full distractor rationales.
+  </p>
+  <div class="books-filter-bar">
+    <button class="filter-btn active" onclick="filterBooks('all')">All Volumes (6)</button>
+    <button class="filter-btn" onclick="filterBooks('stats')">AP® Statistics (3)</button>
+    <button class="filter-btn" onclick="filterBooks('calc')">AP® Calculus (3)</button>
+  </div>
+</section>
+
+<!-- Books Grid Section -->
+<section class="books-grid-section" id="books">
+  <div class="books-grid">
+
+    <!-- BOOK 1: AP Stats Formula & Inference Guide -->
+    <div class="book-card" data-category="stats">
+      <div class="book-cover-wrap">
+        <span class="book-badge-ribbon">Vol 1 • Bestseller</span>
+        <img src="images/books/cover_stats_book1.png" alt="AP Statistics Formula and Inference Guide" class="book-cover-img" loading="lazy">
+      </div>
+      <div class="book-meta-strip">
+        <span>📄 <strong>312 Pages</strong></span>
+        <span>🎯 <strong>500+ MCQs</strong></span>
+        <span>⚡ <strong>Instant PDF</strong></span>
+      </div>
+      <div class="book-body">
+        <span class="book-series-tag">AP® Statistics Series</span>
+        <h2 class="book-title">Formula, Inference & Calculator Mastery Guide</h2>
+        <p class="book-desc">
+          The ultimate reference companion. Step-by-step hypothesis testing conditions (Random, 10%, Normal), TI-84 calculator keystrokes, and complete distractor analysis.
+        </p>
+        <ul class="book-highlights">
+          <li>Complete 9-Unit Inference Decision Matrix</li>
+          <li>Type I vs Type II Error & Power Explanations</li>
+          <li>FRQ Scoring Keys with College Board CED Rubrics</li>
+        </ul>
+        <div class="book-footer">
+          <div class="book-pricing">
+            <span class="book-price-old">$39.99</span>
+            <span class="book-price-now">$14.99</span>
+          </div>
+          <a href="ap-stats.html" class="book-buy-btn">Get Book Access →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOK 2: AP Stats Prep Book 2027 -->
+    <div class="book-card" data-category="stats">
+      <div class="book-cover-wrap">
+        <span class="book-badge-ribbon">Vol 2 • 2027 Ready</span>
+        <img src="images/books/cover_stats_book2.png" alt="AP Statistics Prep Book 2027" class="book-cover-img" loading="lazy">
+      </div>
+      <div class="book-meta-strip">
+        <span>📄 <strong>328 Pages</strong></span>
+        <span>🎯 <strong>6 Full Exams</strong></span>
+        <span>⚡ <strong>Instant PDF</strong></span>
+      </div>
+      <div class="book-body">
+        <span class="book-series-tag">AP® Statistics Series</span>
+        <h2 class="book-title">Comprehensive Prep Book & Exam Companion</h2>
+        <p class="book-desc">
+          Structured diagnostic study architecture. Designed for self-study students and teachers seeking exhaustive CED unit drills and authentic FRQ frameworks.
+        </p>
+        <ul class="book-highlights">
+          <li>Categorical & Quantitative Data Deep Dives</li>
+          <li>Binomial, Geometric, Normal & Sampling Distributions</li>
+          <li>Investigative Task (FRQ Question 6) Blueprint</li>
+        </ul>
+        <div class="book-footer">
+          <div class="book-pricing">
+            <span class="book-price-old">$44.99</span>
+            <span class="book-price-now">$16.99</span>
+          </div>
+          <a href="ap-stats.html" class="book-buy-btn">Get Book Access →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOK 3: AP Stats Practice Companion -->
+    <div class="book-card" data-category="stats">
+      <div class="book-cover-wrap">
+        <span class="book-badge-ribbon">Vol 3 • All-in-One</span>
+        <img src="images/books/cover_stats_book3.png" alt="AP Statistics Practice Companion" class="book-cover-img" loading="lazy">
+      </div>
+      <div class="book-meta-strip">
+        <span>📄 <strong>340 Pages</strong></span>
+        <span>🎯 <strong>750+ Drills</strong></span>
+        <span>⚡ <strong>Instant PDF</strong></span>
+      </div>
+      <div class="book-body">
+        <span class="book-series-tag">AP® Statistics Series</span>
+        <h2 class="book-title">All-in-One Practice Companion & Workbook</h2>
+        <p class="book-desc">
+          High-yield practice workbook packed with verified problem sets, formula reference sheets, and interactive Bluebook simulation tie-ins.
+        </p>
+        <ul class="book-highlights">
+          <li>Full Confidence Interval & Significance Test Drills</li>
+          <li>Chi-Square & Linear Regression Inference Proofs</li>
+          <li>Detailed Distractor Rationales (Why B is wrong, why C is right)</li>
+        </ul>
+        <div class="book-footer">
+          <div class="book-pricing">
+            <span class="book-price-old">$49.99</span>
+            <span class="book-price-now">$17.99</span>
+          </div>
+          <a href="ap-stats.html" class="book-buy-btn">Get Book Access →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOK 4: AP Calculus Formula Guide -->
+    <div class="book-card" data-category="calc">
+      <div class="book-cover-wrap">
+        <span class="book-badge-ribbon">Vol 1 • Calculus AB/BC</span>
+        <img src="images/books/cover_calc_book1.png" alt="AP Calculus Formula Guide" class="book-cover-img" loading="lazy">
+      </div>
+      <div class="book-meta-strip">
+        <span>📄 <strong>308 Pages</strong></span>
+        <span>🎯 <strong>450+ Theorems</strong></span>
+        <span>⚡ <strong>Instant PDF</strong></span>
+      </div>
+      <div class="book-body">
+        <span class="book-series-tag">AP® Calculus Series</span>
+        <h2 class="book-title">Formula & Theorem Visual Mastery Guide</h2>
+        <p class="book-desc">
+          Every limit, derivative rule, and integration technique explained intuitively. Features EVT, IVT, MVT conditions, and polar/parametric formulas.
+        </p>
+        <ul class="book-highlights">
+          <li>Derivatives: Chain, Product, Quotient & Implicit</li>
+          <li>Integrals: U-Sub, By Parts, Partial Fractions & Trig Sub</li>
+          <li>Taylor & Maclaurin Series Convergence Tests (BC)</li>
+        </ul>
+        <div class="book-footer">
+          <div class="book-pricing">
+            <span class="book-price-old">$39.99</span>
+            <span class="book-price-now">$14.99</span>
+          </div>
+          <a href="ap-calc.html" class="book-buy-btn">Get Book Access →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOK 5: AP Calculus Prep Book 2027 -->
+    <div class="book-card" data-category="calc">
+      <div class="book-cover-wrap">
+        <span class="book-badge-ribbon">Vol 2 • 2027 Edition</span>
+        <img src="images/books/cover_calc_book2.png" alt="AP Calculus Prep Book 2027" class="book-cover-img" loading="lazy">
+      </div>
+      <div class="book-meta-strip">
+        <span>📄 <strong>336 Pages</strong></span>
+        <span>🎯 <strong>5 Full Exams</strong></span>
+        <span>⚡ <strong>Instant PDF</strong></span>
+      </div>
+      <div class="book-body">
+        <span class="book-series-tag">AP® Calculus Series</span>
+        <h2 class="book-title">Comprehensive Prep Book & FRQ Scoring Keys</h2>
+        <p class="book-desc">
+          Complete self-study roadmap covering all 10 College Board CED units with authentic FRQ scoring breakdowns and common student trap alerts.
+        </p>
+        <ul class="book-highlights">
+          <li>Related Rates & Optimization Step-by-Step Blueprints</li>
+          <li>Area Between Curves, Disk & Washer Volumes</li>
+          <li>Differential Equations & Euler's Method (BC)</li>
+        </ul>
+        <div class="book-footer">
+          <div class="book-pricing">
+            <span class="book-price-old">$44.99</span>
+            <span class="book-price-now">$16.99</span>
+          </div>
+          <a href="ap-calc.html" class="book-buy-btn">Get Book Access →</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOK 6: AP Calculus Practice Exams -->
+    <div class="book-card" data-category="calc">
+      <div class="book-cover-wrap">
+        <span class="book-badge-ribbon">Vol 3 • Exam Vault</span>
+        <img src="images/books/cover_calc_book3.png" alt="AP Calculus Practice Exams" class="book-cover-img" loading="lazy">
+      </div>
+      <div class="book-meta-strip">
+        <span>📄 <strong>352 Pages</strong></span>
+        <span>🎯 <strong>8 Full Exams</strong></span>
+        <span>⚡ <strong>Instant PDF</strong></span>
+      </div>
+      <div class="book-body">
+        <span class="book-series-tag">AP® Calculus Series</span>
+        <h2 class="book-title">Full-Length Practice Exams & Solutions</h2>
+        <p class="book-desc">
+          8 simulated full-length examinations (Section I No-Calc & Calc Active, plus Section II FRQs) with line-by-line grading criteria.
+        </p>
+        <ul class="book-highlights">
+          <li>Realistic College Board Question Difficulty & Layout</li>
+          <li>Full Scoring Conversion Tables (Predict your 1 to 5 score)</li>
+          <li>Step-by-Step Solutions Verified by Analytical Solvers</li>
+        </ul>
+        <div class="book-footer">
+          <div class="book-pricing">
+            <span class="book-price-old">$49.99</span>
+            <span class="book-price-now">$17.99</span>
+          </div>
+          <a href="ap-calc.html" class="book-buy-btn">Get Book Access →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-bottom">
+    <p>© 2026 EduPro Suite. All rights reserved. Not affiliated with or endorsed by College Board or ACT.</p>
+    <div class="footer-legal">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+      <a href="books.html">Textbooks Catalog</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  function filterBooks(category) {
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => btn.classList.remove('active'));
+    event.target.classList.add('active');
+
+    const cards = document.querySelectorAll('.book-card');
+    cards.forEach(card => {
+      if (category === 'all' || card.getAttribute('data-category') === category) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
