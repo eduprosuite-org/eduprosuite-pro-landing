@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AP® Statistics 2027 Score-5 Vault | EduPro Suite</title>
+  <meta name="description" content="Score 5 on AP® Statistics with 25 full-length mock exams, 500+ flashcards, Bluebook simulator and inference decision trees. 7-Day Free Trial. No credit card.">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="product-page.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- PayPal JS SDK -->
+  <script src="https://www.paypal.com/sdk/js?client-id=Afa7sdsBIdHlh53dXfB0jEJvhXgDmrMe1FZrRaLd3xgDE7DrCuHSBiJPvogxFtuhw67KlCS8YuU0RCmI&currency=USD&intent=capture" defer></script>
+</head>
+<body>
+
+<!-- Announcement Bar -->
+<div class="announcement-bar" id="announcementBar">
+  <div class="announcement-inner">
+    <span>🔥 <strong>AP® Stats Vault — 70% OFF</strong> ends in &nbsp;</span>
+    <div class="countdown-mini" id="countdown">
+      <span class="cd-unit"><span id="cd-days">13</span><small>d</small></span><span class="cd-sep">:</span>
+      <span class="cd-unit"><span id="cd-hours">23</span><small>h</small></span><span class="cd-sep">:</span>
+      <span class="cd-unit"><span id="cd-mins">59</span><small>m</small></span><span class="cd-sep">:</span>
+      <span class="cd-unit"><span id="cd-secs">59</span><small>s</small></span>
+    </div>
+    <a href="#pricing" class="announcement-cta">Claim 70% Off →</a>
+  </div>
+  <button class="announcement-close" onclick="this.parentElement.style.display='none'">✕</button>
+</div>
+
+<!-- Header -->
+<header class="header" id="mainHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="logo-link">
+      <div class="logo">
+        <div class="logo-icon"><svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#2563eb"/><path d="M7 14h14M14 7v14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg></div>
+        <div class="logo-text"><span class="logo-name">EduPro Suite</span><span class="logo-tag">Exam Prep Platform</span></div>
+      </div>
+    </a>
+    <nav class="main-nav">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="ap-stats.html" class="nav-item active">AP® Statistics</a>
+      <a href="ap-calc.html" class="nav-item">AP® Calculus</a>
+      <a href="trade-math.html" class="nav-item">Trade Math</a>
+      <a href="index.html#pricing" class="nav-item">Pricing</a>
+      <a href="affiliates.html" class="nav-item">Affiliates</a>
+    </nav>
+    <div class="header-actions">
+      <a href="#free-trial" class="btn btn-ghost btn-sm">Free Trial</a>
+      <a href="#pricing" class="btn btn-primary btn-sm"><span class="btn-badge">70% Off</span> Buy Now</a>
+      <button class="mobile-menu-btn" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="product-layout">
+  <!-- LEFT SIDEBAR -->
+  <aside class="product-sidebar">
+    <div class="sidebar-section">
+      <div class="sidebar-product-badge blue">📊 AP® Statistics 2027</div>
+      <h3 class="sidebar-title">Score-5 Vault</h3>
+      <div class="sidebar-price">
+        <span class="sidebar-price-old">$65</span>
+        <span class="sidebar-price-main">$19</span>
+        <span class="sidebar-price-period">/month</span>
+      </div>
+      <div class="sidebar-trial">🎁 7-Day Free Trial · No Card Required</div>
+      <a href="#pricing" class="btn btn-primary btn-block sidebar-cta">Get Instant Access →</a>
+    </div>
+
+    <!-- REFER & EARN SIDEBAR WIDGET -->
+    <div class="sidebar-section refer-widget">
+      <div class="refer-widget-header">
+        <span class="refer-icon">🎁</span>
+        <div>
+          <strong>Refer & Earn 25% Off</strong>
+          <small>Share → Friend joins → You save</small>
+        </div>
+      </div>
+      <div class="refer-widget-stats">
+        <div class="rws"><strong>25%</strong><small>Your discount per referral</small></div>
+        <div class="rws"><strong>10%</strong><small>Friend's first-order saving</small></div>
+      </div>
+      <a href="index.html#refer" class="btn btn-outline btn-sm btn-block mt-8">Get My Referral Link →</a>
+    </div>
+
+    <!-- AFFILIATE SIDEBAR WIDGET -->
+    <div class="sidebar-section affiliate-widget">
+      <div class="affiliate-widget-header">
+        <span>💰</span>
+        <strong>Earn 40% Commission</strong>
+      </div>
+      <p>Are you a tutor, blogger, or YouTuber? Earn <strong>40% cash commission</strong> on every AP® Stats sale you refer.</p>
+      <a href="affiliates.html" class="btn btn-outline btn-sm btn-block">Join Affiliate Program →</a>
+    </div>
+
+    <!-- COUPON WIDGET -->
+    <div class="sidebar-section coupon-widget">
+      <div class="coupon-widget-label">🏷️ Active Discount Codes</div>
+      <div class="coupon-item">
+        <code class="coupon-code" onclick="copyCoupon(this)" title="Click to copy">SCORE70</code>
+        <span>= <strong>70% Off</strong> (Limited!)</span>
+      </div>
+      <div class="coupon-item">
+        <code class="coupon-code" onclick="copyCoupon(this)" title="Click to copy">STUDY15</code>
+        <span>= <strong>15% Off</strong> (Anytime)</span>
+      </div>
+      <div class="copy-hint">Click code to copy</div>
+    </div>
+
+    <!-- Table of Contents -->
+    <div class="sidebar-section">
+      <div class="sidebar-toc-title">📋 On This Page</div>
+      <ul class="sidebar-toc">
+        <li><a href="#overview">📊 What's Included</a></li>
+        <li><a href="#free-trial">🎁 Free Resources</a></li>
+        <li><a href="#pricing">💰 Buy / Start Trial</a></li>
+        <li><a href="#reviews">⭐ Reviews</a></li>
+        <li><a href="#faq">❓ FAQ</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="product-main">
+
+    <!-- Direct Free Tools Quick Bar (No Signup Required) -->
+    <div class="free-tools-bar">
+      <div class="free-tools-label">⚡ Direct Free Tools (No Signup Required):</div>
+      <div class="free-tools-buttons">
+        <a href="flashcards-ap-stats.html" class="btn-free-tool">🃏 30 Free Flashcards</a>
+        <a href="mock-test-ap-stats.html" class="btn-free-tool">📝 1 Diagnostic Mock Exam</a>
+        <a href="review-sheet-ap-stats.html" class="btn-free-tool">📄 Virtual Review Sheet</a>
+      </div>
+    </div>
+
+    <!-- HERO -->
+    <section class="product-hero blue-hero">
+      <div class="product-hero-inner">
+        <div class="product-hero-left">
+          <div class="trust-badges-row">
+            <div class="trust-badge">⭐⭐⭐⭐⭐ 4.9/5 (1,200 students)</div>
+            <div class="trust-badge trust-badge-green">✅ College Board CED 2027</div>
+          </div>
+          <div class="product-exam-tag">AP® Statistics · College Board Aligned 2027</div>
+          <h1 class="product-title">Score 5 on AP® Statistics.<br><span class="hero-highlight">Guaranteed or Money Back.</span></h1>
+          <p class="product-subtitle">The most complete AP® Statistics vault available — 25 full-length mock exams, Bluebook-calibrated digital simulator, inference decision trees, and 500+ flashcards. Built precisely to the 2027 CED rubric.</p>
+          <div class="product-stats-row">
+            <div class="ps"><strong>25</strong><span>Mock Exams</span></div>
+            <div class="ps-div"></div>
+            <div class="ps"><strong>709</strong><span>Pages</span></div>
+            <div class="ps-div"></div>
+            <div class="ps"><strong>500+</strong><span>Flashcards</span></div>
+            <div class="ps-div"></div>
+            <div class="ps"><strong>9</strong><span>AP Units Covered</span></div>
+          </div>
+          <div class="hero-cta-group">
+            <a href="#pricing" class="btn btn-primary btn-lg">🚀 Start 7-Day Free Trial<span class="btn-sub">No credit card required</span></a>
+            <a href="#overview" class="btn btn-outline btn-lg">See What's Inside →</a>
+          </div>
+          <div class="flash-deal-row"><span>⚡</span><span>Code <strong class="coupon-code" onclick="copyCoupon(this)">SCORE70</strong> = 70% Off this week only</span><span class="copy-hint">click to copy</span></div>
+        </div>
+        <div class="product-hero-right">
+          <div class="product-mockup-card">
+            <div class="mockup-cover blue-cover">
+              <div class="mockup-cover-inner">
+                <div class="mc-badge">2027 Edition</div>
+                <div class="mc-title">AP® Statistics Score-5 Master Suite</div>
+                <div class="mc-subtitle">25 Full-Length Exams + Simulator</div>
+                <div class="mc-watermark">EduPro Suite</div>
+                <div class="mc-pages">709 Pages</div>
+              </div>
+            </div>
+            <div class="mockup-details">
+              <div class="mockup-feature">✅ Bluebook Digital Simulator</div>
+              <div class="mockup-feature">✅ All 9 AP® Units Covered</div>
+              <div class="mockup-feature">✅ FRQ Rubric Sentence Frames</div>
+              <div class="mockup-feature">✅ Inference Decision Flowchart</div>
+              <div class="mockup-feature free-feature">🔓 1 Mock Exam FREE (No signup)</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT'S INCLUDED -->
+    <section class="product-section" id="overview">
+      <h2 class="product-section-title">📦 Complete Vault Contents</h2>
+      <div class="included-grid">
+        <div class="included-card">
+          <div class="ic-icon">📝</div>
+          <h4>25 Full-Length Mock Exams</h4>
+          <p>Each exam mirrors College Board format exactly: 40 MCQ + 6 FRQ questions with authentic scoring rubrics. Unit-by-unit difficulty progression.</p>
+        </div>
+        <div class="included-card">
+          <div class="ic-icon">💻</div>
+          <h4>Bluebook Digital Simulator</h4>
+          <p>Timed exam environment matching the real AP® Bluebook interface. Annotate, strike-through, and review — just like exam day.</p>
+        </div>
+        <div class="included-card">
+          <div class="ic-icon">🃏</div>
+          <h4>500+ Digital Flashcards</h4>
+          <p>Comprehensive formula, vocabulary, and concept cards across all 9 units. Includes spaced repetition recommendations.</p>
+        </div>
+        <div class="included-card">
+          <div class="ic-icon">🌳</div>
+          <h4>Inference Decision Flowchart</h4>
+          <p>8-page visual decision tree for every inference procedure. Never confuse a z-test, t-test, chi-square or ANOVA again.</p>
+        </div>
+        <div class="included-card">
+          <div class="ic-icon">📋</div>
+          <h4>FRQ Rubric Sentence Frames</h4>
+          <p>Word-for-word scoring language for every FRQ type. Graders reward these exact phrases — use them to maximize partial credit.</p>
+        </div>
+        <div class="included-card">
+          <div class="ic-icon">📄</div>
+          <h4>Quick Review Cheat Sheet</h4>
+          <p>All 9 units compressed onto 2 lamination-ready pages. Perfect for final-week review and exam morning.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREE RESOURCES -->
+    <section class="product-section bg-light-section" id="free-trial">
+      <h2 class="product-section-title">🎁 Free Resources — Try Before You Buy</h2>
+      <p class="product-section-desc">Experience our high-yield materials right in your browser with zero signup required. Then unlock more with free signup!</p>
+      <div class="free-resources-row">
+        <a href="mock-test-ap-stats.html" style="text-decoration:none; color:inherit;">
+          <div class="free-resource-card" style="cursor:pointer;">
+            <span class="frc-icon">📝</span>
+            <h4>1 Free Mock Exam</h4>
+            <p>Timed Section I & II with authentic College Board rubrics</p>
+            <span class="frc-badge">Take Test Free →</span>
+          </div>
+        </a>
+        <a href="flashcards-ap-stats.html" style="text-decoration:none; color:inherit;">
+          <div class="free-resource-card" style="cursor:pointer;">
+            <span class="frc-icon">🃏</span>
+            <h4>30 Digital Flashcards</h4>
+            <p>Inference & probability cards with interactive flip</p>
+            <span class="frc-badge">Practice 30 Cards →</span>
+          </div>
+        </a>
+        <a href="review-sheet-ap-stats.html" style="text-decoration:none; color:inherit;">
+          <div class="free-resource-card" style="cursor:pointer;">
+            <span class="frc-icon">📄</span>
+            <h4>Virtual Review Sheet</h4>
+            <p>All 9 units one-page lamination reference (watermarked)</p>
+            <span class="frc-badge">View Sheet →</span>
+          </div>
+        </a>
+      </div>
+      <div class="free-signup-form">
+        <h3 style="font-size:18px; font-weight:700; color:#0f172a; margin-bottom:6px;">🎁 Free Signup Bonus: Unlock 50 Flashcards + 3 Full Mock Tests</h3>
+        <p style="font-size:13.5px; color:#64748b; margin-bottom:16px;">Create a free account with your email to unlock 20 additional cards and 2 more full mock exams.</p>
+        <form onsubmit="handleFreeSignup(event,'ap_stats')">
+          <input type="text" placeholder="First Name" required class="form-input" id="freeName">
+          <input type="email" placeholder="Email Address" required class="form-input" id="freeEmail">
+          <button type="submit" class="btn btn-primary">Unlock 50 Cards & 3 Mock Tests Free →</button>
+        </form>
+        <div class="form-trust">🔒 Instant browser activation · No credit card · No spam</div>
+      </div>
+    <!-- UI SCREENSHOT SHOWCASE (Visual Live Preview of Tools) -->
+    <section class="ui-showcase-section" id="previews" style="border-radius:16px; margin: 32px 0;">
+      <div style="padding: 0 10px;">
+        <div class="ui-showcase-header">
+          <span class="eyebrow">Visual Platform Preview</span>
+          <h2 class="ui-showcase-title">Inside the AP® Statistics Score-5 Vault</h2>
+          <p class="ui-showcase-subtitle">See the actual Bluebook-calibrated exam simulator, 3D interactive flashcards, and inference decision cheat sheets before enrolling.</p>
+        </div>
+
+        <div class="ui-showcase-grid">
+          <!-- Mock Test Simulator Preview -->
+          <div class="ui-mockup-window">
+            <div class="ui-window-bar">
+              <div class="ui-window-dots"><span class="ui-dot red"></span><span class="ui-dot yellow"></span><span class="ui-dot green"></span></div>
+              <span class="ui-window-title">bluebook-stats-sim</span>
+              <span class="ui-count-badge">25 Exams · 709 Pgs</span>
+            </div>
+            <div class="ui-window-body">
+              <div class="mock-exam-preview-ui">
+                <div class="mep-timer-row"><span>Section I: 40 MCQs</span><span class="mep-timer">⏱️ 88:42</span></div>
+                <div class="mep-question">Q3: Which test statistic tests H₀: μ = 50 vs Hₐ: μ &lt; 50 with unknown σ?</div>
+                <div class="mep-option"><span>(A)</span> <span>z-test statistic</span></div>
+                <div class="mep-option selected"><span>(B)</span> <span>t-statistic with df = 49 ✓</span></div>
+                <div class="mep-correct-banner">✅ Rubric: df = n - 1 (49) earned full credit.</div>
+              </div>
+              <div class="ui-card-footer">
+                <div class="ui-stat-label"><span>Vault Total:</span><strong>25 Full Mock Exams</strong></div>
+                <div class="ui-stat-label"><span>Free No Signup:</span><strong style="color:#4ade80;">1 Full Diagnostic Test</strong></div>
+                <a href="mock-test-ap-stats.html" class="btn btn-primary btn-block btn-sm" style="margin-top:8px;">Launch Mock Exam #1 Free →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Flashcards Preview -->
+          <div class="ui-mockup-window">
+            <div class="ui-window-bar">
+              <div class="ui-window-dots"><span class="ui-dot red"></span><span class="ui-dot yellow"></span><span class="ui-dot green"></span></div>
+              <span class="ui-window-title">stats-flashcards</span>
+              <span class="ui-count-badge">500+ Digital Cards</span>
+            </div>
+            <div class="ui-window-body">
+              <div class="flashcard-preview-ui">
+                <div class="fc-flip-indicator">CARD 14 OF 500 · TAP TO FLIP ↕</div>
+                <div class="fc-preview-q">Standard Error of Sample Means (x̄)?</div>
+                <div class="fc-preview-formula">SE = σ / √n</div>
+                <div class="fc-preview-rating-row"><span class="fc-btn-mini" style="background:#22c55e;">✓ Got it (142)</span><span class="fc-btn-mini" style="background:#f59e0b;">↻ Review (18)</span></div>
+              </div>
+              <div class="ui-card-footer">
+                <div class="ui-stat-label"><span>Vault Total:</span><strong>500+ Digital Flashcards</strong></div>
+                <div class="ui-stat-label"><span>Free No Signup:</span><strong style="color:#4ade80;">30 High-Yield Cards</strong></div>
+                <a href="flashcards-ap-stats.html" class="btn btn-primary btn-block btn-sm" style="margin-top:8px;">Practice 30 Cards Free →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Review Sheet Preview -->
+          <div class="ui-mockup-window">
+            <div class="ui-window-bar">
+              <div class="ui-window-dots"><span class="ui-dot red"></span><span class="ui-dot yellow"></span><span class="ui-dot green"></span></div>
+              <span class="ui-window-title">stats-review-sheet</span>
+              <span class="ui-count-badge">9 Units · 1 Page</span>
+            </div>
+            <div class="ui-window-body">
+              <div class="reviewsheet-preview-ui">
+                <div class="rs-watermark">EduPro Suite</div>
+                <div class="rs-header-row"><span>INFERENCE DECISION TREE</span><span>2027 CED</span></div>
+                <table class="rs-table-mini">
+                  <tr><td><strong>1-Prop z</strong></td><td><span class="rs-badge-mini">z=(p̂-p₀)/SE</span></td><td>np ≥ 10</td></tr>
+                  <tr><td><strong>1-Sample t</strong></td><td><span class="rs-badge-mini">t=(x̄-μ)/SE</span></td><td>df=n-1</td></tr>
+                </table>
+              </div>
+              <div class="ui-card-footer">
+                <div class="ui-stat-label"><span>Vault Total:</span><strong>Complete Formula & Decision Trees</strong></div>
+                <div class="ui-stat-label"><span>Free No Signup:</span><strong style="color:#4ade80;">Virtual Review Sheet</strong></div>
+                <a href="review-sheet-ap-stats.html" class="btn btn-primary btn-block btn-sm" style="margin-top:8px;">Open Review Sheet Free →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section class="product-section" id="pricing">
+      <h2 class="product-section-title">💰 Choose Your AP® Stats Plan</h2>
+      <p class="product-section-desc">All plans include instant digital access and a 30-day money-back guarantee.</p>
+
+      <div class="coupon-strip">
+        <span>🏷️ 15% off anytime:</span>
+        <code class="coupon-code-inline" onclick="copyCoupon(this)">STUDY15</code>
+        &nbsp;|&nbsp;
+        <span>🔥 70% flash sale:</span>
+        <code class="coupon-code-inline" onclick="copyCoupon(this)">SCORE70</code>
+        <span class="copy-hint">click to copy</span>
+      </div>
+
+      <div class="pricing-grid-product">
+
+        <!-- Free Plan -->
+        <div class="pricing-card">
+          <div class="plan-label">Starter</div>
+          <div class="plan-name">Free Forever</div>
+          <div class="plan-price"><span class="price-main">$0</span></div>
+          <ul class="plan-features">
+            <li class="feat-yes">✓ Mock Exam #1 (watermarked PDF)</li>
+            <li class="feat-yes">✓ 30 Digital Flashcards</li>
+            <li class="feat-yes">✓ Quick Review Sheet (watermarked)</li>
+            <li class="feat-no">✗ Full 25-exam question bank</li>
+            <li class="feat-no">✗ Bluebook Simulator</li>
+            <li class="feat-no">✗ FRQ Rubric Templates</li>
+          </ul>
+          <a href="mock-test-ap-stats.html" class="btn btn-outline btn-block">Launch Free Tools →</a>
+        </div>
+
+        <!-- Pro Plan - Featured -->
+        <div class="pricing-card pricing-card-featured">
+          <div class="plan-badge">🏆 MOST POPULAR</div>
+          <div class="plan-label" style="color:#fff;opacity:.7">Score-5 Pro</div>
+          <div class="plan-name">Score-5 Pro</div>
+          <div class="plan-price">
+            <span class="price-old">$65</span>
+            <span class="price-main">$19</span>
+            <span class="price-period">/month</span>
+          </div>
+          <div class="plan-trial-note">🎁 Start Free for 7 Days — No Card Needed</div>
+          <ul class="plan-features plan-features-white">
+            <li class="feat-yes">✓ All 25 Full Mock Exams (709 pages)</li>
+            <li class="feat-yes">✓ Bluebook Digital Timed Simulator</li>
+            <li class="feat-yes">✓ 500+ Flashcard Full Deck</li>
+            <li class="feat-yes">✓ All FRQ Rubric Sentence Frames</li>
+            <li class="feat-yes">✓ Inference Decision Flowchart (8 pages)</li>
+            <li class="feat-yes">✓ TI-84 Keystroke Playbook</li>
+            <li class="feat-yes">✓ Score Tracking Dashboard</li>
+            <li class="feat-yes">✓ Unlimited Exam Resets</li>
+          </ul>
+
+          <!-- Referral & Affiliate Bullets above Price Button -->
+          <div class="pricing-perks-box">
+            <div class="pricing-perks-title">🎁 Member Referral & Earnings:</div>
+            <ul class="pricing-perks-list">
+              <li>🎁 <strong>Refer a Friend:</strong> Earn <strong>25% recurring discount</strong> on your subscription.</li>
+              <li>💰 <strong>Affiliate Rights:</strong> Earn <strong>40% cash commission</strong> per sale referred.</li>
+            </ul>
+          </div>
+
+          <a href="checkout.html?item=ap-stats-pro&coupon=SCORE70" class="btn btn-white btn-block" style="font-size:15px; font-weight:800; padding:14px 20px;">Proceed to Checkout (70% Off) →</a>
+          <p class="plan-guarantee">💳 Instant Access via PayPal · 30-Day Money-Back Guarantee</p>
+        </div>
+
+        <!-- One-Time Lifetime -->
+        <div class="pricing-card">
+          <div class="plan-label">Lifetime</div>
+          <div class="plan-name">Score-5 Lifetime</div>
+          <div class="plan-price">
+            <span class="price-old">$130</span>
+            <span class="price-main">$39</span>
+            <span class="price-period">one-time</span>
+          </div>
+          <ul class="plan-features">
+            <li class="feat-yes">✓ Everything in Pro Plan</li>
+            <li class="feat-yes">✓ Lifetime access — pay once</li>
+            <li class="feat-yes">✓ 2027 & 2028 Edition Updates Free</li>
+            <li class="feat-yes">✓ Printable PDF Downloads Included</li>
+          </ul>
+
+          <!-- Referral & Affiliate Bullets above Price Button -->
+          <div class="pricing-perks-box">
+            <div class="pricing-perks-title">🎁 Member Referral & Earnings:</div>
+            <ul class="pricing-perks-list">
+              <li>🎁 <strong>Refer a Friend:</strong> Earn <strong>25% cashback</strong> on this purchase.</li>
+              <li>💰 <strong>Affiliate Partner:</strong> Earn <strong>40% cash commission</strong> for referring students.</li>
+            </ul>
+          </div>
+
+          <a href="checkout.html?item=ap-stats-lifetime&coupon=SCORE70" class="btn btn-primary btn-block" style="font-size:15px; font-weight:800; padding:14px 20px;">Proceed to Checkout (70% Off) →</a>
+          <p class="plan-guarantee">30-day money-back guarantee</p>
+        </div>
+      </div>
+
+      <!-- Refer & Earn note under pricing -->
+      <div class="refer-reminder-bar">
+        🎁 <strong>Refer a friend & get 25% off your next bill.</strong> Share your unique link after signup. Friend gets 10% off too. <a href="index.html#refer">Learn how it works →</a>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="product-section bg-light-section" id="reviews">
+      <h2 class="product-section-title">⭐ What Students Say</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"The inference decision flowchart alone saved me on FRQ #6. Scored a 5 on first attempt. Nothing else comes close."</p>
+          <div class="testi-author"><div class="testi-avatar">JM</div><div><strong>Jordan M.</strong><small>AP® Statistics · Score: 5</small></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"I went from a 3 to a 5 in 6 weeks using this vault. The FRQ sentence frames are pure gold — exactly what graders want."</p>
+          <div class="testi-author"><div class="testi-avatar" style="background:#7c3aed">SK</div><div><strong>Shreya K.</strong><small>AP® Statistics 2026 · Score: 5</small></div></div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testi-stars">⭐⭐⭐⭐⭐</div>
+          <p>"I'm a tutor and I use this with all my AP Stats students. The Bluebook simulator is unmatched."</p>
+          <div class="testi-author"><div class="testi-avatar" style="background:#059669">MR</div><div><strong>Mark R.</strong><small>AP Tutor · 12 Students Scored 5</small></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="product-section" id="faq">
+      <h2 class="product-section-title">❓ Frequently Asked Questions</h2>
+      <div class="faq-list">
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Is this aligned to the 2027 AP® Statistics CED? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a">Yes. All 25 mock exams and flashcards are fully calibrated to the official College Board 2027 Course and Exam Description. Every skill category, unit weighting, and FRQ type is covered.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">Is there really a free trial with no credit card? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a">Yes — the Starter plan is completely free forever. The 7-day trial for Pro gives you full access, and you only pay if you choose to continue. No card captured at signup.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">How does the referral program work? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a">After signing up for any paid plan, you get a unique referral link. Each friend who signs up with your link earns you 25% off your next billing cycle. Your friend gets 10% off their first order. There is no limit — you can stack referrals.</div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">What is the affiliate program? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a">Tutors, bloggers, YouTubers, and educators can earn 40% cash commission on every sale through their affiliate link. B2B partners (tutoring centers) earn 25% recurring commission on institutional licenses. <a href="affiliates.html">Join the affiliate program →</a></div>
+        </div>
+        <div class="faq-item" onclick="toggleFaq(this)">
+          <div class="faq-q">What is the refund policy? <span class="faq-arrow">▾</span></div>
+          <div class="faq-a">We offer a 30-day no-questions-asked money-back guarantee on all paid plans. Email support@eduprosuite.pro and receive your refund within 3 business days.</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-top">
+      <div class="footer-col footer-brand">
+        <div class="logo footer-logo"><div class="logo-icon"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#2563eb"/><path d="M7 14h14M14 7v14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg></div><span class="logo-name" style="color:white">EduPro Suite</span></div>
+        <p class="footer-desc">AP® Statistics · AP® Calculus · Trade Math Licensing Exams</p>
+        <div class="footer-social">
+          <a href="https://twitter.com" target="_blank" class="social-icon">𝕏</a>
+          <a href="https://youtube.com" target="_blank" class="social-icon">▶</a>
+          <a href="https://reddit.com" target="_blank" class="social-icon">🔴</a>
+          <a href="mailto:support@eduprosuite.pro" class="social-icon">✉</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">All Courses</h4>
+        <ul class="footer-links">
+          <li><a href="ap-stats.html">AP® Statistics 2027</a></li>
+          <li><a href="ap-calc.html">AP® Calculus AB & BC</a></li>
+          <li><a href="trade-math.html">Plumber & Pipefitter Math</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Earn</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#refer">Refer & Earn 25% Off</a></li>
+          <li><a href="affiliates.html">Affiliate Program (40%)</a></li>
+          <li><a href="index.html#pricing">B2B Center Licenses</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Support</h4>
+        <ul class="footer-links">
+          <li><a href="mailto:support@eduprosuite.pro">support@eduprosuite.pro</a></li>
+          <li><a href="#">30-Day Money-Back Guarantee</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <div class="footer-coupon-box"><span>🏷️ 15% off any plan:</span><code onclick="copyCoupon(this)" class="coupon-code-footer">STUDY15</code></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2027 EduPro Suite · AP® and College Board® are registered trademarks not affiliated with this site.</p>
+      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Refunds</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+<script>
+// PayPal Buttons for AP® Statistics Page
+window.addEventListener('load', function() {
+  if (typeof paypal === 'undefined') return;
+
+  // Score-5 Pro Monthly $19
+  paypal.Buttons({
+    style: { layout: 'vertical', color: 'blue', shape: 'rect', label: 'pay', height: 40 },
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          description: 'AP® Statistics Score-5 Pro — Monthly Subscription',
+          amount: { value: '19.00', currency_code: 'USD' }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        document.getElementById('paypal-stats-pro').innerHTML = '<div class="paypal-success">✅ Payment Confirmed! Check your email for access details.</div>';
+      });
+    },
+    onError: function(err) { alert('Payment failed. Please try again or email support@eduprosuite.pro'); }
+  }).render('#paypal-stats-pro');
+
+  // Score-5 Lifetime $39
+  paypal.Buttons({
+    style: { layout: 'vertical', color: 'gold', shape: 'rect', label: 'buynow', height: 40 },
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          description: 'AP® Statistics Score-5 Lifetime Access',
+          amount: { value: '39.00', currency_code: 'USD' }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        document.getElementById('paypal-stats-lifetime').innerHTML = '<div class="paypal-success">✅ Lifetime Access Unlocked! Check your email for download links.</div>';
+      });
+    },
+    onError: function(err) { alert('Payment failed. Please try again or email support@eduprosuite.pro'); }
+  }).render('#paypal-stats-lifetime');
+});
+
+function toggleFaq(el) {
+  el.classList.toggle('open');
+}
+</script>
+</body>
+</html>
