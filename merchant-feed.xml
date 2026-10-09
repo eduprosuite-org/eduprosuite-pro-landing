@@ -5,63 +5,83 @@
     <link>https://eduprosuite.pro/</link>
     <description>Official physical textbooks and student prep guides by EduProSuite</description>
     <item>
-      <g:id>EDU-BOOK-CALC-BC</g:id>
-      <g:title><![CDATA[Mastering AP Calculus BC: Complete Comprehensive Prep Guide & Practice Exams]]></g:title>
-      <g:description><![CDATA[Paperback student edition covering all 10 College Board units, Taylor series drills, worked step-by-step examples, and full practice exams.]]></g:description>
-      <g:link>https://eduprosuite.pro/ap-calc.html</g:link>
-      <g:image_link>https://eduprosuite.pro/images/ap-calc-cover.webp</g:image_link>
-      <g:price>34.99 USD</g:price>
-      <g:availability>in_stock</g:availability>
-      <g:brand>EduProSuite</g:brand>
-      <g:gtin>9781958201015</g:gtin>
-      <g:mpn>EDUPRO-CALC-2026</g:mpn>
-      <g:condition>new</g:condition>
-      <g:product_type><![CDATA[Books > Non-Fiction > Education > Test Preparation]]></g:product_type>
-      <g:google_product_category>784</g:google_product_category>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground Delivery</g:service>
-        <g:price>4.99 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>EDU-BOOK-STATS-01</g:id>
-      <g:title><![CDATA[AP Statistics Master Practice & Inference Suite (Paperback)]]></g:title>
-      <g:description><![CDATA[Official AP Statistics student workbook with complete inference procedures, hypothesis tests, and authentic College Board mock drills.]]></g:description>
+      <g:id>EDU-SCORE5-PRO</g:id>
+      <g:title><![CDATA[Score-5 Pro: AP Statistics Master Practice & Inference Suite]]></g:title>
+      <g:description><![CDATA[Comprehensive student edition with complete inference tests, hypothesis decision frameworks, and College Board mock exam drills.]]></g:description>
       <g:link>https://eduprosuite.pro/ap-stats.html</g:link>
       <g:image_link>https://eduprosuite.pro/images/ap-stats-cover.webp</g:image_link>
-      <g:price>29.99 USD</g:price>
+      <g:price>19.00 USD</g:price>
       <g:availability>in_stock</g:availability>
       <g:brand>EduProSuite</g:brand>
       <g:gtin>9781958201022</g:gtin>
-      <g:mpn>EDUPRO-STATS-2026</g:mpn>
+      <g:mpn>EDUPRO-STATS-SCORE5</g:mpn>
       <g:condition>new</g:condition>
       <g:product_type><![CDATA[Books > Non-Fiction > Education > Test Preparation]]></g:product_type>
       <g:google_product_category>784</g:google_product_category>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground Delivery</g:service>
-        <g:price>4.99 USD</g:price>
+        <g:price>0.00 USD</g:price>
       </g:shipping>
     </item>
     <item>
-      <g:id>EDU-BOOK-TRADE-MATH</g:id>
-      <g:title><![CDATA[Practical Mathematics for Electricians, Plumbers & HVAC Trades]]></g:title>
-      <g:description><![CDATA[Complete trade apprentice handbook: conduit bending geometry, Ohm's law, pipe trigonometry, and load calculations.]]></g:description>
+      <g:id>EDU-SCORE5-ELITE</g:id>
+      <g:title><![CDATA[Score-5 Elite: AP Calculus BC Complete Comprehensive Prep Suite]]></g:title>
+      <g:description><![CDATA[Complete student prep guide covering all 10 College Board units, Taylor series drills, step-by-step calculus proofs, and full-length practice exams.]]></g:description>
+      <g:link>https://eduprosuite.pro/ap-calc.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/ap-calc-cover.webp</g:image_link>
+      <g:price>49.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201015</g:gtin>
+      <g:mpn>EDUPRO-CALC-SCORE5ELITE</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Education > Test Preparation]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-JOURNEYMAN-PRO</g:id>
+      <g:title><![CDATA[Journeyman Pro: Practical Mathematics for Electricians, Plumbers & HVAC Trades]]></g:title>
+      <g:description><![CDATA[Complete trade apprentice handbook: conduit bending geometry, Ohm's law, pipe trigonometry, and electrical load calculations.]]></g:description>
       <g:link>https://eduprosuite.pro/trade-math.html</g:link>
       <g:image_link>https://eduprosuite.pro/images/trade-math-cover.webp</g:image_link>
-      <g:price>39.99 USD</g:price>
+      <g:price>34.00 USD</g:price>
       <g:availability>in_stock</g:availability>
       <g:brand>EduProSuite</g:brand>
       <g:gtin>9781958201039</g:gtin>
-      <g:mpn>EDUPRO-TRADEMATH-2026</g:mpn>
+      <g:mpn>EDUPRO-TRADEMATH-JOURNEYMAN</g:mpn>
       <g:condition>new</g:condition>
       <g:product_type><![CDATA[Books > Non-Fiction > Vocational & Technical]]></g:product_type>
       <g:google_product_category>784</g:google_product_category>
       <g:shipping>
         <g:country>US</g:country>
         <g:service>Standard Ground Delivery</g:service>
-        <g:price>4.99 USD</g:price>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-TI84-PLAYBOOK</g:id>
+      <g:title><![CDATA[TI-84 Playbook: Master Calculator Programs & Exam Vault Suite]]></g:title>
+      <g:description><![CDATA[Step-by-step TI-84 Plus CE graphing calculator playbook, program shortcuts, matrix solver workflows, and high-yield formula cheatsheets.]]></g:description>
+      <g:link>https://eduprosuite.pro/index.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/master-exam-vault-suite.webp</g:image_link>
+      <g:price>9.99 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201046</g:gtin>
+      <g:mpn>EDUPRO-TI84-PLAYBOOK</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Education > Study Guides]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Standard Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
       </g:shipping>
     </item>
   </channel>
