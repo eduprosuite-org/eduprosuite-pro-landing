@@ -499,51 +499,133 @@
 </div>
 
 <!-- Footer -->
-<footer class="footer">
+<!-- ============================================================ -->
+<!-- MASTER DIRECTORY FOOTER (UWorld & Kaplan Style) -->
+<!-- ============================================================ -->
+<footer class="footer" id="masterFooter" style="background:#0f172a; color:#94a3b8; padding: 60px 0 30px; font-size:14px; border-top:1px solid #1e293b;">
   <div class="container footer-inner">
-    <div class="footer-top">
-      <div class="footer-col footer-brand">
-        <div class="logo footer-logo"><div class="logo-icon"><svg width="24" height="24" viewBox="0 0 28 28" fill="none"><rect width="28" height="28" rx="8" fill="#2563eb"/><path d="M7 14h14M14 7v14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg></div><span class="logo-name" style="color:white">EduPro Suite</span></div>
-        <p class="footer-desc">AP® Statistics · AP® Calculus · Trade Math Licensing Exams</p>
-        <div class="footer-social">
-          <a href="https://twitter.com" target="_blank" class="social-icon">𝕏</a>
-          <a href="https://youtube.com" target="_blank" class="social-icon">▶</a>
-          <a href="https://reddit.com" target="_blank" class="social-icon">🔴</a>
-          <a href="mailto:support@eduprosuite.pro" class="social-icon">✉</a>
-        </div>
+    <!-- Top Brand & CTAs -->
+    <div style="border-bottom: 1px solid rgba(255,255,255,0.08); padding-bottom: 30px; margin-bottom: 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <div class="footer-brand">
+        <a href="/" style="text-decoration:none; color:white; font-size:24px; font-weight:800; display:flex; align-items:center; gap:10px;">
+          <span style="background:#2563eb; color:white; padding:4px 10px; border-radius:6px; font-size:18px;">E</span>
+          EduPro Suite
+        </a>
+        <p class="footer-desc" style="max-width:440px; margin-top:8px; color:#64748b; font-size:13.5px; line-height:1.6;">
+          The world's highest-yield exam preparation vault, interactive test simulators, and cheat sheet frameworks. Trusted by 25,000+ test takers across accounting, healthcare, finance, college admissions, and licensed trades.
+        </p>
       </div>
-      <div class="footer-col">
-        <h4 class="footer-col-title">All Courses</h4>
-        <ul class="footer-links">
-          <li><a href="ap-stats.html">AP® Statistics 2027</a></li>
-          <li><a href="ap-calc.html">AP® Calculus AB & BC</a></li>
-          <li><a href="trade-math.html">Plumber & Pipefitter Math</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-title">Earn</h4>
-        <ul class="footer-links">
-          <li><a href="index.html#refer">Refer & Earn 25% Off</a></li>
-          <li><a href="affiliates.html">Affiliate Program (40%)</a></li>
-          <li><a href="index.html#pricing">B2B Center Licenses</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4 class="footer-col-title">Support</h4>
-        <ul class="footer-links">
-          <li><a href="mailto:support@eduprosuite.pro">support@eduprosuite.pro</a></li>
-          <li><a href="#">30-Day Money-Back Guarantee</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-        </ul>
-        <div class="footer-coupon-box"><span>🏷️ 15% off any plan:</span><code onclick="copyCoupon(this)" class="coupon-code-footer">STUDY15</code></div>
+      <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+        <a href="/#pricing" class="btn btn-primary" style="padding: 10px 20px; font-size: 14px; background:#2563eb; color:white; border-radius:8px; text-decoration:none; font-weight:700;">Explore All Passes ($29)</a>
+        <a href="/#free-resources" class="btn btn-ghost" style="padding: 10px 20px; font-size: 14px; border:1px solid rgba(255,255,255,0.2); color:white; border-radius:8px; text-decoration:none;">Free Cheat Sheets</a>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2027 EduPro Suite · AP® and College Board® are registered trademarks not affiliated with this site.</p>
-      <div class="footer-bottom-links"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Refunds</a></div>
+
+    <!-- Multi-Column UWorld / Kaplan Style Directory Grid -->
+    <div class="uworld-footer-catalog" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 32px; padding-bottom: 40px; border-bottom: 1px solid rgba(255,255,255,0.08);">
+      
+      <!-- Col 1: Accounting & Tax -->
+      <div class="footer-catalog-col">
+        <h4 style="color:#60a5fa; font-size:12.5px; text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; font-weight:800;">Accounting & Tax</h4>
+        <ul style="list-style:none; padding:0; margin:0; line-height:2.1; font-size:13px;">
+          <li><a href="cpa-review.html" style="color:#cbd5e1; text-decoration:none;">CPA® Exam Review</a></li>
+          <li><a href="cma-review.html" style="color:#cbd5e1; text-decoration:none;">CMA® Exam Prep</a></li>
+          <li><a href="ea-exam-review.html" style="color:#cbd5e1; text-decoration:none;">EA (Enrolled Agent) Review</a></li>
+          <li><a href="cia-exam-review.html" style="color:#cbd5e1; text-decoration:none;">CIA® Internal Auditor Prep</a></li>
+          <li><a href="cisa-exam-review.html" style="color:#cbd5e1; text-decoration:none;">CISA® Information Systems</a></li>
+          <li><a href="cpe-courses.html" style="color:#cbd5e1; text-decoration:none;">CPE Continuing Education</a></li>
+          <li><a href="income-tax-school.html" style="color:#cbd5e1; text-decoration:none;">Income Tax School Prep</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 2: College & High School Prep -->
+      <div class="footer-catalog-col">
+        <h4 style="color:#60a5fa; font-size:12.5px; text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; font-weight:800;">College & Admissions</h4>
+        <ul style="list-style:none; padding:0; margin:0; line-height:2.1; font-size:13px;">
+          <li><a href="sat-prep.html" style="color:#cbd5e1; text-decoration:none;">Digital SAT® Prep Vault</a></li>
+          <li><a href="act-prep.html" style="color:#cbd5e1; text-decoration:none;">ACT® Exam Prep Vault</a></li>
+          <li><a href="ap-calc.html" style="color:#cbd5e1; text-decoration:none;">AP® Calculus AB & BC</a></li>
+          <li><a href="ap-stats.html" style="color:#cbd5e1; text-decoration:none;">AP® Statistics 2027</a></li>
+          <li><a href="ap-chemistry.html" style="color:#cbd5e1; text-decoration:none;">AP® Chemistry Vault</a></li>
+          <li><a href="isee-prep.html" style="color:#cbd5e1; text-decoration:none;">ISEE® Prep (High School)</a></li>
+          <li><a href="shsat-prep.html" style="color:#cbd5e1; text-decoration:none;">SHSAT® Prep (NYC Specialized)</a></li>
+          <li><a href="ssat-prep.html" style="color:#cbd5e1; text-decoration:none;">SSAT® Secondary Admissions</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Finance & Securities -->
+      <div class="footer-catalog-col">
+        <h4 style="color:#60a5fa; font-size:12.5px; text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; font-weight:800;">Finance & Securities</h4>
+        <ul style="list-style:none; padding:0; margin:0; line-height:2.1; font-size:13px;">
+          <li><a href="cfa-exam.html" style="color:#cbd5e1; text-decoration:none;">CFA® Chartered Analyst Prep</a></li>
+          <li><a href="cmt-exam.html" style="color:#cbd5e1; text-decoration:none;">CMT® Chartered Technician</a></li>
+          <li><a href="cfp-exam.html" style="color:#cbd5e1; text-decoration:none;">CFP® Certified Planner Prep</a></li>
+          <li><a href="caia-exam.html" style="color:#cbd5e1; text-decoration:none;">CAIA® Alternative Investment</a></li>
+          <li><a href="frm-exam.html" style="color:#cbd5e1; text-decoration:none;">FRM® Financial Risk Manager</a></li>
+          <li><a href="securities-licensing.html" style="color:#cbd5e1; text-decoration:none;">Securities & Series Prep</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Medical, Healthcare & Social Work -->
+      <div class="footer-catalog-col">
+        <h4 style="color:#60a5fa; font-size:12.5px; text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; font-weight:800;">Medical & Healthcare</h4>
+        <ul style="list-style:none; padding:0; margin:0; line-height:2.1; font-size:13px;">
+          <li><a href="mcat-prep.html" style="color:#cbd5e1; text-decoration:none;">MCAT® Medical Admissions</a></li>
+          <li><a href="cpc-medical-coding.html" style="color:#cbd5e1; text-decoration:none;">CPC® Medical Coding (AAPC)</a></li>
+          <li><a href="lcsw-exam.html" style="color:#cbd5e1; text-decoration:none;">LCSW Clinical Social Work</a></li>
+          <li><a href="msw-licensing.html" style="color:#cbd5e1; text-decoration:none;">MSW Social Work Licensing</a></li>
+          <li><a href="bsw-licensing.html" style="color:#cbd5e1; text-decoration:none;">BSW Social Work Licensing</a></li>
+          <li><a href="servsafe-food-manager.html" style="color:#cbd5e1; text-decoration:none;">ServSafe® Food Manager</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 5: Real Estate & Insurance -->
+      <div class="footer-catalog-col">
+        <h4 style="color:#60a5fa; font-size:12.5px; text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; font-weight:800;">Real Estate & Insurance</h4>
+        <ul style="list-style:none; padding:0; margin:0; line-height:2.1; font-size:13px;">
+          <li><a href="real-estate-licensing.html" style="color:#cbd5e1; text-decoration:none;">Real Estate Licensing Exam</a></li>
+          <li><a href="real-estate-ce.html" style="color:#cbd5e1; text-decoration:none;">Real Estate Continuing Ed (CE)</a></li>
+          <li><a href="contractor-license.html" style="color:#cbd5e1; text-decoration:none;">Contractor Licensing Exam</a></li>
+          <li><a href="home-inspection.html" style="color:#cbd5e1; text-decoration:none;">Home Inspection Certification</a></li>
+          <li><a href="insurance-licensing.html" style="color:#cbd5e1; text-decoration:none;">Insurance Licensing (Life/P&C)</a></li>
+          <li><a href="insurance-ce.html" style="color:#cbd5e1; text-decoration:none;">Insurance Continuing Ed (CE)</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 6: Trades, CDL & Professional Tech -->
+      <div class="footer-catalog-col">
+        <h4 style="color:#60a5fa; font-size:12.5px; text-transform:uppercase; letter-spacing:1px; margin-bottom:14px; font-weight:800;">Trades, CDL & Tech</h4>
+        <ul style="list-style:none; padding:0; margin:0; line-height:2.1; font-size:13px;">
+          <li><a href="cdl-general-knowledge.html" style="color:#cbd5e1; text-decoration:none;">CDL General Knowledge</a></li>
+          <li><a href="cdl-passenger.html" style="color:#cbd5e1; text-decoration:none;">CDL Passenger Endorsement</a></li>
+          <li><a href="cdl-air-brakes.html" style="color:#cbd5e1; text-decoration:none;">CDL Air Brakes Endorsement</a></li>
+          <li><a href="cdl-hazmat.html" style="color:#cbd5e1; text-decoration:none;">CDL Hazmat (H) Endorsement</a></li>
+          <li><a href="cdl-tanker.html" style="color:#cbd5e1; text-decoration:none;">CDL Tanker (N) Endorsement</a></li>
+          <li><a href="trade-math.html" style="color:#cbd5e1; text-decoration:none;">Plumber & Pipefitter Math</a></li>
+          <li><a href="epa-608-technician.html" style="color:#cbd5e1; text-decoration:none;">EPA 608 HVAC Certification</a></li>
+          <li><a href="fiber-optics-foi.html" style="color:#cbd5e1; text-decoration:none;">Fiber Optics Installer (FOI)</a></li>
+          <li><a href="cfot-fiber-optic.html" style="color:#cbd5e1; text-decoration:none;">CFOT® Certified Fiber Optic</a></li>
+          <li><a href="shrm-cp.html" style="color:#cbd5e1; text-decoration:none;">SHRM-CP® HR Certification</a></li>
+          <li><a href="ai-fundamentals.html" style="color:#cbd5e1; text-decoration:none;">AI Fundamentals: Fluency</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- Legal & Trademark Disclaimer Bar -->
+    <div class="footer-bottom" style="margin-top:24px; font-size:12px; color:rgba(255,255,255,0.4); display:flex; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+      <p style="max-width:820px; margin:0; line-height:1.6;">
+        © 2026 EduPro Suite. All Rights Reserved. Trademarks referenced herein (including CPA®, CFA®, SAT®, ACT®, AP®, MCAT®, CFP®, SHRM-CP®, ServSafe®) are property of their respective trademark holders and do not endorse, sponsor, or affiliate with EduPro Suite. All mock exams and review sheets are independently developed for candidate mastery.
+      </p>
+      <div style="display:flex; gap:16px;">
+        <a href="/privacy.html" style="color:rgba(255,255,255,0.5); text-decoration:none;">Privacy Policy</a>
+        <a href="/#pricing" style="color:rgba(255,255,255,0.5); text-decoration:none;">Terms of Service</a>
+        <a href="mailto:support@eduprosuite.pro" style="color:rgba(255,255,255,0.5); text-decoration:none;">Contact Support</a>
+      </div>
     </div>
   </div>
 </footer>
+
 
 <script src="app.js"></script>
 <script>
