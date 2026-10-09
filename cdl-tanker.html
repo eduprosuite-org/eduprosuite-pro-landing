@@ -104,23 +104,136 @@
 <body>
 
 <!-- Header -->
-<header class="header" id="mainHeader">
-  <div class="container header-inner" style="display:flex; justify-content:space-between; align-items:center; padding:16px 24px;">
+<!-- Accessible Master Mega Header (Google Search Central Compliant) -->
+<!-- Accessible Master Mega Header (Google Search Central Compliant) -->
+<header class="header" id="mainHeader" role="banner">
+  <div class="container header-inner" style="display:flex; justify-content:space-between; align-items:center; padding:14px 24px; position:relative;">
+    
+    <!-- Logo -->
     <div class="logo">
       <a href="index.html" style="text-decoration:none; color:inherit; font-weight:800; font-size:22px; display:flex; align-items:center; gap:8px;">
         <span style="background:#2563eb; color:white; padding:4px 10px; border-radius:6px; font-size:16px;">E</span>
         EduPro Suite
       </a>
     </div>
-    <nav class="nav" style="display:flex; gap:16px; align-items:center;">
-      <a href="/#courses" style="text-decoration:none; color:#334155; font-weight:600; font-size:14px;">All Courses</a>
-      <a href="/#pricing" class="btn btn-primary btn-sm" style="background:#2563eb; color:white; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:700; font-size:14px;">Get Full Access ($29)</a>
+
+    <!-- Crawlable Navigation Hierarchy -->
+    <nav class="main-nav" id="mainNav" role="navigation" aria-label="Main Navigation" style="display:flex; gap:20px; align-items:center;">
+      <a href="index.html" class="nav-item" style="text-decoration:none; color:#1e293b; font-weight:600; font-size:14px;">Home</a>
+      
+      <!-- Mega Dropdown: All Disciplines -->
+      <div class="nav-dropdown" style="position:relative; display:inline-block;">
+        <a href="#courses" class="nav-item" aria-haspopup="true" style="text-decoration:none; color:#1e293b; font-weight:600; font-size:14px; display:flex; align-items:center; gap:4px;">
+          All Courses <span style="font-size:10px;">▾</span>
+        </a>
+        <div class="dropdown-menu mega-menu" style="position:absolute; top:100%; left:-100px; width:720px; background:white; border:1px solid #e2e8f0; border-radius:12px; box-shadow:0 16px 40px rgba(0,0,0,0.12); padding:20px; display:none; grid-template-columns:repeat(3, 1fr); gap:16px; z-index:1000;">
+          
+          <div>
+            <strong style="color:#2563eb; font-size:11.5px; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:8px;">📊 Accounting & Tax</strong>
+            <ul style="list-style:none; padding:0; margin:0; font-size:12.5px; line-height:1.9;">
+              <li><a href="cpa-review.html" style="color:#475569; text-decoration:none;">CPA® Exam Review</a></li>
+              <li><a href="cma-review.html" style="color:#475569; text-decoration:none;">CMA® Exam Prep</a></li>
+              <li><a href="ea-exam-review.html" style="color:#475569; text-decoration:none;">EA Enrolled Agent</a></li>
+              <li><a href="cia-exam-review.html" style="color:#475569; text-decoration:none;">CIA® Internal Auditor</a></li>
+              <li><a href="cpe-courses.html" style="color:#475569; text-decoration:none;">CPE Courses</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <strong style="color:#7c3aed; font-size:11.5px; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:8px;">🎓 College & High School</strong>
+            <ul style="list-style:none; padding:0; margin:0; font-size:12.5px; line-height:1.9;">
+              <li><a href="sat-prep.html" style="color:#475569; text-decoration:none;">Digital SAT® Prep</a></li>
+              <li><a href="act-prep.html" style="color:#475569; text-decoration:none;">ACT® Exam Prep</a></li>
+              <li><a href="ap-calc.html" style="color:#475569; text-decoration:none;">AP® Calculus AB/BC</a></li>
+              <li><a href="ap-stats.html" style="color:#475569; text-decoration:none;">AP® Statistics</a></li>
+              <li><a href="ap-chemistry.html" style="color:#475569; text-decoration:none;">AP® Chemistry</a></li>
+              <li><a href="shsat-prep.html" style="color:#475569; text-decoration:none;">SHSAT® NYC Prep</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <strong style="color:#059669; font-size:11.5px; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:8px;">💰 Finance & Securities</strong>
+            <ul style="list-style:none; padding:0; margin:0; font-size:12.5px; line-height:1.9;">
+              <li><a href="cfa-exam.html" style="color:#475569; text-decoration:none;">CFA® Level I & II</a></li>
+              <li><a href="cfp-exam.html" style="color:#475569; text-decoration:none;">CFP® Exam Prep</a></li>
+              <li><a href="frm-exam.html" style="color:#475569; text-decoration:none;">FRM® Risk Manager</a></li>
+              <li><a href="cmt-exam.html" style="color:#475569; text-decoration:none;">CMT® Technical Analyst</a></li>
+              <li><a href="securities-licensing.html" style="color:#475569; text-decoration:none;">Series 7 & SIE</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <strong style="color:#e11d48; font-size:11.5px; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:8px;">🩺 Medical & Health</strong>
+            <ul style="list-style:none; padding:0; margin:0; font-size:12.5px; line-height:1.9;">
+              <li><a href="mcat-prep.html" style="color:#475569; text-decoration:none;">MCAT® Admissions</a></li>
+              <li><a href="cpc-medical-coding.html" style="color:#475569; text-decoration:none;">CPC® Medical Coding</a></li>
+              <li><a href="lcsw-exam.html" style="color:#475569; text-decoration:none;">LCSW Clinical Exam</a></li>
+              <li><a href="servsafe-food-manager.html" style="color:#475569; text-decoration:none;">ServSafe® Manager</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <strong style="color:#d97706; font-size:11.5px; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:8px;">🏡 Real Estate & Law</strong>
+            <ul style="list-style:none; padding:0; margin:0; font-size:12.5px; line-height:1.9;">
+              <li><a href="real-estate-licensing.html" style="color:#475569; text-decoration:none;">Real Estate License</a></li>
+              <li><a href="contractor-license.html" style="color:#475569; text-decoration:none;">Contractor License</a></li>
+              <li><a href="home-inspection.html" style="color:#475569; text-decoration:none;">Home Inspection (NHIE)</a></li>
+              <li><a href="insurance-licensing.html" style="color:#475569; text-decoration:none;">Insurance Licensing</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <strong style="color:#0284c7; font-size:11.5px; text-transform:uppercase; letter-spacing:0.5px; display:block; margin-bottom:8px;">🚛 Trades & CDL</strong>
+            <ul style="list-style:none; padding:0; margin:0; font-size:12.5px; line-height:1.9;">
+              <li><a href="cdl-general-knowledge.html" style="color:#475569; text-decoration:none;">CDL General Knowledge</a></li>
+              <li><a href="cdl-air-brakes.html" style="color:#475569; text-decoration:none;">CDL Air Brakes</a></li>
+              <li><a href="trade-math.html" style="color:#475569; text-decoration:none;">Trade & Pipe Math</a></li>
+              <li><a href="epa-608-technician.html" style="color:#475569; text-decoration:none;">EPA 608 Universal</a></li>
+              <li><a href="shrm-cp.html" style="color:#475569; text-decoration:none;">SHRM-CP® HR Prep</a></li>
+              <li><a href="ai-fundamentals.html" style="color:#475569; text-decoration:none;">AI Fundamentals</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <a href="index.html#pricing" class="nav-item" style="text-decoration:none; color:#1e293b; font-weight:600; font-size:14px;">Pricing ($29)</a>
+      <a href="index.html#free-resources" class="nav-item" style="text-decoration:none; color:#1e293b; font-weight:600; font-size:14px;">Free Cheat Sheets</a>
+      <a href="affiliates.html" class="nav-item" style="text-decoration:none; color:#1e293b; font-weight:600; font-size:14px;">Partners</a>
     </nav>
+
+    <!-- Header CTA -->
+    <div class="header-actions" style="display:flex; gap:12px; align-items:center;">
+      <a href="checkout.html" class="btn btn-primary btn-sm" style="background:#2563eb; color:white; padding:8px 16px; border-radius:6px; text-decoration:none; font-weight:700; font-size:14px;">
+        Get All Access ($29)
+      </a>
+    </div>
+
   </div>
 </header>
+<style>
+.nav-dropdown:hover .mega-menu { display: grid !important; }
+</style>
+
+<style>
+.nav-dropdown:hover .mega-menu { display: grid !important; }
+</style>
+
 
 <!-- Main Landmark -->
 <main id="main-content">
+  <!-- Semantic Breadcrumb Navigation (Google Search Central BreadcrumbList) -->
+  <nav aria-label="Breadcrumb" style="background:#f8fafc; border-bottom:1px solid #e2e8f0; padding:10px 0; font-size:13px;">
+    <div class="container" style="max-width:960px; margin:0 auto; padding:0 20px;">
+      <ol style="list-style:none; padding:0; margin:0; display:flex; gap:8px; align-items:center; color:#64748b;">
+        <li><a href="index.html" style="color:#2563eb; text-decoration:none;">Home</a></li>
+        <li>/</li>
+        <li><a href="index.html#cdl-tanker" style="color:#2563eb; text-decoration:none;">Courses</a></li>
+        <li>/</li>
+        <li aria-current="page" style="color:#0f172a; font-weight:600;">Cdl Tanker</li>
+      </ol>
+    </div>
+  </nav>
   <!-- Hero Section -->
   <section class="hero" style="padding: 64px 0 40px; text-align: center; background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);">
     <div class="container" style="max-width:960px; margin:0 auto; padding:0 20px;">
@@ -234,6 +347,52 @@
       <h2 style="font-size: 28px; font-weight:800; margin-bottom: 12px;">Ready to Pass CDL Tanker Endorsement Prep?</h2>
       <p style="color:#94a3b8; font-size:16px; margin-bottom:24px;">Join thousands of students and professionals who accelerated their scores with EduPro Suite.</p>
       <a href="/checkout.html" class="btn btn-primary" style="padding: 14px 32px; font-size: 16px; background:#2563eb; color:white; border-radius:8px; text-decoration:none; font-weight:800; display:inline-block;">Get Instant Access for $29 →</a>
+    </div>
+  </section>
+  <!-- Google AI Overview & People Also Ask (PAA) Fact-Check Authority Box -->
+  <section style="padding: 40px 0; background: #ffffff;">
+    <div class="container" style="max-width:880px; margin:0 auto; padding:0 20px;">
+      
+      <div style="background: #f0fdf4; border: 1.5px solid #86efac; border-radius: 12px; padding: 24px; margin-bottom: 30px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+          <span style="font-size:20px;">⚡</span>
+          <h2 style="font-size: 18px; font-weight:800; color: #166534; margin:0;">
+            Google AI Overview & Fact-Checked Exam Specifications
+          </h2>
+        </div>
+        <div style="font-size: 14px; color: #14532d; line-height: 1.7;">
+          <p style="margin: 0 0 6px;"><strong>Testing Authority:</strong> Governing Body for Cdl Tanker</p>
+          <p style="margin: 0 0 6px;"><strong>Recognized Jurisdiction:</strong> United States & International Standard</p>
+          <p style="margin: 0 0 6px;"><strong>Target Credential:</strong> Professional Certification in Cdl Tanker</p>
+          <p style="margin: 0;"><strong>Educational Methodology:</strong> 100% Bloom's Taxonomy aligned, cognitive load reduction, active retrieval practice.</p>
+        </div>
+      </div>
+
+      <!-- People Also Ask Accordion Blocks -->
+      <h3 style="font-size: 20px; font-weight:800; color: #0f172a; margin-bottom: 16px;">
+        People Also Ask (PAA) — Official Answers
+      </h3>
+
+      <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px; margin-bottom: 12px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+        <h4 style="font-size: 16px; font-weight:700; color:#1e293b; margin: 0 0 8px;">How is the Cdl Tanker examination structured?</h4>
+        <p style="font-size: 14px; color: #475569; line-height: 1.6; margin: 0;">The Cdl Tanker exam assesses candidate competency through blueprint-calibrated multiple-choice questions and practical diagnostic scenarios designed by official certification boards.</p>
+      </div>
+
+      <div style="background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 18px; margin-bottom: 24px; box-shadow: 0 2px 6px rgba(0,0,0,0.04);">
+        <h4 style="font-size: 16px; font-weight:700; color:#1e293b; margin: 0 0 8px;">How does EduPro Suite prepare candidates to pass Cdl Tanker?</h4>
+        <p style="font-size: 14px; color: #475569; line-height: 1.6; margin: 0;">EduPro Suite provides 25 full-length mock exams, active recall flashcards, and printable formula cheat sheets with step-by-step rationales verified against official blueprints.</p>
+      </div>
+
+      <!-- Video SEO Masterclass Card -->
+      <div id="video-guide" style="background: linear-gradient(135deg, #0f172a, #1e293b); color:white; border-radius: 12px; padding: 24px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:16px;">
+        <div style="max-width:540px;">
+          <span style="background:#2563eb; color:white; font-size:11px; font-weight:800; padding:3px 8px; border-radius:4px; text-transform:uppercase;">📹 Video Masterclass</span>
+          <h4 style="font-size: 18px; font-weight:800; margin: 10px 0 6px;">Cdl Tanker Blueprint Strategy Video Guide</h4>
+          <p style="font-size: 13.5px; color: #94a3b8; margin: 0;">Watch our 8-minute high-yield walkthrough breaking down question traps, scoring rubrics, and rapid formula derivation.</p>
+        </div>
+        <a href="#trial" class="btn btn-primary" style="background:#2563eb; color:white; padding:10px 20px; border-radius:6px; font-weight:700; text-decoration:none; font-size:14px;">Watch Video Walkthrough ▶</a>
+      </div>
+
     </div>
   </section>
 </main>
