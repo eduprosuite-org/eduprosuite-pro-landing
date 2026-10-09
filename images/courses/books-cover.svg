@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e3a8a"/>
+    </linearGradient>
+    <linearGradient id="ribbonGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#ffffff"/>
+    </linearGradient>
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <rect width="800" height="480" fill="url(#bgGrad)"/>
+  <circle cx="700" cy="80" r="180" fill="#ffffff" fill-opacity="0.03"/>
+  <circle cx="100" cy="400" r="140" fill="#ffffff" fill-opacity="0.04"/>
+
+  <g transform="translate(180, 50)" filter="url(#dropShadow)">
+    <rect x="0" y="0" width="440" height="380" rx="16" fill="#ffffff"/>
+    <path d="M 0 16 C 0 7.16 7.16 0 16 0 L 424 0 C 432.84 0 440 7.16 440 16 L 440 120 L 0 120 Z" fill="url(#bgGrad)"/>
+    <text x="220" y="50" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#38bdf8" text-anchor="middle" letter-spacing="2">OFFICIAL STUDY GUIDES</text>
+    <text x="220" y="85" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="22" font-weight="900" fill="#ffffff" text-anchor="middle">EXAM MASTERY TEXTBOOKS</text>
+    
+    <rect x="40" y="150" width="360" height="48" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="60" y="180" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1e293b">✓ 100% Comprehensive Coverage</text>
+    
+    <rect x="40" y="210" width="360" height="48" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="60" y="240" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1e293b">✓ Verified Diagnostic Questions</text>
+    
+    <rect x="40" y="270" width="360" height="48" rx="8" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="60" y="300" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#1e293b">✓ High-Yield Formula Cheat Sheets</text>
+
+    <text x="220" y="350" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#059669" text-anchor="middle">OFFICIAL BLUEPRINT CONFORMANT</text>
+  </g>
+</svg>
