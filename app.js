@@ -126,26 +126,236 @@ function showCopyToast(code) {
 }
 
 
-// ---- FREE RESOURCES SIGNUP ----
-function handleFreeSignup(e) {
+// ---- FREE RESOURCES & NEWSLETTER LEAD CAPTURE CATALOG ----
+const FREE_RESOURCE_CATALOG = {
+  'ap_stats': {
+    title: 'AP® Statistics 2027 Inference Decision Tree & Cheat Sheet',
+    downloadUrl: 'downloads/AP_Statistics_2027_Inference_Cheat_Sheet.html',
+    filename: 'AP_Statistics_2027_Inference_Cheat_Sheet.html',
+    badge: 'College Board CED 2027 Aligned',
+    subject: 'AP® Statistics'
+  },
+  'ap_calc': {
+    title: 'AP® Calculus AB/BC Existence Theorems & Formula Guide',
+    downloadUrl: 'downloads/AP_Calculus_Theorems_Cheat_Sheet.html',
+    filename: 'AP_Calculus_Theorems_Cheat_Sheet.html',
+    badge: 'College Board CED Aligned',
+    subject: 'AP® Calculus'
+  },
+  'trade': {
+    title: 'Trade Math Rolling Offset & Multiplier Master Reference Guide',
+    downloadUrl: 'downloads/Trade_Math_Offset_Guide.html',
+    filename: 'Trade_Math_Offset_Guide.html',
+    badge: 'UA Local & Journeyman Licensing Standard',
+    subject: 'Trade Math'
+  }
+};
+
+// Lead capture and instant download handler ("data collecting")
+function handleFreeSignup(e, trackKey) {
   e.preventDefault();
-  const name  = document.getElementById('freeName')?.value || '';
-  const email = document.getElementById('freeEmail')?.value || '';
-  const track = document.getElementById('freeTrack')?.value || '';
+  const form = e.target;
+  const nameInput = form.querySelector('input[type="text"]') || document.getElementById('freeName');
+  const emailInput = form.querySelector('input[type="email"]') || document.getElementById('freeEmail');
+  const track = trackKey || document.getElementById('freeTrack')?.value || 'ap_stats';
+  
+  const name = nameInput ? nameInput.value.trim() : 'Student';
+  const email = emailInput ? emailInput.value.trim() : '';
 
-  const trackNames = {
-    'ap_stats': 'AP® Statistics Inference Decision Tree',
-    'ap_calc':  'AP® Calculus Existence Theorems Sheet',
-    'trade':    'Trade Math Rolling Offset Cheat Sheet'
-  };
+  if (!email) {
+    alert('Please enter a valid email address.');
+    return;
+  }
 
-  // Simulate submission (in production, connect to Zoho Mail API / ConvertKit)
-  alert(`🎉 Welcome, ${name || 'Student'}!\n\nYour Free Signup Bonus has been ACTIVATED:\n✅ 50 Flashcards Unlocked\n✅ 3 Diagnostic Mock Exams Unlocked\n✅ Virtual Quick Review Sheet Access\n\nWe have dispatched your direct access links to ${email}.\n(From: support@eduprosuite.pro)`);
+  const resource = FREE_RESOURCE_CATALOG[track] || FREE_RESOURCE_CATALOG['ap_stats'];
 
-  // Reset form
-  e.target.reset();
+  // Persistent Lead Collection in localStorage
+  try {
+    const leads = JSON.parse(localStorage.getItem('edupro_leads') || '[]');
+    const newLead = {
+      name: name,
+      email: email,
+      track: track,
+      subject: resource.subject,
+      resourceTitle: resource.title,
+      timestamp: new Date().toISOString(),
+      page: window.location.pathname
+    };
+    leads.push(newLead);
+    localStorage.setItem('edupro_leads', JSON.stringify(leads));
+    console.log('✅ Lead captured successfully:', newLead);
+  } catch (err) {
+    console.error('Lead storage error:', err);
+  }
+
+  // Automatic download trigger
+  const link = document.createElement('a');
+  link.href = resource.downloadUrl;
+  link.download = resource.filename;
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+
+  // Transition form container to celebration & success state
+  const parentContainer = form.closest('.lead-magnet-card') || form.closest('.free-signup-form') || form.parentElement;
+  if (parentContainer) {
+    parentContainer.innerHTML = `
+      <div class="lead-magnet-success">
+        <div class="lms-badge">🎉 RESOURCE UNLOCKED & DOWNLOAD STARTED</div>
+        <h3>Welcome, ${name}!</h3>
+        <p>Your free official guide <strong>${resource.title}</strong> has started downloading. We have also subscribed <strong>${email}</strong> to our weekly high-yield prep digest.</p>
+        <div class="lms-actions">
+          <a href="${resource.downloadUrl}" download="${resource.filename}" class="btn btn-primary">
+            📥 Download Free Guide Again
+          </a>
+          <a href="${resource.downloadUrl}" target="_blank" class="btn btn-outline">
+            👀 Open in Browser / Print
+          </a>
+        </div>
+        <div class="lms-bonus">
+          🏷️ <strong>Exclusive Welcome Gift:</strong> Use coupon code <strong>SCORE70</strong> for 70% off the complete Exam Vault at checkout!
+        </div>
+      </div>
+    `;
+  }
 }
 
+// Global Lead Export Helpers (for admin / data export)
+window.getEduProLeads = function() {
+  const leads = JSON.parse(localStorage.getItem('edupro_leads') || '[]');
+  console.table(leads);
+  return leads;
+};
+
+window.exportEduProLeads = function() {
+  const leads = JSON.parse(localStorage.getItem('edupro_leads') || '[]');
+  if (!leads.length) {
+    alert('No leads collected yet in this browser session.');
+    return;
+  }
+  const headers = ['Name', 'Email', 'Track', 'Subject', 'Resource', 'Timestamp', 'Page'];
+  const rows = leads.map(l => [
+    `"${l.name || ''}"`,
+    `"${l.email || ''}"`,
+    `"${l.track || ''}"`,
+    `"${l.subject || ''}"`,
+    `"${l.resourceTitle || ''}"`,
+    `"${l.timestamp || ''}"`,
+    `"${l.page || ''}"`
+  ]);
+  const csvContent = 'data:text/csv;charset=utf-8,' + [headers.join(','), ...rows.map(r => r.join(','))].join('\n');
+  const encodedUri = encodeURI(csvContent);
+  const link = document.createElement('a');
+  link.setAttribute('href', encodedUri);
+  link.setAttribute('download', `edupro_leads_${new Date().toISOString().slice(0,10)}.csv`);
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+// ---- FIRST-TIME VISITOR 50% AFFILIATE POPUP ----
+function initFirstTimePopup() {
+  const POPUP_SEEN_KEY = 'eps_affiliate_popup_seen';
+  if (localStorage.getItem(POPUP_SEEN_KEY)) {
+    return; // Already seen, do not bother repeat visitors
+  }
+
+  // Create Modal DOM if not present
+  if (!document.getElementById('epsAffiliateModal')) {
+    const modalHTML = `
+      <div class="eps-modal-overlay" id="epsAffiliateModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="eps-modal-card">
+          <button class="eps-modal-close" id="epsCloseModalBtn" aria-label="Close dialog">&times;</button>
+          <div class="eps-modal-header">
+            <span class="eps-modal-badge">🔥 EXCLUSIVE LAUNCH OFFER</span>
+            <h2 class="eps-modal-title" id="modalTitle">Earn 50% Commission on Every Product Sale!</h2>
+            <p class="eps-modal-subtitle">Partner with EduPro Suite. Earn 50% of the listed price on every course and exam prep vault you recommend to students, peers, or schools.</p>
+          </div>
+          <div class="eps-modal-body">
+            <div class="eps-modal-perks">
+              <div class="eps-perk-item">
+                <span class="eps-perk-icon">💰</span>
+                <div>
+                  <strong>50% Instant Revenue Share</strong>
+                  <small>Earn from $19.50 up to $162.50+ on every single customer purchase through your partner link.</small>
+                </div>
+              </div>
+              <div class="eps-perk-item">
+                <span class="eps-perk-icon">🎁</span>
+                <div>
+                  <strong>Free Review Copies & Promo Codes</strong>
+                  <small>Receive free full-access digital review bundles and an exclusive 10% discount coupon for your followers.</small>
+                </div>
+              </div>
+              <div class="eps-perk-item">
+                <span class="eps-perk-icon">⚡</span>
+                <div>
+                  <strong>Automated Monthly Payouts</strong>
+                  <small>Guaranteed direct deposits via Stripe or PayPal with 60-day tracking cookies and real-time click analytics.</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="eps-modal-actions">
+              <a href="affiliates.html" class="btn btn-primary btn-block eps-modal-btn" id="epsModalCta">Start Earning 50% Now — Join Free →</a>
+              <button class="eps-modal-dismiss" id="epsModalDismissBtn">No thanks, I will continue browsing</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+    document.body.insertAdjacentHTML('beforeend', modalHTML);
+  }
+
+  const modal = document.getElementById('epsAffiliateModal');
+  const closeBtn = document.getElementById('epsCloseModalBtn');
+  const dismissBtn = document.getElementById('epsModalDismissBtn');
+  const ctaBtn = document.getElementById('epsModalCta');
+
+  function dismissModal() {
+    if (!modal) return;
+    modal.classList.remove('active');
+    localStorage.setItem(POPUP_SEEN_KEY, 'true');
+  }
+
+  // Show after 1.5 seconds delay for a smooth user experience
+  setTimeout(() => {
+    if (modal) modal.classList.add('active');
+  }, 1500);
+
+  if (closeBtn) closeBtn.addEventListener('click', dismissModal);
+  if (dismissBtn) dismissBtn.addEventListener('click', dismissModal);
+  if (ctaBtn) {
+    ctaBtn.addEventListener('click', () => {
+      localStorage.setItem(POPUP_SEEN_KEY, 'true');
+    });
+  }
+
+  // Close when clicking outside modal card
+  modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+      dismissModal();
+    }
+  });
+
+  // Close on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+      dismissModal();
+    }
+  });
+}
+
+// Dev/Test helper
+window.resetAffiliatePopup = function() {
+  localStorage.removeItem('eps_affiliate_popup_seen');
+  alert('Popup reset! Refresh the page to see it appear.');
+};
+
+// Initialize popup on window load
+window.addEventListener('DOMContentLoaded', () => {
+  initFirstTimePopup();
+});
 
 // ---- NEWSLETTER SIGNUP ----
 function handleNewsletter(e) {

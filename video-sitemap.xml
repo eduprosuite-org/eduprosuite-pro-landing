@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+  <url>
+    <loc>https://eduprosuite.pro/ap-calc.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://eduprosuite.pro/images/ap-calc-cover.webp</video:thumbnail_loc>
+      <video:title>Mastering AP Calculus BC - Rapid Concept & Series Breakdown</video:title>
+      <video:description>Comprehensive walkthrough of Taylor Series, Integration by Parts, and parametric curves for AP Calculus BC.</video:description>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/calc_bc_mastery</video:player_loc>
+      <video:publication_date>2026-10-01T08:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://eduprosuite.pro/trade-math.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://eduprosuite.pro/images/trade-math-cover.webp</video:thumbnail_loc>
+      <video:title>Trade Math Electrician & HVAC Quick Formulas Walkthrough</video:title>
+      <video:description>Essential formulas for electricians, plumbers, and HVAC technicians including Ohm's law and pipe sizing.</video:description>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/trade_math_mastery</video:player_loc>
+      <video:publication_date>2026-10-02T08:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://eduprosuite.pro/ap-stats.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://eduprosuite.pro/images/ap-stats-cover.webp</video:thumbnail_loc>
+      <video:title>AP Statistics 5-Minute Hypothesis Testing & P-Value Guide</video:title>
+      <video:description>Visual intuition for z-tests, t-tests, Type I vs Type II errors, and confidence intervals.</video:description>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/ap_stats_mastery</video:player_loc>
+      <video:publication_date>2026-10-03T08:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+</urlset>

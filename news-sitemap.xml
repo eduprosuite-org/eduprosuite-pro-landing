@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9">
+  <url>
+    <loc>https://eduprosuite.pro/news/college-board-ap-calculus-2026-updates.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>EduProSuite Newsroom</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-08T09:00:00+00:00</news:publication_date>
+      <news:title><![CDATA[College Board Announces 2026 AP Calculus BC Exam Dates and Calculator Guidelines]]></news:title>
+    </news:news>
+  </url>
+  <url>
+    <loc>https://eduprosuite.pro/news/digital-sat-math-adaptive-scoring-analysis.html</loc>
+    <news:news>
+      <news:publication>
+        <news:name>EduProSuite Newsroom</news:name>
+        <news:language>en</news:language>
+      </news:publication>
+      <news:publication_date>2026-10-07T10:30:00+00:00</news:publication_date>
+      <news:title><![CDATA[Digital SAT 2026 Scoring Analysis: How Module 2 Performance Determines Top Percentiles]]></news:title>
+    </news:news>
+  </url>
+</urlset>

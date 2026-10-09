@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AP Calculus Existence Theorems Guide | EduProSuite</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;600&amp;family=Space+Grotesk:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<style>
+    :root {
+      --primary: #4f46e5;
+      --primary-dark: #4338ca;
+      --slate-900: #0f172a;
+      --slate-800: #1e293b;
+      --slate-700: #334155;
+      --slate-600: #475569;
+      --slate-200: #e2e8f0;
+      --slate-100: #f1f5f9;
+      --slate-50: #f8fafc;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      background: #f1f5f9;
+      color: var(--slate-800);
+      line-height: 1.5;
+      padding: 24px;
+    }
+    .guide-container { max-width: 980px; margin: 0 auto; }
+    .guide-toolbar {
+      background: white;
+      border: 1px solid var(--slate-200);
+      border-radius: 12px;
+      padding: 16px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    .guide-toolbar h1 { font-size: 17px; font-weight: 800; color: var(--slate-900); }
+    .toolbar-btns { display: flex; gap: 10px; }
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 18px;
+      border-radius: 8px;
+      font-weight: 700;
+      font-size: 13.5px;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: 0.2s ease;
+    }
+    .btn-primary { background: var(--primary); color: white; }
+    .btn-primary:hover { background: var(--primary-dark); }
+    .btn-outline { background: white; border: 1.5px solid var(--slate-200); color: var(--slate-700); }
+    .btn-outline:hover { background: var(--slate-50); border-color: var(--primary); color: var(--primary); }
+    
+    .document-page {
+      background: white;
+      border: 1.5px solid var(--slate-200);
+      border-radius: 16px;
+      padding: 48px;
+      box-shadow: 0 12px 36px rgba(0,0,0,0.08);
+      position: relative;
+    }
+    .doc-watermark {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-30deg);
+      font-size: 48px;
+      font-weight: 900;
+      color: rgba(79, 70, 229, 0.04);
+      user-select: none;
+      pointer-events: none;
+      white-space: nowrap;
+      text-transform: uppercase;
+    }
+    .doc-header {
+      border-bottom: 3px solid var(--primary);
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .doc-title {
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 26px;
+      font-weight: 800;
+      color: var(--slate-900);
+      line-height: 1.2;
+    }
+    .doc-subtitle {
+      font-size: 13.5px;
+      color: var(--primary);
+      font-weight: 700;
+      margin-top: 4px;
+    }
+    .doc-badge {
+      background: #eef2ff;
+      border: 1px solid #c7d2fe;
+      color: #3730a3;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      text-align: right;
+    }
+    .section-title {
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 800;
+      padding: 8px 14px;
+      border-radius: 6px;
+      border-left: 4px solid var(--primary);
+      margin: 24px 0 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .guide-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin-bottom: 20px;
+    }
+    .guide-table th {
+      background: var(--slate-50);
+      border: 1px solid var(--slate-200);
+      padding: 10px 12px;
+      text-align: left;
+      font-weight: 700;
+      color: var(--slate-700);
+    }
+    .guide-table td {
+      border: 1px solid var(--slate-200);
+      padding: 10px 12px;
+      vertical-align: top;
+    }
+    .code-chip {
+      font-family: 'JetBrains Mono', monospace;
+      background: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 12px;
+      font-weight: 600;
+      color: #4338ca;
+    }
+    .frq-box {
+      background: #fefce8;
+      border: 1px dashed #ca8a04;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 13px;
+      color: #854d0e;
+      line-height: 1.6;
+      margin-top: 8px;
+    }
+    .tip-box {
+      background: #f0fdf4;
+      border-left: 4px solid #16a34a;
+      padding: 12px 16px;
+      border-radius: 0 8px 8px 0;
+      font-size: 13px;
+      color: #15803d;
+      margin-top: 14px;
+    }
+    .doc-footer {
+      margin-top: 36px;
+      border-top: 1px solid var(--slate-200);
+      padding-top: 16px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 11.5px;
+      color: var(--slate-600);
+    }
+    @media print {
+      body { background: white; padding: 0; }
+      .guide-toolbar { display: none; }
+      .document-page { border: none; box-shadow: none; padding: 20px; }
+      .doc-watermark { display: none; }
+    }
+  </style>
+<meta content="Download the comprehensive AP Calculus AB/BC existence theorems and formulas cheatsheet. Essential Mean Value, Intermediate Value &amp; Extreme Value guide." name="description"/><link href="https://eduprosuite.pro/downloads/AP_Calculus_Theorems_Cheat_Sheet.html" rel="canonical"/><meta content="AP Calculus Existence Theorems Guide | EduProSuite" property="og:title"/><meta content="Download the comprehensive AP Calculus AB/BC existence theorems and formulas cheatsheet. Essential Mean Value, Intermediate Value &amp; Extreme Value guide." property="og:description"/><meta content="https://eduprosuite.pro/downloads/AP_Calculus_Theorems_Cheat_Sheet.html" property="og:url"/><meta content="website" property="og:type"/><meta content="https://eduprosuite.pro/eduprosuite_app_icon.png" property="og:image"/><meta content="summary_large_image" name="twitter:card"/><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://eduprosuite.pro/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "AP Calculus Existence Theorems Guide",
+      "item": "https://eduprosuite.pro/downloads/AP_Calculus_Theorems_Cheat_Sheet.html"
+    }
+  ]
+}</script><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "Book",
+  "name": "AP Calculus Existence Theorems Cheatsheet",
+  "author": {
+    "@type": "Organization",
+    "name": "EduProSuite Publishing"
+  },
+  "bookFormat": "https://schema.org/EBook",
+  "description": "Download the comprehensive AP Calculus AB/BC existence theorems and formulas cheatsheet. Essential Mean Value, Intermediate Value & Extreme Value guide."
+}</script></head>
+<body>
+<div class="guide-container">
+<div class="guide-toolbar">
+<div>
+<a href="../ap-calc.html" style="color:var(--primary); text-decoration:none; font-size:13px; font-weight:600;">← Back to AP® Calc Vault</a>
+<h1>AP® Calculus AB/BC Existence Theorems &amp; Formula Guide</h1>
+</div>
+<div class="toolbar-btns">
+<button class="btn btn-outline" onclick="window.print()">🖨️ Print / Save as PDF</button>
+<a class="btn btn-primary" href="../ap-calc.html#pricing">Unlock Full Vault (70% Off)</a>
+</div>
+</div>
+<div class="document-page">
+<div class="doc-watermark">EduPro Suite · Free Guide</div>
+<div class="doc-header">
+<div>
+<h1 class="doc-title">AP® Calculus Existence Theorems &amp; Formulas</h1>
+<div class="doc-subtitle">College Board CED Aligned · Core FRQ Justification Templates</div>
+</div>
+<div class="doc-badge">
+<strong>Free Student Edition</strong><br/>
+<span>EduProSuite.pro</span>
+</div>
+</div>
+<div class="section-title">1. The Big 4 Existence Theorems (Mandatory FRQ Justifications)</div>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Theorem</th>
+<th>Prerequisites</th>
+<th>Mathematical Conclusion</th>
+<th>Official AP® Grader Justification Template</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>IVT</strong><br/>(Intermediate Value Theorem)</td>
+<td>f is continuous on [a, b]</td>
+<td>For any k between f(a) and f(b), there exists at least one c in (a, b) such that <span class="code-chip">f(c) = k</span>.</td>
+<td><em>"Since f is continuous on [a, b], and f(a) &lt; k &lt; f(b), by the Intermediate Value Theorem there exists c in (a, b) such that f(c) = k."</em></td>
+</tr>
+<tr>
+<td><strong>MVT</strong><br/>(Mean Value Theorem)</td>
+<td>1. Continuous on [a, b]<br/>2. Differentiable on (a, b)</td>
+<td>There exists at least one c in (a, b) such that <span class="code-chip">f'(c) = (f(b) - f(a)) / (b - a)</span>.</td>
+<td><em>"Since f is continuous on [a, b] and differentiable on (a, b), by the Mean Value Theorem there exists a value c where instantaneous rate equals average rate."</em></td>
+</tr>
+<tr>
+<td><strong>EVT</strong><br/>(Extreme Value Theorem)</td>
+<td>f is continuous on closed interval [a, b]</td>
+<td>f attains both an absolute maximum and an absolute minimum on [a, b].</td>
+<td><em>"Candidates Test: Evaluate f(x) at all critical points (f'(x) = 0 or undefined) and at interval endpoints x = a, x = b."</em></td>
+</tr>
+<tr>
+<td><strong>FTC Part 1 &amp; 2</strong><br/>(Fundamental Theorem)</td>
+<td>f is continuous on [a, b]</td>
+<td><span class="code-chip">d/dx ∫[a to x] f(t)dt = f(x)</span><br/><span class="code-chip">∫[a to b] f'(x)dx = f(b) - f(a)</span></td>
+<td><em>"f(b) = f(a) + ∫[a to b] f'(t)dt. The net change in f equals the definite integral of its rate of change."</em></td>
+</tr>
+</tbody>
+</table>
+<div class="section-title">2. High-Yield Derivative &amp; Integral Rules</div>
+<table class="guide-table">
+<thead>
+<tr>
+<th>Operation</th>
+<th>Standard Form</th>
+<th>Chain Rule Extended Form</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Product Rule</strong></td>
+<td><span class="code-chip">d/dx [u · v] = u'v + uv'</span></td>
+<td>Keep first, differentiate second + keep second, differentiate first</td>
+</tr>
+<tr>
+<td><strong>Quotient Rule</strong></td>
+<td><span class="code-chip">d/dx [u / v] = (u'v - uv') / v²</span></td>
+<td>"Low d-High minus High d-Low, over the square of what's below"</td>
+</tr>
+<tr>
+<td><strong>Trig Derivatives</strong></td>
+<td><span class="code-chip">d/dx sin(x) = cos(x)</span><br/><span class="code-chip">d/dx cos(x) = -sin(x)</span></td>
+<td><span class="code-chip">d/dx tan(x) = sec²(x)</span><br/><span class="code-chip">d/dx sec(x) = sec(x)tan(x)</span></td>
+</tr>
+<tr>
+<td><strong>Inverse Trig</strong></td>
+<td><span class="code-chip">d/dx arcsin(x) = 1/√(1-x²)</span></td>
+<td><span class="code-chip">d/dx arctan(x) = 1/(1+x²)</span></td>
+</tr>
+<tr>
+<td><strong>Exponential &amp; Log</strong></td>
+<td><span class="code-chip">d/dx e^(kx) = k·e^(kx)</span></td>
+<td><span class="code-chip">d/dx ln|x| = 1/x, d/dx a^x = a^x·ln(a)</span></td>
+</tr>
+</tbody>
+</table>
+<div class="section-title">3. Justifying Local Extrema &amp; Inflection Points (FRQ Points)</div>
+<div style="margin-bottom: 12px;">
+<strong style="font-size:13px; color:var(--slate-900);">First Derivative Test for Local Max/Min:</strong>
+<div class="frq-box">
+        "f has a local maximum at x = c because <strong>f'(c) = 0</strong> (or undefined) and <strong>f'(x) changes sign from positive to negative</strong> at x = c."
+      </div>
+</div>
+<div style="margin-bottom: 12px;">
+<strong style="font-size:13px; color:var(--slate-900);">Point of Inflection Justification:</strong>
+<div class="frq-box">
+        "The graph of f has a point of inflection at x = c because <strong>f''(x) changes sign</strong> (from positive to negative or negative to positive) at x = c."
+      </div>
+</div>
+<div class="tip-box">
+<strong>💡 FRQ Warning:</strong> Never say "the graph changes from increasing to decreasing" or "it changes direction." Graders require explicitly naming <strong>f'(x)</strong> or <strong>f''(x)</strong>.
+    </div>
+<div class="doc-footer">
+<div><strong>EduPro Suite Exam Prep</strong> · support@eduprosuite.pro · Published under Nominal Fair Use</div>
+<div>AP® is a registered trademark of the College Board.</div>
+</div>
+</div>
+</div>
+</body>
+</html>
