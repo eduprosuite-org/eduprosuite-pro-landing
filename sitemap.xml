@@ -66,4 +66,10 @@
     <priority>0.5</priority>
     <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://eduprosuite.pro/ap-chemistry.html</loc>
+    <lastmod>2026-10-09</lastmod>
+    <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
+  </url>
 </urlset>
