@@ -26,7 +26,7 @@
       <g:shipping>
         <g:country>IN</g:country>
         <g:service>Standard Ground Delivery</g:service>
-        <g:price>0.00 INR</g:price>
+        <g:price>0.00 USD</g:price>
       </g:shipping>
     </item>
     <item>
@@ -51,7 +51,7 @@
       <g:shipping>
         <g:country>IN</g:country>
         <g:service>Standard Ground Delivery</g:service>
-        <g:price>0.00 INR</g:price>
+        <g:price>0.00 USD</g:price>
       </g:shipping>
     </item>
     <item>
@@ -76,7 +76,7 @@
       <g:shipping>
         <g:country>IN</g:country>
         <g:service>Standard Ground Delivery</g:service>
-        <g:price>0.00 INR</g:price>
+        <g:price>0.00 USD</g:price>
       </g:shipping>
     </item>
     <item>
@@ -101,7 +101,7 @@
       <g:shipping>
         <g:country>IN</g:country>
         <g:service>Standard Ground Delivery</g:service>
-        <g:price>0.00 INR</g:price>
+        <g:price>0.00 USD</g:price>
       </g:shipping>
     </item>
   </channel>
