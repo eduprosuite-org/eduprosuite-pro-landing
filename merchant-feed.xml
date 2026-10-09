@@ -23,6 +23,11 @@
         <g:service>Standard Ground Delivery</g:service>
         <g:price>0.00 USD</g:price>
       </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Ground Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
     </item>
     <item>
       <g:id>EDU-SCORE5-ELITE</g:id>
@@ -42,6 +47,11 @@
         <g:country>US</g:country>
         <g:service>Standard Ground Delivery</g:service>
         <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Ground Delivery</g:service>
+        <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
     <item>
@@ -63,6 +73,11 @@
         <g:service>Standard Ground Delivery</g:service>
         <g:price>0.00 USD</g:price>
       </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Ground Delivery</g:service>
+        <g:price>0.00 INR</g:price>
+      </g:shipping>
     </item>
     <item>
       <g:id>EDU-TI84-PLAYBOOK</g:id>
@@ -82,6 +97,11 @@
         <g:country>US</g:country>
         <g:service>Standard Ground Delivery</g:service>
         <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Standard Ground Delivery</g:service>
+        <g:price>0.00 INR</g:price>
       </g:shipping>
     </item>
   </channel>
