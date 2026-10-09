@@ -527,15 +527,4 @@
     <priority>0.85</priority>
     <changefreq>weekly</changefreq>
   </url>
-  <url>
-    <loc>https://eduprosuite.pro/ai-fundamentals.html</loc>
-    <lastmod>2026-10-09</lastmod>
-    <image:image>
-      <image:loc>https://eduprosuite.pro/images/courses/ai-fundamentals-cover.svg</image:loc>
-      <image:title>AI FUNDAMENTALS Exam Prep Vault</image:title>
-      <image:caption>Official 2026 blueprint practice exams and formula cheat sheets for AI FUNDAMENTALS</image:caption>
-    </image:image>
-    <priority>0.85</priority>
-    <changefreq>weekly</changefreq>
-  </url>
 </urlset>
