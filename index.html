@@ -34,7 +34,7 @@
     </div>
     <a href="#pricing" class="announcement-cta">Grab 70% Off Now →</a>
   </div>
-  <button class="announcement-close" onclick="document.getElementById('announcementBar').style.display='none'">✕</button>
+  <button class="announcement-close" aria-label="Close Announcement Bar" onclick="document.getElementById('announcementBar').style.display='none'">✕</button>
 </div>
 
 <!-- ============================================================ -->
@@ -88,12 +88,14 @@
         <span class="btn-badge">70% Off</span>
         Get Full Access
       </a>
-      <button class="mobile-menu-btn" id="mobileMenuBtn" onclick="toggleMobileMenu()">
+      <button class="mobile-menu-btn" aria-label="Toggle navigation menu" id="mobileMenuBtn" onclick="toggleMobileMenu()">
         <span></span><span></span><span></span>
       </button>
     </div>
   </div>
 </header>
+
+<main id="main-content">
 
 <!-- ============================================================ -->
 <!-- HERO SECTION -->
@@ -480,6 +482,7 @@
               <span>2027 CED</span>
             </div>
             <table class="rs-table-mini">
+              <thead><tr><th>Test Type</th><th>Formula</th><th>Condition</th></tr></thead>
               <tr><td><strong>1-Prop z</strong></td><td><span class="rs-badge-mini">z = (p̂-p₀)/SE</span></td><td>np ≥ 10</td></tr>
               <tr><td><strong>1-Sample t</strong></td><td><span class="rs-badge-mini">t = (x̄-μ)/SE</span></td><td>df = n - 1</td></tr>
               <tr><td><strong>Chi-Square</strong></td><td><span class="rs-badge-mini">χ² = Σ(O-E)²/E</span></td><td>Exp ≥ 5</td></tr>
@@ -582,7 +585,7 @@
           <form class="email-form" onsubmit="handleFreeSignup(event)">
             <input type="text" placeholder="Your First Name" required class="form-input" id="freeName">
             <input type="email" placeholder="Your Email Address" required class="form-input" id="freeEmail">
-            <select class="form-input form-select" id="freeTrack">
+            <select class="form-input form-select" id="freeTrack" aria-label="Select exam track">
               <option value="ap_stats">📊 AP® Statistics (Unlock 50 Cards + 3 Tests)</option>
               <option value="ap_calc">∫ AP® Calculus (Unlock 50 Cards + 3 Tests)</option>
               <option value="trade">🔧 Trade Math (Unlock 50 Cards + 3 Tests)</option>
@@ -977,6 +980,8 @@
 <!-- ============================================================ -->
 <!-- FOOTER -->
 <!-- ============================================================ -->
+</main>
+
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-top">
@@ -1062,6 +1067,6 @@
 <!-- ============================================================ -->
 <!-- SCRIPTS -->
 <!-- ============================================================ -->
-<script src="app.js"></script>
+<script src="app.js" defer></script>
 </body>
 </html>

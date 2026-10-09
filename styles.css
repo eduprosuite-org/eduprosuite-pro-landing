@@ -233,7 +233,7 @@ body {
   border-radius: 4px;
   align-self: auto;
 }
-.btn-sub { font-size: 11px; font-weight: 400; opacity: 0.75; }
+.btn-sub { font-size: 11px; font-weight: 500; color: #ffffff; opacity: 0.95; }
 
 .mobile-menu-btn { display: none; flex-direction: column; gap: 4px; background: none; border: none; cursor: pointer; padding: 4px; }
 .mobile-menu-btn span { display: block; width: 22px; height: 2px; background: var(--slate-700); border-radius: 2px; }
@@ -256,7 +256,7 @@ body {
 
 .trust-badges-row { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
 .trust-badge { font-size: 12px; font-weight: 600; color: var(--slate-600); background: white; border: 1px solid var(--slate-200); padding: 4px 10px; border-radius: 20px; }
-.trust-badge-green { color: var(--green-600); border-color: #bbf7d0; background: var(--green-50); }
+.trust-badge-green { color: #047857; border-color: #a7f3d0; background: #ecfdf5; font-weight: 600; }
 
 .hero-title { font-family: var(--font-display); font-size: 48px; font-weight: 800; line-height: 1.1; letter-spacing: -1.5px; color: var(--slate-900); margin-bottom: 16px; }
 .hero-highlight { background: linear-gradient(135deg, #2563eb, #4f46e5); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
@@ -293,7 +293,7 @@ body {
   letter-spacing: 1px;
   font-size: 13px;
 }
-.copy-hint { font-size: 11px; color: var(--slate-400); font-style: italic; }
+.copy-hint { font-size: 11px; color: #475569; font-style: italic; font-weight: 500; }
 
 /* Hero Product Card */
 .hero-product-card { background: white; border-radius: var(--radius-xl); box-shadow: var(--shadow-xl); border: 1px solid var(--slate-200); overflow: hidden; }
