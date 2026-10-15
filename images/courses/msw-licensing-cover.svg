@@ -58,7 +58,7 @@
     <!-- Top Header Ribbon -->
     <rect x="130" y="80" width="220" height="30" rx="6" fill="#881337" stroke="#fb7185" stroke-width="1.2"/>
     <text x="142" y="100" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="11" font-weight="800" fill="#fecdd3" letter-spacing="1.5">
-      ✓ ASWB MASTER'S BLUEPRINT
+      ✓ ASWB MASTER&apos;S BLUEPRINT
     </text>
 
     <!-- Star Rating & Trust Badge -->
@@ -69,12 +69,12 @@
 
     <!-- Main Course Title -->
     <text x="130" y="175" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="34" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
-      MSW MASTER'S EXAM
+      MSW MASTER&apos;S EXAM
     </text>
 
     <!-- Subtitle / Exam Modules -->
     <text x="130" y="215" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#fb7185">
-      Psychosocial Assessment & NASW Ethics
+      Psychosocial Assessment &amp; NASW Ethics
     </text>
 
     <!-- Thin Divider -->

@@ -74,7 +74,7 @@
 
     <!-- Subtitle / Exam Modules -->
     <text x="130" y="215" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#facc15">
-      Technical Analysis, Charts & Oscillators
+      Technical Analysis, Charts &amp; Oscillators
     </text>
 
     <!-- Thin Divider -->

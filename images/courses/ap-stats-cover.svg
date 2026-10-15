@@ -74,7 +74,7 @@
 
     <!-- Subtitle / Exam Modules -->
     <text x="130" y="215" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#c084fc">
-      Inference, Probability & Bluebook Simulator
+      Inference, Probability &amp; Bluebook Simulator
     </text>
 
     <!-- Thin Divider -->

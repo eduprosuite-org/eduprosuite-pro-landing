@@ -58,7 +58,7 @@
     <!-- Top Header Ribbon -->
     <rect x="130" y="80" width="220" height="30" rx="6" fill="#78350f" stroke="#f59e0b" stroke-width="1.2"/>
     <text x="142" y="100" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="11" font-weight="800" fill="#fde68a" letter-spacing="1.5">
-      ✓ NASCLA & PSI BLUEPRINT
+      ✓ NASCLA &amp; PSI BLUEPRINT
     </text>
 
     <!-- Star Rating & Trust Badge -->
@@ -74,7 +74,7 @@
 
     <!-- Subtitle / Exam Modules -->
     <text x="130" y="215" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#f59e0b">
-      Business, Law, Safety & Building Codes
+      Business, Law, Safety &amp; Building Codes
     </text>
 
     <!-- Thin Divider -->

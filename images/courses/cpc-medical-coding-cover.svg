@@ -74,7 +74,7 @@
 
     <!-- Subtitle / Exam Modules -->
     <text x="130" y="215" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#fb7185">
-      CPT, ICD-10-CM & HCPCS Guidelines
+      CPT, ICD-10-CM &amp; HCPCS Guidelines
     </text>
 
     <!-- Thin Divider -->

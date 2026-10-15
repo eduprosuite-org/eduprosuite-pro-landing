@@ -74,7 +74,7 @@
 
     <!-- Subtitle / Exam Modules -->
     <text x="130" y="215" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#c084fc">
-      Specialized High Schools Math & ELA
+      Specialized High Schools Math &amp; ELA
     </text>
 
     <!-- Thin Divider -->

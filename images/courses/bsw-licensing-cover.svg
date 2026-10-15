@@ -58,7 +58,7 @@
     <!-- Top Header Ribbon -->
     <rect x="130" y="80" width="220" height="30" rx="6" fill="#881337" stroke="#fb7185" stroke-width="1.2"/>
     <text x="142" y="100" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="11" font-weight="800" fill="#fecdd3" letter-spacing="1.5">
-      ✓ ASWB BACHELOR'S LICENSE
+      ✓ ASWB BACHELOR&apos;S LICENSE
     </text>
 
     <!-- Star Rating & Trust Badge -->
@@ -74,7 +74,7 @@
 
     <!-- Subtitle / Exam Modules -->
     <text x="130" y="215" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#fb7185">
-      Generalist Practice & Social Work Ethics
+      Generalist Practice &amp; Social Work Ethics
     </text>
 
     <!-- Thin Divider -->

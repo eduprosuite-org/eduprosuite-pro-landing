@@ -74,7 +74,7 @@
 
     <!-- Subtitle / Exam Modules -->
     <text x="130" y="215" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#f59e0b">
-      Life, Health, Property & Casualty Exams
+      Life, Health, Property &amp; Casualty Exams
     </text>
 
     <!-- Thin Divider -->

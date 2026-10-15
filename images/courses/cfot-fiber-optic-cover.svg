@@ -74,7 +74,7 @@
 
     <!-- Subtitle / Exam Modules -->
     <text x="130" y="215" font-family="'Inter', sans-serif" font-size="16" font-weight="600" fill="#38bdf8">
-      Optical Transmission, Network Design & Test
+      Optical Transmission, Network Design &amp; Test
     </text>
 
     <!-- Thin Divider -->
