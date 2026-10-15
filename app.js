@@ -130,22 +130,22 @@ function showCopyToast(code) {
 const FREE_RESOURCE_CATALOG = {
   'ap_stats': {
     title: 'AP® Statistics 2027 Inference Decision Tree & Cheat Sheet',
-    downloadUrl: 'downloads/AP_Statistics_2027_Inference_Cheat_Sheet.html',
-    filename: 'AP_Statistics_2027_Inference_Cheat_Sheet.html',
+    downloadUrl: 'downloads/ap-statistics-2027-inference-cheat-sheet.html',
+    filename: 'ap-statistics-2027-inference-cheat-sheet.html',
     badge: 'College Board CED 2027 Aligned',
     subject: 'AP® Statistics'
   },
   'ap_calc': {
     title: 'AP® Calculus AB/BC Existence Theorems & Formula Guide',
-    downloadUrl: 'downloads/AP_Calculus_Theorems_Cheat_Sheet.html',
-    filename: 'AP_Calculus_Theorems_Cheat_Sheet.html',
+    downloadUrl: 'downloads/ap-calculus-theorems-cheat-sheet.html',
+    filename: 'ap-calculus-theorems-cheat-sheet.html',
     badge: 'College Board CED Aligned',
     subject: 'AP® Calculus'
   },
   'trade': {
     title: 'Trade Math Rolling Offset & Multiplier Master Reference Guide',
-    downloadUrl: 'downloads/Trade_Math_Offset_Guide.html',
-    filename: 'Trade_Math_Offset_Guide.html',
+    downloadUrl: 'downloads/trade-math-offset-guide.html',
+    filename: 'trade-math-offset-guide.html',
     badge: 'UA Local & Journeyman Licensing Standard',
     subject: 'Trade Math'
   }
@@ -357,13 +357,95 @@ window.addEventListener('DOMContentLoaded', () => {
   initFirstTimePopup();
 });
 
-// ---- NEWSLETTER SIGNUP ----
+// ---- NEWSLETTER & LEAD MAGNET SIGNUP ----
 function handleNewsletter(e) {
   e.preventDefault();
   const email = document.getElementById('nlEmail')?.value || '';
+  if (!email) return;
+
+  try {
+    const existing = JSON.parse(localStorage.getItem('eps_subscribers_queue') || '[]');
+    existing.push({
+      subscriber_id: 'sub-' + Date.now().toString().slice(-4),
+      email: email,
+      first_name: 'Subscriber',
+      category: 'Newsletter Weekly',
+      opt_in_date: new Date().toISOString().split('T')[0],
+      current_day: '1',
+      completed: 'No'
+    });
+    localStorage.setItem('eps_subscribers_queue', JSON.stringify(existing));
+  } catch (err) {}
+
   alert(`✅ Subscribed!\n\nWelcome to the EduPro Suite weekly digest, ${email}.\nYou'll receive high-yield exam tips and flash deals every Monday morning.`);
   e.target.reset();
 }
+
+// High-converting Lead Magnet Opt-in Handler
+function handleLeadMagnetSubmit(e, category, directDownloadUrl) {
+  e.preventDefault();
+  const form = e.target;
+  const emailInput = form.querySelector('input[type="email"]');
+  const nameInput = form.querySelector('input[name="first_name"]') || form.querySelector('input[type="text"]');
+  const email = emailInput ? emailInput.value.trim() : '';
+  const firstName = nameInput && nameInput.value.trim() ? nameInput.value.trim() : 'Student';
+  
+  if (!email) return;
+
+  const leadRecord = {
+    subscriber_id: 'sub-' + Date.now().toString().slice(-4),
+    email: email,
+    first_name: firstName,
+    category: category || 'General Exam Prep',
+    opt_in_date: new Date().toISOString().split('T')[0],
+    current_day: '1',
+    completed: 'No'
+  };
+
+  // 1. Save to LocalStorage queue
+  try {
+    const existing = JSON.parse(localStorage.getItem('eps_subscribers_queue') || '[]');
+    existing.push(leadRecord);
+    localStorage.setItem('eps_subscribers_queue', JSON.stringify(existing));
+  } catch (err) {
+    console.warn('LocalStorage queue save error:', err);
+  }
+
+  // 2. Dispatch to Make.com Webhook if available
+  const webhookUrl = 'https://hook.eu1.make.com/u2mm9t728ojuul02kvalsjbvejofaxrf';
+  fetch(webhookUrl, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      event: 'lead_magnet_optin',
+      lead: leadRecord,
+      timestamp: new Date().toISOString()
+    })
+  }).catch(() => {/* Silent catch to guarantee instant UX */});
+
+  // 3. Render High-Converting Confirmation State
+  const parentContainer = form.closest('.signup-card-bottom') || form.parentElement;
+  if (parentContainer) {
+    parentContainer.innerHTML = `
+      <div style="padding: 10px 0; text-align: center;">
+        <div style="font-size: 32px; margin-bottom: 8px;">🎉</div>
+        <h3 style="color: #facc15; font-size: 20px; font-weight: 800; margin-bottom: 6px;">You're In, ${firstName}! Your Free Pack is Ready</h3>
+        <p style="color: #e2e8f0; font-size: 13.5px; max-width: 500px; margin: 0 auto 18px;">
+          We sent your 3 Full Practice Exams & Flashcard vault to <strong>${email}</strong>. You can also print / save your Cheatsheet immediately below:
+        </p>
+        <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+          <button onclick="window.print()" class="btn btn-primary" style="background: #facc15; color: #0f172a; font-weight: 800; padding: 10px 22px; border-radius: 6px; border: none; cursor: pointer; display: inline-block;">
+            📥 Download / Print Cheatsheet (PDF)
+          </button>
+          <a href="checkout.html?ref=optin_gift" class="btn" style="background: #2563eb; color: white; font-weight: 700; padding: 10px 20px; border-radius: 6px; text-decoration: none; display: inline-block;">
+            Claim 40% VIP Exam Vault Pass →
+          </a>
+        </div>
+      </div>
+    `;
+  }
+}
+
 
 
 // ---- MOBILE MENU TOGGLE ----

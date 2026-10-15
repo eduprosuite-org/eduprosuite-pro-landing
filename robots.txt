@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://eduprosuite.pro/sitemap.xml
+Sitemap: https://eduprosuite.pro/image-sitemap.xml
+Sitemap: https://eduprosuite.pro/news-sitemap.xml
+Sitemap: https://eduprosuite.pro/video-sitemap.xml

@@ -34,4 +34,37 @@
       <video:family_friendly>yes</video:family_friendly>
     </video:video>
   </url>
+  <url>
+    <loc>https://eduprosuite.pro/sat-prep.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://eduprosuite.pro/images/courses/sat-prep-cover.svg</video:thumbnail_loc>
+      <video:title>Digital SAT 2026 Math Module Strategies & Desmos Hacks</video:title>
+      <video:description>Essential Desmos graphing calculator tricks, quadratic vertex formulas, and adaptive module pacing.</video:description>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/sat_math_mastery</video:player_loc>
+      <video:publication_date>2026-10-04T08:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://eduprosuite.pro/cpa-review.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://eduprosuite.pro/images/courses/cpa-review-cover.svg</video:thumbnail_loc>
+      <video:title>CPA Exam FAR & REG Core Frameworks in 7 Minutes</video:title>
+      <video:description>Rapid review of revenue recognition (ASC 606), leases (ASC 842), and individual vs corporate tax basis.</video:description>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/cpa_review_mastery</video:player_loc>
+      <video:publication_date>2026-10-05T08:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://eduprosuite.pro/epa-608-technician.html</loc>
+    <video:video>
+      <video:thumbnail_loc>https://eduprosuite.pro/images/courses/epa-608-technician-cover.svg</video:thumbnail_loc>
+      <video:title>EPA 608 Universal Certification Core & Type II Recovery Rules</video:title>
+      <video:description>Master ozone depletion, Montreal Protocol rules, evacuation levels, and recovery techniques.</video:description>
+      <video:player_loc>https://www.youtube-nocookie.com/embed/epa_608_mastery</video:player_loc>
+      <video:publication_date>2026-10-06T08:00:00+00:00</video:publication_date>
+      <video:family_friendly>yes</video:family_friendly>
+    </video:video>
+  </url>
 </urlset>

@@ -1,106 +1,381 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:g="http://base.google.com/ns/1.0">
   <channel>
-    <title>EduProSuite Educational Test Prep &amp; Trade Book Catalog</title>
+    <title>EduProSuite Educational Test Prep &amp; Trade Exam Catalog</title>
     <link>https://eduprosuite.pro/</link>
-    <description>Official physical textbooks and student prep guides by EduProSuite</description>
+    <description>Official examination preparation suites, diagnostic workbooks, and licensure simulators by EduProSuite</description>
     <item>
-      <g:id>EDU-SCORE5-PRO</g:id>
-      <g:title><![CDATA[Score-5 Pro: AP Statistics Master Practice & Inference Suite]]></g:title>
-      <g:description><![CDATA[Comprehensive student edition with complete inference tests, hypothesis decision frameworks, and College Board mock exam drills.]]></g:description>
-      <g:link>https://eduprosuite.pro/ap-stats.html</g:link>
-      <g:image_link>https://eduprosuite.pro/images/ap-stats-cover.webp</g:image_link>
-      <g:price>19.00 USD</g:price>
-      <g:availability>in_stock</g:availability>
-      <g:brand>EduProSuite</g:brand>
-      <g:gtin>9781958201022</g:gtin>
-      <g:mpn>EDUPRO-STATS-SCORE5</g:mpn>
-      <g:condition>new</g:condition>
-      <g:product_type><![CDATA[Books > Non-Fiction > Education > Test Preparation]]></g:product_type>
-      <g:google_product_category>784</g:google_product_category>
-      <g:shipping>
-        <g:country>US</g:country>
-        <g:service>Standard Ground Delivery</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-      <g:shipping>
-        <g:country>IN</g:country>
-        <g:service>Standard Ground Delivery</g:service>
-        <g:price>0.00 USD</g:price>
-      </g:shipping>
-    </item>
-    <item>
-      <g:id>EDU-SCORE5-ELITE</g:id>
-      <g:title><![CDATA[Score-5 Elite: AP Calculus BC Complete Comprehensive Prep Suite]]></g:title>
-      <g:description><![CDATA[Complete student prep guide covering all 10 College Board units, Taylor series drills, step-by-step calculus proofs, and full-length practice exams.]]></g:description>
+      <g:id>EDU-AP-CALC-BC</g:id>
+      <g:title><![CDATA[AP® Calculus BC Complete Prep Vault & Bluebook Practice Exams]]></g:title>
+      <g:description><![CDATA[Comprehensive student prep guide covering all 10 College Board units, Taylor series drills, step-by-step calculus proofs, and full-length practice exams.]]></g:description>
       <g:link>https://eduprosuite.pro/ap-calc.html</g:link>
-      <g:image_link>https://eduprosuite.pro/images/ap-calc-cover.webp</g:image_link>
-      <g:price>49.00 USD</g:price>
+      <g:image_link>https://eduprosuite.pro/images/courses/ap-calc-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
       <g:availability>in_stock</g:availability>
       <g:brand>EduProSuite</g:brand>
       <g:gtin>9781958201015</g:gtin>
-      <g:mpn>EDUPRO-CALC-SCORE5ELITE</g:mpn>
+      <g:mpn>EDUPRO-CALC-BC</g:mpn>
       <g:condition>new</g:condition>
       <g:product_type><![CDATA[Books > Non-Fiction > Education > Test Preparation]]></g:product_type>
       <g:google_product_category>784</g:google_product_category>
       <g:shipping>
         <g:country>US</g:country>
-        <g:service>Standard Ground Delivery</g:service>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
         <g:price>0.00 USD</g:price>
       </g:shipping>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard Ground Delivery</g:service>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
         <g:price>0.00 USD</g:price>
       </g:shipping>
     </item>
     <item>
-      <g:id>EDU-JOURNEYMAN-PRO</g:id>
-      <g:title><![CDATA[Journeyman Pro: Practical Mathematics for Electricians, Plumbers & HVAC Trades]]></g:title>
+      <g:id>EDU-AP-STATS-PRO</g:id>
+      <g:title><![CDATA[AP® Statistics 2027 Inference & Hypothesis Testing Suite]]></g:title>
+      <g:description><![CDATA[Comprehensive student edition with complete inference tests, hypothesis decision frameworks, and College Board mock exam drills.]]></g:description>
+      <g:link>https://eduprosuite.pro/ap-stats.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/ap-stats-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201022</g:gtin>
+      <g:mpn>EDUPRO-STATS-PRO</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Education > Test Preparation]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-TRADE-MATH-PRO</g:id>
+      <g:title><![CDATA[Journeyman Trade Math: Electrician, Plumber & Pipefitter Calculation Suite]]></g:title>
       <g:description><![CDATA[Complete trade apprentice handbook: conduit bending geometry, Ohm's law, pipe trigonometry, and electrical load calculations.]]></g:description>
       <g:link>https://eduprosuite.pro/trade-math.html</g:link>
-      <g:image_link>https://eduprosuite.pro/images/trade-math-cover.webp</g:image_link>
-      <g:price>34.00 USD</g:price>
+      <g:image_link>https://eduprosuite.pro/images/courses/trade-math-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
       <g:availability>in_stock</g:availability>
       <g:brand>EduProSuite</g:brand>
       <g:gtin>9781958201039</g:gtin>
-      <g:mpn>EDUPRO-TRADEMATH-JOURNEYMAN</g:mpn>
+      <g:mpn>EDUPRO-TRADEMATH-PRO</g:mpn>
       <g:condition>new</g:condition>
       <g:product_type><![CDATA[Books > Non-Fiction > Vocational & Technical]]></g:product_type>
       <g:google_product_category>784</g:google_product_category>
       <g:shipping>
         <g:country>US</g:country>
-        <g:service>Standard Ground Delivery</g:service>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
         <g:price>0.00 USD</g:price>
       </g:shipping>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard Ground Delivery</g:service>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
         <g:price>0.00 USD</g:price>
       </g:shipping>
     </item>
     <item>
-      <g:id>EDU-TI84-PLAYBOOK</g:id>
-      <g:title><![CDATA[TI-84 Playbook: Master Calculator Programs & Exam Vault Suite]]></g:title>
-      <g:description><![CDATA[Step-by-step TI-84 Plus CE graphing calculator playbook, program shortcuts, matrix solver workflows, and high-yield formula cheatsheets.]]></g:description>
-      <g:link>https://eduprosuite.pro/index.html</g:link>
-      <g:image_link>https://eduprosuite.pro/images/master-exam-vault-suite.webp</g:image_link>
-      <g:price>9.99 USD</g:price>
+      <g:id>EDU-DIGITAL-SAT-PRO</g:id>
+      <g:title><![CDATA[Digital SAT® 2026 Adaptive Master Prep Suite & Desmos Shortcuts]]></g:title>
+      <g:description><![CDATA[Full-length adaptive digital exam simulator with Desmos graphing calculator hacks, non-linear function modeling, and 800-target practice questions.]]></g:description>
+      <g:link>https://eduprosuite.pro/sat-prep.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/sat-prep-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
       <g:availability>in_stock</g:availability>
       <g:brand>EduProSuite</g:brand>
-      <g:gtin>9781958201046</g:gtin>
-      <g:mpn>EDUPRO-TI84-PLAYBOOK</g:mpn>
+      <g:gtin>9781958201053</g:gtin>
+      <g:mpn>EDUPRO-SAT-DIGITAL</g:mpn>
       <g:condition>new</g:condition>
-      <g:product_type><![CDATA[Books > Non-Fiction > Education > Study Guides]]></g:product_type>
+      <g:product_type><![CDATA[Books > Non-Fiction > Education > Test Preparation]]></g:product_type>
       <g:google_product_category>784</g:google_product_category>
       <g:shipping>
         <g:country>US</g:country>
-        <g:service>Standard Ground Delivery</g:service>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
         <g:price>0.00 USD</g:price>
       </g:shipping>
       <g:shipping>
         <g:country>IN</g:country>
-        <g:service>Standard Ground Delivery</g:service>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-CPA-REVIEW-VAULT</g:id>
+      <g:title><![CDATA[CPA® Exam Review Vault: Complete AUD, FAR, REG & Disciplines]]></g:title>
+      <g:description><![CDATA[Master 2026 CPA Exam Blueprints with adaptive task-based simulations, bond amortization schedules, and authoritative regulation drills.]]></g:description>
+      <g:link>https://eduprosuite.pro/cpa-review.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/cpa-review-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201060</g:gtin>
+      <g:mpn>EDUPRO-CPA-VAULT</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Business & Economics > Accounting]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-CFA-LEVEL1-SUITE</g:id>
+      <g:title><![CDATA[CFA® Level I & II Chartered Financial Analyst Master Suite]]></g:title>
+      <g:description><![CDATA[Full curriculum review covering Ethical & Professional Standards, Quantitative Methods, Financial Reporting, and Portfolio Management.]]></g:description>
+      <g:link>https://eduprosuite.pro/cfa-exam.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/cfa-exam-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201077</g:gtin>
+      <g:mpn>EDUPRO-CFA-L1</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Business & Economics > Finance]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-CDL-AIRBRAKES-PRO</g:id>
+      <g:title><![CDATA[CDL Air Brakes Endorsement Master Preparation Suite]]></g:title>
+      <g:description><![CDATA[Pass your CDL Air Brakes endorsement on the first attempt with 7-step pre-trip inspection procedures, dual air brake systems, and practice drills.]]></g:description>
+      <g:link>https://eduprosuite.pro/cdl-air-brakes.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/cdl-air-brakes-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201084</g:gtin>
+      <g:mpn>EDUPRO-CDL-AIRBRAKES</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Transportation > Automotive]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-EPA-608-UNIVERSAL</g:id>
+      <g:title><![CDATA[EPA 608 Universal HVAC Technician Certification Suite]]></g:title>
+      <g:description><![CDATA[Core, Type I, Type II, and Type III refrigerant recovery laws, saturation charts, and Section 608 exam simulator.]]></g:description>
+      <g:link>https://eduprosuite.pro/epa-608-technician.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/epa-608-technician-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201091</g:gtin>
+      <g:mpn>EDUPRO-EPA608-UNIV</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Technology & Engineering > Construction]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-ACT-PREP-VAULT</g:id>
+      <g:title><![CDATA[ACT® 36 Target Prep Vault & Science Reasoning Suite]]></g:title>
+      <g:description><![CDATA[Full-length timed ACT diagnostic exams, pacing strategies, English grammar rules, and scientific graph analysis.]]></g:description>
+      <g:link>https://eduprosuite.pro/act-prep.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/act-prep-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201107</g:gtin>
+      <g:mpn>EDUPRO-ACT-36</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Education > Test Preparation]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-MCAT-PREP-SUITE</g:id>
+      <g:title><![CDATA[MCAT® Medical Admissions Comprehensive Review Suite]]></g:title>
+      <g:description><![CDATA[High-yield biological systems, chemical physical foundations, CARS analysis, and behavioral sciences practice question bank.]]></g:description>
+      <g:link>https://eduprosuite.pro/mcat-prep.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/mcat-prep-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201114</g:gtin>
+      <g:mpn>EDUPRO-MCAT-ADMIT</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Medical > Test Preparation]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-CMA-EXAM-PREP</g:id>
+      <g:title><![CDATA[CMA® Certified Management Accountant Exam Review Vault]]></g:title>
+      <g:description><![CDATA[Part 1 & Part 2 financial planning, performance, control, and strategic financial management mock exam simulator.]]></g:description>
+      <g:link>https://eduprosuite.pro/cma-review.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/cma-review-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201121</g:gtin>
+      <g:mpn>EDUPRO-CMA-REVIEW</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Business & Economics > Accounting]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-REAL-ESTATE-LICENSE</g:id>
+      <g:title><![CDATA[Real Estate Licensing Exam National & State Master Suite]]></g:title>
+      <g:description><![CDATA[Pass your real estate salesperson or broker licensing exam with property ownership, real estate law, valuation, and finance practice tests.]]></g:description>
+      <g:link>https://eduprosuite.pro/real-estate-licensing.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/real-estate-licensing-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201138</g:gtin>
+      <g:mpn>EDUPRO-REALESTATE-LIC</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Business & Economics > Real Estate]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-CPC-MEDICAL-CODING</g:id>
+      <g:title><![CDATA[CPC® Medical Coding Exam Mastery Suite (AAPC Aligned)]]></g:title>
+      <g:description><![CDATA[Certified Professional Coder review: CPT, ICD-10-CM, HCPCS Level II, and surgical coding scenario breakdowns.]]></g:description>
+      <g:link>https://eduprosuite.pro/cpc-medical-coding.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/cpc-medical-coding-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201145</g:gtin>
+      <g:mpn>EDUPRO-CPC-CODING</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Medical > Administration]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-SHRM-CP-HR</g:id>
+      <g:title><![CDATA[SHRM-CP® Human Resources Certification Practice Suite]]></g:title>
+      <g:description><![CDATA[Behavioral competencies, situational judgment test items, and functional HR knowledge domain practice modules.]]></g:description>
+      <g:link>https://eduprosuite.pro/shrm-cp.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/shrm-cp-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201152</g:gtin>
+      <g:mpn>EDUPRO-SHRM-CP</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Business & Economics > Human Resources]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+    </item>
+    <item>
+      <g:id>EDU-CFOT-FIBER-OPTIC</g:id>
+      <g:title><![CDATA[CFOT® Certified Fiber Optic Technician Master Exam Vault]]></g:title>
+      <g:description><![CDATA[FOA certified technician preparation: optical fiber transmission theory, splicing techniques, OTDR testing, and safety protocols.]]></g:description>
+      <g:link>https://eduprosuite.pro/cfot-fiber-optic.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/courses/cfot-fiber-optic-cover.svg</g:image_link>
+      <g:price>29.00 USD</g:price>
+      <g:availability>in_stock</g:availability>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958201169</g:gtin>
+      <g:mpn>EDUPRO-CFOT-FIBER</g:mpn>
+      <g:condition>new</g:condition>
+      <g:product_type><![CDATA[Books > Non-Fiction > Technology & Engineering > Telecommunications]]></g:product_type>
+      <g:google_product_category>784</g:google_product_category>
+      <g:shipping>
+        <g:country>US</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
+        <g:price>0.00 USD</g:price>
+      </g:shipping>
+      <g:shipping>
+        <g:country>IN</g:country>
+        <g:service>Instant Digital &amp; Ground Delivery</g:service>
         <g:price>0.00 USD</g:price>
       </g:shipping>
     </item>
