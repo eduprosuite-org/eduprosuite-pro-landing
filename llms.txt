@@ -101,3 +101,10 @@
 - [TI-84 Commands for AP Statistics: Syntax & Guide](https://eduprosuite.pro/ap-stats-ti84-calculator-guide.html): Master the TI-84 Plus CE calculator for AP Statistics: normalcdf, invNorm, 1-PropZTest, 2-SampTTest, LinRegTTest, and common syntax errors.
 - [Digital SAT Desmos Calculator Guide: 10 Score-Boosting Tricks](https://eduprosuite.pro/sat-desmos-calculator-tricks.html): 10 secret Desmos graphing calculator shortcuts for Digital SAT Math: systems of equations, regressions, slider constants, vertex finding, and inequalities.
 - [Digital SAT Math Formula Sheet 2026: Official Reference](https://eduprosuite.pro/sat-math-formulas-sheet.html): Complete Digital SAT Math formula sheet breakdown: College Board reference sheet geometry formulas, plus 15 unprovided formulas you must memorize to score 750+.
+
+
+## Newly Added Exam Courses & Simulators
+- [CDL Air Brake 7-Step Inspection & Leak Test Guide 2026](https://eduprosuite.pro/cdl-air-brakes-inspection-guide.html): Master the CDL air brake 7-step pre-trip inspection: applied pressure leak test, low air warning buzzer, spring brake pop-out, and governor cut-in/cut-out psi.
+- [CDL Stopping Distance Formulas & Air Brake Lag Guide](https://eduprosuite.pro/cdl-stopping-distance-formulas.html): Calculate commercial vehicle stopping distance: perception distance, reaction distance, air brake lag distance, and braking distance at 55 mph.
+- [EPA 608 Refrigerant Recovery & Evacuation Levels Guide 2026](https://eduprosuite.pro/epa-608-refrigerant-recovery-guide.html): Official EPA 608 refrigerant recovery guide: required evacuation levels in inches of Hg vacuum, leak repair thresholds, Type I, II, III rules, and recovery tank limits.
+- [Conduit Bending Math: 30° Offset Multipliers & Formulas](https://eduprosuite.pro/trade-math-conduit-bending-formulas.html): Electrician conduit bending formulas guide: 30-degree offset multipliers, shrink per inch, 3-bend and 4-bend saddles, take-up deductions, and NEC bending rules.
