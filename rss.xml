@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EduProSuite Newsroom &amp; Exam Updates</title>
+    <link>https://eduprosuite.pro/</link>
+    <description>Verified academic analysis of College Board AP exam guidelines, Digital SAT scoring matrices, and professional licensing exam updates.</description>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Oct 2026 13:45:57 GMT</lastBuildDate>
+    <atom:link href="https://eduprosuite.pro/rss.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title><![CDATA[2026 AP Calculus BC Exam Dates & Calculator Guidelines Released]]></title>
+      <link>https://eduprosuite.pro/news/college-board-ap-calculus-2026-updates.html</link>
+      <guid isPermaLink="true">https://eduprosuite.pro/news/college-board-ap-calculus-2026-updates.html</guid>
+      <pubDate>Thu, 08 Oct 2026 09:00:00 GMT</pubDate>
+      <author>support@eduprosuite.pro (Dr. Eleanor Vance, Lead Mathematics Assessment Fellow)</author>
+      <description><![CDATA[Official updates from the College Board regarding the 2026 AP Calculus AB and BC administration dates, Section I calculator restrictions, and unit weight distribution.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Digital SAT 2026 Scoring: Module 2 Percentile Breakdown]]></title>
+      <link>https://eduprosuite.pro/news/digital-sat-math-adaptive-scoring-analysis.html</link>
+      <guid isPermaLink="true">https://eduprosuite.pro/news/digital-sat-math-adaptive-scoring-analysis.html</guid>
+      <pubDate>Wed, 07 Oct 2026 10:30:00 GMT</pubDate>
+      <author>support@eduprosuite.pro (Marcus Sterling, Senior Psychometric Specialist)</author>
+      <description><![CDATA[An in-depth empirical breakdown of the College Board's multistage adaptive scoring matrix on the Digital SAT mathematics sections.]]></description>
+    </item>
+  </channel>
+</rss>
