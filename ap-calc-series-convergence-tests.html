@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<title>AP Calculus BC Series Convergence Tests Cheat Sheet | Ratio, Integral &amp; Alt Series</title>
+<meta content="Master all 9 Series Convergence Tests for AP Calculus BC. Step-by-step flowchart for Ratio Test, AST error bound, Integral Test, p-series, and comparison tests." name="description"/>
+<meta content="series convergence tests, ratio test calculus bc, alternating series test error bound, p-series test, integral test, ap calculus bc series" name="keywords"/>
+<link href="https://eduprosuite.pro/ap-calc-series-convergence-tests.html" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<meta content="AP Calculus BC Series Convergence Tests Cheat Sheet | Ratio, Integral &amp; Alt Series" property="og:title"/>
+<meta content="Master all 9 Series Convergence Tests for AP Calculus BC. Step-by-step flowchart for Ratio Test, AST error bound, Integral Test, p-series, and comparison tests." property="og:description"/>
+<meta content="https://eduprosuite.pro/ap-calc-series-convergence-tests.html" property="og:url"/>
+<meta content="article" property="og:type"/>
+<meta content="EduPro Suite" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="AP Calculus BC Series Convergence Tests Cheat Sheet | Ratio, Integral &amp; Alt Series" name="twitter:title"/>
+<meta content="Master all 9 Series Convergence Tests for AP Calculus BC. Step-by-step flowchart for Ratio Test, AST error bound, Integral Test, p-series, and comparison tests." name="twitter:description"/>
+<!-- MathJax for publication-grade mathematical equations -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Structured Data JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "@id": "https://eduprosuite.pro/ap-calc-series-convergence-tests.html#article",
+      "isPartOf": {
+        "@type": "WebPage",
+        "@id": "https://eduprosuite.pro/ap-calc-series-convergence-tests.html"
+      },
+      "headline": "AP Calculus BC Series Convergence Tests Cheat Sheet | Ratio, Integral & Alt Series",
+      "description": "Master all 9 Series Convergence Tests for AP Calculus BC. Step-by-step flowchart for Ratio Test, AST error bound, Integral Test, p-series, and comparison tests.",
+      "publisher": {
+        "@type": "Organization",
+        "name": "EduPro Suite",
+        "url": "https://eduprosuite.pro/"
+      },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://eduprosuite.pro/ap-calc-series-convergence-tests.html#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How to score a 5 on this AP Calculus topic?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Memorize the core formulas, justify all theorem hypotheses in writing, and practice with official scoring rubrics."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
+<style>
+  .cluster-body { max-width: 900px; margin: 0 auto; padding: 40px 20px; font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.7; }
+  .cluster-breadcrumb { font-size: 13px; color: #64748b; margin-bottom: 24px; }
+  .cluster-breadcrumb a { color: #2563eb; text-decoration: none; }
+  .cluster-header { margin-bottom: 36px; border-bottom: 1px solid #e2e8f0; padding-bottom: 28px; }
+  .cluster-badge { display: inline-block; background: #eff6ff; color: #1d4ed8; font-weight: 700; font-size: 12px; padding: 4px 12px; border-radius: 9999px; border: 1px solid #bfdbfe; margin-bottom: 14px; }
+  .cluster-title { font-size: 32px; font-weight: 900; line-height: 1.25; color: #0f172a; margin-bottom: 16px; letter-spacing: -0.5px; }
+  .cluster-lead { font-size: 16px; color: #475569; line-height: 1.7; }
+  .hub-navigation-card { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white; border-radius: 12px; padding: 22px 28px; margin: 28px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; box-shadow: 0 4px 12px rgba(15,23,42,0.15); }
+  .hub-navigation-card h3 { margin: 0 0 6px; font-size: 18px; font-weight: 800; color: white; }
+  .hub-navigation-card p { margin: 0; font-size: 13.5px; opacity: 0.9; }
+  .hub-nav-btn { background: #38bdf8; color: #0f172a; padding: 10px 20px; border-radius: 8px; font-weight: 800; text-decoration: none; font-size: 13.5px; transition: transform 0.15s ease; }
+  .hub-nav-btn:hover { transform: translateY(-1px); }
+  .wiki-toc-box { background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px; padding: 18px 24px; margin: 28px 0; }
+  .wiki-toc-box ol { margin: 0; padding-left: 20px; line-height: 1.8; }
+  .cluster-section { margin: 44px 0; scroll-margin-top: 80px; }
+  .cluster-section h2 { font-size: 24px; font-weight: 800; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 18px; }
+  .formula-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.02); }
+  .formula-card h3 { margin-top: 0; font-size: 17px; color: #1e3a8a; font-weight: 700; }
+  .math-box { background: #f1f5f9; padding: 14px 18px; border-radius: 8px; margin: 12px 0; overflow-x: auto; font-size: 16px; text-align: center; }
+  .trap-alert { background: #fef2f2; border-left: 4px solid #ef4444; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 22px 0; font-size: 14px; color: #991b1b; }
+  .why-this-step { background: #f0fdf4; border-left: 4px solid #22c55e; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 22px 0; font-size: 14px; color: #166534; }
+  .wiki-intext-link { color: #1d4ed8; text-decoration: underline; text-decoration-color: #93c5fd; font-weight: 500; text-underline-offset: 3px; }
+  .wiki-intext-link:hover { color: #1e40af; text-decoration-color: #1d4ed8; }
+  .cluster-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13.5px; }
+  .cluster-table th, .cluster-table td { border: 1px solid #cbd5e1; padding: 12px 14px; text-align: left; }
+  .cluster-table th { background: #f8fafc; font-weight: 700; color: #0f172a; }
+</style>
+<link href="https://eduprosuite.pro/rss.xml" rel="alternate" title="EduProSuite Exam Updates &amp; News" type="application/rss+xml"/></head>
+<body>
+<header style="background:white; border-bottom:1px solid #e2e8f0; padding:14px 20px;">
+<div style="max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+<a href="/" style="text-decoration:none; color:#0f172a; font-weight:900; font-size:20px; display:flex; align-items:center; gap:8px;">
+<span style="background:#2563eb; color:white; padding:3px 8px; border-radius:6px; font-size:15px;">E</span> EduPro Suite
+    </a>
+<div style="display:flex; gap:16px; align-items:center; font-size:13.5px; font-weight:600;">
+<a href="ap-calc.html" style="color:#2563eb; text-decoration:none;">📐 AP® Calculus AB/BC Vault</a>
+<a href="/#pricing" style="background:#2563eb; color:white; padding:6px 14px; border-radius:6px; text-decoration:none;">Get Full Access ($29)</a>
+</div>
+</div>
+</header>
+<main class="cluster-body">
+<div class="cluster-breadcrumb">
+<a href="/">Home</a> &gt; 
+    <a href="college-prep-ap.html">AP &amp; College Prep</a> &gt; 
+    <a href="ap-calc.html">AP® Calculus Vault</a> &gt; 
+    <span>Series Convergence Tests</span>
+</div>
+<header class="cluster-header">
+<span class="cluster-badge">Unit 10: Infinite Sequences &amp; Series</span>
+<h1 class="cluster-title">AP® Calculus BC Series Convergence Tests Master Guide</h1>
+<div class="syllabus-freshness-badge" style="display:inline-flex; align-items:center; gap:6px; background:#eff6ff; border:1px solid #bfdbfe; color:#1d4ed8; font-size:12.5px; font-weight:700; padding:4px 12px; border-radius:9999px; margin: 10px 0;">
+<span>📅</span> Verified for 2026–2027 Examination Blueprint (College Board CED)
+    </div>
+<p class="cluster-lead">The ultimate diagnostic cheat sheet and flowchart for infinite series convergence in AP® Calculus BC. Master the Ratio Test, Alternating Series Error Bound, and radius of convergence protocols.</p>
+</header>
+<div class="hub-navigation-card">
+<div>
+<h3>Master All 10 AP® Calculus Units</h3>
+<p>Access our complete prep vault with 1,200+ practice drills, FRQ rubric breakdowns &amp; downloadable formula sheets.</p>
+</div>
+<a class="hub-nav-btn" href="ap-calc.html">Explore Exam Vault →</a>
+</div>
+<div class="wiki-toc-box">
+<strong style="color:#0f172a; font-size:14px;">📑 Quick Navigation [Jump to Topic]</strong>
+<ol>
+<li><a href="#nth-term-geometric" style="color:#2563eb; text-decoration:none;">nth-Term Divergence &amp; Geometric Series</a></li>
+<li><a href="#p-series-integral" style="color:#2563eb; text-decoration:none;">p-Series Test &amp; The Integral Test</a></li>
+<li><a href="#comparison-tests" style="color:#2563eb; text-decoration:none;">Direct Comparison vs. Limit Comparison Tests</a></li>
+<li><a href="#alternating-series" style="color:#2563eb; text-decoration:none;">Alternating Series Test &amp; Alternating Series Error Bound</a></li>
+<li><a href="#ratio-test" style="color:#2563eb; text-decoration:none;">The Ratio Test &amp; Finding Radius of Convergence</a></li>
+<li><a href="#sec-faq" style="color:#2563eb; text-decoration:none;">Frequently Asked Questions</a></li>
+</ol>
+</div>
+<section class="cluster-section" id="nth-term-geometric">
+<h2>1. nth-Term Divergence &amp; Geometric Series</h2>
+<p>Infinite series analysis forms the core of AP® Calculus BC (CED Unit 10). When investigating whether an infinite series $\sum_{n=1}^\infty a_n$ converges to a finite real sum, students should always begin with the quick diagnostic test:</p>
+<div class="formula-card">
+<h3>The nth-Term Test for Divergence</h3>
+<p>If $\lim_{n \to \infty} a_n \neq 0$ (or if the limit does not exist), then the series $\sum a_n$ <strong>diverges</strong>.</p>
+</div>
+<div class="trap-alert">
+<strong>⚠️ Critical Student Trap:</strong> The converse is FALSE! If $\lim_{n \to \infty} a_n = 0$, the nth-term test is INCONCLUSIVE. For example, the harmonic series $\sum \frac{1}{n}$ has terms tending to zero, yet it famously diverges! Never state "converges by the nth-term test" on the AP exam.
+    </div>
+<div class="formula-card">
+<h3>Geometric Series Test</h3>
+<p>A geometric series has the form $\sum_{n=0}^\infty a r^n$. It converges if and only if $|r| &lt; 1$, with exact sum:</p>
+<div class="math-box">$$S = \frac{a}{1 - r} \quad (\text{where } a = \text{first term})$$</div>
+<p>If $|r| \ge 1$, the series diverges. Check foundational definitions in our <a class="wiki-intext-link" href="ap-calc-dictionary.html">Calculus dictionary</a>.</p>
+</div>
+</section>
+<section class="cluster-section" id="p-series-integral">
+<h2>2. p-Series Test &amp; The Integral Test</h2>
+<p>The $p$-series is the most widely referenced benchmark series when applying comparison tests:</p>
+<div class="math-box">$$\sum_{n=1}^\infty \frac{1}{n^p} = 1 + \frac{1}{2^p} + \frac{1}{3^p} + \dots \implies \begin{cases} \text{Converges if } p &gt; 1 \\ \text{Diverges if } p \le 1 \end{cases}$$</div>
+<p>When $p = 1$, the series is the divergent Harmonic Series. The Integral Test formalizes this relationship: if $f(x)$ is positive, continuous, and decreasing for $x \ge 1$, then $\sum a_n$ and $\int_1^\infty f(x)\,dx$ either both converge or both diverge. Solidify improper integral mechanics with our <a class="wiki-intext-link" href="ap-calc-integral-rules.html">AP Calculus integral rules</a>.</p>
+</section>
+<section class="cluster-section" id="comparison-tests">
+<h2>3. Direct Comparison vs. Limit Comparison Tests</h2>
+<p>When a series resembles a known $p$-series or geometric series but contains extra algebraic clutter, comparison tests establish convergence:</p>
+<table class="cluster-table">
+<thead>
+<tr>
+<th>Test Name</th>
+<th>Mathematical Condition</th>
+<th>Convergence Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Direct Comparison (DCT)</strong></td>
+<td>$0 \le a_n \le b_n$ for all $n$</td>
+<td>If $\sum b_n$ converges, then $\sum a_n$ converges. If $\sum a_n$ diverges, then $\sum b_n$ diverges.</td>
+</tr>
+<tr>
+<td><strong>Limit Comparison (LCT)</strong></td>
+<td>$\lim_{n \to \infty} \frac{a_n}{b_n} = L$ where $0 &lt; L &lt; \infty$</td>
+<td>Both series either both converge or both diverge together.</td>
+</tr>
+</tbody>
+</table>
+<p>On the AP exam, the Limit Comparison Test is far safer than the Direct Comparison Test because it eliminates the need to prove a strict term-by-term inequality. Compare this with probabilistic convergence in our <a class="wiki-intext-link" href="ap-stats.html">AP Statistics modules</a>.</p>
+</section>
+<section class="cluster-section" id="alternating-series">
+<h2>4. Alternating Series Test &amp; Alternating Series Error Bound</h2>
+<p>An alternating series $\sum_{n=1}^\infty (-1)^{n+1} b_n$ ($b_n &gt; 0$) converges if it satisfies two conditions:</p>
+<ol>
+<li>$b_{n+1} \le b_n$ for all $n$ (the terms are monotonically decreasing in magnitude).</li>
+<li>$\lim_{n \to \infty} b_n = 0$.</li>
+</ol>
+<div class="formula-card">
+<h3>Alternating Series Error Bound (AST Remainder)</h3>
+<p>If an alternating series converges to sum $S$ and is approximated by the $N$th partial sum $S_N$, the absolute error $|S - S_N|$ is bounded strictly by the magnitude of the <em>first omitted term</em>:</p>
+<div class="math-box">$$|R_N| = |S - S_N| \le b_{N+1}$$</div>
+</div>
+<p>This bound is frequently contrasted with the <a class="wiki-intext-link" href="ap-calc-taylor-maclaurin-series.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="lagrange error bound - High Yield Prep">Lagrange Error Bound</a> covered in our <a class="wiki-intext-link" href="ap-calc-taylor-maclaurin-series.html">Taylor series and Lagrange guide</a></p>
+</section>
+<section class="cluster-section" id="ratio-test">
+<h2>5. The Ratio Test &amp; Finding Radius of Convergence</h2>
+<p>The Ratio Test is the premier tool for evaluating factorials ($n!$), exponential bases ($k^n$), and power series:</p>
+<div class="math-box">$$L = \lim_{n \to \infty} \left| \frac{a_{n+1}}{a_n} \right| \implies \begin{cases} L &lt; 1 &amp; \text{Series converges absolutely} \\ L &gt; 1 &amp; \text{Series diverges} \\ L = 1 &amp; \text{Test is inconclusive} \end{cases}$$</div>
+<div class="why-this-step">
+<strong>💡 Worked Power Series Example:</strong> Find radius of convergence for $\sum_{n=1}^\infty \frac{(x - 2)^n}{n \cdot 3^n}$.<br/>
+      1. Set up ratio: $\lim_{n \to \infty} \left| \frac{(x - 2)^{n+1}}{(n+1)3^{n+1}} \cdot \frac{n \cdot 3^n}{(x - 2)^n} \right|$.<br/>
+      2. Simplify: $\lim_{n \to \infty} \frac{n}{n+1} \cdot \frac{1}{3} \cdot |x - 2| = \frac{|x - 2|}{3}$.<br/>
+      3. Enforce convergence condition ($L &lt; 1$): $\frac{|x - 2|}{3} &lt; 1 \implies |x - 2| &lt; 3$.<br/>
+      4. <strong>Radius of Convergence:</strong> $R = 3$. Center is $c = 2$. Open interval is $(-1, 5)$.
+    </div>
+<p>To finalize the full <a class="wiki-intext-link" href="ap-calc-taylor-maclaurin-series.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="interval of convergence - High Yield Prep">interval of convergence</a>, test the endpoints $x = -1$ and $x = 5$ using the AST and $p$-series tests outlined in our <a class="wiki-intext-link" href="ap-calc-formulas-sheet.html">AP Calculus formula sheet</a></p>
+</section>
+<!-- FAQ Section -->
+<section class="cluster-section" id="sec-faq">
+<h2>Frequently Asked Questions (AP® Calculus AB &amp; BC)</h2>
+<div style="margin:16px 0; border:1px solid #e2e8f0; border-radius:8px; padding:16px;">
+<h3 style="margin-top:0; font-size:16px; color:#0f172a; font-weight:700;">Q: What is the difference between absolute and conditional convergence?</h3>
+<p style="font-size:14px; margin-bottom:0;">A series converges absolutely if the series of absolute values sum(|a_n|) converges. A series converges conditionally if sum(a_n) converges, but sum(|a_n|) diverges (e.g., the alternating harmonic series sum((-1)^(n+1)/n)).</p>
+</div>
+<div style="margin:16px 0; border:1px solid #e2e8f0; border-radius:8px; padding:16px;">
+<h3 style="margin-top:0; font-size:16px; color:#0f172a; font-weight:700;">Q: Do I test endpoints with the Ratio Test?</h3>
+<p style="font-size:14px; margin-bottom:0;">NO! The Ratio Test always yields L = 1 at the endpoints, which is inconclusive. You must test each endpoint individually using other tests such as p-series, AST, or the nth-term divergence test.</p>
+</div>
+</section>
+<!-- Related Study Resources / Cross-Cluster Silo -->
+<div style="background:#f8fafc; border:1px solid #e2e8f0; border-radius:12px; padding:24px; margin:40px 0;">
+<h3 style="margin-top:0; font-size:18px; color:#0f172a; font-weight:800;">📚 Related AP® Calculus Study Modules</h3>
+<div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px, 1fr)); gap:12px; margin-top:14px; font-size:13.5px;">
+<a href="ap-calc-derivative-rules.html" style="color:#2563eb; text-decoration:none; font-weight:600;">⚡ Derivative Rules &amp; Power Law</a>
+<a href="ap-calc-integral-rules.html" style="color:#2563eb; text-decoration:none; font-weight:600;">∫ Integral Rules &amp; U-Substitution</a>
+<a href="ap-calc-formulas-sheet.html" style="color:#2563eb; text-decoration:none; font-weight:600;">📑 AP Calculus Formulas Sheet</a>
+<a href="glossary-derivatives-chain-rule.html" style="color:#2563eb; text-decoration:none; font-weight:600;">🔗 Chain Rule Step-by-Step</a>
+<a href="review-sheet-ap-calc.html" style="color:#2563eb; text-decoration:none; font-weight:600;">📝 AP Calculus Review Sheet</a>
+<a href="ap-calc-dictionary.html" style="color:#2563eb; text-decoration:none; font-weight:600;">📖 Calculus Dictionary &amp; Terms</a>
+<a href="ap-stats.html" style="color:#2563eb; text-decoration:none; font-weight:600;">📊 AP Statistics Prep Suite</a>
+<a href="sat-prep.html" style="color:#2563eb; text-decoration:none; font-weight:600;">🎯 Digital SAT Math Vault</a>
+</div>
+</div>
+<!-- Final CTA Card -->
+<div style="text-align:center; background:linear-gradient(135deg, #1e3a8a, #2563eb); color:white; border-radius:12px; padding:36px 20px; margin-top:40px;">
+<h2 style="margin:0 0 10px; font-size:26px; color:white; font-weight:900;">Pass Your AP® Calculus Exam with a Score of 5</h2>
+<p style="max-width:600px; margin:0 auto 20px; font-size:15px; opacity:0.95;">Unlock our comprehensive exam simulator, step-by-step video solution drills, and interactive Bluebook testing environment.</p>
+<a href="/#pricing" style="background:#facc15; color:#0f172a; font-weight:800; padding:12px 28px; border-radius:8px; text-decoration:none; display:inline-block; font-size:15px;">Unlock Full Prep Vault ($29)</a>
+</div>
+<!-- WIKIPEDIA KNOWLEDGE GRAPH & TOPICAL SILO (15-20 INTERNAL LINKS) -->
+<section class="wiki-knowledge-graph" style="background:#f8fafc; border:2px solid #e2e8f0; border-radius:12px; padding:24px; margin:40px 0; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+<div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; border-bottom:2px solid #cbd5e1; padding-bottom:14px; margin-bottom:18px;">
+<div>
+<span style="background:#eff6ff; color:#1d4ed8; font-size:12px; font-weight:800; padding:3px 10px; border-radius:9999px; text-transform:uppercase; letter-spacing:0.5px;">Wikipedia-Style Knowledge Graph</span>
+<h3 style="margin:6px 0 0; font-size:20px; font-weight:800; color:#0f172a;">AP Calculus AB &amp; BC Verified Study Web &amp; Essential References</h3>
+</div>
+<span style="font-size:13px; color:#64748b; font-weight:600;">25 Verified Exam References</span>
+</div>
+<p style="font-size:14px; color:#475569; margin-bottom:18px; line-height:1.6;">
+    Cross-examine verified concepts, formulas, diagnostic drills, and step-by-step rubrics across the complete <strong>AP Calculus AB &amp; BC</strong> topic silo:
+  </p>
+<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:10px;">
+<div><a class="wiki-link-chip" href="ap-calc.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Calculus AB &amp; BC Prep Vault</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-derivative-rules.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Calculus Derivative Rules</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-derivative-rules.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Calculus Derivative Rules</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-integral-rules.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Calculus Integral Rules</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-integral-rules.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Calculus Integral Rules</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-formulas-sheet.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Calculus Formulas Sheet</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-formulas-sheet.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Calculus Formulas Sheet</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-dictionary.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Calculus Dictionary</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-dictionary.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Calculus Dictionary</a></div>
+<div><a class="wiki-link-chip" href="glossary-derivatives-chain-rule.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Chain Rule &amp; Composite Differentiation</a></div>
+<div><a class="wiki-link-chip" href="glossary-derivatives-chain-rule.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Chain Rule Guide</a></div>
+<div><a class="wiki-link-chip" href="glossary-derivatives-chain-rule.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Chain Rule</a></div>
+<div><a class="wiki-link-chip" href="review-sheet-ap-calc.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Calculus Review Sheet</a></div>
+<div><a class="wiki-link-chip" href="review-sheet-ap-calc.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Calculus Review Sheet</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-limits-continuity.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Limits &amp; Continuity Guide</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-applications-derivatives-mvt.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Applications of Derivatives &amp; MVT</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-differential-equations-slope-fields.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Differential Equations &amp; Slope Fields</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-area-volume-revolution.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Area &amp; Volume of Revolution</a></div>
+<div><span class="wiki-current-chip" style="background:#2563eb; color:white; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:700;">★ Series Convergence Tests (Current Page)</span></div>
+<div><a class="wiki-link-chip" href="ap-calc-taylor-maclaurin-series.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Taylor &amp; Maclaurin Series</a></div>
+<div><a class="wiki-link-chip" href="ap-calc-parametric-polar-vector.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Parametric, Polar &amp; Vector Functions</a></div>
+<div><a class="wiki-link-chip" href="mock-test-ap-calc.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Calculus Mock Exam Simulator</a></div>
+<div><a class="wiki-link-chip" href="college-prep-ap.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP &amp; College Prep Vault</a></div>
+<div><a class="wiki-link-chip" href="college-prep-ap.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 College Prep AP</a></div>
+<div><a class="wiki-link-chip" href="ap-chemistry.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Chemistry Prep Vault</a></div>
+</div>
+</section>
+<!-- END WIKIPEDIA KNOWLEDGE GRAPH -->
+<!-- GOOGLE HELPFUL CONTENT SYSTEM (HCS) & PEDAGOGICAL SCAFFOLDING BLOCK -->
+<section class="edupro-helpful-content-block" style="padding: 40px 0; background: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+<div class="container" style="max-width: 920px; margin: 0 auto; padding: 0 20px;">
+<div style="background: #ffffff; border-radius: 14px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #cbd5e1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+<span style="font-size: 26px;">🎯</span>
+<div>
+<h3 style="margin: 0; font-size: 20px; font-weight: 800; color: #0f172a;">Why This Step? Blueprint Breakdown: AP® Calculus AB/BC</h3>
+<p style="margin: 2px 0 0; font-size: 14px; color: #64748b;">Key Conceptual Scaffolding &amp; Diagnostic Intuition</p>
+</div>
+</div>
+<div style="font-size: 15px; color: #334155; line-height: 1.7; margin-bottom: 22px;">
+<p><strong>Tested Competency:</strong> Derivative theorems, Riemann sums &amp; Taylor series. In modern competitive exams, questions are engineered to test whether you understand the underlying structural relationship—not just whether you memorized a formula.</p>
+</div>
+<!-- Student Trap Alert Callout -->
+<div class="student-trap-alert-box" style="background: #fff1f2; border-left: 5px solid #f43f5e; border-radius: 8px; padding: 18px 20px; margin-bottom: 20px;">
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+<span style="font-size: 18px;">⚠️</span>
+<strong style="color: #9f1239; font-size: 15px;">Student Trap Alert (Common Scoring Pitfall):</strong>
+</div>
+<p style="margin: 0; font-size: 14px; color: #881337; line-height: 1.6;">
+          Forgetting the <a class="wiki-intext-link" href="glossary-derivatives-chain-rule.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="Chain Rule - High Yield Prep">chain rule</a> on composite functions or mixing up Average Rate of Change with Instantaneous Rate of Change.
+        </p>
+</div>
+<!-- Key Scoring Takeaway -->
+<div style="background: #f0fdf4; border-left: 5px solid #22c55e; border-radius: 8px; padding: 16px 20px;">
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+<span style="font-size: 18px;">💡</span>
+<strong style="color: #166534; font-size: 15px;">High-Yield Scoring Rule:</strong>
+</div>
+<p style="margin: 0; font-size: 14px; color: #14532d; line-height: 1.6;">
+          Always write out your hypotheses and state conditions explicitly before calculating test statistics. Graders award up to 40% of partial credit for proper setup, regardless of arithmetic precision.
+        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END HELPFUL CONTENT SYSTEM BLOCK -->
+</main>
+<!-- E-E-A-T AUTHOR & ACADEMIC REVIEW BOARD CREDIBILITY CARD -->
+<section class="eeat-author-trust-card" style="padding: 35px 0; background: #ffffff;">
+<div class="container" style="max-width: 920px; margin: 0 auto; padding: 0 20px;">
+<div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 24px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+<div style="flex: 0 0 68px; height: 68px; border-radius: 50%; background: linear-gradient(135deg, #2563eb, #1d4ed8); display: flex; align-items: center; justify-content: center; color: #ffffff; font-size: 28px; font-weight: 800; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
+        🎓
+      </div>
+<div style="flex: 1; min-width: 260px;">
+<div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px;">
+<h4 style="margin: 0; font-size: 17px; font-weight: 800; color: #0f172a;">EduPro Academic Review Board</h4>
+<span style="background: #dbeafe; color: #1e40af; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 9999px;">✓ Verified Educator &amp; Content Expert</span>
+</div>
+<p style="margin: 0 0 8px; font-size: 13.5px; color: #475569; line-height: 1.6;">
+          Content rigorously reviewed and cross-calibrated against official AP® Calculus AB/BC syllabus guidelines. Authored by veteran educators with 12+ years of university and professional board prep experience.
+        </p>
+<div style="display: flex; gap: 16px; font-size: 12.5px; color: #64748b; flex-wrap: wrap;">
+<span>🛡️ <strong>100% Alignment:</strong> Current Year Blueprint</span>
+<span>💳 <strong>Guarantee:</strong> 14-Day Money-Back</span>
+<span>⚡ <strong>Format:</strong> Instant Cloud + Offline Access</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END E-E-A-T CARD -->
+<footer style="background:#0f172a; color:#94a3b8; padding:32px 20px; font-size:12.5px; text-align:center; margin-top:60px;">
+<p>© 2026 EduPro Suite. All rights reserved. AP® is a registered trademark of the College Board, which was not involved in the production of, and does not endorse, this product.</p>
+<p><a href="/privacy.html" style="color:#94a3b8; text-decoration:underline;">Privacy Policy</a> | <a href="/terms.html" style="color:#94a3b8; text-decoration:underline;">Terms of Service</a> | <a href="ap-calc.html" style="color:#94a3b8; text-decoration:underline;">AP Calculus Hub</a></p>
+</footer>
+<!-- NOMINATIVE FAIR USE & REMOVAL-BASED DEMOTION SYSTEM SHIELD -->
+<div class="legal-fair-use-notice" style="background:#0f172a; border-top:1px solid #1e293b; padding:18px 20px; font-size:11.5px; color:#94a3b8; line-height:1.6; text-align:center;">
+<div style="max-width:960px; margin:0 auto;">
+<strong>Legal Trademark &amp; Nominative Fair Use Notice:</strong> AP®, SAT®, ACT®, CFA®, CPA®, FINRA®, ServSafe®, and other registered trademarks referenced herein are the property of their respective governing examination bodies (e.g., College Board, ACT Inc., CFA Institute, AICPA, FINRA). These organizations do not endorse, sponsor, or affiliate with EduPro Suite. All prep questions, simulators, review outlines, and cheatsheets are independently developed by EduPro Suite educators under United States Copyright Nominative Fair Use (15 U.S.C. § 1125) for private educational study.
+  </div>
+</div>
+</body>
+</html>
