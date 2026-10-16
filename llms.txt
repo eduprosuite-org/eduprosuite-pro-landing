@@ -131,3 +131,12 @@
 
 ## Newly Added Exam Courses & Simulators
 - [AP Calculus Integral Rules: U-Substitution, Parts & FTC](https://eduprosuite.pro/ap-calc-integral-rules.html): Master all AP Calculus integral rules: Power Rule for Integration, U-Substitution, Integration by Parts, and Fundamental Theorem of Calculus (FTC) with worked proofs.
+
+
+## Newly Added Exam Courses & Simulators
+- [AP Statistics Chi-Square Tests: GOF, Homogeneity & Independence](https://eduprosuite.pro/ap-stats-chi-square-tests.html): Master AP Statistics Chi-Square tests: Goodness-of-Fit, Homogeneity, and Independence. Complete expected count formulas, conditions, and TI-84 calculator steps.
+- [AP Statistics Experimental Design & Sampling Bias Guide](https://eduprosuite.pro/ap-stats-experimental-design-guide.html): Master AP Statistics Unit 3 experimental design: 4 principles of experiments, SRS vs stratified vs cluster sampling, blocking, and sources of bias.
+- [AP Statistics Linear Regression & Slope t-Test: Complete Guide](https://eduprosuite.pro/ap-stats-linear-regression-t-test.html): Master AP Statistics Unit 2 & 9 linear regression: LSRL equation, correlation r, r-squared, residual plots, slope t-test, and computer output tables.
+- [AP Statistics Normal Distribution & Z-Score: Complete Guide](https://eduprosuite.pro/ap-stats-normal-distribution-z-score.html): Master AP Statistics normal distributions: empirical 68-95-99.7 rule, z-score calculations, normal probability plots, and TI-84 normalcdf/invNorm steps.
+- [AP Statistics Probability Rules & Random Variables Cheat Sheet](https://eduprosuite.pro/ap-stats-probability-rules-cheat-sheet.html): Master AP Statistics Unit 4 probability: addition rule, conditional probability, independence formulas, binomial BINS and geometric BITS models.
+- [AP Statistics Sampling Distributions & Central Limit Theorem (CLT)](https://eduprosuite.pro/ap-stats-sampling-distributions.html): Master AP Statistics Unit 5 sampling distributions: Central Limit Theorem (CLT), standard error formulas for means and proportions, and the 10% condition.

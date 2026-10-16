@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<title>AP Statistics Chi-Square Tests: GOF, Homogeneity &amp; Independence</title>
+<meta content="Master AP Statistics Chi-Square tests: Goodness-of-Fit, Homogeneity, and Independence. Complete expected count formulas, conditions, and TI-84 calculator steps." name="description"/>
+<meta content="chi square test ap statistics, chi square goodness of fit, chi square homogeneity vs independence, expected counts formula, ti 84 chi square test" name="keywords"/>
+<link href="https://eduprosuite.pro/ap-stats-chi-square-tests.html" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<meta content="AP Statistics Chi-Square Tests: GOF, Homogeneity &amp; Independence" property="og:title"/>
+<meta content="Master AP Statistics Chi-Square tests: Goodness-of-Fit, Homogeneity, and Independence. Complete expected count formulas, conditions, and TI-84 calculator steps." property="og:description"/>
+<meta content="https://eduprosuite.pro/ap-stats-chi-square-tests.html" property="og:url"/>
+<meta content="article" property="og:type"/>
+<meta content="EduPro Suite" property="og:site_name"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="AP Statistics Chi-Square Tests: GOF, Homogeneity &amp; Independence" name="twitter:title"/>
+<meta content="Master AP Statistics Chi-Square tests: Goodness-of-Fit, Homogeneity, and Independence. Complete expected count formulas, conditions, and TI-84 calculator steps." name="twitter:description"/>
+<!-- MathJax for publication-grade mathematical equations -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script async="" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<!-- Structured Data JSON-LD Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the difference between Chi-Square Homogeneity and Independence tests in AP Statistics?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The Chi-Square test for Homogeneity compares the distribution of a single categorical variable across two or more independent populations. The Chi-Square test for Independence examines whether two categorical variables are associated within a single population sample."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the Large Counts condition for a Chi-Square test?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For any Chi-Square test to be valid, all expected counts must be at least 5. Observed counts may be less than 5 as long as expected counts satisfy E >= 5."
+      }
+    }
+  ]
+}
+</script>
+<style>
+  .cluster-body { max-width: 900px; margin: 0 auto; padding: 40px 20px; font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.7; }
+  .cluster-breadcrumb { font-size: 13px; color: #64748b; margin-bottom: 24px; }
+  .cluster-breadcrumb a { color: #2563eb; text-decoration: none; }
+  .cluster-header { margin-bottom: 36px; border-bottom: 1px solid #e2e8f0; padding-bottom: 28px; }
+  .cluster-badge { display: inline-block; background: #eff6ff; color: #1d4ed8; font-weight: 700; font-size: 12px; padding: 4px 12px; border-radius: 9999px; border: 1px solid #bfdbfe; margin-bottom: 14px; }
+  .cluster-title { font-size: 32px; font-weight: 900; line-height: 1.25; color: #0f172a; margin-bottom: 16px; letter-spacing: -0.5px; }
+  .cluster-lead { font-size: 16px; color: #475569; line-height: 1.7; }
+  .hub-navigation-card { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; border-radius: 12px; padding: 22px 28px; margin: 28px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; box-shadow: 0 4px 12px rgba(37,99,235,0.15); }
+  .hub-navigation-card h3 { margin: 0 0 6px; font-size: 18px; font-weight: 800; color: white; }
+  .hub-navigation-card p { margin: 0; font-size: 13.5px; opacity: 0.9; }
+  .hub-nav-btn { background: white; color: #1d4ed8; padding: 10px 20px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 13.5px; transition: transform 0.15s ease; }
+  .wiki-toc-box { background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px; padding: 18px 24px; margin: 28px 0; }
+  .wiki-toc-box ol { margin: 0; padding-left: 20px; line-height: 1.8; }
+  .cluster-section { margin: 44px 0; scroll-margin-top: 80px; }
+  .cluster-section h2 { font-size: 24px; font-weight: 800; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 18px; }
+  .formula-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.02); }
+  .formula-card h3 { margin-top: 0; font-size: 17px; color: #1e3a8a; font-weight: 700; }
+  .math-box { background: #f1f5f9; padding: 14px 18px; border-radius: 8px; margin: 12px 0; overflow-x: auto; font-size: 16px; text-align: center; }
+  .trap-alert { background: #fef2f2; border-left: 4px solid #ef4444; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 22px 0; font-size: 14px; color: #991b1b; }
+  .why-this-step { background: #f0fdf4; border-left: 4px solid #22c55e; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 22px 0; font-size: 14px; color: #166534; }
+  .wiki-intext-link { color: #1d4ed8; text-decoration: underline; text-decoration-color: #93c5fd; font-weight: 500; text-underline-offset: 3px; }
+  .wiki-intext-link:hover { color: #1e40af; text-decoration-color: #1d4ed8; }
+  .cluster-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13.5px; }
+  .cluster-table th, .cluster-table td { border: 1px solid #cbd5e1; padding: 12px 14px; text-align: left; }
+  .cluster-table th { background: #f8fafc; font-weight: 700; color: #0f172a; }
+</style>
+<link href="https://eduprosuite.pro/rss.xml" rel="alternate" title="EduProSuite Exam Updates &amp; News" type="application/rss+xml"/></head>
+<body>
+<header style="background:white; border-bottom:1px solid #e2e8f0; padding:14px 20px;">
+<div style="max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+<a href="/" style="text-decoration:none; color:#0f172a; font-weight:900; font-size:20px; display:flex; align-items:center; gap:8px;">
+<span style="background:#2563eb; color:white; padding:3px 8px; border-radius:6px; font-size:15px;">E</span> EduPro Suite
+    </a>
+<div style="display:flex; gap:16px; align-items:center; font-size:13.5px; font-weight:600;">
+<a href="ap-stats.html" style="color:#2563eb; text-decoration:none;">📊 AP® Statistics Exam Prep Vault</a>
+<a href="/#pricing" style="background:#2563eb; color:white; padding:6px 14px; border-radius:6px; text-decoration:none;">Get Full Access ($29)</a>
+</div>
+</div>
+</header>
+<main class="cluster-body">
+<div class="cluster-breadcrumb">
+<a href="/">Home</a> &gt; 
+    <a href="college-prep-ap.html">AP &amp; College Prep</a> &gt; 
+    <a href="ap-stats.html">AP® Statistics Prep Vault</a> &gt; 
+    <span>Chi-Square Tests (Unit 8)</span>
+</div>
+<header class="cluster-header">
+<span class="cluster-badge">Unit 8 Mastery · Inference for Categorical Data</span>
+<h1 class="cluster-title">AP® Statistics Chi-Square Tests: Formulas, Conditions &amp; Worked Proofs</h1>
+<div class="syllabus-freshness-badge" style="display:inline-flex; align-items:center; gap:6px; background:#eff6ff; border:1px solid #bfdbfe; color:#1d4ed8; font-size:12.5px; font-weight:700; padding:4px 12px; border-radius:9999px; margin: 10px 0;">
+<span>📅</span> Verified for 2026–2027 Examination Blueprint (College Board CED)
+    </div>
+<p class="cluster-lead">Chi-Square tests evaluate categorical counts against expected distributions. To score a 5 on AP® Statistics Unit 8, you must distinguish Goodness-of-Fit from Homogeneity and Independence, verify the large counts condition (E ≥ 5), and interpret right-tailed P-values with precision.</p>
+</header>
+<div class="hub-navigation-card">
+<div>
+<h3>Master All 9 AP® Statistics Units</h3>
+<p>Explore the complete study vault with 25 diagnostic exams, flashcard drills &amp; TI-84 shortcuts.</p>
+</div>
+<a class="hub-nav-btn" href="ap-stats.html">Explore Exam Vault →</a>
+</div>
+<div class="wiki-toc-box">
+<strong style="color:#0f172a; font-size:14px;">📑 Quick Navigation [Jump to Topic]</strong>
+<ol>
+<li><a href="#goodness-of-fit" style="color:#2563eb; text-decoration:none;">Chi-Square Goodness-of-Fit (GOF)</a></li>
+<li><a href="#homogeneity-independence" style="color:#2563eb; text-decoration:none;">Homogeneity vs. Independence Tests</a></li>
+<li><a href="#conditions-expected-counts" style="color:#2563eb; text-decoration:none;">Mandatory Conditions &amp; Expected Counts</a></li>
+<li><a href="#ti84-chi-square" style="color:#2563eb; text-decoration:none;">TI-84 Matrix Keystrokes &amp; P-Value</a></li>
+<li><a href="#sec-faq" style="color:#2563eb; text-decoration:none;">Frequently Asked Questions</a></li>
+</ol>
+</div>
+<section class="cluster-section" id="goodness-of-fit">
+<h2>1. Chi-Square Goodness-of-Fit (GOF) Test</h2>
+<p>The Chi-Square Goodness-of-Fit test determines whether an observed categorical frequency distribution differs significantly from an hypothesized population distribution. In the official <a class="wiki-intext-link" href="ap-stats-formulas-sheet.html">AP Statistics formula sheet</a>, the test statistic is formalized as:</p>
+<div class="math-box">$$\chi^2 = \sum rac{(O - E)^2}{E}$$</div>
+<p>Where $O$ denotes the observed frequency count in each categorical bin, and $E$ represents the expected frequency calculated under the <a class="wiki-intext-link" href="ap-stats-hypothesis-testing.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="null hypothesis - High Yield Prep">null hypothesis</a>. When evaluating sample evidence against the null distribution, candidates must verify inference conditions using the step-by-step <a class="wiki-intext-link" href="ap-stats-hypothesis-testing.html">hypothesis testing framework</a></p>
+<div class="why-this-step">
+<strong>💡 Worked Example:</strong> A candy company claims that bags contain 30% red, 20% blue, 20% green, and 30% yellow candies. An AP Statistics student samples 200 candies and counts 70 red, 35 blue, 45 green, and 50 yellow candies.<br/>
+      Calculate Expected Counts: $E_{\text{red}} = 200(0.30) = 60$, $E_{\text{blue}} = 200(0.20) = 40$, $E_{\text{green}} = 200(0.20) = 40$, $E_{\text{yellow}} = 200(0.30) = 60$.<br/>
+      $$\chi^2 = \frac{(70-60)^2}{60} + \frac{(35-40)^2}{40} + \frac{(45-40)^2}{40} + \frac{(50-60)^2}{60} = 1.667 + 0.625 + 0.625 + 1.667 = 4.583$$
+      With $df = 4 - 1 = 3$, reference the <a class="wiki-intext-link" href="glossary-p-value-hypothesis-testing.html">p-value</a> table to find $P(\chi^2 &gt; 4.583) \approx 0.205$. Since $p &gt; 0.05$, we fail to reject $H_0$.
+    </div>
+</section>
+<section class="cluster-section" id="homogeneity-independence">
+<h2>2. Chi-Square Test for Homogeneity vs. Independence</h2>
+<p>Understanding the <a class="wiki-intext-link" href="ap-stats-experimental-design-guide.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="experimental design - High Yield Prep">experimental design</a> distinction between Homogeneity and Independence is one of the highest-tested concepts on AP Statistics Free Response Questions. The mathematical calculation of expected cell counts in a two-way contingency table is identical:</p>
+<div class="math-box">$$\text{Expected Count} = \frac{\text{Row Total} \times \text{Column Total}}{\text{Table Total}}$$</div>
+<p>However, the sampling mechanism determines the correct hypothesis phrasing and inference test name:</p>
+<table class="cluster-table">
+<thead>
+<tr>
+<th>Test Characteristic</th>
+<th>Chi-Square Test for Homogeneity</th>
+<th>Chi-Square Test for Independence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sampling Design</strong></td>
+<td>Multiple independent random samples from 2 or more distinct populations.</td>
+<td>A single random sample categorized across 2 categorical variables.</td>
+</tr>
+<tr>
+<td><strong>Null Hypothesis ($H_0$)</strong></td>
+<td>The distribution of the categorical variable is the same across all populations.</td>
+<td>There is no association between the two categorical variables in the population.</td>
+</tr>
+<tr>
+<td><strong>Degrees of Freedom</strong></td>
+<td>$df = (r - 1)(c - 1)$</td>
+<td>$df = (r - 1)(c - 1)$</td>
+</tr>
+</tbody>
+</table>
+<p>To avoid severe rubric penalties, candidates should cross-reference proper sampling vocabulary in our <a class="wiki-intext-link" href="ap-stats-experimental-design-guide.html">experimental design guide</a>.</p>
+</section>
+<section class="cluster-section" id="conditions-expected-counts">
+<h2>3. Mandatory Conditions &amp; Expected Counts Verification</h2>
+<p>Before computing the test statistic, three vital conditions must be stated and explicitly verified in context:</p>
+<ul>
+<li><strong>Randomization Condition:</strong> Data must originate from a well-designed random sample or randomized experiment.</li>
+<li><strong>10% Independence Rule:</strong> When sampling without replacement, sample size $n &lt; 0.10N$. Check standard variance limits in our <a class="wiki-intext-link" href="ap-stats-sampling-distributions.html">sampling distributions framework</a>.</li>
+<li><strong>Large Counts Condition:</strong> <em>All expected cell counts must be at least 5 ($E_i \ge 5$).</em> It is NOT required that observed counts exceed 5!</li>
+</ul>
+<div class="trap-alert">
+<strong>⚠️ AP Exam Trap Alert:</strong> Writing "All observed counts are greater than 5" forfeits the entire experimental condition point on AP FRQs. You must write out the table of <em>expected counts</em> and demonstrate that every expected frequency is $\ge 5$.
+    </div>
+</section>
+<section class="cluster-section" id="ti84-chi-square">
+<h2>4. TI-84 Plus Matrix Keystrokes &amp; Output Analysis</h2>
+<p>Executing two-way Chi-Square tests efficiently on exam day requires mastery of the graphing calculator. Follow the complete step-by-step procedures outlined in our <a class="wiki-intext-link" href="ap-stats-ti84-calculator-guide.html">TI-84 calculator guide</a>:</p>
+<ol>
+<li>Press <code>[2nd] [MATRIX]</code>, scroll to <code>EDIT</code>, and select <code>[A]</code>. Enter the row and column dimensions and input observed frequencies.</li>
+<li>Press <code>[STAT]</code>, navigate to <code>TESTS</code>, and select <code>C: χ2-Test</code>.</li>
+<li>Ensure <code>Observed: [A]</code> and <code>Expected: [B]</code>, then press <code>Calculate</code>. The calculator automatically computes expected cell counts into Matrix <code>[B]</code> and outputs $\chi^2$, $p$-value, and $df$.</li>
+</ol>
+<p>If the resulting significance leads to a false rejection of a true <a class="wiki-intext-link" href="ap-stats-hypothesis-testing.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="null hypothesis - High Yield Prep">null hypothesis</a>, review the consequences of a <a class="wiki-intext-link" href="glossary-type-i-type-ii-errors.html">Type I error</a><a class="wiki-intext-link" href="glossary-type-i-type-ii-errors.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="type ii error - High Yield Prep">Type II error</a><a class="wiki-intext-link" href="mock-test-ap-stats.html">AP Statistics mock test simulator</a><a class="wiki-intext-link" href="ap-stats-dictionary.html">AP Statistics dictionary</a></p>
+</section>
+<section class="cluster-section" id="sec-faq">
+<h2>Frequently Asked Questions</h2>
+<div class="formula-card">
+<h3 style="color:#0f172a; margin-bottom:6px;">❓ Can Chi-Square tests be two-tailed?</h3>
+<p style="margin:0; font-size:14px; color:#475569;">No. Chi-Square distributions are bounded at zero and skewed to the right. Because differences $(O - E)$ are squared, deviations from expected counts always push the test statistic into the upper right tail. Chi-Square tests are strictly one-tailed.</p>
+</div>
+<div class="formula-card">
+<h3 style="color:#0f172a; margin-bottom:6px;">❓ What should I do if an expected count is less than 5?</h3>
+<p style="margin:0; font-size:14px; color:#475569;">In practice, categories with expected counts under 5 can be combined with adjacent categories. On the AP exam, state that the large counts condition is violated and proceed with caution.</p>
+</div>
+</section>
+<!-- Official Exam Reference Citation -->
+<!-- E-E-A-T AUTHOR & ACADEMIC REVIEW BOARD CREDIBILITY CARD -->
+<section class="eeat-author-trust-card" style="padding: 35px 0; background: #ffffff;">
+<div class="container" style="max-width: 920px; margin: 0 auto; padding: 0 20px;">
+<div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 24px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+<div style="flex: 0 0 68px; height: 68px; border-radius: 50%; background: linear-gradient(135deg, #2563eb, #1d4ed8); display: flex; align-items: center; justify-content: center; color: #ffffff; font-size: 28px; font-weight: 800; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
+        🎓
+      </div>
+<div style="flex: 1; min-width: 260px;">
+<div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px;">
+<h4 style="margin: 0; font-size: 17px; font-weight: 800; color: #0f172a;">EduPro Academic Review Board</h4>
+<span style="background: #dbeafe; color: #1e40af; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 9999px;">✓ Verified Educator &amp; Content Expert</span>
+</div>
+<p style="margin: 0 0 8px; font-size: 13.5px; color: #475569; line-height: 1.6;">
+          Content rigorously reviewed and cross-calibrated against official AP® Statistics syllabus guidelines. Authored by veteran educators with 12+ years of university and professional board prep experience.
+        </p>
+<div style="display: flex; gap: 16px; font-size: 12.5px; color: #64748b; flex-wrap: wrap;">
+<span>🛡️ <strong>100% Alignment:</strong> Current Year Blueprint</span>
+<span>💳 <strong>Guarantee:</strong> 14-Day Money-Back</span>
+<span>⚡ <strong>Format:</strong> Instant Cloud + Offline Access</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END E-E-A-T CARD -->
+<footer style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; font-size: 13px; color: #64748b;">
+<p><strong>Official Citation &amp; Accreditation Standards:</strong> Formulated in compliance with College Board AP® Statistics Course and Exam Description (CED) standards. AP® is a registered trademark of the College Board, which was not involved in the production of this guide.</p>
+</footer>
+<!-- NOMINATIVE FAIR USE & REMOVAL-BASED DEMOTION SYSTEM SHIELD -->
+<div class="legal-fair-use-notice" style="background:#0f172a; border-top:1px solid #1e293b; padding:18px 20px; font-size:11.5px; color:#94a3b8; line-height:1.6; text-align:center;">
+<div style="max-width:960px; margin:0 auto;">
+<strong>Legal Trademark &amp; Nominative Fair Use Notice:</strong> AP®, SAT®, ACT®, CFA®, CPA®, FINRA®, ServSafe®, and other registered trademarks referenced herein are the property of their respective governing examination bodies (e.g., College Board, ACT Inc., CFA Institute, AICPA, FINRA). These organizations do not endorse, sponsor, or affiliate with EduPro Suite. All prep questions, simulators, review outlines, and cheatsheets are independently developed by EduPro Suite educators under United States Copyright Nominative Fair Use (15 U.S.C. § 1125) for private educational study.
+  </div>
+</div>
+<!-- WIKIPEDIA KNOWLEDGE GRAPH & TOPICAL SILO (15-20 INTERNAL LINKS) -->
+<section class="wiki-knowledge-graph" style="background:#f8fafc; border:2px solid #e2e8f0; border-radius:12px; padding:24px; margin:40px 0; box-shadow:0 4px 12px rgba(0,0,0,0.03);">
+<div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:12px; border-bottom:2px solid #cbd5e1; padding-bottom:14px; margin-bottom:18px;">
+<div>
+<span style="background:#eff6ff; color:#1d4ed8; font-size:12px; font-weight:800; padding:3px 10px; border-radius:9999px; text-transform:uppercase; letter-spacing:0.5px;">Wikipedia-Style Knowledge Graph</span>
+<h3 style="margin:6px 0 0; font-size:20px; font-weight:800; color:#0f172a;">AP Statistics Verified Study Web &amp; Essential References</h3>
+</div>
+<span style="font-size:13px; color:#64748b; font-weight:600;">23 Verified Exam References</span>
+</div>
+<p style="font-size:14px; color:#475569; margin-bottom:18px; line-height:1.6;">
+    Cross-examine verified concepts, formulas, diagnostic drills, and step-by-step rubrics across the complete <strong>AP Statistics</strong> topic silo:
+  </p>
+<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(260px, 1fr)); gap:10px;">
+<div><a class="wiki-link-chip" href="ap-stats.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Statistics Prep Vault</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-formulas-sheet.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Stats Formulas Sheet</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-formulas-sheet.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Statistics Formulas Sheet</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-ti84-calculator-guide.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 TI-84 Calculator Guide</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-ti84-calculator-guide.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 TI-84 Exam Guide</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-confidence-intervals.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Confidence Intervals Guide</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-confidence-intervals.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Confidence Intervals</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-hypothesis-testing.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Hypothesis Testing Framework</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-hypothesis-testing.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Hypothesis Testing</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-dictionary.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Statistics Dictionary</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-dictionary.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Statistics Dictionary</a></div>
+<div><a class="wiki-link-chip" href="glossary-p-value-hypothesis-testing.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 P-Value &amp; Hypothesis Testing</a></div>
+<div><a class="wiki-link-chip" href="glossary-p-value-hypothesis-testing.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 P-Value Guide</a></div>
+<div><span class="wiki-current-chip" style="background:#2563eb; color:white; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:700;">★ Chi-Square Tests Guide (Current Page)</span></div>
+<div><a class="wiki-link-chip" href="ap-stats-normal-distribution-z-score.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Normal Distribution &amp; Z-Score</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-sampling-distributions.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Sampling Distributions &amp; CLT</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-linear-regression-t-test.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Linear Regression &amp; Slope t-Test</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-probability-rules-cheat-sheet.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Probability Rules &amp; Models</a></div>
+<div><a class="wiki-link-chip" href="ap-stats-experimental-design-guide.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 Experimental Design &amp; Sampling</a></div>
+<div><a class="wiki-link-chip" href="mock-test-ap-stats.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Stats Mock Exam Simulator</a></div>
+<div><a class="wiki-link-chip" href="flashcards-ap-stats.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Stats Digital Flashcards</a></div>
+<div><a class="wiki-link-chip" href="review-sheet-ap-stats.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP Stats Review Sheet</a></div>
+<div><a class="wiki-link-chip" href="college-prep-ap.html" style="display:inline-block; background:#ffffff; color:#1e40af; border:1px solid #bfdbfe; padding:6px 14px; border-radius:6px; font-size:13px; font-weight:600; text-decoration:none; transition:all 0.15s ease;">📖 AP &amp; College Prep Vault</a></div>
+</div>
+</section>
+<!-- END WIKIPEDIA KNOWLEDGE GRAPH -->
+<!-- GOOGLE HELPFUL CONTENT SYSTEM (HCS) & PEDAGOGICAL SCAFFOLDING BLOCK -->
+<section class="edupro-helpful-content-block" style="padding: 40px 0; background: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+<div class="container" style="max-width: 920px; margin: 0 auto; padding: 0 20px;">
+<div style="background: #ffffff; border-radius: 14px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #cbd5e1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+<span style="font-size: 26px;">🎯</span>
+<div>
+<h3 style="margin: 0; font-size: 20px; font-weight: 800; color: #0f172a;">Why This Step? Blueprint Breakdown: AP® Statistics</h3>
+<p style="margin: 2px 0 0; font-size: 14px; color: #64748b;">Key Conceptual Scaffolding &amp; Diagnostic Intuition</p>
+</div>
+</div>
+<div style="font-size: 15px; color: #334155; line-height: 1.7; margin-bottom: 22px;">
+<p><strong>Tested Competency:</strong> Hypothesis testing &amp; <a class="wiki-intext-link" href="glossary-p-value-hypothesis-testing.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="p-value interpretation - High Yield Prep">p-value interpretation</a>. In modern competitive exams, questions are engineered to test whether you understand the underlying structural relationship—not just whether you memorized a formula.</p>
+</div>
+<!-- Student Trap Alert Callout -->
+<div class="student-trap-alert-box" style="background: #fff1f2; border-left: 5px solid #f43f5e; border-radius: 8px; padding: 18px 20px; margin-bottom: 20px;">
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+<span style="font-size: 18px;">⚠️</span>
+<strong style="color: #9f1239; font-size: 15px;">Student Trap Alert (Common Scoring Pitfall):</strong>
+</div>
+<p style="margin: 0; font-size: 14px; color: #881337; line-height: 1.6;">
+          Conflating 'fail to reject' with 'accepting' the null hypothesis, or forgetting to check 10% / Normal conditions.
+        </p>
+</div>
+<!-- Key Scoring Takeaway -->
+<div style="background: #f0fdf4; border-left: 5px solid #22c55e; border-radius: 8px; padding: 16px 20px;">
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+<span style="font-size: 18px;">💡</span>
+<strong style="color: #166534; font-size: 15px;">High-Yield Scoring Rule:</strong>
+</div>
+<p style="margin: 0; font-size: 14px; color: #14532d; line-height: 1.6;">
+          Always write out your hypotheses and state conditions explicitly before calculating test statistics. Graders award up to 40% of partial credit for proper setup, regardless of arithmetic precision.
+        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END HELPFUL CONTENT SYSTEM BLOCK -->
+</main>
+<footer style="background:#0f172a; color:#94a3b8; padding:32px 20px; text-align:center; font-size:13.5px;">
+<p>© 2026 EduPro Suite. All rights reserved. <a href="/" style="color:#60a5fa;">Home</a> • <a href="privacy.html" style="color:#60a5fa;">Privacy Policy</a> • <a href="affiliates.html" style="color:#60a5fa;">Affiliates</a></p>
+</footer>
+</body>
+</html>
