@@ -5,7 +5,7 @@
     <loc>https://eduprosuite.pro/ap-calc.html</loc>
     <video:video>
       <video:thumbnail_loc>https://eduprosuite.pro/images/ap-calc-cover.webp</video:thumbnail_loc>
-      <video:title>Mastering AP Calculus BC - Rapid Concept & Series Breakdown</video:title>
+      <video:title>Mastering AP Calculus BC - Rapid Concept &amp; Series Breakdown</video:title>
       <video:description>Comprehensive walkthrough of Taylor Series, Integration by Parts, and parametric curves for AP Calculus BC.</video:description>
       <video:player_loc>https://www.youtube-nocookie.com/embed/calc_bc_mastery</video:player_loc>
       <video:publication_date>2026-10-01T08:00:00+00:00</video:publication_date>
@@ -16,8 +16,8 @@
     <loc>https://eduprosuite.pro/trade-math.html</loc>
     <video:video>
       <video:thumbnail_loc>https://eduprosuite.pro/images/trade-math-cover.webp</video:thumbnail_loc>
-      <video:title>Trade Math Electrician & HVAC Quick Formulas Walkthrough</video:title>
-      <video:description>Essential formulas for electricians, plumbers, and HVAC technicians including Ohm's law and pipe sizing.</video:description>
+      <video:title>Trade Math Electrician &amp; HVAC Quick Formulas Walkthrough</video:title>
+      <video:description>Essential formulas for electricians, plumbers, and HVAC technicians including Ohm&#x27;s law and pipe sizing.</video:description>
       <video:player_loc>https://www.youtube-nocookie.com/embed/trade_math_mastery</video:player_loc>
       <video:publication_date>2026-10-02T08:00:00+00:00</video:publication_date>
       <video:family_friendly>yes</video:family_friendly>
@@ -27,7 +27,7 @@
     <loc>https://eduprosuite.pro/ap-stats.html</loc>
     <video:video>
       <video:thumbnail_loc>https://eduprosuite.pro/images/ap-stats-cover.webp</video:thumbnail_loc>
-      <video:title>AP Statistics 5-Minute Hypothesis Testing & P-Value Guide</video:title>
+      <video:title>AP Statistics 5-Minute Hypothesis Testing &amp; P-Value Guide</video:title>
       <video:description>Visual intuition for z-tests, t-tests, Type I vs Type II errors, and confidence intervals.</video:description>
       <video:player_loc>https://www.youtube-nocookie.com/embed/ap_stats_mastery</video:player_loc>
       <video:publication_date>2026-10-03T08:00:00+00:00</video:publication_date>
@@ -38,7 +38,7 @@
     <loc>https://eduprosuite.pro/sat-prep.html</loc>
     <video:video>
       <video:thumbnail_loc>https://eduprosuite.pro/images/courses/sat-prep-cover.svg</video:thumbnail_loc>
-      <video:title>Digital SAT 2026 Math Module Strategies & Desmos Hacks</video:title>
+      <video:title>Digital SAT 2026 Math Module Strategies &amp; Desmos Hacks</video:title>
       <video:description>Essential Desmos graphing calculator tricks, quadratic vertex formulas, and adaptive module pacing.</video:description>
       <video:player_loc>https://www.youtube-nocookie.com/embed/sat_math_mastery</video:player_loc>
       <video:publication_date>2026-10-04T08:00:00+00:00</video:publication_date>
@@ -49,7 +49,7 @@
     <loc>https://eduprosuite.pro/cpa-review.html</loc>
     <video:video>
       <video:thumbnail_loc>https://eduprosuite.pro/images/courses/cpa-review-cover.svg</video:thumbnail_loc>
-      <video:title>CPA Exam FAR & REG Core Frameworks in 7 Minutes</video:title>
+      <video:title>CPA Exam FAR &amp; REG Core Frameworks in 7 Minutes</video:title>
       <video:description>Rapid review of revenue recognition (ASC 606), leases (ASC 842), and individual vs corporate tax basis.</video:description>
       <video:player_loc>https://www.youtube-nocookie.com/embed/cpa_review_mastery</video:player_loc>
       <video:publication_date>2026-10-05T08:00:00+00:00</video:publication_date>
@@ -60,7 +60,7 @@
     <loc>https://eduprosuite.pro/epa-608-technician.html</loc>
     <video:video>
       <video:thumbnail_loc>https://eduprosuite.pro/images/courses/epa-608-technician-cover.svg</video:thumbnail_loc>
-      <video:title>EPA 608 Universal Certification Core & Type II Recovery Rules</video:title>
+      <video:title>EPA 608 Universal Certification Core &amp; Type II Recovery Rules</video:title>
       <video:description>Master ozone depletion, Montreal Protocol rules, evacuation levels, and recovery techniques.</video:description>
       <video:player_loc>https://www.youtube-nocookie.com/embed/epa_608_mastery</video:player_loc>
       <video:publication_date>2026-10-06T08:00:00+00:00</video:publication_date>

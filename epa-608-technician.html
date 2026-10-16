@@ -28,13 +28,18 @@
 <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/></noscript>
 <link href="styles.css" rel="stylesheet"/>
 <!-- Schema.org Course, FAQPage, BreadcrumbList, Offer JSON-LD -->
-<script type="application/ld+json">{
+<script type="application/ld+json">
+{
   "@context": "https://schema.org",
   "@graph": [
     {
       "@type": "Organization",
       "@id": "https://eduprosuite.pro/#organization",
       "name": "EduPro Suite",
+      "alternateName": [
+        "EduProSuite",
+        "EduPro Suite Vault"
+      ],
       "url": "https://eduprosuite.pro/",
       "logo": {
         "@type": "ImageObject",
@@ -66,7 +71,7 @@
       "@id": "https://eduprosuite.pro/#website",
       "url": "https://eduprosuite.pro/",
       "name": "EduPro Suite",
-      "description": "#1 Exam Prep Vault \u2014 AP Stats, Calculus & Trade Math",
+      "description": "#1 Exam Prep Vault — AP Stats, Calculus & Trade Math",
       "publisher": {
         "@id": "https://eduprosuite.pro/#organization"
       },
@@ -163,6 +168,71 @@
       ]
     },
     {
+      "@type": "Product",
+      "@id": "https://eduprosuite.pro/epa-608-technician.html#product",
+      "name": "EPA Section 608 Technician Prep — Master Study Vault & Practice Suite",
+      "image": "https://eduprosuite.pro/images/courses/epa-608-technician-cover.svg",
+      "description": "Master Core, Type I (Small Appliances), Type II (High-Pressure), and Type III (Low-Pressure) HVAC refrigerant recovery, leak repair, and recycling rules...",
+      "brand": {
+        "@type": "Brand",
+        "name": "EduPro Suite"
+      },
+      "sku": "EDUPRO-EPA608TECHNICI-VAULT",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "248",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://eduprosuite.pro/epa-608-technician.html",
+        "priceCurrency": "USD",
+        "price": "29.00",
+        "availability": "https://schema.org/InStock",
+        "itemCondition": "https://schema.org/NewCondition",
+        "priceValidUntil": "2027-12-31",
+        "shippingDetails": {
+          "@type": "OfferShippingDetails",
+          "shippingRate": {
+            "@type": "MonetaryAmount",
+            "value": "0.00",
+            "currency": "USD"
+          },
+          "shippingDestination": {
+            "@type": "DefinedRegion",
+            "addressCountry": "US"
+          },
+          "deliveryTime": {
+            "@type": "ShippingDeliveryTime",
+            "handlingTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 0,
+              "unitCode": "DAY"
+            },
+            "transitTime": {
+              "@type": "QuantitativeValue",
+              "minValue": 0,
+              "maxValue": 0,
+              "unitCode": "DAY"
+            }
+          }
+        },
+        "hasMerchantReturnPolicy": {
+          "@type": "MerchantReturnPolicy",
+          "applicableCountry": "US",
+          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+          "merchantReturnDays": 30,
+          "returnFees": "https://schema.org/FreeReturn",
+          "returnMethod": "https://schema.org/ReturnByMail",
+          "refundType": "https://schema.org/FullRefund",
+          "merchantReturnLink": "https://eduprosuite.pro/privacy.html"
+        }
+      }
+    },
+    {
       "@type": "FAQPage",
       "@id": "https://eduprosuite.pro/epa-608-technician.html#faq",
       "mainEntity": [
@@ -234,75 +304,13 @@
           "url": "https://eduprosuite.pro/eduprosuite_app_icon.png"
         }
       }
-    },
-    {
-      "@type": "Product",
-      "@id": "https://eduprosuite.pro/epa-608-technician.html#product",
-      "name": "EPA Section 608 Technician Prep \u2014 Master Study Vault & Practice Suite",
-      "image": "https://eduprosuite.pro/images/courses/epa-608-technician-cover.svg",
-      "description": "Master Core, Type I (Small Appliances), Type II (High-Pressure), and Type III (Low-Pressure) HVAC refrigerant recovery, leak repair, and recycling rules...",
-      "brand": {
-        "@type": "Brand",
-        "name": "EduPro Suite"
-      },
-      "sku": "EDUPRO-EPA608TECHNICI-VAULT",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "4.9",
-        "reviewCount": "248",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "offers": {
-        "@type": "Offer",
-        "url": "https://eduprosuite.pro/epa-608-technician.html",
-        "priceCurrency": "USD",
-        "price": "29.00",
-        "availability": "https://schema.org/InStock",
-        "itemCondition": "https://schema.org/NewCondition",
-        "priceValidUntil": "2027-12-31",
-        "shippingDetails": {
-          "@type": "OfferShippingDetails",
-          "shippingRate": {
-            "@type": "MonetaryAmount",
-            "value": "0.00",
-            "currency": "USD"
-          },
-          "shippingDestination": {
-            "@type": "DefinedRegion",
-            "addressCountry": "US"
-          },
-          "deliveryTime": {
-            "@type": "ShippingDeliveryTime",
-            "handlingTime": {
-              "@type": "QuantitativeValue",
-              "minValue": 0,
-              "maxValue": 0,
-              "unitCode": "DAY"
-            },
-            "transitTime": {
-              "@type": "QuantitativeValue",
-              "minValue": 0,
-              "maxValue": 0,
-              "unitCode": "DAY"
-            }
-          }
-        },
-        "hasMerchantReturnPolicy": {
-          "@type": "MerchantReturnPolicy",
-          "applicableCountry": "US",
-          "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
-          "merchantReturnDays": 30,
-          "returnFees": "https://schema.org/FreeReturn",
-          "returnMethod": "https://schema.org/ReturnByMail",
-          "refundType": "https://schema.org/FullRefund",
-          "merchantReturnLink": "https://eduprosuite.pro/privacy.html"
-        }
-      }
     }
   ]
-}</script>
-<meta content="index, follow, max-image-preview:large" name="robots"/><meta content="image/jpeg" property="og:image:type"/><link href="data:image/svg+xml,&lt;svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'&gt;&lt;rect width='32' height='32' rx='8' fill='%232563eb'/&gt;&lt;text y='22' x='4' font-size='18' fill='white' font-weight='bold'&gt;E&lt;/text&gt;&lt;/svg&gt;" rel="icon" type="image/svg+xml"/><link href="/eduprosuite_app_icon.png" rel="apple-touch-icon"/></head>
+}
+</script>
+<meta content="index, follow, max-image-preview:large" name="robots"/><meta content="image/jpeg" property="og:image:type"/><link rel="icon" type="image/x-icon" href="/favicon.ico"/>
+<link rel="icon" type="image/png" sizes="48x48" href="/eduprosuite_app_icon.png"/>
+<link rel="apple-touch-icon" href="/eduprosuite_app_icon.png"/><link href="/eduprosuite_app_icon.png" rel="apple-touch-icon"/></head>
 <body>
 <!-- Header -->
 <!-- Accessible Master Mega Header (Google Search Central Compliant) -->
@@ -584,6 +592,9 @@
 <div style="display: flex; gap: 12px; flex-wrap: wrap;">
 <a download="" href="downloads/epa-608-refrigerant-recovery-cheat-sheet.pdf" style="display: inline-flex; align-items: center; gap: 6px; background: #b91c1c; color: #ffffff; padding: 8px 14px; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.88rem;">
         📥 Download EPA 608 Universal Technician Recovery Reference Sheet (PDF)
+      </a>
+<a href="mock-test-epa608.html" style="display: inline-flex; align-items: center; gap: 6px; background: #2563eb; color: #ffffff; padding: 8px 14px; border-radius: 6px; font-weight: 600; text-decoration: none; font-size: 0.88rem;">
+        📝 Take Free EPA 608 Universal Practice Test (Interactive Simulator) →
       </a>
 </div>
 </div>
