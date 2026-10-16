@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
+  <title>CPA FAR Depreciation Formulas Guide: MACRS & GAAP</title>
+  <meta name="description" content="Master CPA FAR depreciation accounting: Straight-Line, Double-Declining Balance, Sum-of-the-Years'-Digits, MACRS half-year convention, and impairment testing."/>
+  <meta name="keywords" content="cpa far depreciation formulas, macrs half year convention cpa, double declining balance formula, sum of the years digits cpa, gaap asset impairment rules"/>
+  <link rel="canonical" href="https://eduprosuite.pro/cpa-far-depreciation-formulas-guide.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <meta property="og:title" content="CPA FAR Depreciation Formulas Guide: MACRS & GAAP"/>
+  <meta property="og:description" content="Master CPA FAR depreciation accounting: Straight-Line, Double-Declining Balance, Sum-of-the-Years'-Digits, MACRS half-year convention, and impairment testing."/>
+  <meta property="og:url" content="https://eduprosuite.pro/cpa-far-depreciation-formulas-guide.html"/>
+  <meta property="og:type" content="article"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  
+  <!-- MathJax for publication-grade mathematical & financial equations -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Structured Data JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": "https://eduprosuite.pro/cpa-far-depreciation-formulas-guide.html#article",
+        "headline": "CPA FAR Depreciation Formulas Guide: MACRS & GAAP",
+        "description": "Master CPA FAR depreciation accounting: Straight-Line, Double-Declining Balance, Sum-of-the-Years'-Digits, MACRS half-year convention, and impairment testing.",
+        "url": "https://eduprosuite.pro/cpa-far-depreciation-formulas-guide.html",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@type": "Organization",
+          "name": "EduPro Suite",
+          "url": "https://eduprosuite.pro/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://eduprosuite.pro/cpa-far-depreciation-formulas-guide.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://eduprosuite.pro/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Accounting & Tax",
+            "item": "https://eduprosuite.pro/finance-accounting.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "CPA® Exam Review Vault",
+            "item": "https://eduprosuite.pro/cpa-review.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "CPA FAR Depreciation Formulas Guide: MACRS & GAAP",
+            "item": "https://eduprosuite.pro/cpa-far-depreciation-formulas-guide.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://eduprosuite.pro/cpa-far-depreciation-formulas-guide.html#faq",
+        "mainEntity": [
+          {
+              "@type": "Question",
+              "name": "Can you reverse an asset impairment loss under US GAAP?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Under US GAAP (ASC 360), once an impairment loss is recognized on an asset held for use, the new lower cost basis becomes the new historical cost and cannot be written back up, even if market value recovers."
+              }
+            },\n          {
+              "@type": "Question",
+              "name": "What property classes are most tested under MACRS?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "5-year property (computers, office machinery, automobiles) and 7-year property (office furniture, fixtures, and agricultural equipment) are the most heavily tested on CPA FAR and REG exams."
+              }
+            }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    .cluster-body { max-width: 900px; margin: 0 auto; padding: 40px 20px; font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.7; }
+    .cluster-breadcrumb { font-size: 13px; color: #64748b; margin-bottom: 24px; }
+    .cluster-breadcrumb a { color: #2563eb; text-decoration: none; }
+    .cluster-header { margin-bottom: 36px; border-bottom: 1px solid #e2e8f0; padding-bottom: 28px; }
+    .cluster-badge { display: inline-block; background: #eff6ff; color: #1d4ed8; font-weight: 700; font-size: 12px; padding: 4px 12px; border-radius: 9999px; border: 1px solid #bfdbfe; margin-bottom: 14px; }
+    .cluster-title { font-size: 32px; font-weight: 900; line-height: 1.25; color: #0f172a; margin-bottom: 16px; letter-spacing: -0.5px; }
+    .cluster-lead { font-size: 16px; color: #475569; line-height: 1.7; }
+    .hub-navigation-card { background: linear-gradient(135deg, #0f172a, #1e3a8a); color: white; border-radius: 12px; padding: 22px 28px; margin: 28px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; box-shadow: 0 4px 12px rgba(15,23,42,0.15); }
+    .hub-navigation-card h3 { margin: 0 0 6px; font-size: 18px; font-weight: 800; color: white; }
+    .hub-navigation-card p { margin: 0; font-size: 13.5px; opacity: 0.9; }
+    .hub-nav-btn { background: #2563eb; color: white; padding: 10px 20px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 13.5px; transition: transform 0.15s ease; }
+    .hub-nav-btn:hover { background: #1d4ed8; transform: translateY(-2px); }
+    .wiki-toc-box { background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px; padding: 18px 24px; margin: 28px 0; }
+    .wiki-toc-box ol { margin: 0; padding-left: 20px; line-height: 1.8; }
+    .cluster-section { margin: 44px 0; scroll-margin-top: 80px; }
+    .cluster-section h2 { font-size: 24px; font-weight: 800; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 18px; }
+    .formula-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.02); }
+    .formula-card h3 { margin-top: 0; font-size: 17px; color: #1e3a8a; font-weight: 700; }
+    .math-box { background: #f1f5f9; padding: 14px 18px; border-radius: 8px; margin: 12px 0; overflow-x: auto; font-size: 16px; text-align: center; }
+    .why-this-step { background: #f0fdf4; border-left: 4px solid #22c55e; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 22px 0; font-size: 14px; color: #166534; }
+    .cluster-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13.5px; }
+    .cluster-table th, .cluster-table td { border: 1px solid #cbd5e1; padding: 12px 14px; text-align: left; }
+    .cluster-table th { background: #f8fafc; font-weight: 700; color: #0f172a; }
+    .related-clusters-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin: 40px 0; }
+    .related-clusters-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 14px; }
+    .related-cluster-link { display: block; background: white; border: 1px solid #cbd5e1; border-radius: 8px; padding: 12px 16px; text-decoration: none; color: #1e293b; font-size: 13.5px; font-weight: 600; transition: border-color 0.15s ease; }
+    .related-cluster-link:hover { border-color: #2563eb; color: #2563eb; }
+  </style>
+</head>
+<body>
+
+  <!-- GLOBAL NAV BAR -->
+  <header style="background:white; border-bottom:1px solid #e2e8f0; padding:14px 20px;">
+    <div style="max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+      <a href="/" style="text-decoration:none; color:#0f172a; font-weight:900; font-size:20px; display:flex; align-items:center; gap:8px;">
+        <span style="background:#2563eb; color:white; padding:3px 8px; border-radius:6px; font-size:15px;">E</span> EduPro Suite
+      </a>
+      <div style="display:flex; gap:16px; align-items:center; font-size:13.5px; font-weight:600;">
+        <a href="cpa-review.html" style="color:#2563eb; text-decoration:none;">🏛️ CPA® Exam Review Vault</a>
+        <a href="/#pricing" style="background:#2563eb; color:white; padding:6px 14px; border-radius:6px; text-decoration:none;">Get Full Pass ($29)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="cluster-body">
+    <!-- Breadcrumb Navigation -->
+    <div class="cluster-breadcrumb">
+      <a href="/">Home</a> &gt; 
+      <a href="finance-accounting.html">Accounting & Tax</a> &gt; 
+      <a href="cpa-review.html">CPA® Exam Review Vault</a> &gt; 
+      <span>CPA FAR Depreciation Formulas Guide: MACRS & GAAP</span>
+    </div>
+
+    <!-- Header Section -->
+    <header class="cluster-header">
+      <span class="cluster-badge">AICPA 2026–2027 Blueprint Aligned · Financial Accounting & Reporting</span>
+      <h1 class="cluster-title">CPA FAR Depreciation Methods: GAAP vs. MACRS Formula Guide</h1>
+      <p class="cluster-lead">Depreciation and fixed asset accounting form the bedrock of the CPA FAR examination, appearing in multiple-choice questions and task-based simulations (TBS). Knowing when to apply salvage value, how to calculate half-year MACRS conventions, and how to test for GAAP asset impairment is essential to passing.</p>
+    </header>
+
+    <!-- Contextual internal concept link -->
+    <p class="wiki-concept-link" style="font-size:13.5px; color:#475569; margin:12px 0;">🔗 Related Professional Reference: Explore our <a href="glossary-gaap-vs-ifrs-depreciation.html" style="color:#2563eb; font-weight:600; text-decoration:none;">GAAP vs. IFRS Depreciation Standards Guide</a> and <a href="glossary-fiduciary-vs-suitability.html" style="color:#2563eb; font-weight:600; text-decoration:none;">Fiduciary Duty vs. Suitability Standards</a>.</p>
+
+    <!-- Pillar Hub & Diagnostic Tools Quick Jump -->
+    <div class="hub-navigation-card">
+      <div>
+        <h3>Preparing for Your CPA or CFA Certification Exam?</h3>
+        <p>Get complete access to the CPA® Exam Review Vault with timed diagnostic exams, flashcards & cheatsheets.</p>
+      </div>
+      <a href="cpa-review.html" class="hub-nav-btn">Access Exam Pass ($29) →</a>
+    </div>
+
+    <!-- Wikipedia Table of Contents -->
+    <div class="wiki-toc-box">
+      <strong style="color:#0f172a; font-size:14px;">📑 Quick Navigation [Jump to Topic]</strong>
+      <ol>
+        <li><a href="#sec-gaap-methods" style="color:#2563eb; text-decoration:none;">GAAP Financial Depreciation Methods</a></li>\n        <li><a href="#sec-macrs" style="color:#2563eb; text-decoration:none;">Tax Depreciation: MACRS & Section 179</a></li>\n        <li><a href="#sec-impairment" style="color:#2563eb; text-decoration:none;">Two-Step GAAP Asset Impairment Test</a></li>\n        <li><a href="#sec-comparison" style="color:#2563eb; text-decoration:none;">GAAP vs. MACRS Comparative Summary Matrix</a></li>\n        <li><a href="#sec-faq" style="color:#2563eb; text-decoration:none;">Frequently Asked Questions</a></li>
+      </ol>
+    </div>
+
+    <!-- Pedagogical Content Sections -->
+    
+        <section id="sec-gaap-methods" class="cluster-section">
+            <h2>1. GAAP Financial Accounting Depreciation Methods</h2>
+            <p>Under US GAAP (ASC 360), tangible long-lived assets must be depreciated over their estimated useful lives. Salvage value is factored into straight-line and sum-of-the-years'-digits calculations, but excluded from the initial double-declining balance base.</p>
+            
+            <div class="formula-card">
+                <h3>1. Straight-Line Method (SL)</h3>
+                <div class="math-box">$$\text{Annual Depreciation} = \frac{\text{Historical Cost} - \text{Estimated Salvage Value}}{\text{Useful Life in Years}}$$</div>
+            </div>
+
+            <div class="formula-card">
+                <h3>2. Double-Declining Balance Method (200% DB)</h3>
+                <div class="math-box">$$\text{Depreciation Rate} = \frac{2}{\text{Useful Life}}, \quad \text{Annual Expense} = \text{Beginning Book Value} \times \text{Rate}$$</div>
+                <div class="why-this-step">
+                    <strong>💡 Key Examination Standard:</strong> Do NOT subtract salvage value from the cost when computing annual DDB depreciation! However, you must stop depreciating once the asset's book value reaches the salvage value (salvage acts as a floor).
+                </div>
+            </div>
+
+            <div class="formula-card">
+                <h3>3. Sum-of-the-Years'-Digits (SYD)</h3>
+                <div class="math-box">$$\text{Denominator } S = \frac{n(n+1)}{2}, \quad \text{Depreciation Expense} = (\text{Cost} - \text{Salvage}) \times \left(\frac{\text{Remaining Life}}{S}\right)$$</div>
+            </div>
+        </section>
+
+        <section id="sec-macrs" class="cluster-section">
+            <h2>2. Tax Depreciation: MACRS (Modified Accelerated Cost Recovery)</h2>
+            <p>For tax purposes, the IRS mandates MACRS under IRC Section 168. Key rules tested on FAR and REG:</p>
+            <ul>
+                <li><strong>Salvage Value is Ignored:</strong> MACRS always depreciates 100% of the asset's basis down to zero ($0$).</li>
+                <li><strong>Half-Year Convention:</strong> Personal property placed in service during the tax year is treated as placed in service at the midpoint of the year, entitling the company to a half-year's depreciation in Year 1.</li>
+                <li><strong>Mid-Quarter Convention:</strong> If more than <strong>40%</strong> of personal property is placed in service during the 4th quarter, the mid-quarter convention is mandatory for all property acquired that year.</li>
+                <li><strong>Real Property:</strong> Residential rental property is depreciated over <strong>27.5 years</strong> (mid-month convention); nonresidential commercial property over <strong>39 years</strong>.</li>
+            </ul>
+        </section>
+
+        <section id="sec-impairment" class="cluster-section">
+            <h2>3. Two-Step GAAP Long-Lived Asset Impairment Test (ASC 360)</h2>
+            <p>Assets held for use are tested for recoverability whenever events or changes in circumstances indicate that their carrying amount may not be recoverable:</p>
+            <div class="formula-card">
+                <h3>Step 1: Recoverability Test (Undiscounted Cash Flows)</h3>
+                <p>Compare Carrying Value (Book Value) to <strong>Undiscounted Expected Future Cash Flows</strong>.</p>
+                <ul>
+                    <li>If Undiscounted Cash Flows $\ge$ Carrying Value: <strong>No Impairment.</strong></li>
+                    <li>If Undiscounted Cash Flows $<$ Carrying Value: <strong>Asset is Impaired. Proceed to Step 2.</strong></li>
+                </ul>
+            </div>
+            <div class="formula-card">
+                <h3>Step 2: Measurement of Impairment Loss (Fair Value)</h3>
+                <div class="math-box">$$\text{Impairment Loss} = \text{Carrying Value} - \text{Fair Value (or Discounted Cash Flows)}$$</div>
+                <p>The loss is recognized in operating income. Reversals of impairment losses are strictly prohibited under US GAAP (unlike IFRS).</p>
+            </div>
+        </section>
+
+        <section id="sec-comparison" class="cluster-section">
+            <h2>4. Comparative Summary: GAAP vs. Tax MACRS</h2>
+            <div class="table-responsive">
+                <table class="cluster-table">
+                    <thead>
+                        <tr>
+                            <th>Feature</th>
+                            <th>US GAAP (Financial Reporting)</th>
+                            <th>MACRS (IRS Tax Reporting)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Salvage Value</td>
+                            <td>Subtracted for SL and SYD; floor for DDB</td>
+                            <td><strong>Ignored (Always $0$)</strong></td>
+                        </tr>
+                        <tr>
+                            <td>Useful Life</td>
+                            <td>Management's authentic economic estimate</td>
+                            <td>Statutory recovery periods (3, 5, 7, 15, 27.5, 39 yrs)</td>
+                        </tr>
+                        <tr>
+                            <td>Year 1 Convention</td>
+                            <td>Time-weighted by actual service date</td>
+                            <td>Half-Year or Mid-Quarter statutory convention</td>
+                        </tr>
+                        <tr>
+                            <td>Deferred Taxes</td>
+                            <td colspan="2">Timing difference creates Deferred Tax Liability (DTL) due to accelerated tax depreciation in early years.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        
+
+    <!-- FAQ Section -->
+    <section id="sec-faq" class="cluster-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="formula-card">
+              <h3 style="color:#0f172a; margin-bottom:6px;">❓ Can you reverse an asset impairment loss under US GAAP?</h3>
+              <p style="margin:0; font-size:14px; color:#475569;">No. Under US GAAP (ASC 360), once an impairment loss is recognized on an asset held for use, the new lower cost basis becomes the new historical cost and cannot be written back up, even if market value recovers.</p>
+            </div>\n<div class="formula-card">
+              <h3 style="color:#0f172a; margin-bottom:6px;">❓ What property classes are most tested under MACRS?</h3>
+              <p style="margin:0; font-size:14px; color:#475569;">5-year property (computers, office machinery, automobiles) and 7-year property (office furniture, fixtures, and agricultural equipment) are the most heavily tested on CPA FAR and REG exams.</p>
+            </div>
+    </section>
+
+    <!-- Topic Cluster Sibling Hub -->
+    <div class="related-clusters-box">
+      <h3 style="margin:0; font-size:17px; color:#0f172a; font-weight:800;">🔗 Related Accounting & Finance Certification Hubs</h3>
+      <div class="related-clusters-grid">
+        <a href="cpa-review.html" class="related-cluster-link">🏛️ CPA® Exam Review Vault (Overview)</a>
+        <a href="cpa-review.html" class="related-cluster-link">📊 CPA Exam Review Vault</a>
+        <a href="cfa-exam.html" class="related-cluster-link">📈 CFA Level 1 Preparation</a>
+        <a href="cma-review.html" class="related-cluster-link">📑 CMA Management Accounting</a>
+        <a href="cpa-far-depreciation-formulas-guide.html" class="related-cluster-link">📐 CPA FAR Depreciation Guide</a>
+        <a href="cpa-aud-audit-assertions-guide.html" class="related-cluster-link">🔍 CPA AUD Assertions Guide</a>
+        <a href="cfa-level-1-tvm-calculator-guide.html" class="related-cluster-link">🧮 CFA TVM Calculator Guide</a>
+        <a href="cfa-level-1-ethics-code-standards-guide.html" class="related-cluster-link">⚖️ CFA Ethics & Standards Guide</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Legal & Trademark Disclaimer Bar -->
+  <footer style="background:#0f172a; color:#94a3b8; padding:36px 20px; font-size:12px; text-align:center; border-top:1px solid #1e293b;">
+    <div style="max-width:900px; margin:0 auto; line-height:1.7;">
+      <strong>Legal Trademark &amp; Regulatory Disclaimer:</strong> CPA® is a registered trademark of AICPA. CFA® and Chartered Financial Analyst® are registered trademarks of CFA Institute. Neither organization sponsors, endorses, or is affiliated with EduPro Suite. Study materials are independently developed under US Copyright Nominative Fair Use for private professional examination prep.
+    </div>
+  </footer>
+
+</body>
+</html>

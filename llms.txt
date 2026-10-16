@@ -108,3 +108,10 @@
 - [CDL Stopping Distance Formulas & Air Brake Lag Guide](https://eduprosuite.pro/cdl-stopping-distance-formulas.html): Calculate commercial vehicle stopping distance: perception distance, reaction distance, air brake lag distance, and braking distance at 55 mph.
 - [EPA 608 Refrigerant Recovery & Evacuation Levels Guide 2026](https://eduprosuite.pro/epa-608-refrigerant-recovery-guide.html): Official EPA 608 refrigerant recovery guide: required evacuation levels in inches of Hg vacuum, leak repair thresholds, Type I, II, III rules, and recovery tank limits.
 - [Conduit Bending Math: 30° Offset Multipliers & Formulas](https://eduprosuite.pro/trade-math-conduit-bending-formulas.html): Electrician conduit bending formulas guide: 30-degree offset multipliers, shrink per inch, 3-bend and 4-bend saddles, take-up deductions, and NEC bending rules.
+
+
+## Newly Added Exam Courses & Simulators
+- [CFA Level 1 Ethics & Standards of Professional Conduct Guide](https://eduprosuite.pro/cfa-level-1-ethics-code-standards-guide.html): Master CFA Institute Code of Ethics and Standards I-VII: Professionalism, Capital Markets, Duties to Clients, Duties to Employers, and GIPS compliance rules.
+- [CFA Level 1 Time Value of Money: BA II Plus Keystrokes](https://eduprosuite.pro/cfa-level-1-tvm-calculator-guide.html): Master Time Value of Money (TVM) on CFA Level 1: Texas Instruments BA II Plus keystrokes for annuities, perpetuity, bond pricing, NPV, and IRR.
+- [CPA AUD Audit Assertions & Risk Procedures Guide 2026](https://eduprosuite.pro/cpa-aud-audit-assertions-guide.html): Master CPA AUD management assertions: Completeness, Existence, Accuracy, Valuation, Rights & Obligations, Cutoff, and Risk Assessment procedures (AU-C 315).
+- [CPA FAR Depreciation Formulas Guide: MACRS & GAAP](https://eduprosuite.pro/cpa-far-depreciation-formulas-guide.html): Master CPA FAR depreciation accounting: Straight-Line, Double-Declining Balance, Sum-of-the-Years'-Digits, MACRS half-year convention, and impairment testing.
