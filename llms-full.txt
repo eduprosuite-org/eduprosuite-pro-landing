@@ -1,0 +1,114 @@
+# EduProSuite Complete Course & Exam Simulator Specifications (Full Context)
+
+EduProSuite (https://eduprosuite.pro/) provides interactive test preparation, question banks, and rapid revision sheets for high-stakes certification and academic exams.
+
+---
+
+## 1. AP & College Admissions Hub
+
+### AP Statistics Exam Prep & Simulators
+- **Target URL**: https://eduprosuite.pro/ap-stats.html
+- **Mock Simulator**: https://eduprosuite.pro/mock-test-ap-stats.html
+- **Quick Review Sheet**: https://eduprosuite.pro/review-sheet-ap-stats.html
+- **Flashcards Deck**: https://eduprosuite.pro/flashcards-ap-stats.html
+- **Coverage**: 
+  - Exploring One- and Two-Variable Data (z-scores, boxplots, linear regression, residuals, $r^2$).
+  - Collecting Data (simple random samples, stratified, cluster, experiments vs observational studies).
+  - Probability, Random Variables & Distributions (binomial, geometric, normal approximation).
+  - Sampling Distributions & Central Limit Theorem ($p$, $\hat{p}$, $\mu$, $\bar{x}$, standard error formulas).
+  - Inference for Categorical Data (1-prop $z$-test, 2-prop $z$-test, Chi-square Goodness of Fit, Homogeneity & Independence).
+  - Inference for Quantitative Data (1-sample $t$-test, 2-sample $t$-test, paired $t$-test, slope of regression line $t$-test).
+
+### AP Calculus AB / BC Prep
+- **Target URL**: https://eduprosuite.pro/ap-calc.html
+- **Quick Review Sheet**: https://eduprosuite.pro/review-sheet-ap-calc.html
+- **Coverage**: Limits & Continuity, Product/Quotient/Chain Rule, Implicit Differentiation, Mean Value Theorem, Riemann Sums, Fundamental Theorem of Calculus, U-Substitution, Integration by Parts, Logistic Differential Equations, Taylor & Maclaurin Series (BC).
+
+### Digital SAT & ACT Prep
+- **Digital SAT**: https://eduprosuite.pro/sat-prep.html
+  - Multistage Adaptive Testing algorithms, Desmos Graphing Calculator built-in mastery, Advanced Algebra, Geometry & Trigonometry, Rhetorical Synthesis, and Grammar Conventions.
+- **ACT Prep**: https://eduprosuite.pro/act-prep.html
+  - English punctuation rules, Math speed problem solving, Reading passage locators, and Science conflicting viewpoints analysis.
+
+---
+
+## 2. Skilled Trades, HVAC & Mechanical Licenses
+
+### EPA Section 608 Universal Technician Certification
+- **Course Page**: https://eduprosuite.pro/epa-608-technician.html
+- **Simulator**: https://eduprosuite.pro/mock-test-epa608.html
+- **Refrigerant Recovery Guide**: https://eduprosuite.pro/glossary-section-608-refrigerants.html
+- **Coverage**:
+  - Core: Ozone depletion potential (ODP), Clean Air Act regulations, Montreal Protocol, Section 608 sales restriction, recovery techniques, evacuation levels.
+  - Type I: Small appliances containing 5 lbs or less of refrigerant (split systems, process tubes, passive recovery).
+  - Type II: High-pressure appliances (split AC, package rooftop units, chillers, major leak repair thresholds: 30% industrial, 20% commercial, 10% comfort cooling).
+  - Type III: Low-pressure appliances (CFC-11, HCFC-123, rupture disks, water tube hydrostatic testing, purge units).
+
+### Journeyman Plumber & Pipefitter Licensing
+- **Course Page**: https://eduprosuite.pro/trade-math.html
+- **Simulator**: https://eduprosuite.pro/mock-test-plumber.html
+- **Cheat Sheet**: https://eduprosuite.pro/review-sheet-trade-math.html
+- **Coverage**:
+  - Drain-Waste-Vent (DWV) sizing, IPC / UPC sanitary drainage fixture units (DFU), minimum trap arm lengths, slope per foot ($1/4"$ or $1/8"$).
+  - Water supply sizing, fixture units (WSFU), pressure loss per 100 feet, static vs dynamic head calculations.
+  - Rolling offsets: $45^\circ$ constant (1.414), $22.5^\circ$ constant (2.613), true offset calculations, fitting take-offs.
+
+### Journeyman Electrician Licensing (NEC)
+- **Simulator**: https://eduprosuite.pro/mock-test-electrician.html
+- **Conduit Bending Guide**: https://eduprosuite.pro/glossary-conduit-bending-multipliers.html
+- **Coverage**:
+  - 2023/2026 National Electrical Code (NEC).
+  - Ohm's law, 3-phase power formulas ($P = \sqrt{3} \times V \times I \times PF$), voltage drop formulas.
+  - Article 310 ampacity adjustments, temperature correction factors, raceway fill (Chapter 9, Table 1).
+  - Motor branch circuit protection (Article 430), box sizing (Article 314), grounding & bonding (Article 250).
+
+---
+
+## 3. Commercial Driver's License (CDL) Endorsements
+
+- **Air Brakes Endorsement**: https://eduprosuite.pro/cdl-air-brakes.html
+  - Dual air brake systems, governor cut-out (120-140 PSI) and cut-in (100 PSI), low air warning (at or above 55-60 PSI), emergency spring brakes, slack adjuster pushrod stroke inspection limits.
+  - Guide: https://eduprosuite.pro/glossary-air-brakes-slack-adjuster.html
+- **General Knowledge**: https://eduprosuite.pro/cdl-general-knowledge.html
+  - Pre-trip inspection, vehicle control, space management, hazardous driving conditions, railroad crossings, accident procedures.
+- **Hazmat (H) Endorsement**: https://eduprosuite.pro/cdl-hazmat.html
+  - 9 hazard classes, shipping papers, placards, loading/unloading restrictions, bulk packaging, emergency response guidebook (ERG).
+- **Passenger (P) & Tanker (N)**: https://eduprosuite.pro/cdl-passenger.html | https://eduprosuite.pro/cdl-tanker.html
+  - Baffle mechanics, liquid surge control, high center of gravity rollovers, emergency exits, passenger management.
+
+---
+
+## 4. Finance, Accounting, Tax & Risk Certifications
+
+- **CPA Exam Review**: https://eduprosuite.pro/cpa-review.html
+  - Core: Financial Accounting & Reporting (FAR), Auditing & Attestation (AUD), Taxation & Regulation (REG).
+  - Discipline: Business Analysis & Reporting (BAR), Information Systems & Controls (ISC), Tax Compliance & Planning (TCP).
+- **CFA Exam Prep**: https://eduprosuite.pro/cfa-exam.html
+  - Quantitative Methods, Micro/Macroeconomics, Financial Statement Analysis, Corporate Issuers, Equity Valuation, Fixed Income, Derivatives, Alternative Investments, Portfolio Management.
+- **IRS Enrolled Agent (EA)**: https://eduprosuite.pro/ea-exam-review.html
+  - Part 1: Individuals (Form 1040, credits, deductions, filing statuses).
+  - Part 2: Businesses (Sole proprietorships, partnerships Form 1065, S-corps Form 1120-S, C-corps Form 1120, trust taxation).
+  - Part 3: Representation, Practices & Procedures (Circular 230, audits, appeals, collections, penalties, power of attorney Form 2848).
+- **CFP Board Exam**: https://eduprosuite.pro/cfp-exam.html
+  - General principles, risk management & insurance, investment planning, tax planning, retirement savings, estate planning.
+- **FINRA Securities Licensing**: https://eduprosuite.pro/securities-licensing.html
+  - SIE (Securities Industry Essentials), Series 7 (General Securities Representative), Series 63 (Uniform Securities Agent State Law), Series 65/66 (Investment Adviser Representative).
+  - Fiduciary vs Suitability: https://eduprosuite.pro/glossary-fiduciary-vs-suitability.html
+
+---
+
+## 5. Healthcare, Medical Coding & Social Work
+
+- **CPC Medical Coding (AAPC)**: https://eduprosuite.pro/cpc-medical-coding.html
+  - ICD-10-CM diagnosis coding, CPT procedure codes (Evaluation & Management, Surgery, Radiology, Pathology), HCPCS Level II, modifiers (-25, -59, etc.).
+- **MCAT Exam Prep**: https://eduprosuite.pro/mcat-prep.html
+  - Chemical and Physical Foundations of Biological Systems, Critical Analysis and Reasoning Skills (CARS), Biological and Biochemical Foundations of Living Systems, Psychological, Social, and Biological Foundations of Behavior.
+- **ASWB Social Work Licensing (LCSW / LMSW / BSW)**: https://eduprosuite.pro/lcsw-exam.html
+  - Human development, diversity, assessment & diagnosis (DSM-5-TR), clinical interventions, ethics, boundary issues, NASW Code of Ethics.
+
+---
+
+## Technical Features & Pedagogy
+- **No Calculators Required**: Realistic exam simulators equipped with built-in scientific/graphing calculators where permitted by testing bodies.
+- **Instant Diagnostic Analytics**: Weakness identification by sub-topic with targeted review drills.
+- **Full Legal & Nominative Fair Use Compliance**: All trademarks (AP®, SAT®, CPA®, CFA®, NEC®, etc.) belong to their respective trademark holders. EduProSuite test preparation materials are independent and adhere strictly to US nominative fair use doctrine.

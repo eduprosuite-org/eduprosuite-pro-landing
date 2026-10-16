@@ -1,0 +1,58 @@
+# EduProSuite
+
+> EduProSuite (https://eduprosuite.pro/) is an educational platform and professional licensing hub providing rigorous, formula-verified test simulators, interactive digital practice exams, printable quick-review cheat sheets, and comprehensive study vaults across STEM college preparation, skilled trades, finance & accounting, and professional healthcare credentials.
+
+## Free Interactive Mock Exam Simulators
+- [AP Statistics Master Simulator](https://eduprosuite.pro/mock-test-ap-stats.html): 40-question timed practice exam with instant feedback, formula rationale, and AP scoring distribution.
+- [EPA Section 608 Universal Exam Simulator](https://eduprosuite.pro/mock-test-epa608.html): 100-question practice test covering Core, Type I (Small Appliances), Type II (High Pressure), and Type III (Low Pressure).
+- [Journeyman Plumber Exam Simulator](https://eduprosuite.pro/mock-test-plumber.html): IPC/UPC code questions, pipe sizing, fixture units, venting formulas, and drainage slope calculations.
+- [Journeyman Electrician NEC Simulator](https://eduprosuite.pro/mock-test-electrician.html): National Electrical Code (NEC) load calculations, conduit fill, motor circuits, and box sizing.
+
+## Quick-Review Cheat Sheets & Formula Guides
+- [AP Statistics Quick Review Sheet](https://eduprosuite.pro/review-sheet-ap-stats.html): Essential probability formulas, sampling distributions, hypothesis test test-statistics, and inference conditions.
+- [AP Calculus Quick Review Sheet](https://eduprosuite.pro/review-sheet-ap-calc.html): Derivatives, integral rules, chain rule, fundamental theorem of calculus, and series convergence tests.
+- [Trade Math Formula Cheat Sheet](https://eduprosuite.pro/review-sheet-trade-math.html): Pipe rolling offsets, bend multipliers, hydraulic pressure, and volume calculations.
+- [AP Statistics Digital Flashcards](https://eduprosuite.pro/flashcards-ap-stats.html): Interactive digital flashcards covering terms, standard error formulas, and Type I/II errors.
+
+## Technical Knowledge Base & Glossary
+- [CDL Air Brake Slack Adjusters & Pushrod Stroke](https://eduprosuite.pro/glossary-air-brakes-slack-adjuster.html): FMCSA stroke limits, automatic vs manual adjusters, and pre-trip inspection steps.
+- [Conduit Bending Multipliers & Offset Formulas](https://eduprosuite.pro/glossary-conduit-bending-multipliers.html): NEC conduit bending multipliers for 10°, 22.5°, 30°, 45°, and 60° bends.
+- [The Chain Rule in Calculus: Formulas & Worked Examples](https://eduprosuite.pro/glossary-derivatives-chain-rule.html): Step-by-step calculus chain rule proofs, composite functions, and Leibniz notation.
+- [Fiduciary Duty vs Suitability Standard](https://eduprosuite.pro/glossary-fiduciary-vs-suitability.html): SEC Regulation Best Interest (Reg BI) vs FINRA Rule 2111 suitability guidelines.
+- [GAAP vs IFRS: Depreciation, Inventory & Leases](https://eduprosuite.pro/glossary-gaap-vs-ifrs-depreciation.html): FASB vs IASB accounting divergence for LIFO/FIFO, component depreciation, and asset impairment.
+- [HACCP Temperature Danger Zone (41°F - 135°F)](https://eduprosuite.pro/glossary-haccp-temperature-danger-zone.html): ServSafe food safety temperatures, two-stage cooling rules, and bacterial growth limits.
+- [Mechanic's Liens for General Contractors](https://eduprosuite.pro/glossary-mechanics-lien-contractors.html): Preliminary notice statutory deadlines, perfecting a lien, and foreclosure compliance.
+- [P-Value in Hypothesis Testing](https://eduprosuite.pro/glossary-p-value-hypothesis-testing.html): Interpretation of statistical significance, alpha thresholds, and common misconceptions.
+- [EPA 608 Refrigerant Recovery & Leak Rates](https://eduprosuite.pro/glossary-section-608-refrigerants.html): Clean Air Act Section 608 trigger rates for commercial refrigeration and industrial process equipment.
+- [Type I vs Type II Errors in Statistics](https://eduprosuite.pro/glossary-type-i-type-ii-errors.html): Alpha (false positive), Beta (false negative), and statistical power calculations.
+
+## College Board & High School Exam Prep
+- [AP Statistics Prep Suite](https://eduprosuite.pro/ap-stats.html): Complete AP Stats curriculum, FRQ rubric walk-throughs, and calculator keystrokes.
+- [AP Calculus AB/BC Prep](https://eduprosuite.pro/ap-calc.html): AP Calculus exam master guide covering differential and integral calculus.
+- [AP Chemistry Score-5 Vault](https://eduprosuite.pro/ap-chemistry.html): Thermodynamics, kinetics, equilibrium, and electrochemistry exam prep.
+- [Digital SAT Exam Prep Vault](https://eduprosuite.pro/sat-prep.html): Adaptive digital testing strategy, Desmos calculator techniques, and reading passage analysis.
+- [ACT Exam Prep Vault](https://eduprosuite.pro/act-prep.html): English, Math, Reading, and Science speed pacing strategies.
+- [SHSAT Specialized High Schools Vault](https://eduprosuite.pro/shsat-prep.html): Admissions prep for Stuyvesant, Bronx Science, and Brooklyn Tech.
+- [SSAT & ISEE Exam Prep](https://eduprosuite.pro/ssat-prep.html): Independent and private school entrance examination vaults.
+
+## Skilled Trades, HVAC & Commercial Driving
+- [EPA 608 Technician Certification](https://eduprosuite.pro/epa-608-technician.html): Universal HVAC technician certification preparation.
+- [Plumbing & Pipefitting Trade Math](https://eduprosuite.pro/trade-math.html): Applied geometry, slope, fall, and mechanical trade math.
+- [Contractor Licensing Exam Prep](https://eduprosuite.pro/contractor-license.html): NASCLA, business law, project management, and trade exam preparation.
+- [Commercial Driver's License (CDL) Suite](https://eduprosuite.pro/cdl-general-knowledge.html): Air Brakes, General Knowledge, Hazmat (H), Passenger (P), and Tanker (N) endorsements.
+- [Certified Fiber Optic Technician (CFOT)](https://eduprosuite.pro/cfot-fiber-optic.html): FOA standards, OTDR testing, cable termination, and splicing.
+- [Home Inspection Certification](https://eduprosuite.pro/home-inspection.html): National Home Inspector Examination (NHIE) comprehensive prep.
+
+## Finance, Accounting & Professional Licensure
+- [CPA Exam Review Vault](https://eduprosuite.pro/cpa-review.html): AUD, FAR, REG, and discipline sections (BAR, ISC, TCP).
+- [CFA Exam Prep (Levels I & II)](https://eduprosuite.pro/cfa-exam.html): Ethics, quantitative methods, economics, equity, and fixed income.
+- [IRS Enrolled Agent (EA) Review](https://eduprosuite.pro/ea-exam-review.html): Special Enrollment Examination (SEE) Parts 1, 2, and 3 tax prep.
+- [CFP Exam Prep Vault](https://eduprosuite.pro/cfp-exam.html): Certified Financial Planner comprehensive board exam preparation.
+- [CMA & CIA Exam Vaults](https://eduprosuite.pro/cma-review.html): Certified Management Accountant and Certified Internal Auditor exams.
+- [CPC Medical Coding Exam](https://eduprosuite.pro/cpc-medical-coding.html): AAPC Certified Professional Coder (CPT, ICD-10-CM, HCPCS Level II).
+- [Social Work Licensing (LCSW / LMSW / BSW)](https://eduprosuite.pro/lcsw-exam.html): ASWB clinical, masters, and bachelors board exams.
+- [Real Estate & Insurance Licensing](https://eduprosuite.pro/real-estate-licensing.html): Pre-licensing exam courses and state-approved continuing education (CE).
+
+## Policy, Research & Updates
+- [EduProSuite Newsroom & Research](https://eduprosuite.pro/index.html): Updates on adaptive exam scoring algorithms, licensure board updates, and educational technology.
+- [Full LLM Contextual Documentation](https://eduprosuite.pro/llms-full.txt): Comprehensive plain-text specifications for all courses and tools.

@@ -1,6 +1,43 @@
 User-agent: *
 Allow: /
 
+# OpenAI / ChatGPT Search Bots
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+# Perplexity AI Crawlers
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Anthropic Claude Crawlers
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# Apple Intelligence & Siri
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Microsoft Bing & Copilot
+User-agent: Bingbot
+Allow: /
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Sitemaps
 Sitemap: https://eduprosuite.pro/sitemap.xml
 Sitemap: https://eduprosuite.pro/image-sitemap.xml
 Sitemap: https://eduprosuite.pro/news-sitemap.xml
