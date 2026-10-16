@@ -5,16 +5,17 @@
     <link>https://eduprosuite.pro/</link>
     <description>Official examination preparation suites, diagnostic workbooks, and licensure study guides by EduProSuite</description>
     <item>
-      <g:id>EDU-AP-STATS-PRO</g:id>
+      <g:id>EDU-SCORE5-PRO</g:id>
       <g:title><![CDATA[AP Statistics Exam Prep Suite - Practice Tests, Formula Cheatsheet & Inference Drills (Study Guide)]]></g:title>
       <g:description><![CDATA[Comprehensive AP Statistics preparation suite with full-length inference practice tests, hypothesis testing decision frameworks, and scoring rubrics.]]></g:description>
       <g:link>https://eduprosuite.pro/ap-stats.html</g:link>
-      <g:image_link>https://eduprosuite.pro/images/ap-stats-cover.webp</g:image_link>
+      <g:image_link>https://eduprosuite.pro/images/ap-stats-cover.webp?v=2</g:image_link>
+      <g:additional_image_link>https://eduprosuite.pro/images/courses/lifestyle-ap-stats.webp</g:additional_image_link>
       <g:price>29.00 USD</g:price>
       <g:availability>in_stock</g:availability>
       <g:brand>EduProSuite</g:brand>
       <g:gtin>9781958201022</g:gtin>
-      <g:mpn>EDUPRO-STATS-2026</g:mpn>
+      <g:mpn>EDUPRO-STATS-SCORE5</g:mpn>
       <g:condition>new</g:condition>
       <g:product_type><![CDATA[Books > Non-Fiction > Education > Test Preparation]]></g:product_type>
       <g:google_product_category>784</g:google_product_category>
@@ -30,16 +31,16 @@
       </g:shipping>
     </item>
     <item>
-      <g:id>EDU-AP-CALC-BC</g:id>
+      <g:id>EDU-SCORE5-ELITE</g:id>
       <g:title><![CDATA[AP Calculus BC Prep Vault - 10 Unit Review, Taylor Series Drills & Practice Exams (Study Guide)]]></g:title>
       <g:description><![CDATA[Complete AP Calculus BC student study suite covering all 10 College Board units, Taylor series proofs, differential equations, and mock exams.]]></g:description>
       <g:link>https://eduprosuite.pro/ap-calc.html</g:link>
-      <g:image_link>https://eduprosuite.pro/images/ap-calc-cover.webp</g:image_link>
+      <g:image_link>https://eduprosuite.pro/images/ap-calc-cover.webp?v=2</g:image_link>
       <g:price>29.00 USD</g:price>
       <g:availability>in_stock</g:availability>
       <g:brand>EduProSuite</g:brand>
       <g:gtin>9781958201015</g:gtin>
-      <g:mpn>EDUPRO-CALCBC-2026</g:mpn>
+      <g:mpn>EDUPRO-CALC-SCORE5ELITE</g:mpn>
       <g:condition>new</g:condition>
       <g:product_type><![CDATA[Books > Non-Fiction > Education > Test Preparation]]></g:product_type>
       <g:google_product_category>784</g:google_product_category>
@@ -55,16 +56,16 @@
       </g:shipping>
     </item>
     <item>
-      <g:id>EDU-TRADE-MATH-PRO</g:id>
+      <g:id>EDU-JOURNEYMAN-PRO</g:id>
       <g:title><![CDATA[Journeyman Trade Math Suite - Electrical Conduit, Plumbing & HVAC Calculations (Handbook)]]></g:title>
       <g:description><![CDATA[Complete trade apprentice handbook: conduit bending geometry, Ohm's law, pipe trigonometry, and electrical service load calculation worksheets.]]></g:description>
       <g:link>https://eduprosuite.pro/trade-math.html</g:link>
-      <g:image_link>https://eduprosuite.pro/images/courses/trade-math-cover.webp</g:image_link>
+      <g:image_link>https://eduprosuite.pro/images/courses/trade-math-cover.webp?v=2</g:image_link>
       <g:price>29.00 USD</g:price>
       <g:availability>in_stock</g:availability>
       <g:brand>EduProSuite</g:brand>
       <g:gtin>9781958201039</g:gtin>
-      <g:mpn>EDUPRO-TRADEMATH-2026</g:mpn>
+      <g:mpn>EDUPRO-TRADEMATH-JOURNEYMAN</g:mpn>
       <g:condition>new</g:condition>
       <g:product_type><![CDATA[Books > Non-Fiction > Vocational & Technical]]></g:product_type>
       <g:google_product_category>784</g:google_product_category>
