@@ -59,6 +59,22 @@ body {
 .mt-12 { margin-top: 12px; }
 .hidden { display: none !important; }
 
+/* Wikipedia-Style Contextual Internal Concept Links */
+.wiki-concept-link {
+  color: var(--blue-600, #2563eb);
+  text-decoration: underline;
+  text-decoration-color: rgba(37, 99, 235, 0.45);
+  text-underline-offset: 3px;
+  font-weight: 500;
+  transition: all 0.15s ease;
+}
+.wiki-concept-link:hover {
+  color: var(--blue-700, #1d4ed8);
+  text-decoration-color: var(--blue-700, #1d4ed8);
+  background-color: var(--blue-50, #eff6ff);
+  border-radius: 2px;
+}
+
 /* ---- ANNOUNCEMENT BAR ---- */
 .announcement-bar {
   background: linear-gradient(90deg, #1e293b 0%, #0f172a 100%);
