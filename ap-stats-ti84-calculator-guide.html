@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
+  <title>TI-84 Commands for AP Statistics: Syntax & Guide</title>
+  <meta name="description" content="Master the TI-84 Plus CE calculator for AP Statistics: normalcdf, invNorm, 1-PropZTest, 2-SampTTest, LinRegTTest, and common syntax errors."/>
+  <meta name="keywords" content="ti 84 ap statistics commands, normalcdf invnorm syntax, 1 prop z test ti 84, linregttest ti 84 ap stats, calculator shortcuts ap stats"/>
+  <link rel="canonical" href="https://eduprosuite.pro/ap-stats-ti84-calculator-guide.html"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin=""/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <meta property="og:title" content="TI-84 Commands for AP Statistics: Syntax & Guide"/>
+  <meta property="og:description" content="Master the TI-84 Plus CE calculator for AP Statistics: normalcdf, invNorm, 1-PropZTest, 2-SampTTest, LinRegTTest, and common syntax errors."/>
+  <meta property="og:url" content="https://eduprosuite.pro/ap-stats-ti84-calculator-guide.html"/>
+  <meta property="og:type" content="article"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  
+  <!-- MathJax for publication-grade mathematical equations -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <!-- Structured Data JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "TechArticle",
+        "@id": "https://eduprosuite.pro/ap-stats-ti84-calculator-guide.html#article",
+        "headline": "TI-84 Commands for AP Statistics: Syntax & Guide",
+        "description": "Master the TI-84 Plus CE calculator for AP Statistics: normalcdf, invNorm, 1-PropZTest, 2-SampTTest, LinRegTTest, and common syntax errors.",
+        "url": "https://eduprosuite.pro/ap-stats-ti84-calculator-guide.html",
+        "inLanguage": "en-US",
+        "publisher": {
+          "@type": "Organization",
+          "name": "EduPro Suite",
+          "url": "https://eduprosuite.pro/"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://eduprosuite.pro/ap-stats-ti84-calculator-guide.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://eduprosuite.pro/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "AP & College Prep",
+            "item": "https://eduprosuite.pro/college-prep-ap.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "AP® Statistics Exam Vault",
+            "item": "https://eduprosuite.pro/ap-stats.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "TI-84 Commands for AP Statistics: Syntax & Guide",
+            "item": "https://eduprosuite.pro/ap-stats-ti84-calculator-guide.html"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://eduprosuite.pro/ap-stats-ti84-calculator-guide.html#faq",
+        "mainEntity": [
+          {
+              "@type": "Question",
+              "name": "Can I clear calculator RAM before entering the exam?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Proctors will instruct you to clear calculator RAM before Section I. Practice re-enabling DiagnosticOn and setting RADIAN/DEGREE modes beforehand."
+              }
+            },\n          {
+              "@type": "Question",
+              "name": "What if x is not an integer in 1-PropZTest?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "If you calculate $x = n \times \hat{p}$ and get a decimal (e.g., 42.6), you must round to the nearest whole integer (43), or the TI-84 will give a <code>DOMAIN ERROR</code>."
+              }
+            }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    .cluster-body { max-width: 900px; margin: 0 auto; padding: 40px 20px; font-family: 'Inter', sans-serif; color: #1e293b; line-height: 1.7; }
+    .cluster-breadcrumb { font-size: 13px; color: #64748b; margin-bottom: 24px; }
+    .cluster-breadcrumb a { color: #2563eb; text-decoration: none; }
+    .cluster-header { margin-bottom: 36px; border-bottom: 1px solid #e2e8f0; padding-bottom: 28px; }
+    .cluster-badge { display: inline-block; background: #eff6ff; color: #1d4ed8; font-weight: 700; font-size: 12px; padding: 4px 12px; border-radius: 9999px; border: 1px solid #bfdbfe; margin-bottom: 14px; }
+    .cluster-title { font-size: 32px; font-weight: 900; line-height: 1.25; color: #0f172a; margin-bottom: 16px; letter-spacing: -0.5px; }
+    .cluster-lead { font-size: 16px; color: #475569; line-height: 1.7; }
+    .hub-navigation-card { background: linear-gradient(135deg, #1e3a8a, #2563eb); color: white; border-radius: 12px; padding: 22px 28px; margin: 28px 0; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; box-shadow: 0 4px 12px rgba(37,99,235,0.15); }
+    .hub-navigation-card h3 { margin: 0 0 6px; font-size: 18px; font-weight: 800; color: white; }
+    .hub-navigation-card p { margin: 0; font-size: 13.5px; opacity: 0.9; }
+    .hub-nav-btn { background: white; color: #1d4ed8; padding: 10px 20px; border-radius: 8px; font-weight: 700; text-decoration: none; font-size: 13.5px; transition: transform 0.15s ease; }
+    .hub-nav-btn:hover { transform: translateY(-2px); }
+    .wiki-toc-box { background: #f8fafc; border: 1px solid #cbd5e1; border-radius: 10px; padding: 18px 24px; margin: 28px 0; }
+    .wiki-toc-box ol { margin: 0; padding-left: 20px; line-height: 1.8; }
+    .cluster-section { margin: 44px 0; scroll-margin-top: 80px; }
+    .cluster-section h2 { font-size: 24px; font-weight: 800; color: #0f172a; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; margin-bottom: 18px; }
+    .formula-card { background: #ffffff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 20px; margin: 20px 0; box-shadow: 0 2px 6px rgba(0,0,0,0.02); }
+    .formula-card h3 { margin-top: 0; font-size: 17px; color: #1e3a8a; font-weight: 700; }
+    .math-box { background: #f1f5f9; padding: 14px 18px; border-radius: 8px; margin: 12px 0; overflow-x: auto; font-size: 16px; text-align: center; }
+    .trap-alert { background: #fef2f2; border-left: 4px solid #ef4444; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 22px 0; font-size: 14px; color: #991b1b; }
+    .why-this-step { background: #f0fdf4; border-left: 4px solid #22c55e; padding: 16px 20px; border-radius: 0 8px 8px 0; margin: 22px 0; font-size: 14px; color: #166534; }
+    .cluster-table { width: 100%; border-collapse: collapse; margin: 20px 0; font-size: 13.5px; }
+    .cluster-table th, .cluster-table td { border: 1px solid #cbd5e1; padding: 12px 14px; text-align: left; }
+    .cluster-table th { background: #f8fafc; font-weight: 700; color: #0f172a; }
+    .related-clusters-box { background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 12px; padding: 24px; margin: 40px 0; }
+    .related-clusters-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; margin-top: 14px; }
+    .related-cluster-link { display: block; background: white; border: 1px solid #cbd5e1; border-radius: 8px; padding: 12px 16px; text-decoration: none; color: #1e293b; font-size: 13.5px; font-weight: 600; transition: border-color 0.15s ease; }
+    .related-cluster-link:hover { border-color: #2563eb; color: #2563eb; }
+  </style>
+</head>
+<body>
+
+  <!-- GLOBAL NAV BAR -->
+  <header style="background:white; border-bottom:1px solid #e2e8f0; padding:14px 20px;">
+    <div style="max-width:1100px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+      <a href="/" style="text-decoration:none; color:#0f172a; font-weight:900; font-size:20px; display:flex; align-items:center; gap:8px;">
+        <span style="background:#2563eb; color:white; padding:3px 8px; border-radius:6px; font-size:15px;">E</span> EduPro Suite
+      </a>
+      <div style="display:flex; gap:16px; align-items:center; font-size:13.5px; font-weight:600;">
+        <a href="ap-stats.html" style="color:#2563eb; text-decoration:none;">🏛️ AP® Statistics Exam Vault</a>
+        <a href="/#pricing" style="background:#2563eb; color:white; padding:6px 14px; border-radius:6px; text-decoration:none;">Get Full Access ($29)</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="cluster-body">
+    <!-- Breadcrumb Navigation -->
+    <div class="cluster-breadcrumb">
+      <a href="/">Home</a> &gt; 
+      <a href="college-prep-ap.html">AP & College Prep</a> &gt; 
+      <a href="ap-stats.html">AP® Statistics Exam Vault</a> &gt; 
+      <span>TI-84 Commands for AP Statistics: Syntax & Guide</span>
+    </div>
+
+    <!-- Header Section -->
+    <header class="cluster-header">
+      <span class="cluster-badge">TI-84 Plus CE / Silver Edition · Button-by-Button Cheatsheet</span>
+      <h1 class="cluster-title">TI-84 Calculator Commands for AP® Statistics: The Complete Reference</h1>
+      <p class="cluster-lead">A TI-84 Plus CE calculator is an indispensable tool on the AP® Statistics exam, saving critical minutes on complex computations. Here is the step-by-step keystroke guide for every distribution, test, and interval you will encounter.</p>
+    </header>
+
+    <!-- Pillar Hub & Diagnostic Tools Quick Jump -->
+    <div class="hub-navigation-card">
+      <div>
+        <h3>Need Full Exam Prep with Step-by-Step Simulators?</h3>
+        <p>Explore the complete AP® Statistics Exam Vault with 25 diagnostic exams, flashcards & cheat sheets.</p>
+      </div>
+      <a href="ap-stats.html" class="hub-nav-btn">Explore Exam Vault →</a>
+    </div>
+
+    <!-- Wikipedia Table of Contents -->
+    <div class="wiki-toc-box">
+      <strong style="color:#0f172a; font-size:14px;">📑 Quick Navigation [Jump to Topic]</strong>
+      <ol>
+        <li><a href="#dist-calc" style="color:#2563eb; text-decoration:none;">Probability Distributions (Normal, Binomial, Geometric)</a></li>\n        <li><a href="#test-calc" style="color:#2563eb; text-decoration:none;">Hypothesis Tests (Z-Tests, T-Tests, Chi-Square)</a></li>\n        <li><a href="#int-calc" style="color:#2563eb; text-decoration:none;">Confidence Intervals</a></li>\n        <li><a href="#reg-calc" style="color:#2563eb; text-decoration:none;">Linear Regression & Residuals</a></li>\n        <li><a href="#sec-faq" style="color:#2563eb; text-decoration:none;">Frequently Asked Questions</a></li>
+      </ol>
+    </div>
+
+    <!-- Pedagogical Content Sections -->
+    
+        <section id="dist-calc" class="cluster-section">
+            <h2>1. Probability Distributions [2nd] [VARS] (DISTR)</h2>
+            <div class="table-responsive">
+                <table class="cluster-table">
+                    <thead>
+                        <tr>
+                            <th>Command</th>
+                            <th>Keystrokes</th>
+                            <th>Input Syntax</th>
+                            <th>When to Use</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><code>normalcdf</code></td>
+                            <td>[2nd] [VARS] -> 2</td>
+                            <td><code>(lower, upper, $\mu$, $\sigma$)</code></td>
+                            <td>Find area under normal curve between two values. Use $-1\text{E}99$ or $1\text{E}99$ for $\pm\infty$.</td>
+                        </tr>
+                        <tr>
+                            <td><code>invNorm</code></td>
+                            <td>[2nd] [VARS] -> 3</td>
+                            <td><code>(area, $\mu$, $\sigma$, [LEFT/CENTER/RIGHT])</code></td>
+                            <td>Find $z^*$ or $x$ value for a given percentile area.</td>
+                        </tr>
+                        <tr>
+                            <td><code>binompdf</code></td>
+                            <td>[2nd] [VARS] -> A</td>
+                            <td><code>(trials, $p$, $x$)</code></td>
+                            <td>Find probability of <em>exactly</em> $x$ successes: $P(X = k)$.</td>
+                        </tr>
+                        <tr>
+                            <td><code>binomcdf</code></td>
+                            <td>[2nd] [VARS] -> B</td>
+                            <td><code>(trials, $p$, $x$)</code></td>
+                            <td>Find cumulative probability of <em>at most</em> $x$ successes: $P(X \le k)$.</td>
+                        </tr>
+                        <tr>
+                            <td><code>tcdf</code></td>
+                            <td>[2nd] [VARS] -> 6</td>
+                            <td><code>(lower, upper, $df$)</code></td>
+                            <td>Find probability area under Student's $t$ curve with degrees of freedom $df$.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="test-calc" class="cluster-section">
+            <h2>2. Hypothesis Tests [STAT] -> TESTS</h2>
+            <div class="formula-card">
+                <h3>1-PropZTest (Menu Option 5)</h3>
+                <p><strong>Inputs:</strong> $p_0$ (null proportion), $x$ (number of successes, must be an integer), $n$ (sample size), prop ($
+e p_0, < p_0, > p_0$).</p>
+                <p><strong>Output:</strong> $z$ (standardized test statistic), $p$ ($P$-value), $\hat{p}$ (sample proportion).</p>
+            </div>
+            <div class="formula-card">
+                <h3>2-SampTTest (Menu Option 4)</h3>
+                <p><strong>Inputs:</strong> Data in Lists or Summary Stats ($\bar{x}_1, s_1, n_1, \bar{x}_2, s_2, n_2$), Pooled: <strong>Always select NO</strong>.</p>
+                <p><strong>Output:</strong> $t$ test statistic, $p$-value, calculated degrees of freedom ($df$).</p>
+            </div>
+            <div class="trap-alert">
+                <strong>🚨 Critical AP Exam Note on Pooled T-Test:</strong> Never select "Pooled: YES" for two-sample $t$-tests on the AP exam unless population variances are explicitly proven equal. Always select "Pooled: NO".
+            </div>
+        </section>
+
+        <section id="reg-calc" class="cluster-section">
+            <h2>3. Linear Regression & Residuals [STAT] [CALC] 8</h2>
+            <p>Always use <code>LinReg(a+bx)</code> (Option 8), NOT Option 4, to conform with College Board notation where $b$ represents slope.</p>
+            <ol>
+                <li>Enter explanatory $x$ data into $L_1$ and response $y$ data into $L_2$.</li>
+                <li>Press [STAT] -> CALC -> <code>8: LinReg(a+bx)</code>.</li>
+                <li>Turn DiagnosticOn: Press [2nd] [0] (CATALOG), scroll down to <code>DiagnosticOn</code>, and press [ENTER] twice to display correlation coefficient $r$ and $r^2$.</li>
+                <li>Residuals are automatically saved to list <code>RESID</code> ([2nd] [STAT] -> NAMES -> RESID).</li>
+            </ol>
+        </section>
+        
+
+    <!-- FAQ Section -->
+    <section id="sec-faq" class="cluster-section">
+      <h2>Frequently Asked Questions</h2>
+      <div class="formula-card">
+              <h3 style="color:#0f172a; margin-bottom:6px;">❓ Can I clear calculator RAM before entering the exam?</h3>
+              <p style="margin:0; font-size:14px; color:#475569;">Proctors will instruct you to clear calculator RAM before Section I. Practice re-enabling DiagnosticOn and setting RADIAN/DEGREE modes beforehand.</p>
+            </div>\n<div class="formula-card">
+              <h3 style="color:#0f172a; margin-bottom:6px;">❓ What if x is not an integer in 1-PropZTest?</h3>
+              <p style="margin:0; font-size:14px; color:#475569;">If you calculate $x = n \times \hat{p}$ and get a decimal (e.g., 42.6), you must round to the nearest whole integer (43), or the TI-84 will give a <code>DOMAIN ERROR</code>.</p>
+            </div>
+    </section>
+
+    <!-- Topic Cluster Sibling Hub -->
+    <div class="related-clusters-box">
+      <h3 style="margin:0; font-size:17px; color:#0f172a; font-weight:800;">🔗 Complete Topic Cluster & Free Diagnostic Tools</h3>
+      <div class="related-clusters-grid">
+        <a href="ap-stats.html" class="related-cluster-link">🏛️ AP® Statistics Exam Vault (Overview)</a>
+        <a href="ap-stats-dictionary.html" class="related-cluster-link">📖 AP Stats A-Z Dictionary Hub</a>
+        <a href="mock-test-ap-stats.html" class="related-cluster-link">📝 1 Free Diagnostic Mock Exam</a>
+        <a href="flashcards-ap-stats.html" class="related-cluster-link">🃏 30 Free Flashcards</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Legal & Trademark Disclaimer Bar -->
+  <footer style="background:#0f172a; color:#94a3b8; padding:36px 20px; font-size:12px; text-align:center; border-top:1px solid #1e293b;">
+    <div style="max-width:900px; margin:0 auto; line-height:1.7;">
+      <strong>Legal Trademark &amp; Nominative Fair Use Notice:</strong> AP®, SAT®, ACT®, and College Board are registered trademarks of the College Board, which was not involved in the production of, and does not endorse, EduPro Suite study materials. All materials are independently authored under US Nominative Fair Use for educational purposes.
+    </div>
+  </footer>
+
+</body>
+</html>
