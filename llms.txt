@@ -115,3 +115,15 @@
 - [CFA Level 1 Time Value of Money: BA II Plus Keystrokes](https://eduprosuite.pro/cfa-level-1-tvm-calculator-guide.html): Master Time Value of Money (TVM) on CFA Level 1: Texas Instruments BA II Plus keystrokes for annuities, perpetuity, bond pricing, NPV, and IRR.
 - [CPA AUD Audit Assertions & Risk Procedures Guide 2026](https://eduprosuite.pro/cpa-aud-audit-assertions-guide.html): Master CPA AUD management assertions: Completeness, Existence, Accuracy, Valuation, Rights & Obligations, Cutoff, and Risk Assessment procedures (AU-C 315).
 - [CPA FAR Depreciation Formulas Guide: MACRS & GAAP](https://eduprosuite.pro/cpa-far-depreciation-formulas-guide.html): Master CPA FAR depreciation accounting: Straight-Line, Double-Declining Balance, Sum-of-the-Years'-Digits, MACRS half-year convention, and impairment testing.
+
+
+## Newly Added Exam Courses & Simulators
+- [AP Calculus AB & BC A-Z Dictionary](https://eduprosuite.pro/ap-calc-dictionary.html): Comprehensive AP Calculus AB & BC A-Z dictionary: 60+ definitions, derivative rules, integration formulas, series convergence tests, and CED theorems.
+- [CDL Exam A-Z Dictionary](https://eduprosuite.pro/cdl-exam-dictionary.html): Comprehensive CDL Exam A-Z dictionary: 60+ terms, FMCSA regulations, dual air brake systems, slack adjuster stroke limits, hazmat placards, and pre-trip inspections.
+- [CFA Level 1 A-Z Dictionary](https://eduprosuite.pro/cfa-exam-dictionary.html): Comprehensive CFA Level 1 A-Z dictionary: 60+ terms, CFA Institute Standards I-VII, BA II Plus calculator steps, CAPM, TVM, and financial statement analysis.
+- [CPA Exam A-Z Dictionary](https://eduprosuite.pro/cpa-exam-dictionary.html): Comprehensive CPA Exam A-Z dictionary: 60+ terms, FASB GAAP vs IFRS, management audit assertions, tax basis rules, and task-based simulation frameworks.
+- [Journeyman Electrician A-Z Dictionary](https://eduprosuite.pro/electrician-nec-dictionary.html): Comprehensive Journeyman Electrician A-Z dictionary: 60+ terms, 2023/2026 NEC articles, conduit fill, box sizing, Ohm's law, and motor branch circuits.
+- [EPA Section 608 HVAC A-Z Dictionary](https://eduprosuite.pro/epa-608-dictionary.html): Exhaustive EPA Section 608 HVAC A-Z dictionary: 60+ terms, Montreal Protocol, recovery vacuums, leak rates, safety codes, and SNAP replacement refrigerants.
+- [MCAT A-Z Dictionary](https://eduprosuite.pro/mcat-exam-dictionary.html): Comprehensive MCAT A-Z dictionary: 60+ terms, Michaelis-Menten kinetics, Henderson-Hasselbalch, CARS passage strategies, action potentials, and psych theories.
+- [Journeyman Plumber A-Z Dictionary](https://eduprosuite.pro/plumber-trade-math-dictionary.html): Comprehensive Journeyman Plumber A-Z dictionary: 50+ terms, IPC/UPC drainage slope rules, rolling offset constants, fixture units, and vent sizing formulas.
+- [Digital SAT Math A-Z Dictionary](https://eduprosuite.pro/sat-math-dictionary.html): Comprehensive Digital SAT Math A-Z dictionary: 50+ definitions, adaptive test strategies, Desmos calculator shortcuts, quadratic vertex formulas, and geometry theorems.
