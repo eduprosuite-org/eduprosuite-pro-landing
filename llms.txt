@@ -127,3 +127,7 @@
 - [MCAT A-Z Dictionary](https://eduprosuite.pro/mcat-exam-dictionary.html): Comprehensive MCAT A-Z dictionary: 60+ terms, Michaelis-Menten kinetics, Henderson-Hasselbalch, CARS passage strategies, action potentials, and psych theories.
 - [Journeyman Plumber A-Z Dictionary](https://eduprosuite.pro/plumber-trade-math-dictionary.html): Comprehensive Journeyman Plumber A-Z dictionary: 50+ terms, IPC/UPC drainage slope rules, rolling offset constants, fixture units, and vent sizing formulas.
 - [Digital SAT Math A-Z Dictionary](https://eduprosuite.pro/sat-math-dictionary.html): Comprehensive Digital SAT Math A-Z dictionary: 50+ definitions, adaptive test strategies, Desmos calculator shortcuts, quadratic vertex formulas, and geometry theorems.
+
+
+## Newly Added Exam Courses & Simulators
+- [AP Calculus Integral Rules: U-Substitution, Parts & FTC](https://eduprosuite.pro/ap-calc-integral-rules.html): Master all AP Calculus integral rules: Power Rule for Integration, U-Substitution, Integration by Parts, and Fundamental Theorem of Calculus (FTC) with worked proofs.
