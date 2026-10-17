@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="index, follow, max-image-preview:large" name="robots"/>
+<title>Ultimate Math Cheat Sheets Vault (2026) | K-12, College, IB &amp; Exam Prep</title>
+<meta content="Explore the definitive collection of 28 high-yield math formula cheat sheets: Middle School, High School Algebra &amp; Geometry, College Calculus 1-3, Linear Algebra, IB Math AA/AI, SAT, ACT &amp; AP exams." name="description"/>
+<meta content="math cheat sheet, printable math formula sheet, algebra cheat sheet, calculus derivative cheat sheet, SAT math formulas, IB math formula sheet" name="keywords"/>
+<link href="https://eduprosuite.pro/math-cheat-sheets.html" rel="canonical"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Space+Grotesk:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+<!-- Open Graph Meta -->
+<meta content="Ultimate Math Cheat Sheets Vault (2026) | EduProSuite" property="og:title"/>
+<meta content="Browse 28 high-yield math cheat sheets from Grade 5 through College Multivariable Calculus and IB/AP exam prep." property="og:description"/>
+<meta content="https://eduprosuite.pro/math-cheat-sheets.html" property="og:url"/>
+<meta content="website" property="og:type"/>
+<meta content="https://eduprosuite.pro/images/master-exam-vault-suite.webp" property="og:image"/>
+<style>
+  body { font-family: 'Inter', sans-serif; color: #0f172a; margin: 0; padding: 0; background: #f8fafc; }
+  .hub-container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+  
+  .hub-hero { text-align: center; padding: 60px 20px 40px; background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%); color: white; border-radius: 20px; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); }
+  .hub-hero-badge { display: inline-block; background: rgba(56, 189, 248, 0.15); color: #38bdf8; border: 1px solid rgba(56, 189, 248, 0.3); padding: 6px 16px; border-radius: 9999px; font-size: 13px; font-weight: 700; margin-bottom: 18px; text-transform: uppercase; }
+  .hub-hero-title { font-size: 42px; font-weight: 900; line-height: 1.2; margin: 0 0 16px; font-family: 'Space Grotesk', sans-serif; letter-spacing: -0.5px; }
+  .hub-hero-desc { font-size: 18px; color: #cbd5e1; max-width: 800px; margin: 0 auto 28px; line-height: 1.7; }
+  
+  .filter-bar { display: flex; justify-content: center; flex-wrap: wrap; gap: 10px; margin-bottom: 40px; }
+  .filter-btn { background: white; border: 1px solid #cbd5e1; color: #475569; padding: 10px 20px; border-radius: 9999px; font-weight: 700; font-size: 14px; cursor: pointer; transition: all 0.2s ease; }
+  .filter-btn:hover, .filter-btn.active { background: #2563eb; color: white; border-color: #2563eb; box-shadow: 0 4px 12px rgba(37,99,235,0.25); }
+
+  .catalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 28px; }
+  .sheet-card { background: white; border-radius: 14px; overflow: hidden; border: 1px solid #e2e8f0; box-shadow: 0 2px 8px rgba(0,0,0,0.04); transition: transform 0.2s ease, box-shadow 0.2s ease; display: flex; flex-direction: column; }
+  .sheet-card:hover { transform: translateY(-4px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
+  .sheet-card-img-wrap { position: relative; background: #0f172a; aspect-ratio: 16/10; overflow: hidden; }
+  .sheet-card-img-wrap img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .sheet-card-badge { position: absolute; top: 12px; right: 12px; background: rgba(15,23,42,0.85); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3); font-size: 11px; font-weight: 800; padding: 3px 10px; border-radius: 6px; backdrop-filter: blur(4px); }
+  .sheet-card-body { padding: 22px; display: flex; flex-direction: column; flex-grow: 1; }
+  .sheet-card-tier { font-size: 12px; font-weight: 700; color: #64748b; text-transform: uppercase; margin-bottom: 8px; letter-spacing: 0.5px; }
+  .sheet-card-title { margin: 0 0 10px; font-size: 19px; font-weight: 800; line-height: 1.35; }
+  .sheet-card-title a { color: #0f172a; text-decoration: none; }
+  .sheet-card-title a:hover { color: #2563eb; }
+  .sheet-card-desc { font-size: 14px; color: #64748b; line-height: 1.6; margin: 0 0 20px; flex-grow: 1; }
+  .sheet-card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #f1f5f9; padding-top: 16px; }
+  .sheet-card-price { font-size: 18px; font-weight: 900; color: #1e3a8a; }
+  .sheet-card-btn { background: #eff6ff; color: #1d4ed8; border: 1px solid #bfdbfe; font-size: 13.5px; font-weight: 700; padding: 8px 16px; border-radius: 6px; text-decoration: none; transition: background 0.15s ease; }
+  .sheet-card-btn:hover { background: #2563eb; color: white; border-color: #2563eb; }
+</style>
+<script>
+  function filterTier(tier, btn) {
+    const cards = document.querySelectorAll('.sheet-card');
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+
+    cards.forEach(card => {
+      if (tier === 'all' || card.getAttribute('data-tier').toLowerCase().includes(tier.toLowerCase())) {
+        card.style.display = 'flex';
+      } else {
+        card.style.display = 'none';
+      }
+    });
+  }
+</script>
+<meta content="EduPro Suite" property="og:site_name"/><meta content="Ultimate Math Cheat Sheets Vault (2026) | K-12, College, IB &amp; Exam Prep" name="twitter:title"/><meta content="Explore the definitive collection of 28 high-yield math formula cheat sheets: Middle School, High School Algebra &amp; Geometry, College Calculus 1-3, Linear Algebra, IB Math AA/AI, SAT, ACT &amp; AP exams." name="twitter:description"/><link href="https://eduprosuite.pro/rss.xml" rel="alternate" title="EduProSuite Exam Updates &amp; News" type="application/rss+xml"/></head>
+<body>
+<header style="background:white; border-bottom:1px solid #e2e8f0; padding:16px 20px;">
+<div style="max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center;">
+<a href="/" style="text-decoration:none; color:#0f172a; font-weight:900; font-size:22px; display:flex; align-items:center; gap:8px;">
+<span style="background:#2563eb; color:white; padding:4px 10px; border-radius:6px; font-size:16px;">E</span> EduPro Suite
+    </a>
+<div style="display:flex; gap:16px; align-items:center; font-size:14px; font-weight:600;">
+<a href="/" style="color:#475569; text-decoration:none;">Home</a>
+<a href="/#pricing" style="background:#2563eb; color:white; padding:8px 18px; border-radius:8px; text-decoration:none;">All-Access Pass ($29)</a>
+</div>
+</div>
+</header>
+<div class="hub-container">
+<div class="hub-hero">
+<span class="hub-hero-badge">2026 Master Publication Portfolio</span>
+<h1 class="hub-hero-title">The Ultimate Math Cheat Sheets Vault</h1>
+<!-- GOOGLE FRESHNESS SYSTEM: 2026-2027 SYLLABUS CALIBRATION BADGE -->
+<div class="syllabus-freshness-badge" style="display:inline-flex; align-items:center; gap:6px; background:#eff6ff; border:1px solid #bfdbfe; color:#1d4ed8; font-size:12.5px; font-weight:700; padding:4px 12px; border-radius:9999px; margin: 10px 0;">
+<span style="font-size:14px;">📅</span> Verified for 2026–2027 Examination Blueprint (Latest CED Edition)
+</div>
+<p class="hub-hero-desc">28 vector-sharp, high-yield formula sheets and exam roadmaps. From 5th Grade Foundations to College Multivariable Calculus, IB DP Math, and Standardized 800-Target Test Prep.</p>
+</div>
+<div class="filter-bar">
+<button class="filter-btn active" onclick="filterTier('all', this)">All 28 Sheets</button>
+<button class="filter-btn" onclick="filterTier('Middle School', this)">Middle School (5-8)</button>
+<button class="filter-btn" onclick="filterTier('High School', this)">High School Math</button>
+<button class="filter-btn" onclick="filterTier('College', this)">College &amp; University STEM</button>
+<button class="filter-btn" onclick="filterTier('International Baccalaureate', this)">IB Mathematics</button>
+<button class="filter-btn" onclick="filterTier('Standardized Exam', this)">Exam Prep (SAT/ACT/AP/GRE/GMAT)</button>
+</div>
+<div class="catalog-grid" id="catalogGrid">
+<div class="sheet-card" data-tier="Middle School (Grades 5-8)">
+<div class="sheet-card-img-wrap">
+<img alt="5th Grade Math Master Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/5th-grade-math-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">Grade 5 Foundation</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Middle School (Grades 5-8)</div>
+<h3 class="sheet-card-title"><a href="5th-grade-math-cheat-sheet.html">5th Grade Math Master Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Essential 5th grade math reference sheet covering fraction operations, decimal conversions, PEMDAS order of operations, and volume...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">9.99 USD</span>
+<a class="sheet-card-btn" href="5th-grade-math-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="Middle School (Grades 5-8)">
+<div class="sheet-card-img-wrap">
+<img alt="6th Grade Math &amp; Ratios Reference Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/6th-grade-math-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">Grade 6 Core</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Middle School (Grades 5-8)</div>
+<h3 class="sheet-card-title"><a href="6th-grade-math-cheat-sheet.html">6th Grade Math &amp; Ratios Reference Sheet</a></h3>
+<p class="sheet-card-desc">Comprehensive 6th grade math cheat sheet covering unit rates, ratios, algebraic expressions, integer arithmetic, and coordinate pl...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">9.99 USD</span>
+<a class="sheet-card-btn" href="6th-grade-math-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="Middle School (Grades 5-8)">
+<div class="sheet-card-img-wrap">
+<img alt="7th Grade Pre-Algebra Reference Card Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/7th-grade-math-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">Grade 7 Pre-Algebra</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Middle School (Grades 5-8)</div>
+<h3 class="sheet-card-title"><a href="7th-grade-math-cheat-sheet.html">7th Grade Pre-Algebra Reference Card</a></h3>
+<p class="sheet-card-desc">High-yield 7th grade math study guide with two-step linear equations, constant of proportionality (y=kx), circle formulas, and com...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">9.99 USD</span>
+<a class="sheet-card-btn" href="7th-grade-math-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="Middle School (Grades 5-8)">
+<div class="sheet-card-img-wrap">
+<img alt="8th Grade Math &amp; Linear Functions Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/8th-grade-math-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">Grade 8 Algebra Readiness</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Middle School (Grades 5-8)</div>
+<h3 class="sheet-card-title"><a href="8th-grade-math-cheat-sheet.html">8th Grade Math &amp; Linear Functions Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Essential 8th grade math formula sheet featuring slope-intercept form, laws of exponents, Pythagorean theorem, scientific notation...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">9.99 USD</span>
+<a class="sheet-card-btn" href="8th-grade-math-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="High School Core Mathematics">
+<div class="sheet-card-img-wrap">
+<img alt="Algebra 1 Formula &amp; Factoring Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/algebra-1-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">High School Algebra 1</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">High School Core Mathematics</div>
+<h3 class="sheet-card-title"><a href="algebra-1-cheat-sheet.html">Algebra 1 Formula &amp; Factoring Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Printable Algebra 1 cheat sheet with quadratic formula derivations, polynomial factoring hacks, point-slope equations, and systems...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">9.99 USD</span>
+<a class="sheet-card-btn" href="algebra-1-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="High School Core Mathematics">
+<div class="sheet-card-img-wrap">
+<img alt="Geometry Formulas &amp; Circle Theorems Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/geometry-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">High School Geometry</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">High School Core Mathematics</div>
+<h3 class="sheet-card-title"><a href="geometry-cheat-sheet.html">Geometry Formulas &amp; Circle Theorems Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Comprehensive geometry reference sheet featuring circle theorems, volume of 3D solids, right triangle trigonometry (SOH CAH TOA), ...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">9.99 USD</span>
+<a class="sheet-card-btn" href="geometry-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="High School Core Mathematics">
+<div class="sheet-card-img-wrap">
+<img alt="Algebra 2 &amp; Advanced Polynomials Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/algebra-2-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">High School Algebra 2</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">High School Core Mathematics</div>
+<h3 class="sheet-card-title"><a href="algebra-2-cheat-sheet.html">Algebra 2 &amp; Advanced Polynomials Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Essential Algebra 2 study guide featuring change of base log formulas, conic sections (ellipse, hyperbola, parabola), complex numb...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">9.99 USD</span>
+<a class="sheet-card-btn" href="algebra-2-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="High School Core Mathematics">
+<div class="sheet-card-img-wrap">
+<img alt="Unit Circle &amp; Trigonometric Identities Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/trigonometry-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">High School Trigonometry</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">High School Core Mathematics</div>
+<h3 class="sheet-card-title"><a href="trigonometry-cheat-sheet.html">Unit Circle &amp; Trigonometric Identities Cheat Sheet</a></h3>
+<p class="sheet-card-desc">High-yield trigonometry quick reference sheet with complete unit circle coordinates, Pythagorean identities, double angle formulas...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">9.99 USD</span>
+<a class="sheet-card-btn" href="trigonometry-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="High School Core Mathematics">
+<div class="sheet-card-img-wrap">
+<img alt="Pre-Calculus &amp; Vectors Reference Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/pre-calculus-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">High School Pre-Calculus</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">High School Core Mathematics</div>
+<h3 class="sheet-card-title"><a href="pre-calculus-cheat-sheet.html">Pre-Calculus &amp; Vectors Reference Sheet</a></h3>
+<p class="sheet-card-desc">Essential Pre-<a class="wiki-intext-link" href="ap-calc-formulas-sheet.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="calculus formula sheet - High Yield Prep">Calculus formula sheet</a> with polar to Cartesian conversions ($r, \theta$), vector dot and cross products, parametric ...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">9.99 USD</span>
+<a class="sheet-card-btn" href="pre-calculus-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="College &amp; University STEM">
+<div class="sheet-card-img-wrap">
+<img alt="Calculus 1 Master Derivative Rules Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/calculus-1-derivative-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">College Calculus 1</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">College &amp; University STEM</div>
+<h3 class="sheet-card-title"><a href="calculus-1-derivative-cheat-sheet.html">Calculus 1 Master Derivative Rules Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Publication-grade Calculus 1 reference card featuring all derivative shortcuts, power rule, chain rule, <a class="wiki-intext-link" href="ap-calc-derivative-rules.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="implicit differentiation - High Yield Prep">implicit differentiation</a>, ...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="calculus-1-derivative-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="College &amp; University STEM">
+<div class="sheet-card-img-wrap">
+<img alt="Calculus 2 Integration &amp; Series Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/calculus-2-integration-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">College Calculus 2</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">College &amp; University STEM</div>
+<h3 class="sheet-card-title"><a href="calculus-2-integration-cheat-sheet.html">Calculus 2 Integration &amp; Series Cheat Sheet</a></h3>
+<p class="sheet-card-desc">The ultimate Calculus 2 exam revision sheet: <a class="wiki-intext-link" href="ap-calc-integral-rules.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="integration by parts - High Yield Prep">Integration by Parts</a> (LIATE), trigonometric substitutions, partial fractions, 10 seri...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="calculus-2-integration-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="College &amp; University STEM">
+<div class="sheet-card-img-wrap">
+<img alt="Multivariable Calculus 3 Formulas Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/calculus-3-multivariable-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">College Multivariable Calculus</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">College &amp; University STEM</div>
+<h3 class="sheet-card-title"><a href="calculus-3-multivariable-cheat-sheet.html">Multivariable Calculus 3 Formulas Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Essential Multivariable Calculus 3 cheat sheet with partial derivatives, directional derivatives, gradient vectors, double/triple ...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="calculus-3-multivariable-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="College &amp; University STEM">
+<div class="sheet-card-img-wrap">
+<img alt="Linear Algebra &amp; Eigenvalue Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/linear-algebra-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">University Linear Algebra</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">College &amp; University STEM</div>
+<h3 class="sheet-card-title"><a href="linear-algebra-cheat-sheet.html">Linear Algebra &amp; Eigenvalue Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Essential Linear Algebra cheat sheet featuring matrix multiplication, row reduction (RREF), null space, rank-nullity theorem, eige...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="linear-algebra-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="College &amp; University STEM">
+<div class="sheet-card-img-wrap">
+<img alt="Differential Equations &amp; Laplace Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/differential-equations-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">University Differential Equations</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">College &amp; University STEM</div>
+<h3 class="sheet-card-title"><a href="differential-equations-cheat-sheet.html">Differential Equations &amp; Laplace Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Comprehensive <a class="wiki-intext-link" href="ap-calc-differential-equations-slope-fields.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="differential equations - High Yield Prep">Differential Equations</a> formula sheet: Integrating factors $\mu(x) = e^{\int P(x)dx}$, second-order linear ODEs, char...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="differential-equations-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="College &amp; University STEM">
+<div class="sheet-card-img-wrap">
+<img alt="Discrete Mathematics &amp; Logic Proofs Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/discrete-math-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">University Discrete Mathematics</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">College &amp; University STEM</div>
+<h3 class="sheet-card-title"><a href="discrete-math-cheat-sheet.html">Discrete Mathematics &amp; Logic Proofs Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Complete Discrete Mathematics reference card: Propositional logic truth tables, De Morgan's laws, set cardinality, pigeonhole prin...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="discrete-math-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="College &amp; University STEM">
+<div class="sheet-card-img-wrap">
+<img alt="College Statistics &amp; Inference Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/college-statistics-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">College Statistics &amp; Data Science</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">College &amp; University STEM</div>
+<h3 class="sheet-card-title"><a href="college-statistics-cheat-sheet.html">College Statistics &amp; Inference Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Comprehensive college-level statistics reference sheet: Z vs T decision frameworks, <a class="wiki-intext-link" href="ap-stats-sampling-distributions.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="central limit theorem - High Yield Prep">Central Limit Theorem</a>, confidence intervals, h...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="college-statistics-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="International Baccalaureate (IB Math)">
+<div class="sheet-card-img-wrap">
+<img alt="IB Math Analysis &amp; Approaches HL Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/ib-math-aa-hl-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">IB Diploma Programme</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">International Baccalaureate (IB Math)</div>
+<h3 class="sheet-card-title"><a href="ib-math-aa-hl-cheat-sheet.html">IB Math Analysis &amp; Approaches HL Cheat Sheet</a></h3>
+<p class="sheet-card-desc">The definitive IB Math AA HL formula sheet and quick study guide: <a class="wiki-intext-link" href="ap-calc-taylor-maclaurin-series.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="maclaurin series - High Yield Prep">Maclaurin series</a>, de Moivre's theorem, vector cross products, di...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="ib-math-aa-hl-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="International Baccalaureate (IB Math)">
+<div class="sheet-card-img-wrap">
+<img alt="IB Math Analysis &amp; Approaches SL Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/ib-math-aa-sl-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">IB Diploma Programme</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">International Baccalaureate (IB Math)</div>
+<h3 class="sheet-card-title"><a href="ib-math-aa-sl-cheat-sheet.html">IB Math Analysis &amp; Approaches SL Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Condensed IB Math AA SL formula guide: Quadratic functions, logarithmic properties, arithmetic/geometric sequences, binomial expan...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="ib-math-aa-sl-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="International Baccalaureate (IB Math)">
+<div class="sheet-card-img-wrap">
+<img alt="IB Math Applications &amp; Interpretation HL Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/ib-math-ai-hl-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">IB Diploma Programme</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">International Baccalaureate (IB Math)</div>
+<h3 class="sheet-card-title"><a href="ib-math-ai-hl-cheat-sheet.html">IB Math Applications &amp; Interpretation HL Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Comprehensive IB Math AI HL formula sheet: Transition state matrices, steady-state Markov chains, Poisson probability, coupled dif...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="ib-math-ai-hl-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="International Baccalaureate (IB Math)">
+<div class="sheet-card-img-wrap">
+<img alt="IB Math Applications &amp; Interpretation SL Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/ib-math-ai-sl-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">IB Diploma Programme</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">International Baccalaureate (IB Math)</div>
+<h3 class="sheet-card-title"><a href="ib-math-ai-sl-cheat-sheet.html">IB Math Applications &amp; Interpretation SL Cheat Sheet</a></h3>
+<p class="sheet-card-desc">High-yield IB Math AI SL quick reference card: Compound interest amortizations (TVM solver), Voronoi nearest-neighbor diagrams, Pe...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="ib-math-ai-sl-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="Standardized Exam Prep">
+<div class="sheet-card-img-wrap">
+<img alt="Digital SAT Math 800-Target Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/digital-sat-math-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">Digital SAT 2026 Ready</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Standardized Exam Prep</div>
+<h3 class="sheet-card-title"><a href="digital-sat-math-cheat-sheet.html">Digital SAT Math 800-Target Cheat Sheet</a></h3>
+<p class="sheet-card-desc">The ultimate Digital SAT Math formula and Desmos hack sheet: Quadratic vertex form, circle equation constants, non-linear system s...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="digital-sat-math-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="Standardized Exam Prep">
+<div class="sheet-card-img-wrap">
+<img alt="ACT Math 60-Formula Master Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/act-math-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">ACT 36 Target</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Standardized Exam Prep</div>
+<h3 class="sheet-card-title"><a href="act-math-cheat-sheet.html">ACT Math 60-Formula Master Cheat Sheet</a></h3>
+<p class="sheet-card-desc">Essential <a class="wiki-intext-link" href="act-prep.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="act math formula - High Yield Prep">ACT Math formula</a> sheet: Unlike SAT, ACT gives zero formulas! Master arithmetic progressions, matrix multiplication, loga...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="act-math-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="Standardized Exam Prep">
+<div class="sheet-card-img-wrap">
+<img alt="AP Calculus AB Exam Master Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/ap-calculus-ab-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">AP Score 5 Prep</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Standardized Exam Prep</div>
+<h3 class="sheet-card-title"><a href="ap-calculus-ab-cheat-sheet.html">AP Calculus AB Exam Master Cheat Sheet</a></h3>
+<p class="sheet-card-desc">High-yield AP Calculus AB exam revision sheet: Squeeze theorem, <a class="wiki-intext-link" href="ap-calc-applications-derivatives-mvt.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="mean value theorem - High Yield Prep">Mean Value Theorem</a> (MVT), Fundamental Theorem of Calculus (FTC Par...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="ap-calculus-ab-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="Standardized Exam Prep">
+<div class="sheet-card-img-wrap">
+<img alt="AP Calculus BC Ultimate Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/ap-calculus-bc-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">AP Score 5 Prep</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Standardized Exam Prep</div>
+<h3 class="sheet-card-title"><a href="ap-calculus-bc-cheat-sheet.html">AP Calculus BC Ultimate Cheat Sheet</a></h3>
+<p class="sheet-card-desc">The ultimate AP Calculus BC cheat sheet: <a class="wiki-intext-link" href="ap-calc-parametric-polar-vector.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="polar area - High Yield Prep">Polar area</a> integrals ($A = \frac{1}{2}\int r^2 d\theta$), parametric arc length, Euler's ...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="ap-calculus-bc-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="Standardized Exam Prep">
+<div class="sheet-card-img-wrap">
+<img alt="AP Statistics Master Formula &amp; Decision Tree Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/ap-statistics-formula-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">AP Score 5 Prep</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Standardized Exam Prep</div>
+<h3 class="sheet-card-title"><a href="ap-statistics-formula-cheat-sheet.html">AP Statistics Master Formula &amp; Decision Tree</a></h3>
+<p class="sheet-card-desc">The complete <a class="wiki-intext-link" href="ap-stats.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="ap statistics exam - High Yield Prep">AP Statistics exam</a> survival sheet: Inference test decision tree (Z vs T, 1-prop vs 2-prop, Chi-Square GOF vs Independ...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="ap-statistics-formula-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="Standardized Exam Prep">
+<div class="sheet-card-img-wrap">
+<img alt="GRE Quant 170-Target Formula Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/gre-math-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">GRE 170 Quant Prep</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Standardized Exam Prep</div>
+<h3 class="sheet-card-title"><a href="gre-math-cheat-sheet.html">GRE Quant 170-Target Formula Sheet</a></h3>
+<p class="sheet-card-desc">Master GRE Quant with high-yield number property rules, prime factorizations, overlapping set Venn diagrams, work-rate multipliers...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="gre-math-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="Standardized Exam Prep">
+<div class="sheet-card-img-wrap">
+<img alt="GMAT Focus Quant Formula &amp; DS Framework Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/gmat-math-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">GMAT Focus Edition</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Standardized Exam Prep</div>
+<h3 class="sheet-card-title"><a href="gmat-math-cheat-sheet.html">GMAT Focus Quant Formula &amp; DS Framework</a></h3>
+<p class="sheet-card-desc">Essential GMAT Focus Edition math cheat sheet: Data Sufficiency (AD/BCE) elimination framework, weighted averages, overlapping set...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">14.99 USD</span>
+<a class="sheet-card-btn" href="gmat-math-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+<div class="sheet-card" data-tier="Standardized Exam Prep">
+<div class="sheet-card-img-wrap">
+<img alt="TI-84 Plus CE Calculator Hacks Cheat Sheet Cover" decoding="async" height="375" loading="lazy" src="images/cheat-sheets/ti-84-calculator-cheat-sheet-cover.webp" width="600"/>
+<span class="sheet-card-badge">Exam Keystroke Guide</span>
+</div>
+<div class="sheet-card-body">
+<div class="sheet-card-tier">Standardized Exam Prep</div>
+<h3 class="sheet-card-title"><a href="ti-84-calculator-cheat-sheet.html">TI-84 Plus CE Calculator Hacks Cheat Sheet</a></h3>
+<p class="sheet-card-desc">The definitive TI-84 Plus CE keystroke playbook for AP, SAT, and ACT exams: rref() matrix solvers, <a class="wiki-intext-link" href="ap-stats-normal-distribution-z-score.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="normalcdf - High Yield Prep">normalcdf</a>, invNorm, polySmlt2 p...</p>
+<div class="sheet-card-footer">
+<span class="sheet-card-price">9.99 USD</span>
+<a class="sheet-card-btn" href="ti-84-calculator-cheat-sheet.html">View Sheet →</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- GOOGLE HELPFUL CONTENT SYSTEM (HCS) & PEDAGOGICAL SCAFFOLDING BLOCK -->
+<section class="edupro-helpful-content-block" style="padding: 40px 0; background: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+<div class="container" style="max-width: 920px; margin: 0 auto; padding: 0 20px;">
+<div style="background: #ffffff; border-radius: 14px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #cbd5e1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+<span style="font-size: 26px;">🎯</span>
+<div>
+<h3 style="margin: 0; font-size: 20px; font-weight: 800; color: #0f172a;">Why This Step? Blueprint Breakdown: Math Cheat Sheets Prep</h3>
+<p style="margin: 2px 0 0; font-size: 14px; color: #64748b;">Key Conceptual Scaffolding &amp; Diagnostic Intuition</p>
+</div>
+</div>
+<div style="font-size: 15px; color: #334155; line-height: 1.7; margin-bottom: 22px;">
+<p><strong>Tested Competency:</strong> Core exam competencies, blueprint formulas &amp; diagnostic review. In modern competitive exams, questions are engineered to test whether you understand the underlying structural relationship—not just whether you memorized a formula.</p>
+</div>
+<!-- Student Trap Alert Callout -->
+<div class="student-trap-alert-box" style="background: #fff1f2; border-left: 5px solid #f43f5e; border-radius: 8px; padding: 18px 20px; margin-bottom: 20px;">
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+<span style="font-size: 18px;">⚠️</span>
+<strong style="color: #9f1239; font-size: 15px;">Student Trap Alert (Common Scoring Pitfall):</strong>
+</div>
+<p style="margin: 0; font-size: 14px; color: #881337; line-height: 1.6;">
+          Relying on rote memorization instead of conceptual problem-solving and timed simulation drills.
+        </p>
+</div>
+<!-- Key Scoring Takeaway -->
+<div style="background: #f0fdf4; border-left: 5px solid #22c55e; border-radius: 8px; padding: 16px 20px;">
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+<span style="font-size: 18px;">💡</span>
+<strong style="color: #166534; font-size: 15px;">High-Yield Scoring Rule:</strong>
+</div>
+<p style="margin: 0; font-size: 14px; color: #14532d; line-height: 1.6;">
+          Always write out your hypotheses and state conditions explicitly before calculating test statistics. Graders award up to 40% of partial credit for proper setup, regardless of arithmetic precision.
+        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END HELPFUL CONTENT SYSTEM BLOCK -->
+<!-- E-E-A-T AUTHOR & ACADEMIC REVIEW BOARD CREDIBILITY CARD -->
+<section class="eeat-author-trust-card" style="padding: 35px 0; background: #ffffff;">
+<div class="container" style="max-width: 920px; margin: 0 auto; padding: 0 20px;">
+<div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 24px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+<div style="flex: 0 0 68px; height: 68px; border-radius: 50%; background: linear-gradient(135deg, #2563eb, #1d4ed8); display: flex; align-items: center; justify-content: center; color: #ffffff; font-size: 28px; font-weight: 800; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
+        🎓
+      </div>
+<div style="flex: 1; min-width: 260px;">
+<div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px;">
+<h4 style="margin: 0; font-size: 17px; font-weight: 800; color: #0f172a;">EduPro Academic Review Board</h4>
+<span style="background: #dbeafe; color: #1e40af; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 9999px;">✓ Verified Educator &amp; Content Expert</span>
+</div>
+<p style="margin: 0 0 8px; font-size: 13.5px; color: #475569; line-height: 1.6;">
+          Content rigorously reviewed and cross-calibrated against official Math Cheat Sheets Prep syllabus guidelines. Authored by veteran educators with 12+ years of university and professional board prep experience.
+        </p>
+<div style="display: flex; gap: 16px; font-size: 12.5px; color: #64748b; flex-wrap: wrap;">
+<span>🛡️ <strong>100% Alignment:</strong> Current Year Blueprint</span>
+<span>💳 <strong>Guarantee:</strong> 14-Day Money-Back</span>
+<span>⚡ <strong>Format:</strong> Instant Cloud + Offline Access</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END E-E-A-T CARD -->
+<footer style="background:#0f172a; color:#94a3b8; padding:40px 20px; margin-top:80px; font-size:13.5px; text-align:center;">
+<p style="margin:0 0 10px;">© 2026 EduPro Suite. All rights reserved. High-Yield Educational Resources &amp; Test Preparation.</p>
+<p style="margin:0; max-width:800px; margin-left:auto; margin-right:auto; line-height:1.6;">AP®, SAT®, ACT®, GRE®, GMAT®, and IB® are registered trademarks of their respective owners. EduPro Suite materials are designed independently for educational reference under nominative fair use.</p>
+</footer>
+<!-- NOMINATIVE FAIR USE & REMOVAL-BASED DEMOTION SYSTEM SHIELD -->
+<div class="legal-fair-use-notice" style="background:#0f172a; border-top:1px solid #1e293b; padding:18px 20px; font-size:11.5px; color:#94a3b8; line-height:1.6; text-align:center;">
+<div style="max-width:960px; margin:0 auto;">
+<strong>Legal Trademark &amp; Nominative Fair Use Notice:</strong> AP®, SAT®, ACT®, CFA®, CPA®, FINRA®, ServSafe®, and other registered trademarks referenced herein are the property of their respective governing examination bodies (e.g., College Board, ACT Inc., CFA Institute, AICPA, FINRA). These organizations do not endorse, sponsor, or affiliate with EduPro Suite. All prep questions, simulators, review outlines, and cheatsheets are independently developed by EduPro Suite educators under United States Copyright Nominative Fair Use (15 U.S.C. § 1125) for private educational study.
+  </div>
+</div>
+</body>
+</html>
