@@ -167,7 +167,7 @@
 </div>
 <section class="cluster-section" id="core-derivative-rules">
 <h2>1. Product, Quotient &amp; Chain Rules</h2>
-<p>Remember <a class="wiki-intext-link" href="ap-calc-derivative-rules.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="quotient rule - High Yield Prep">Quotient Rule</a> rhythm: 'Low d-High minus High d-Low, all over Low squared'. For Chain Rule, evaluate outer derivative first while leaving inside unchanged, then multiply by inner derivative.</p>
+<p>Remember <a class="wiki-intext-link" href="ap-calc-derivative-rules.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="quotient rule - High Yield Prep">Quotient Rule</a> rhythm: 'Low d-High minus High d-Low, all over Low squared'. For <a class="wiki-intext-link" href="glossary-derivatives-chain-rule.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="Chain Rule - High Yield Prep">Chain Rule</a>, evaluate outer derivative first while leaving inside unchanged, then multiply by inner derivative.</p>
 <div class="math-box">$$\frac{d}{dx}[f(x)g(x)] = f'(x)g(x) + f(x)g'(x), \quad \frac{d}{dx}\left[\frac{f(x)}{g(x)}\right] = \frac{f'(x)g(x) - f(x)g'(x)}{[g(x)]^2}, \quad \frac{d}{dx}[f(g(x))] = f'(g(x)) \cdot g'(x)$$</div>
 <div class="trap-alert">
 <strong>⚠️ Student Trap Alert:</strong> Applying Power Rule to product without Product Rule: $\frac{d}{dx}[x^2 \sin x] \neq 2x \cos x$! It is $2x \sin x + x^2 \cos x$.
@@ -189,7 +189,7 @@
 </section>
 <section class="cluster-section" id="lhopital-optimization">
 <h2>3. L'Hopital's Rule &amp; First/Second Derivative Tests</h2>
-<p>You must verify that the limit directly produces $\frac{0}{0}$ or $\frac{\infty}{\infty}$ before applying L'Hopital's. Differentiate numerator and denominator separately (do NOT use quotient rule).</p>
+<p>You must verify that the limit directly produces $\frac{0}{0}$ or $\frac{\infty}{\infty}$ before applying L'Hopital's. Differentiate numerator and denominator separately (do NOT use <a class="wiki-intext-link" href="ap-calc-derivative-rules.html" style="color:#1d4ed8; text-decoration:underline; text-decoration-color:#93c5fd; font-weight:500;" title="quotient rule - High Yield Prep">quotient rule</a>).</p>
 <div class="math-box">$$\lim_{x \to c} \frac{f(x)}{g(x)} = \lim_{x \to c} \frac{f'(x)}{g'(x)} \quad \left(\text{Strictly for } \frac{0}{0} \text{ or } \frac{\pm\infty}{\pm\infty}\right), \quad f''(c) &gt; 0 \implies \text{Local Min}, \quad f''(c) &lt; 0 \implies \text{Local Max}$$</div>
 <div class="trap-alert">
 <strong>⚠️ Student Trap Alert:</strong> Applying L'Hopital to determinate limits: If $\lim_{x \to 0} \frac{x+1}{x+2} = \frac{1}{2}$, applying L'Hopital gives $\frac{1}{1} = 1$, which is completely WRONG!

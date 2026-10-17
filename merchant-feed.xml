@@ -1135,5 +1135,245 @@
       <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
       <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
     </item>
+    <item>
+      <g:id>EDU-CS-TRD-ELEC</g:id>
+      <g:title>Electrician Math Formula Cheat Sheet: Ohm's Law Wheel, Watt's Law & 3-Phase Power Calculations - EduProSuite</g:title>
+      <g:description>Essential electrician formula reference card: Complete Ohm's Law and Watt's Law wheel, 3-phase power ($P = \sqrt{3} E I \text{PF}$), motor horsepower, and transformer turns ratios.</g:description>
+      <g:link>https://eduprosuite.pro/electrician-formulas-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/electrician-formulas-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203019</g:gtin>
+      <g:mpn>EDUPRO-CS-ELEC01</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>Electrical</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
+    <item>
+      <g:id>EDU-CS-TRD-BEND</g:id>
+      <g:title>Conduit Bending Multipliers & Shrink Reference Card: Offsets, Saddles & Stub-Ups - EduProSuite</g:title>
+      <g:description>Essential conduit bending reference guide: Offset multipliers ($10^\circ, 22.5^\circ, 30^\circ, 45^\circ, 60^\circ$), shrink per inch, 3-point and 4-point saddles, and 90° stub-up bender take-up marks.</g:description>
+      <g:link>https://eduprosuite.pro/conduit-bending-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/conduit-bending-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203026</g:gtin>
+      <g:mpn>EDUPRO-CS-BEND01</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>Electrical</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
+    <item>
+      <g:id>EDU-CS-TRD-VDROP</g:id>
+      <g:title>Voltage Drop & NEC Wire Sizing Reference Card: Single-Phase, 3-Phase & Conduit Fill - EduProSuite</g:title>
+      <g:description>Comprehensive NEC code calculation guide: Single-phase and 3-phase voltage drop formulas ($VD = \frac{2KIL}{CM}$), conductor circular mils, continuous load 125% rule, and conduit fill limits.</g:description>
+      <g:link>https://eduprosuite.pro/voltage-drop-wire-sizing-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/voltage-drop-wire-sizing-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203033</g:gtin>
+      <g:mpn>EDUPRO-CS-VDROP</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>Electrical</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
+    <item>
+      <g:id>EDU-CS-TRD-HVAC</g:id>
+      <g:title>HVAC Calculation Formulas Cheat Sheet: CFM Airflow, Tonnage & Sensible Heat Multipliers - EduProSuite</g:title>
+      <g:description>Essential HVAC calculation formulas reference sheet: CFM airflow calculations, Sensible ($Q_s = 1.08 \cdot CFM \cdot \Delta T$) and Latent heat, tonnage sizing ($12,000 \text{ BTU/hr}$), and blower motor calculations.</g:description>
+      <g:link>https://eduprosuite.pro/hvac-calculation-formulas-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/hvac-calculation-formulas-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203040</g:gtin>
+      <g:mpn>EDUPRO-CS-HVAC01</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>HVAC</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
+    <item>
+      <g:id>EDU-CS-TRD-EPA608</g:id>
+      <g:title>EPA 608 Universal Certification Cheat Sheet: Core, Type I, II, III Refrigerant Rules & Leak Rates - EduProSuite</g:title>
+      <g:description>Essential EPA Section 608 study guide: Ozone depletion potentials, recovery evacuation levels (inches of Hg vacuum), allowable leak repair thresholds (10%, 20%, 30%), and SNAP regulations.</g:description>
+      <g:link>https://eduprosuite.pro/epa-608-universal-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/epa-608-universal-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203057</g:gtin>
+      <g:mpn>EDUPRO-CS-EPA608</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>HVAC</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
+    <item>
+      <g:id>EDU-CS-TRD-CHARG</g:id>
+      <g:title>Superheat & Subcooling Charging Cheat Sheet: TXV, Piston & Saturation Temp Charts - EduProSuite</g:title>
+      <g:description>Essential HVAC diagnostic charging sheet: Fixed orifice target superheat charts, TXV subcooling calculations, suction line vs liquid line temperature probes, and troubleshooting system faults.</g:description>
+      <g:link>https://eduprosuite.pro/superheat-subcooling-charging-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/superheat-subcooling-charging-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203064</g:gtin>
+      <g:mpn>EDUPRO-CS-SHSC</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>HVAC</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
+    <item>
+      <g:id>EDU-CS-TRD-DUCT</g:id>
+      <g:title>HVAC Duct Sizing & Friction Loss Cheat Sheet: CFM vs Velocity & Static Pressure - EduProSuite</g:title>
+      <g:description>Essential duct design reference card: Friction loss rates ($0.08" - 0.10" \text{ w.c.}/100 \text{ ft}$), round to rectangular equivalent duct conversions, CFM velocity limits, and External Static Pressure (ESP).</g:description>
+      <g:link>https://eduprosuite.pro/hvac-duct-sizing-friction-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/hvac-duct-sizing-friction-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203071</g:gtin>
+      <g:mpn>EDUPRO-CS-DUCT1</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>HVAC</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
+    <item>
+      <g:id>EDU-CS-TRD-PIPE</g:id>
+      <g:title>Pipe Rolling Offset & Fitting Multipliers Cheat Sheet: 45° Travel & Cut Lengths - EduProSuite</g:title>
+      <g:description>Essential pipefitting and plumbing calculation card: 45° simple and rolling offsets ($T = \sqrt{R^2 + S^2} \times 1.414$), fitting take-outs, cut length deductions, and spread offsets.</g:description>
+      <g:link>https://eduprosuite.pro/pipe-rolling-offset-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/pipe-rolling-offset-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203088</g:gtin>
+      <g:mpn>EDUPRO-CS-PIPE01</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>Plumbing</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
+    <item>
+      <g:id>EDU-CS-TRD-PLUMB</g:id>
+      <g:title>Plumbing Math & Water Pressure Head Cheat Sheet: PSI, Tank Gallons & GPM Flow Rates - EduProSuite</g:title>
+      <g:description>Essential plumbing calculation sheet: Hydrostatic pressure head ($0.433 \text{ psi/ft}$), tank volume in gallons ($L \times W \times H / 231$ or $D^2 \times H \times 5.9$), GPM flow rates, and DWV pipe slope rules.</g:description>
+      <g:link>https://eduprosuite.pro/plumbing-math-water-pressure-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/plumbing-math-water-pressure-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203095</g:gtin>
+      <g:mpn>EDUPRO-CS-PLUMB</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>Plumbing</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
+    <item>
+      <g:id>EDU-CS-TRD-FRAME</g:id>
+      <g:title>Construction Framing & Rafter Math Cheat Sheet: Pitch, Run, Rise & Plumb Cuts - EduProSuite</g:title>
+      <g:description>Essential construction math cheat sheet: Roof pitch ratios (Rise/Run), common rafter lengths ($R = \sqrt{\text{Rise}^2 + \text{Run}^2}$), bird's mouth cut depths, and stair riser/tread stringer layouts.</g:description>
+      <g:link>https://eduprosuite.pro/construction-rafter-framing-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/construction-rafter-framing-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203101</g:gtin>
+      <g:mpn>EDUPRO-CS-FRAME</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>Construction</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
+    <item>
+      <g:id>EDU-CS-TRD-WELD</g:id>
+      <g:title>AWS Welding Symbols & Electrode Selection Chart: SMAW, MIG, TIG & Joint Penetration - EduProSuite</g:title>
+      <g:description>Essential AWS A2.4 welding symbol reference card: Reference lines, arrow side vs other side, fillet weld sizing, groove weld penetration, and SMAW electrode numbering ($E6010, E7018$).</g:description>
+      <g:link>https://eduprosuite.pro/welding-symbols-electrode-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/welding-symbols-electrode-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203118</g:gtin>
+      <g:mpn>EDUPRO-CS-WELD</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>Welding</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
+    <item>
+      <g:id>EDU-CS-TRD-CONC</g:id>
+      <g:title>Concrete Volume & Yardage Calculation Cheat Sheet: Slabs, Footings & Rebar Sizing - EduProSuite</g:title>
+      <g:description>Essential concrete volume and estimating reference card: Cubic yard formulas ($L \times W \times D / 27$), 10% waste factors, cylinder pier volume, and rebar sizing ($1/8"$ rule).</g:description>
+      <g:link>https://eduprosuite.pro/concrete-volume-estimator-cheat-sheet.html</g:link>
+      <g:image_link>https://eduprosuite.pro/images/trade-cheat-sheets/concrete-volume-estimator-cheat-sheet-cover.webp</g:image_link>
+      <g:availability>in stock</g:availability>
+      <g:condition>new</g:condition>
+      <g:price>9.99 USD</g:price>
+      <g:brand>EduProSuite</g:brand>
+      <g:gtin>9781958203125</g:gtin>
+      <g:mpn>EDUPRO-CS-CONC</g:mpn>
+      <g:google_product_category>784</g:google_product_category>
+      <g:product_type>Books &gt; Non-Fiction &gt; Vocational &amp; Technical &gt; Trade Math</g:product_type>
+      <g:custom_label_0>Trade-Field-Manual-2026</g:custom_label_0>
+      <g:custom_label_1>Construction</g:custom_label_1>
+      <g:custom_label_2>Printable-Pocket-Card</g:custom_label_2>
+      <g:custom_label_3>Instant-Digital-Access</g:custom_label_3>
+      <g:custom_label_4>Impulse-SweetSpot</g:custom_label_4>
+    </item>
   </channel>
 </rss>
