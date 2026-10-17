@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#064e3b" />
+      <stop offset="100%" stop-color="#020617" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+    <pattern id="gridPattern" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Deep Academic / Financial Background -->
+  <rect width="1600" height="1000" fill="url(#bgGrad)" />
+  <rect width="1600" height="1000" fill="url(#gridPattern)" />
+
+  <!-- Outer Print Safety Margin Frame -->
+  <rect x="55" y="45" width="1490" height="910" fill="none" stroke="#34d399" stroke-opacity="0.35" stroke-width="2" rx="12" />
+
+  <!-- Top Authority Series Badge -->
+  <rect x="95" y="80" width="460" height="44" rx="8" fill="#1e293b" stroke="#34d399" stroke-width="1.5" />
+  <circle cx="120" cy="102" r="6" fill="#34d399" />
+  <text x="140" y="109" font-family="'Space Grotesk', 'Inter', sans-serif" font-size="15" font-weight="800" fill="#f8fafc" letter-spacing="2">EDUPRO SUITE · TIER-1 ACCREDITED</text>
+
+  <!-- Category & Curriculum Sub-Header -->
+  <text x="95" y="180" font-family="'Inter', sans-serif" font-size="20" font-weight="800" fill="#34d399" letter-spacing="3">IELTS & ENGLISH LANGUAGE ARTS · IELTS ACADEMIC 8.5+</text>
+
+  <!-- High-Contrast Bold Title -->
+  <text x="95" y="275" font-family="'Space Grotesk', 'Impact', sans-serif" font-size="52" font-weight="900" fill="#ffffff" letter-spacing="-0.5">
+    IELTS SPEAKING BAND 8+ IDIOMS & DISCOURS
+  </text>
+  <text x="95" y="348" font-family="'Space Grotesk', 'Impact', sans-serif" font-size="52" font-weight="900" fill="url(#goldGrad)" letter-spacing="-0.5">
+    E MARKERS
+  </text>
+
+  <!-- 3 Strategic Feature Pills -->
+  <g transform="translate(95, 425)">
+    <rect x="0" y="0" width="280" height="46" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <circle cx="24" cy="23" r="6" fill="#34d399" />
+    <text x="44" y="29" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Active Recall &amp; Flashcards</text>
+
+    <rect x="300" y="0" width="280" height="46" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <circle cx="324" cy="23" r="6" fill="#10b981" />
+    <text x="344" y="29" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#f8fafc">100% Exam Blueprint Aligned</text>
+
+    <rect x="600" y="0" width="280" height="46" rx="8" fill="#1e293b" stroke="#334155" stroke-width="1.5" />
+    <circle cx="624" cy="23" r="6" fill="#38bdf8" />
+    <text x="644" y="29" font-family="'Inter', sans-serif" font-size="14" font-weight="700" fill="#f8fafc">Time-Compression Quicksheet</text>
+  </g>
+
+  <!-- Mockup Preview Console Box -->
+  <rect x="95" y="525" width="1410" height="265" rx="12" fill="#030712" fill-opacity="0.85" stroke="#374151" stroke-width="2" />
+  
+  <rect x="95" y="525" width="1410" height="42" rx="12" fill="#111827" />
+  <circle cx="125" cy="546" r="5" fill="#ef4444" />
+  <circle cx="143" cy="546" r="5" fill="#f59e0b" />
+  <circle cx="161" cy="546" r="5" fill="#10b981" />
+  <text x="185" y="552" font-family="'Courier New', monospace" font-size="14" fill="#9ca3af">high_yield_active_recall_blueprint.los</text>
+
+  <!-- Formula Code Watermark Snippet -->
+  <text x="135" y="635" font-family="'Courier New', monospace" font-size="26" font-weight="700" fill="#34d399">
+    &gt;&gt;&gt; Part 3 Speculation: 'It is highly plausible that...', '
+  </text>
+  <text x="135" y="700" font-family="'Courier New', monospace" font-size="22" font-weight="600" fill="#cbd5e1">
+    [OFFICIAL BLUEPRINT] Spaced Repetition Algorithms · Zero Ambiguity Answer Keys
+  </text>
+  <text x="135" y="750" font-family="'Courier New', monospace" font-size="18" fill="#64748b">
+    Instant Digital Anki (.apkg) &amp; Vector-Sharp PDF Download · Mobile-Optimized Interface
+  </text>
+
+  <!-- Bottom Authority Bar -->
+  <line x1="95" y1="850" x2="1505" y2="850" stroke="#334155" stroke-width="1.5" />
+  <text x="95" y="895" font-family="'Inter', sans-serif" font-size="18" font-weight="800" fill="#ffffff">EDUPROSUITE.PRO</text>
+  <text x="1505" y="895" font-family="'Inter', sans-serif" font-size="15" font-weight="700" fill="#34d399" text-anchor="end">2026 OFFICIAL PUBLICATION EDITION</text>
+</svg>

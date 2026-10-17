@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>STEM, Engineering &amp; Medical Healthcare Vault - EduProSuite</title>
+<meta content="Access 38 peer-reviewed formula quicksheets and active recall flashcards across Data Science &amp; AI, Professional Engineering (FE/PE), Medical &amp; Nursing Math (NCLEX), and Aviation/Marine Navigation." name="description"/>
+<meta content="machine learning math cheat sheet, fe exam civil mechanical formula sheet, nursing dosage calculation nclex cheat sheet, aviation wind triangle formula, medical dosimetry math" name="keywords"/>
+<link href="https://eduprosuite.pro/stem-engineering-medical-vault.html" rel="canonical"/>
+<meta content="index, follow" name="robots"/>
+<meta content="website" property="og:type"/>
+<meta content="STEM, Engineering &amp; Medical Healthcare Vault - EduProSuite" property="og:title"/>
+<meta content="38 publication-grade formula sheets across AI/ML, FE/PE Engineering, Clinical Nursing &amp; Medical Math, and Spatial Aviation Navigation." property="og:description"/>
+<meta content="https://eduprosuite.pro/stem-engineering-medical-vault.html" property="og:url"/>
+<style>
+    :root {
+      --bg: #030712;
+      --surface: #0f172a;
+      --surface-border: #1e293b;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding-bottom: 80px;
+    }
+    header {
+      background: rgba(15, 23, 42, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--surface-border);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .brand-logo {
+      font-weight: 800;
+      font-size: 1.25rem;
+      color: #fff;
+      text-decoration: none;
+    }
+    .brand-logo span { color: var(--accent); }
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.95rem;
+      margin-left: 1.5rem;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: #fff; }
+    .hero {
+      text-align: center;
+      padding: 4rem 1.5rem 3rem;
+      background: radial-gradient(circle at 50% 20%, rgba(56, 189, 248, 0.15), transparent 70%);
+      border-bottom: 1px solid var(--surface-border);
+    }
+    .hero h1 {
+      font-size: 2.75rem;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+    .hero p {
+      color: var(--text-muted);
+      font-size: 1.15rem;
+      max-width: 800px;
+      margin: 0 auto 2rem;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem;
+    }
+    .category-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      margin-bottom: 3rem;
+    }
+    .category-btn {
+      padding: 0.5rem 1.25rem;
+      border-radius: 30px;
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .category-btn:hover, .category-btn.active {
+      background: var(--accent);
+      color: #030712;
+      border-color: var(--accent);
+    }
+    .hub-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2rem;
+    }
+    .hub-card {
+      background: var(--surface);
+      border: 1px solid var(--surface-border);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+    .hub-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--accent);
+    }
+    .hub-card-img {
+      position: relative;
+      background: #000;
+    }
+    .hub-card-img img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+    .hub-badge {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      background: rgba(3, 7, 18, 0.85);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      font-size: 0.7rem;
+      font-weight: 700;
+      padding: 0.25rem 0.6rem;
+      border-radius: 20px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    .hub-card-body {
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .hub-cat {
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.5rem;
+    }
+    .hub-card-body h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      line-height: 1.35;
+    }
+    .hub-card-body p {
+      color: var(--text-muted);
+      font-size: 0.88rem;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+    .hub-card-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      border-top: 1px solid var(--surface-border);
+    }
+    .hub-price {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: #fff;
+    }
+    .hub-btn {
+      background: rgba(56, 189, 248, 0.1);
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      padding: 0.45rem 1rem;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+    .hub-btn:hover {
+      background: var(--accent);
+      color: #030712;
+    }
+    footer {
+      text-align: center;
+      margin-top: 4rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+<meta content="EduPro Suite" property="og:site_name"/><meta content="STEM, Engineering &amp; Medical Healthcare Vault - EduProSuite" name="twitter:title"/><meta content="Access 38 peer-reviewed formula quicksheets and active recall flashcards across Data Science &amp; AI, Professional Engineering (FE/PE), Medical &amp; Nursing Math (NCLEX), and Aviation/Marine Navigation." name="twitter:description"/><link href="https://eduprosuite.pro/rss.xml" rel="alternate" title="EduProSuite Exam Updates &amp; News" type="application/rss+xml"/></head>
+<body>
+<header>
+<a class="brand-logo" href="https://eduprosuite.pro/">EduPro<span>Suite</span></a>
+<nav class="nav-links">
+<a href="https://eduprosuite.pro/stem-engineering-medical-vault.html">STEM &amp; Medical Hub</a>
+<a href="https://eduprosuite.pro/global-academics-vault.html">Global Academics</a>
+<a href="https://eduprosuite.pro/professional-certifications-vault.html">Pro Vault</a>
+</nav>
+</header>
+<section class="hero">
+<h1>STEM, Engineering &amp; Medical Healthcare Vault</h1>
+<!-- GOOGLE FRESHNESS SYSTEM: 2026-2027 SYLLABUS CALIBRATION BADGE -->
+<div class="syllabus-freshness-badge" style="display:inline-flex; align-items:center; gap:6px; background:#eff6ff; border:1px solid #bfdbfe; color:#1d4ed8; font-size:12.5px; font-weight:700; padding:4px 12px; border-radius:9999px; margin: 10px 0;">
+<span style="font-size:14px;">📅</span> Verified for 2026–2027 Examination Blueprint (Latest CED Edition)
+</div>
+<p>38 publication-grade formula quicksheets, NCLEX clinical drug math cards, NCEES FE/PE engineering derivations, and aviation navigation calculation suites.</p>
+</section>
+<main class="container">
+<div class="category-nav">
+<a class="category-btn active" href="#">All 38 Products</a>
+<a class="category-btn" href="#datascience">Data Science &amp; AI</a>
+<a class="category-btn" href="#engineering">Professional Engineering (FE/PE)</a>
+<a class="category-btn" href="#medical">Medical &amp; Nursing Math</a>
+<a class="category-btn" href="#aviation">Aviation &amp; Spatial Math</a>
+</div>
+<div class="hub-grid">
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Linear Algebra for Machine Learning Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/math-for-machine-learning-linear-algebra-cover.webp" width="400"/>
+<span class="hub-badge">AI / ML Foundations</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Data Science &amp; AI</span>
+<h3>Linear Algebra for Machine Learning Quicksheet</h3>
+<p>Essential Linear Algebra for Machine Learning: Singular Value Decomposition (SVD), Eigendecomposition, Princip...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="math-for-machine-learning-linear-algebra.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Multivariate Calculus for Machine Learning Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/math-for-data-science-multivariate-calculus-cover.webp" width="400"/>
+<span class="hub-badge">AI / ML Foundations</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Data Science &amp; AI</span>
+<h3>Multivariate Calculus for Machine Learning Deck</h3>
+<p>Essential calculus for deep learning: Jacobians, Hessian matrices, Gradient Descent vector derivations, Matrix...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="math-for-data-science-multivariate-calculus.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Probability Distributions &amp; Bayes Inference for AI" decoding="async" height="250" loading="lazy" src="images/pro-certifications/probability-distributions-for-data-science-cover.webp" width="400"/>
+<span class="hub-badge">AI / ML Foundations</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Data Science &amp; AI</span>
+<h3>Probability Distributions &amp; Bayes Inference for AI</h3>
+<p>Comprehensive reference guide: Multivariate Gaussian, Bernoulli, Poisson, Dirichlet, Beta priors, Kullback-Lei...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="probability-distributions-for-data-science.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Deep Learning Optimization &amp; Schedulers Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/optimization-algorithms-deep-learning-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Deep Learning Optimization</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Data Science &amp; AI</span>
+<h3>Deep Learning Optimization &amp; Schedulers Quicksheet</h3>
+<p>Essential formulas for neural network optimizers: SGD with Momentum, Nesterov Accelerated Gradient (NAG), AdaG...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="optimization-algorithms-deep-learning-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Quant Trading &amp; Financial Engineering Math Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/quant-trading-financial-engineering-math-cover.webp" width="400"/>
+<span class="hub-badge">Quantitative Finance</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Data Science &amp; AI</span>
+<h3>Quant Trading &amp; Financial Engineering Math Quicksheet</h3>
+<p>High-yield formulas for Quant Trading: Itô's Lemma, Geometric Brownian Motion, Black-Scholes-Merton PDE, Ornst...</p>
+<div class="hub-card-footer">
+<span class="hub-price">49.00 USD</span>
+<a class="hub-btn" href="quant-trading-financial-engineering-math.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Machine Learning Classical Algorithms Formula Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/machine-learning-algorithms-formula-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Machine Learning Core</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Data Science &amp; AI</span>
+<h3>Machine Learning Classical Algorithms Formula Deck</h3>
+<p>Essential formulas for classical ML: Support Vector Machines (SVM) dual Lagrangian, Decision Tree Gini Impurit...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="machine-learning-algorithms-formula-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Transformer Attention &amp; Deep Learning Architectures Sheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/deep-learning-architectures-formula-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Deep Learning / LLMs</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Data Science &amp; AI</span>
+<h3>Transformer Attention &amp; Deep Learning Architectures Sheet</h3>
+<p>Essential formulas for modern deep learning: Scaled Dot-Product Attention, Multi-Head Attention, RoPE Rotary P...</p>
+<div class="hub-card-footer">
+<span class="hub-price">39.00 USD</span>
+<a class="hub-btn" href="deep-learning-architectures-formula-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Bayesian Inference, MCMC &amp; VAEs Formula Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/bayesian-inference-mcmc-formula-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Advanced AI / Stats</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Data Science &amp; AI</span>
+<h3>Bayesian Inference, MCMC &amp; VAEs Formula Deck</h3>
+<p>Comprehensive reference guide: Metropolis-Hastings MCMC, Gibbs Sampling, Evidence Lower Bound (ELBO), Reparame...</p>
+<div class="hub-card-footer">
+<span class="hub-price">39.00 USD</span>
+<a class="hub-btn" href="bayesian-inference-mcmc-formula-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Time Series Forecasting &amp; Econometrics Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/time-series-forecasting-math-cheatsheet-cover.webp" width="400"/>
+<span class="hub-badge">Quantitative Methods</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Data Science &amp; AI</span>
+<h3>Time Series Forecasting &amp; Econometrics Quicksheet</h3>
+<p>Essential formulas for time series: ARIMA $(p, d, q)$, Stationarity (ADF Test), ARCH/GARCH volatility modeling...</p>
+<div class="hub-card-footer">
+<span class="hub-price">39.00 USD</span>
+<a class="hub-btn" href="time-series-forecasting-math-cheatsheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="SQL for Data Science &amp; Window Functions Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/sql-for-data-science-window-functions-deck-cover.webp" width="400"/>
+<span class="hub-badge">Data Engineering &amp; Analytics</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Data Science &amp; AI</span>
+<h3>SQL for Data Science &amp; Window Functions Quicksheet</h3>
+<p>Comprehensive reference guide: Window Functions (`ROW_NUMBER()`, `DENSE_RANK()`, `LEAD()`, `LAG()`), Recursive...</p>
+<div class="hub-card-footer">
+<span class="hub-price">24.99 USD</span>
+<a class="hub-btn" href="sql-for-data-science-window-functions-deck.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="FE Civil Engineering Math &amp; Mechanics Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/fe-exam-civil-engineering-math-sheet-cover.webp" width="400"/>
+<span class="hub-badge">NCEES® FE Civil Prep</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Professional Engineering</span>
+<h3>FE Civil Engineering Math &amp; Mechanics Quicksheet</h3>
+<p>Essential NCEES FE Civil exam formulas: Fluid statics and Bernoulli, Geotechnical Mohr's Circle and effective ...</p>
+<div class="hub-card-footer">
+<span class="hub-price">39.00 USD</span>
+<a class="hub-btn" href="fe-exam-civil-engineering-math-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="FE Mechanical Thermodynamics &amp; Machine Design Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/fe-exam-mechanical-engineering-math-sheet-cover.webp" width="400"/>
+<span class="hub-badge">NCEES® FE Mech Prep</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Professional Engineering</span>
+<h3>FE Mechanical Thermodynamics &amp; Machine Design Deck</h3>
+<p>Comprehensive reference guide for NCEES FE Mechanical: 1st &amp; 2nd Laws of Thermodynamics, Heat Transfer (Conduc...</p>
+<div class="hub-card-footer">
+<span class="hub-price">39.00 USD</span>
+<a class="hub-btn" href="fe-exam-mechanical-engineering-math-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="FE Electrical &amp; Computer Engineering Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/fe-exam-electrical-computer-math-sheet-cover.webp" width="400"/>
+<span class="hub-badge">NCEES® FE Electrical</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Professional Engineering</span>
+<h3>FE Electrical &amp; Computer Engineering Quicksheet</h3>
+<p>Essential formulas for NCEES FE Electrical: AC Phasors, Complex Power ($S = P + jQ$), Thévenin/Norton equivale...</p>
+<div class="hub-card-footer">
+<span class="hub-price">39.00 USD</span>
+<a class="hub-btn" href="fe-exam-electrical-computer-math-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="PE Civil Structural Depth Codes &amp; Formulas Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/pe-exam-civil-structural-depth-sheet-cover.webp" width="400"/>
+<span class="hub-badge">NCEES® PE Civil Structural</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Professional Engineering</span>
+<h3>PE Civil Structural Depth Codes &amp; Formulas Deck</h3>
+<p>Essential formulas for PE Civil Structural: ACI 318 Reinforced Concrete nominal moment $\phi M_n$, AISC 360 St...</p>
+<div class="hub-card-footer">
+<span class="hub-price">49.00 USD</span>
+<a class="hub-btn" href="pe-exam-civil-structural-depth-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Fluid Mechanics &amp; Navier-Stokes Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/fluid-mechanics-navier-stokes-cheatsheet-cover.webp" width="400"/>
+<span class="hub-badge">Engineering Science</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Professional Engineering</span>
+<h3>Fluid Mechanics &amp; Navier-Stokes Quicksheet</h3>
+<p>Comprehensive reference guide: Incompressible Navier-Stokes equations, Reynolds Number flow regimes, Boundary ...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="fluid-mechanics-navier-stokes-cheatsheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Thermodynamics Power &amp; Refrigeration Cycles Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/thermodynamics-carnot-rankine-cycle-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Engineering Science</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Professional Engineering</span>
+<h3>Thermodynamics Power &amp; Refrigeration Cycles Deck</h3>
+<p>Essential formulas for thermodynamic cycles: Ideal Rankine reheat cycle, Brayton gas turbine with regeneration...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="thermodynamics-carnot-rankine-cycle-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Strength of Materials &amp; Solid Mechanics Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/strength-of-materials-mechanics-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Engineering Science</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Professional Engineering</span>
+<h3>Strength of Materials &amp; Solid Mechanics Quicksheet</h3>
+<p>High-yield reference guide: Hooke's Law, Flexure Formula ($\sigma = My/I$), Shear Flow ($q = VQ/I$), Torsion (...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="strength-of-materials-mechanics-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Control Systems &amp; Laplace Stability Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/control-systems-laplace-stability-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Systems &amp; Controls</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Professional Engineering</span>
+<h3>Control Systems &amp; Laplace Stability Quicksheet</h3>
+<p>Essential formulas for classical control theory: Transfer Functions, Routh-Hurwitz Stability Criterion, Root L...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="control-systems-laplace-stability-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Nursing Dosage Calculations &amp; NCLEX Drug Math Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/nursing-dosage-calculations-nclex-cheat-sheet-cover.webp" width="400"/>
+<span class="hub-badge">NCLEX® Math Mastery</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Medical &amp; Nursing Math</span>
+<h3>Nursing Dosage Calculations &amp; NCLEX Drug Math Deck</h3>
+<p>Essential nursing drug calculations: Dimensional Analysis, Desired Over Have $(D/H 	imes V)$, IV Drip Rate ($g...</p>
+<div class="hub-card-footer">
+<span class="hub-price">24.99 USD</span>
+<a class="hub-btn" href="nursing-dosage-calculations-nclex-cheat-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Pediatric Dosage &amp; Body Surface Area (BSA) Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/pediatric-dosage-calculation-formulas-cover.webp" width="400"/>
+<span class="hub-badge">Clinical Pediatrics</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Medical &amp; Nursing Math</span>
+<h3>Pediatric Dosage &amp; Body Surface Area (BSA) Quicksheet</h3>
+<p>Critical pediatric emergency math: Mosteller Body Surface Area (BSA) formula, 4-2-1 Maintenance Fluid Rule, Cl...</p>
+<div class="hub-card-footer">
+<span class="hub-price">24.99 USD</span>
+<a class="hub-btn" href="pediatric-dosage-calculation-formulas.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Pharmacokinetics (PK/PD) Equations Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/pharmacology-pharmacokinetics-math-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Pharmacokinetics</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Medical &amp; Nursing Math</span>
+<h3>Pharmacokinetics (PK/PD) Equations Quicksheet</h3>
+<p>Essential Clinical Pharmacokinetics formulas: Volume of Distribution ($V_d$), Clearance ($CL$), Elimination Ha...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="pharmacology-pharmacokinetics-math-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Clinical Laboratory Science &amp; QC Math Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/clinical-laboratory-calculations-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Clinical Pathology</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Medical &amp; Nursing Math</span>
+<h3>Clinical Laboratory Science &amp; QC Math Deck</h3>
+<p>Essential formulas for Clinical Lab Scientists (MLS/MLT): Beer-Lambert Law, Serial Dilutions ($C_1 V_1 = C_2 V...</p>
+<div class="hub-card-footer">
+<span class="hub-price">24.99 USD</span>
+<a class="hub-btn" href="clinical-laboratory-calculations-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Critical Care IV Drug Titration &amp; Infusion Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/critical-care-iv-infusion-titration-sheet-cover.webp" width="400"/>
+<span class="hub-badge">ICU Critical Care</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Medical &amp; Nursing Math</span>
+<h3>Critical Care IV Drug Titration &amp; Infusion Quicksheet</h3>
+<p>Essential formulas for ICU / ER nurses: Vasoactive infusion titration ($mcg/kg/min \leftrightarrow mL/hr$), No...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="critical-care-iv-infusion-titration-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Pharmacy Technician PTCE Math &amp; Alligation Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/pharmacy-technician-ptce-math-cheat-sheet-cover.webp" width="400"/>
+<span class="hub-badge">PTCB® PTCE Prep</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Medical &amp; Nursing Math</span>
+<h3>Pharmacy Technician PTCE Math &amp; Alligation Deck</h3>
+<p>Master PTCB PTCE pharmacy math: The Alligation Alternate Method, Days Supply calculations, Reconstitution volu...</p>
+<div class="hub-card-footer">
+<span class="hub-price">19.99 USD</span>
+<a class="hub-btn" href="pharmacy-technician-ptce-math-cheat-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Medical Dosimetry &amp; Radiation Oncology Math Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/medical-dosimetry-radiation-oncology-math-cover.webp" width="400"/>
+<span class="hub-badge">Radiation Oncology</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Medical &amp; Nursing Math</span>
+<h3>Medical Dosimetry &amp; Radiation Oncology Math Quicksheet</h3>
+<p>Elite formula sheet for Medical Dosimetrists (CMD): Monitor Unit (MU) calculations, Inverse Square Law, Percen...</p>
+<div class="hub-card-footer">
+<span class="hub-price">49.00 USD</span>
+<a class="hub-btn" href="medical-dosimetry-radiation-oncology-math.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Cardiovascular Hemodynamics &amp; Vascular Resistance Sheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/cardiovascular-hemodynamics-formulas-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Cardiology &amp; ICU</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Medical &amp; Nursing Math</span>
+<h3>Cardiovascular Hemodynamics &amp; Vascular Resistance Sheet</h3>
+<p>Essential formulas for ICU and Cardiology fellows: Mean Arterial Pressure (MAP), Cardiac Output Fick Equation,...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="cardiovascular-hemodynamics-formulas-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Arterial Blood Gas (ABG) &amp; Winter's Formula Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/arterial-blood-gas-abg-interpretation-deck-cover.webp" width="400"/>
+<span class="hub-badge">Clinical Pulmonology</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Medical &amp; Nursing Math</span>
+<h3>Arterial Blood Gas (ABG) &amp; Winter's Formula Deck</h3>
+<p>Essential diagnostic guide for ABG interpretation: Henderson-Hasselbalch equation, Winter's formula for metabo...</p>
+<div class="hub-card-footer">
+<span class="hub-price">24.99 USD</span>
+<a class="hub-btn" href="arterial-blood-gas-abg-interpretation-deck.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Emergency Trauma Fluid &amp; Parkland Burn Formula Sheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/emergency-fluid-resuscitation-parkland-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Emergency &amp; Trauma</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Medical &amp; Nursing Math</span>
+<h3>Emergency Trauma Fluid &amp; Parkland Burn Formula Sheet</h3>
+<p>Critical emergency trauma formulas: The Parkland Burn Formula ($4 mL 	imes kg 	imes \%TBSA$), Rule of Nines ad...</p>
+<div class="hub-card-footer">
+<span class="hub-price">24.99 USD</span>
+<a class="hub-btn" href="emergency-fluid-resuscitation-parkland-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="FAA Private Pilot VFR Navigation &amp; Flight Math Sheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/private-pilot-vfr-navigation-wind-triangle-cover.webp" width="400"/>
+<span class="hub-badge">FAA® Private Pilot Prep</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Aviation &amp; Spatial Math</span>
+<h3>FAA Private Pilot VFR Navigation &amp; Flight Math Sheet</h3>
+<p>Essential flight mathematics for FAA Private Pilots: The Wind Triangle (Groundspeed &amp; Wind Correction Angle), ...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="private-pilot-vfr-navigation-wind-triangle.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="FAA Instrument Rating (IFR) Navigation &amp; Descent Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/instrument-rating-ifr-holding-pattern-math-cover.webp" width="400"/>
+<span class="hub-badge">FAA® Instrument Rating</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Aviation &amp; Spatial Math</span>
+<h3>FAA Instrument Rating (IFR) Navigation &amp; Descent Deck</h3>
+<p>Master IFR navigation: Standard Rate Turn formulas ($15\% 	ext{ of TAS}$), 3-Degree Glideslope Descent Gradien...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="instrument-rating-ifr-holding-pattern-math.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Commercial Flight Planning, CG &amp; Fuel Reserves Sheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/commercial-aviation-flight-planning-fuel-math-cover.webp" width="400"/>
+<span class="hub-badge">Commercial Aviation</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Aviation &amp; Spatial Math</span>
+<h3>Commercial Flight Planning, CG &amp; Fuel Reserves Sheet</h3>
+<p>Essential commercial flight operations math: Weight &amp; Balance Center of Gravity ($CG$), Point of No Return (PN...</p>
+<div class="hub-card-footer">
+<span class="hub-price">39.00 USD</span>
+<a class="hub-btn" href="commercial-aviation-flight-planning-fuel-math.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Marine Navigation, Dead Reckoning &amp; Tides Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/marine-navigation-dead-reckoning-celestial-sheet-cover.webp" width="400"/>
+<span class="hub-badge">USCG® Marine Navigation</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Aviation &amp; Spatial Math</span>
+<h3>Marine Navigation, Dead Reckoning &amp; Tides Quicksheet</h3>
+<p>Essential formulas for Merchant Marine &amp; Coast Guard navigators: Dead Reckoning Course Made Good, Rule of Twel...</p>
+<div class="hub-card-footer">
+<span class="hub-price">34.99 USD</span>
+<a class="hub-btn" href="marine-navigation-dead-reckoning-celestial-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Land Surveying Coordinate Geometry (COGO) Sheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/surveying-coordinate-geometry-cogo-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Land Surveying (FS / PS)</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Aviation &amp; Spatial Math</span>
+<h3>Land Surveying Coordinate Geometry (COGO) Sheet</h3>
+<p>Essential formulas for NCEES FS &amp; PS Surveying exams: Latitudes and Departures ($\Delta Y, \Delta X$), Compass...</p>
+<div class="hub-card-footer">
+<span class="hub-price">34.99 USD</span>
+<a class="hub-btn" href="surveying-coordinate-geometry-cogo-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Construction Estimating &amp; Quantity Takeoff Quicksheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/construction-estimating-quantity-takeoff-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Construction Management</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Aviation &amp; Spatial Math</span>
+<h3>Construction Estimating &amp; Quantity Takeoff Quicksheet</h3>
+<p>Essential formulas for construction project managers and estimators: Concrete cubic yardage with waste factor,...</p>
+<div class="hub-card-footer">
+<span class="hub-price">24.99 USD</span>
+<a class="hub-btn" href="construction-estimating-quantity-takeoff-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Structural Load Combinations &amp; ASCE 7-22 Sheet" decoding="async" height="250" loading="lazy" src="images/pro-certifications/structural-load-calculation-ibc-asce7-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Structural Engineering</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Aviation &amp; Spatial Math</span>
+<h3>Structural Load Combinations &amp; ASCE 7-22 Sheet</h3>
+<p>Essential formulas for structural engineering loads: LRFD &amp; ASD Load Combinations (ASCE 7-22), Velocity Pressu...</p>
+<div class="hub-card-footer">
+<span class="hub-price">39.00 USD</span>
+<a class="hub-btn" href="structural-load-calculation-ibc-asce7-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Architectural Scales, Golden Ratio &amp; Stair Math Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/architectural-scale-proportion-golden-ratio-cover.webp" width="400"/>
+<span class="hub-badge">Architecture &amp; Design</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Aviation &amp; Spatial Math</span>
+<h3>Architectural Scales, Golden Ratio &amp; Stair Math Deck</h3>
+<p>Essential architectural mathematics: Imperial scale factors ($1/4" = 1'-0"$), The Golden Ratio ($\phi = 1.618$...</p>
+<div class="hub-card-footer">
+<span class="hub-price">24.99 USD</span>
+<a class="hub-btn" href="architectural-scale-proportion-golden-ratio.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Supply Chain Logistics, EOQ &amp; Safety Stock Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/supply-chain-logistics-eoq-safety-stock-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Operations &amp; Logistics</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Aviation &amp; Spatial Math</span>
+<h3>Supply Chain Logistics, EOQ &amp; Safety Stock Deck</h3>
+<p>Essential formulas for Supply Chain professionals: Economic Order Quantity ($EOQ$), Reorder Point ($ROP$) with...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="supply-chain-logistics-eoq-safety-stock-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+<div class="hub-card">
+<div class="hub-card-img">
+<img alt="Six Sigma Process Capability ($C_p, C_{pk}$) &amp; OEE Deck" decoding="async" height="250" loading="lazy" src="images/pro-certifications/industrial-manufacturing-six-sigma-math-sheet-cover.webp" width="400"/>
+<span class="hub-badge">Lean Six Sigma</span>
+</div>
+<div class="hub-card-body">
+<span class="hub-cat">Aviation &amp; Spatial Math</span>
+<h3>Six Sigma Process Capability ($C_p, C_{pk}$) &amp; OEE Deck</h3>
+<p>Essential formulas for Industrial Quality Engineers: Process Capability Indices ($C_p, C_{pk}$), Overall Equip...</p>
+<div class="hub-card-footer">
+<span class="hub-price">29.99 USD</span>
+<a class="hub-btn" href="industrial-manufacturing-six-sigma-math-sheet.html">Access Quicksheet →</a>
+</div>
+</div>
+</div>
+</div>
+<!-- GOOGLE HELPFUL CONTENT SYSTEM (HCS) & PEDAGOGICAL SCAFFOLDING BLOCK -->
+<section class="edupro-helpful-content-block" style="padding: 40px 0; background: #f8fafc; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0;">
+<div class="container" style="max-width: 920px; margin: 0 auto; padding: 0 20px;">
+<div style="background: #ffffff; border-radius: 14px; padding: 28px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); border: 1px solid #cbd5e1;">
+<div style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+<span style="font-size: 26px;">🎯</span>
+<div>
+<h3 style="margin: 0; font-size: 20px; font-weight: 800; color: #0f172a;">Why This Step? Blueprint Breakdown: Stem Engineering Medical Vault Prep</h3>
+<p style="margin: 2px 0 0; font-size: 14px; color: #64748b;">Key Conceptual Scaffolding &amp; Diagnostic Intuition</p>
+</div>
+</div>
+<div style="font-size: 15px; color: #334155; line-height: 1.7; margin-bottom: 22px;">
+<p><strong>Tested Competency:</strong> Core exam competencies, blueprint formulas &amp; diagnostic review. In modern competitive exams, questions are engineered to test whether you understand the underlying structural relationship—not just whether you memorized a formula.</p>
+</div>
+<!-- Student Trap Alert Callout -->
+<div class="student-trap-alert-box" style="background: #fff1f2; border-left: 5px solid #f43f5e; border-radius: 8px; padding: 18px 20px; margin-bottom: 20px;">
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 6px;">
+<span style="font-size: 18px;">⚠️</span>
+<strong style="color: #9f1239; font-size: 15px;">Student Trap Alert (Common Scoring Pitfall):</strong>
+</div>
+<p style="margin: 0; font-size: 14px; color: #881337; line-height: 1.6;">
+          Relying on rote memorization instead of conceptual problem-solving and timed simulation drills.
+        </p>
+</div>
+<!-- Key Scoring Takeaway -->
+<div style="background: #f0fdf4; border-left: 5px solid #22c55e; border-radius: 8px; padding: 16px 20px;">
+<div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+<span style="font-size: 18px;">💡</span>
+<strong style="color: #166534; font-size: 15px;">High-Yield Scoring Rule:</strong>
+</div>
+<p style="margin: 0; font-size: 14px; color: #14532d; line-height: 1.6;">
+          Always write out your hypotheses and state conditions explicitly before calculating test statistics. Graders award up to 40% of partial credit for proper setup, regardless of arithmetic precision.
+        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- END HELPFUL CONTENT SYSTEM BLOCK -->
+</main>
+<!-- E-E-A-T AUTHOR & ACADEMIC REVIEW BOARD CREDIBILITY CARD -->
+<section class="eeat-author-trust-card" style="padding: 35px 0; background: #ffffff;">
+<div class="container" style="max-width: 920px; margin: 0 auto; padding: 0 20px;">
+<div style="background: #f8fafc; border: 1.5px solid #e2e8f0; border-radius: 12px; padding: 24px; display: flex; flex-wrap: wrap; gap: 20px; align-items: center;">
+<div style="flex: 0 0 68px; height: 68px; border-radius: 50%; background: linear-gradient(135deg, #2563eb, #1d4ed8); display: flex; align-items: center; justify-content: center; color: #ffffff; font-size: 28px; font-weight: 800; box-shadow: 0 4px 12px rgba(37,99,235,0.25);">
+        🎓
+      </div>
+<div style="flex: 1; min-width: 260px;">
+<div style="display: flex; align-items: center; gap: 8px; flex-wrap: wrap; margin-bottom: 4px;">
+<h4 style="margin: 0; font-size: 17px; font-weight: 800; color: #0f172a;">EduPro Academic Review Board</h4>
+<span style="background: #dbeafe; color: #1e40af; font-size: 12px; font-weight: 700; padding: 2px 8px; border-radius: 9999px;">✓ Verified Educator &amp; Content Expert</span>
+</div>
+<p style="margin: 0 0 8px; font-size: 13.5px; color: #475569; line-height: 1.6;">
+          Content rigorously reviewed and cross-calibrated against official Stem Engineering Medical Vault Prep syllabus guidelines. Authored by veteran educators with 12+ years of university and professional board prep experience.
+        </p>
+<div style="display: flex; gap: 16px; font-size: 12.5px; color: #64748b; flex-wrap: wrap;">
+<span>🛡️ <strong>100% Alignment:</strong> Current Year Blueprint</span>
+<span>💳 <strong>Guarantee:</strong> 14-Day Money-Back</span>
+<span>⚡ <strong>Format:</strong> Instant Cloud + Offline Access</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END E-E-A-T CARD -->
+<footer>
+<p>© 2026 EduProSuite. All rights reserved. Peer-reviewed for academic &amp; professional rigor.</p>
+</footer>
+<!-- NOMINATIVE FAIR USE & REMOVAL-BASED DEMOTION SYSTEM SHIELD -->
+<div class="legal-fair-use-notice" style="background:#0f172a; border-top:1px solid #1e293b; padding:18px 20px; font-size:11.5px; color:#94a3b8; line-height:1.6; text-align:center;">
+<div style="max-width:960px; margin:0 auto;">
+<strong>Legal Trademark &amp; Nominative Fair Use Notice:</strong> AP®, SAT®, ACT®, CFA®, CPA®, FINRA®, ServSafe®, and other registered trademarks referenced herein are the property of their respective governing examination bodies (e.g., College Board, ACT Inc., CFA Institute, AICPA, FINRA). These organizations do not endorse, sponsor, or affiliate with EduPro Suite. All prep questions, simulators, review outlines, and cheatsheets are independently developed by EduPro Suite educators under United States Copyright Nominative Fair Use (15 U.S.C. § 1125) for private educational study.
+  </div>
+</div>
+</body>
+</html>
